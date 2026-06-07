@@ -9,4 +9,8 @@ Die deutschsprachigen Texte basieren ausschließlich auf dem deutschen Grundrege
 - [SWADE Core Rules](https://foundryvtt.com/packages/swade-core-rules) – kostenpflichtiges Premium-Modul von Pinnacle
   
 ## Rechte
-Savage Worlds und SWADE sind Eigentum der **Pinnacle Entertainment Group**, die deutschsprachigen Rechte liegen bei **Ulisses Spiele**. Dieses inoffizielle Fan-Projekt enthält keine Original-Spielinhalte, sondern nur Übersetzungs-Mappings für Babele und ersetzt nicht das kostenpflichtige Originalmodul.
+**Savage Worlds** und **SWADE** sind Eigentum der **Pinnacle Entertainment Group**; die deutschsprachigen Rechte liegen bei **Ulisses Spiele**. Dieses inoffizielle Fan-Projekt liefert die deutschen Regeltexte von Ulisses Spiele (verwendet mit Genehmigung) als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, das installiert sein muss und nicht ersetzt wird.
+
+<p align="center">
+  <img src="Logo/Savage-Worlds-Fanprodukt-Logo.png" alt="Savage Worlds Fanprodukt" width="300">
+</p>
