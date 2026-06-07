@@ -1,0 +1,550 @@
+{
+  "label": "Fahrzeuge",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "vehicleCategory"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "04PrTkmyCKrCAst7": {
+      "name": "Japanisches Zero",
+      "tokenName": "Japanisches Zero",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "items": {
+        "2× Linked Medium MG (Fixed Front)": {
+          "name": "2x Mittleres Maschinengewehr (verknüpft, fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked 20mm Cannons (Fixed Front)": {
+          "name": "2x 20mm-Kanone (verknüpft, fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "2vDj86l3gjFLCXZF": {
+      "name": "M4 Sherman",
+      "tokenName": "M4 Sherman",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}.</p>\n</div>",
+      "items": {
+        "Medium Machine Gun (Fixed Front)": {
+          "name": "Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Pintle Mount on Turret)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette am Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "75mm Tank Gun (AP Rounds) (Turret, Stabilizer)": {
+          "name": "75mm-Panzerkanone (Geschützturm, Stabilisatoren) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "31tPWF6mRWsdafMZ": {
+      "name": "Ruderboot",
+      "tokenName": "Ruderboot",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "4flKPfdT508Vb6CO": {
+      "name": "M2 Bradley",
+      "tokenName": "M2 Bradley",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "25mm Cannon (Improved Stabilizer)": {
+          "name": "25mm-Kanone (Verbesserte Stabilisatoren)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (In Turret)": {
+          "name": "Mittleres Maschinengewehr (im Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "TOW Missile Launcher": {
+          "name": "TOW-Werfer",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe (SW)}. Eine drahtgelenkte Rakete, die aus einem tragbaren oder auf einem Fahrzeug montierten Werfer abgefeuert wird. Erfordert keine Zielerfassung, nur eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe}, und kann nicht elektronisch gestört werden. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Mittlere Flächenschablone}.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        }
+      }
+    },
+    "5KUTmOLJOgXXEML8": {
+      "name": "Learjet",
+      "tokenName": "Learjet",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "77trqpRUWQyzY4V1": {
+      "name": "Galeone",
+      "tokenName": "Galeone",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "16 to 46 Cannons (12 lb), Solid Shot (Fixed Left and Right)": {
+          "name": "16x bis 64x Kanone (fest nach links und rechts), Rundgeschoss",
+          "description": "<div class=\"swade-core\">\n<p>Kanonen werden verwendet, um Stadtmauern zu zerstören oder große Truppenformationen aufzubrechen. Der Anführer der Besatzung der Waffe legt die @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen} ab.</p>\n<p><strong>Bombardieren:</strong>&nbsp;Wenn sie eine grobe Vorstellung haben, wo sich ihr Ziel befindet, können Haubitzen, Mörser und Bombarden auf Ziele feuern, die sie nicht sehen können, indem sie Geschosse über Gelände oder Hindernisse hinweg abfeuern. Bombardieren bedeutet einen Abzug von -4 zusätzlich zu allen anderen Modifikatoren, und verdoppelt die Abweichung, wenn die Schießenprobe misslingt (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächenangriffe}). Verringere den Abzug auf &ndash;2, wenn die Schützen genaue Koordinaten ihres Ziels haben (wie zum Beispiel von einem Zielaufklärer).</p>\n<p><strong>Rundgeschosse:</strong> Schwere Kugeln aus Eisen, Blei oder Stein, die darauf ausgelegt sind, Mauern einzureißen oder durch eng stehende Soldatengruppen zu pflügen. Der Anführer der Besatzung muss wie üblich eine Schießenprobe ablegen. Wirf bei einem Erfolg einen Würfel. Bei einem geraden Ergebnis prallt die Kugel zu einem weiteren Opfer hinter dem ersten Ziel (innerhalb von 6&ldquo;) und trifft es ebenfalls. Fahre auf diese Weise fort, bis der Würfel ein ungerades Ergebnis erzielt.</p>\n<p>Vergleiche die Schießenprobe für jedes Ziel mit einem Basis-ZW von 4, gegebenenfalls angepasst für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung}, Spezialfähigkeiten wie dem Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.V1WWGHUtlFTVTAM9]{Ausweichen} etc. Ein Treffer verursacht 2W6, bei einer Steigerung 3W6 Schaden.</p>\n<p><strong>Anmerkung:</strong>&nbsp;Alle Arten von Kanonengeschossen sind @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffen} mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 8. Zwei Besatzungsmitglieder können gleichzeitig nachladen.</p>\n</div>"
+        }
+      }
+    },
+    "7PMrUMu5SGkE3AfG": {
+      "name": "Schwebepanzer",
+      "tokenName": "Schwebepanzer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Nachtsicht}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schweben}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</span></p>\n</div>",
+      "items": {
+        "Heavy Laser (Turret, Improved Stabilizer)": {
+          "name": "Schwerer Laser (Geschützturm, Verbesserte Stabilisatoren)",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe (SW)}</p>\n<p><strong>Kauterisieren:</strong>&nbsp;Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine Konstitutionsprobe, um nicht zu verbluten.</p>\n<p><strong>Überladen:</strong>&nbsp;Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der Schießen-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong>&nbsp;Pistolen, Maschinenpistolen und Gewehre ignorieren Rückstoß. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem Dreibein montiert sind.</p>\n</div>"
+        },
+        "Gatling (Laser) (Fixed Front, Reaction Fire)": {
+          "name": "Gatling-Laser (fest nach vorne, Reaktionsfeuer)",
+          "description": "<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02lasersfuturi00]{Kauterisieren, Überladen, Kein Rückstoß}</p>"
+        }
+      }
+    },
+    "7eOpgbmrP4Lp8WZr": {
+      "name": "Galeere",
+      "tokenName": "Galeere",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}. Hat Runder und Segel.</p>\n</div>",
+      "items": {
+        "Catapult (Fixed Front)": {
+          "name": "Katapult (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{MFS}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladezeit} ist 5 Minuten für eine Mannschaft von 4.</p>\n<hr />\n<p>Katapulte sind einfache Apparaturen, die große Steine auf Wehranlagen oder Reihen von Gegnern schleudern. Sie erfordern normalerweise eine Mannschaft von acht Mann, um das Projektil zu laden, den Hebel herunterzudrücken, der es abfeuert, und dann zu zielen. Eine Person kann die Waffe abfeuern, doch zum Nachladen sind mindestens vier Personen notwendig.</p>\n</div>"
+        }
+      }
+    },
+    "B1L7m7Ib33wiEJ5b": {
+      "name": "Familienkutsche",
+      "tokenName": "Familienkutsche",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Typischer Wagen für Familien. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Airbags}, eingeschränkte Luxusausstattung.</p>\n</div>"
+    },
+    "Cm8x4rQz5otPP51e": {
+      "name": "SUV",
+      "tokenName": "SUV",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Luxusausstattung, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Allradantrieb}.</p>\n</div>"
+    },
+    "FREBKQF5XM2Tnnzs": {
+      "name": "Pz VI Tiger II",
+      "tokenName": "Pz VI Tiger II",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}.</p>\n</div>",
+      "items": {
+        "88mm Tank Gun (AP Rounds) (Turret)": {
+          "name": "88mm-Panzerkanone (Geschützturm) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (Front Fixed and in Turret)": {
+          "name": "Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "H4OLk6rOnDwkw9HM": {
+      "name": "Fahrrad",
+      "tokenName": "Fahrrad",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>50% Chance, dass Schüsse den Fahrradfahrer treffen, sofern nicht auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele} geschossen wird. Verdoppelt die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} des Fahrers und das Ergebnis seines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfels}.</p>\n</div>"
+    },
+    "H7t8ffwahVekUEzJ": {
+      "name": "T-80 Kampfpanzer",
+      "tokenName": "T-80 Kampfpanzer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "125mm Tank Gun (AP Rounds) (Improved Stabilizer)": {
+          "name": "125mm-Panzerkanone (Verbesserte Stabilisatoren) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Med. Machine Gun (In Turret)": {
+          "name": "Mittleres Maschinengewehr (im Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Pintle Mount on Turret)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette am Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "HkpgQyvTbyjnGs5Q": {
+      "name": "B-17 Flying Fortress",
+      "tokenName": "B-17 Flying Fortress",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "items": {
+        "2× Linked Heavy MG (Fixed Front)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked Heavy MG (Top Turret)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, oberer Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked Heavy MG (Ball Turret)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, Kugelturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked Heavy MG (Fixed Left)": {
+          "name": "Schweres Maschinengewehr (fest nach links)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked Heavy MG (Fixed Right)": {
+          "name": "Schweres Maschinengewehr (fest nach rechts)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Bombs": {
+          "name": "Bomben",
+          "description": "<div class=\"swade-core\">\n<blockquote>\n<p>Schadensgrad durch Bomben: Ja.</p>\n<p>Eine Bombe ist lediglich eine @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchterungs}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} gegen jedes Ziel <em>außerhalb</em> des Wirkbereichs.</p>\n<p><cite>- Clint Black</cite></p>\n</blockquote>\n</div>"
+        }
+      }
+    },
+    "I2N6AmYNoRLpNmaQ": {
+      "name": "Helikopter",
+      "tokenName": "Helikopter",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "IO90dRY8w40x2OsQ": {
+      "name": "Spitfire Mk IIA",
+      "tokenName": "Spitfire Mk IIA",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "items": {
+        "4× Linked Medium MG (Fixed Front)": {
+          "name": "4x Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "K7J7PPWXBdcYnal2": {
+      "name": "Kleinwagen",
+      "tokenName": "Kleinwagen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Honda Civic oder ähnliches Fahrzeug.</p>\n</div>"
+    },
+    "KpykrpU7NaPlbBwx": {
+      "name": "Geländemotorrad",
+      "tokenName": "Geländemotorrad",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Typisches Motorrad, das für Verwendung im Gelände ausgelegt ist, mit hervorragenden Stoßdämpfern. Geländetauglich (behandle wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Allradantrieb}). 50% Chance, dass Schüsse den Fahrradfahrer treffen, sofern nicht auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele} geschossen wird.</p>\n</div>"
+    },
+    "LViZeMg2UKAsGxB5": {
+      "name": "Frühes Auto",
+      "tokenName": "Frühes Auto",
+      "Beschreibung": "<div class=\"swade-core\">Modell T und so weiter.</div>"
+    },
+    "MUvNDeCx54H6jS3L": {
+      "name": "Schwebetruppentransporter",
+      "tokenName": "Schwebetruppentransporter",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schweben}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "Gatling (Laser) (Fixed Front, Reaction Fire)": {
+          "name": "Gatling-Laser (fest nach vorne, Reaktionsfeuer)",
+          "description": "<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02lasersfuturi00]{Kauterisieren, Überladen, Kein Rückstoß}</p>"
+        }
+      }
+    },
+    "N1nOGIFobhT9sTdG": {
+      "name": "Sportwagen",
+      "tokenName": "Sportwagen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Mustang oder ähnlicher typischer Sportwagen.</p>\n</div>"
+    },
+    "NycSbNuC28avrpvZ": {
+      "name": "Jeep",
+      "tokenName": "Jeep",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Allradantrieb}</p>\n</div>",
+      "items": {
+        "Heavy Machine Gun (Front Pintle Mount)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "QsevwmVE184ZuT1b": {
+      "name": "Kleine Jacht",
+      "tokenName": "Kleine Jacht",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "S3g1GRWgvmPBFOVL": {
+      "name": "BF-109",
+      "tokenName": "BF-109",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "items": {
+        "2× Linked Heavy MG (Fixed Front)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "20mm Cannon (Fixed Front)": {
+          "name": "20mm-Kanone (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "S5OIbCVaqBit0305": {
+      "name": "Tragflächenboot",
+      "tokenName": "Tragflächenboot",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "UXH49ILTjEu5irQP": {
+      "name": "P-51 Mustang",
+      "tokenName": "P-51 Mustang",
+      "Beschreibung": "<div class=\"swade-core\">&nbsp;</div>",
+      "items": {
+        "2× Linked Heavy MG (Fixed Front)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "VOrzpARd1HyuPM5d": {
+      "name": "Sattelschlepper",
+      "tokenName": "Sattelschlepper",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Anhänger ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} 7 (Groß), @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} 14 (2). @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Manövrierfähigkeit} mit Anhänger ist &ndash;2.</p>\n</div>"
+    },
+    "Vr39yui2GFn6it6c": {
+      "name": "AH-64 Apache",
+      "tokenName": "AH-64 Apache",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Helikopter, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}.</p>\n</div>",
+      "items": {
+        "Hellfire Missiles": {
+          "name": "16x Hellfire",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Eine lasergelenkte Rakete, die aus einem auf einem Fahrzeug montierten Werfer abgefeuert wird.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        },
+        "30mm Cannon (Fixed Front)": {
+          "name": "30mm-Kanone (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "XHhPMpH1YsDmpjdu": {
+      "name": "Streetbike",
+      "tokenName": "Streetbike",
+      "Beschreibung": "<div class=\"swade-core\">Typische bekannte Straßenmotorräder, die für die Verwendung in der Stadt ausgelegt sind. 50% Chance, dass Schüsse den Fahrradfahrer treffen, sofern nicht auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele} geschossen wird.</div>"
+    },
+    "ZLlBcEXYjyQYDKcU": {
+      "name": "F-15 Eagle",
+      "tokenName": "F-15 Eagle",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}.</p>\n</div>",
+      "items": {
+        "20mm Cannon (Fixed Front)": {
+          "name": "20mm-Kanone (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Bombs": {
+          "name": "Bomben",
+          "description": "<div class=\"swade-core\">\n<blockquote>\n<p>Schadensgrad durch Bomben: Ja.</p>\n<p>Eine Bombe ist lediglich eine @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchterungs}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} gegen jedes Ziel <em>außerhalb</em> des Wirkbereichs.</p>\n<p><cite>- Clint Black</cite></p>\n</blockquote>\n</div>"
+        },
+        "Sidewinder": {
+          "name": "Sidewinder",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Eine wärmesuchende Kurzstreckenrakete, die aus einem Flugzeug abgefeuert wird. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Kleine Flächenschablone}.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        },
+        "Sparrow": {
+          "name": "4x Sparrow",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Eine radargelenkte Mittelstreckenrakete, die aus einem Flugzeug abgefeuert wird. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Kleine Flächenschablone}.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        }
+      }
+    },
+    "as6h4AV6AMsV2S1E": {
+      "name": "Patrouillenboot, Fluss",
+      "tokenName": "Patrouillenboot, Fluss",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "2× Linked Heavy MG (Front Front Pintle Mount)": {
+          "name": "2x Schweres Maschinengewehr (verknüpft, Pivotlafette nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "2× Linked Medium MG (Left and Right)": {
+          "name": "2x Mittleres Maschinengewehr (Pivotlafette nach hinten)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Stern)": {
+          "name": "Schweres Maschinengewehr (Heck)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "bxBfHRoz4kxo0KUO": {
+      "name": "Cessna Skyhawk",
+      "tokenName": "Cessna Skyhawk",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "eYcJl1VJ96F3D81o": {
+      "name": "PT-Schnellboot (Zweiter Weltkrieg)",
+      "tokenName": "PT-Schnellboot (Zweiter Weltkrieg)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "50 cal MG (Front Pintle Mount)": {
+          "name": "Maschinengewehr Kaliber 50 (Pivotlafette nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n<hr />\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong> Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>"
+        },
+        "Heavy MG (Rear Pintle Mount)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette nach hinten)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "4× torpedo tubes (Fixed Forward)": {
+          "name": "4x Torpedorohre (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p>Raketenwerfer und frühe Torpedos sind Direktfeuerwaffen, die bei Kontakt mit dem Ziel explodieren. Alle angegebenen Waffen sind @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Große Flächenschablone}</p>\n</div>"
+        }
+      }
+    },
+    "gWeisWt5kJgMCuXp": {
+      "name": "T-72 Kampfpanzer",
+      "tokenName": "T-72 Kampfpanzer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "125mm Tank Gun (AP Rounds)": {
+          "name": "125mm-Panzerkanone (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (In Turret)": {
+          "name": "Mittleres Maschinengewehr (im Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Pintle Mount on Turret)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette am Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "gYeSqjrHtHXL5YFy": {
+      "name": "Spaceshuttle",
+      "tokenName": "Spaceshuttle",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "heolZoaUdXmAL6OQ": {
+      "name": "M5A1 Stuart",
+      "tokenName": "M5A1 Stuart",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}.</p>\n</div>",
+      "items": {
+        "37mm AT Gun (AP Rounds) (Turret, Stabilizer)": {
+          "name": "37mm-Panzerabwehrkanone (Geschützturm, Stabilisatoren) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (Front Fixed)": {
+          "name": "Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Pintle Mount on Turret)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette am Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "l5aNqjQd8oDIX04G": {
+      "name": "AV-8B Harrier",
+      "tokenName": "AV-8B Harrier",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>&ndash;1 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Manövrierfähigkeit} im Senkrechtstartermodus.</p>\n</div>",
+      "items": {
+        "25mm Cannon (Fixed Front)": {
+          "name": "25mm-Kanone (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Bombs": {
+          "name": "Bomben",
+          "description": "<div class=\"swade-core\">\n<blockquote>\n<p>Schadensgrad durch Bomben: Ja.</p>\n<p>Eine Bombe ist lediglich eine @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchterungs}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} gegen jedes Ziel <em>außerhalb</em> des Wirkbereichs.</p>\n<p><cite>- Clint Black</cite></p>\n</blockquote>\n</div>"
+        },
+        "Sidewinder Missiles": {
+          "name": "2x Sidewinder",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Eine wärmesuchende Kurzstreckenrakete, die aus einem Flugzeug abgefeuert wird.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        }
+      }
+    },
+    "lTyAXgrxAV1aqcL1": {
+      "name": "Mittelklassewagen",
+      "tokenName": "Mittelklassewagen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Airbags}, Luxusausstattung.</p>\n</div>"
+    },
+    "mx4asgXzuvv8f3ml": {
+      "name": "Schnellboot",
+      "tokenName": "Schnellboot",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "p5IvzoYZN8y1a8FM": {
+      "name": "Pz IVJ",
+      "tokenName": "Pz IVJ",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}.</p>\n</div>",
+      "items": {
+        "Medium Machine Gun (Front Fixed and in Turret)": {
+          "name": "Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "75mm Tank Gun (AP Rounds) (Turret)": {
+          "name": "75mm-Panzerkanone (Geschützturm) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "phSDD9CeJ9mMCsvx": {
+      "name": "T-34/76",
+      "tokenName": "T-34/76",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Abgeschrägte Panzerung} (nur Front),&nbsp;@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}.</p>\n</div>",
+      "items": {
+        "76mm Tank Gun (AP Rounds) (Turret)": {
+          "name": "76mm-Panzerkanone (Geschützturm) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (Front Fixed and in Turret)": {
+          "name": "Mittleres Maschinengewehr (nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "qc3ULdbRDVzDklLx": {
+      "name": "SU-27",
+      "tokenName": "SU-27",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}.</p>\n</div>",
+      "items": {
+        "30mm Cannon (Fixed Front)": {
+          "name": "30mm-Kanone (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Sidewinder Missiles (Soviet equivalent)": {
+          "name": "4x Sidewinder (sowjetische Entsprechung)",
+          "description": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Eine wärmesuchende Kurzstreckenrakete, die aus einem Flugzeug abgefeuert wird. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Kleine Flächenschablone}.</p>\n<hr />\n<p>Wenn es nicht anderweitig angegeben ist, müssen Raketen ihre Ziele &bdquo;anvisieren&ldquo;, ehe sie abgefeuert werden können. Dies ist eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.91f2yizlcZskP6ie]{Elektronikprobe} gegen die Fertigkeit, mit der das Ziel manövriert wird (@UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt}, je nachdem).</p>\n<p>Bei einem Erfolg hat der Angreifer das Ziel für einen Augenblick in der Zielerfassung, sodass er bis zur Hälfte der Raketen, die sein Fahrzeug abfeuern kann, verwenden kann. Eine Steigerung sorgt für solidere Zielerfassung und erlaubt es ihm, alle abzufeuern. Der Gegner muss jeder Rakete einzeln ausweichen, indem er zum Fahrzeug passende Fertigkeitsproben mit -4 (oder &ndash;2, wenn er beträchtliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} hat, wie einen Asteroiden, Wolkenkratzer, die Wände einer Schlucht oder sogar große feindliche Schiffe) ablegt.</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass das Fahrzeug @UUID[Compendium.swade-core-rules.swade-tables.RollTable.Jg8oLO3b9iMjvB6B]{Außer Kontrolle} gerät.</p>\n<p><strong>Raketenabwehrsysteme:</strong> Kriegsschiffe und futuristische Raumschiffe haben oft &bdquo;Punktverteidigungssysteme&ldquo;, um eintreffende Raketen abzuschießen. Wer diese Systeme bedient, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, um die Raketen abzuschießen. Das System erlaubt eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} pro Rakete auf kurzer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, inklusive aller relevanten Modifikatoren (auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} - Raketen bewegen sich bei Mach 1, was zu einem Abzug von -6 führt, wenn es nicht anders angegeben ist). Sofern nicht anders beschrieben, sind Raketen Gegenstände mit Robustheit 8 (2) (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Dinge zerstören}).</p>\n</div>"
+        }
+      }
+    },
+    "rmrce7qwpBT4COZC": {
+      "name": "M1A1 Abrams",
+      "tokenName": "M1A1 Abrams",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Kettenfahrzeug}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Lichtverstärker}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "120mm Tank Gun (AP Rounds) (Imp Stabilizer)": {
+          "name": "120mm-Panzerkanone (Verbesserte Stabilisisatoren) (PB-Geschosse)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Panzer- und Panzerabwehrkanonen:</strong>&nbsp;Diese Waffen können entweder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend (PB)} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02highexplosiv00]{Hochexplosiv (HE)} Geschosse abfeuern, nach Wahl des Schützen. PB-Geschosse verursachen auf kurze Entfernung zusätzlichen Schaden. Erhöhe den Waffenschaden um einen Würfel, wenn sie innerhalb der Hälfte ihrer kurzen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} abgefeuert werden (4W10+2 wird beispielsweise zu 5W10+2).</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (Front Fixed and in Turret)": {
+          "name": "Mittleres Maschinengewehr (fest nach vorne)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Heavy Machine Gun (Pintle Mount on Turret)": {
+          "name": "Schweres Maschinengewehr (Pivotlafette am Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "sFX9tixhz9W6zUux": {
+      "name": "Doppeldecker",
+      "tokenName": "Doppeldecker",
+      "Beschreibung": "<div class=\"swade-core\"></div>"
+    },
+    "ygADcQHRCTVtgLEp": {
+      "name": "Kutsche",
+      "tokenName": "Kutsche",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Wird von einem @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.IBoqX3yt1KAw9yFy]{Pferd} gezogen. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} auf dem Tisch ist 12, und es kann @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{sprinten}.</p>\n</div>"
+    },
+    "z4Pkyp0t642TrSo2": {
+      "name": "BTR 70 Transportpanzer",
+      "tokenName": "BTR 70 Transportpanzer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Amphibisch}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Allradantrieb}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00]{Schwere Panzerung}.</p>\n</div>",
+      "items": {
+        "Heavy Machine Gun (Turret)": {
+          "name": "Schweres Maschinengewehr (Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        },
+        "Medium Machine Gun (Turret)": {
+          "name": "Mittleres Maschinengewehr (im Geschützturm)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    },
+    "z9kSIm9K9vw53Zpw": {
+      "name": "UH-1 (Huey)",
+      "tokenName": "UH-1 (Huey)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Helikopter</p>\n</div>",
+      "items": {
+        "Medium MG (Fixed Left or Right)": {
+          "name": "Mittleres Maschinengewehr (fest links oder rechts)",
+          "description": "<div class=\"swade-core\">\n<p><strong>Minimale Feuerrate:</strong>&nbsp;Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von mindestens 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n</div>"
+        }
+      }
+    }
+  }
+}

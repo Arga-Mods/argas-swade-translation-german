@@ -1,0 +1,52 @@
+{
+    "id": "argas-swade-translation-german",
+    "title": "Arga's SWADE Translation (German)",
+    "description": "Unofficial German translation of the official SWADE Core Rules module (swade-core-rules).",
+    "version": "14.0.1",
+    "authors": [
+        {
+            "name": "Arga",
+            "url": "https://github.com/Arga-Mods"
+        }
+    ],
+    "url": "https://github.com/Arga-Mods/argas-swade-translation-german",
+    "bugs": "https://github.com/Arga-Mods/argas-swade-translation-german/issues",
+    "changelog": "https://github.com/Arga-Mods/argas-swade-translation-german/releases",
+    "readme": "https://github.com/Arga-Mods/argas-swade-translation-german/blob/main/README.md",
+    "manifest": "https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest/download/module.json",
+    "download": "https://github.com/Arga-Mods/argas-swade-translation-german/releases/download/14.0.1/argas-swade-translation-german.zip",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "14"
+    },
+    "esmodules": [
+        "register.js"
+    ],
+    "languages": [
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        }
+    ],
+    "relationships": {
+        "requires": [
+            {
+                "id": "babele",
+                "type": "module",
+                "compatibility": {}
+            },
+            {
+                "id": "swade-core-rules",
+                "type": "module"
+            }
+        ],
+        "recommends": [
+            {
+                "id": "lang-de",
+                "type": "module",
+                "reason": "Deutsche Übersetzung der Foundry-Core-Texte (German [Core])"
+            }
+        ]
+    }
+}

@@ -1,0 +1,3025 @@
+{
+	"label": "Talente",
+	"mapping": {
+		"Beschreibung": "system.description",
+		"Rang": {
+			"path": "system.requirements",
+			"converter": "rankRequirement"
+		},
+		"Quelle": {
+			"path": "system.source",
+			"converter": "sourceTranslation"
+		},
+		"Kategorie": {
+			"path": "system.category",
+			"converter": "edgeCategory"
+		}
+	},
+	"folders": {},
+	"entries": {
+		"01hdQ1Ye4tigQI0k": {
+			"name": "Lieblingswaffe",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held kennt eine einzigartige Waffe (Excalibur, Old Betsy, Stich) sehr genau. Wenn er sie verwendet, addiert er +1 auf seine Proben mit @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} (Werfen), @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}, und erhält +1 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}, wenn er die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03readyingweap00]{Waffe bereitgemacht} hat (selbst bei einer Fernkampfwaffe).</p> <p>Ein Kämpfer kann dieses Talent mehrere Male wählen und jedes Mal für eine andere Waffe verwenden. Wenn eine Lieblingswaffe verloren geht, kann sie ersetzt werden, doch die Vorteile treten erst nach ein paar Tagen wieder in Kraft (solange wie die SL für angemessen hält).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "skill with the chosen weapon of d8+",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"0NxWUIWyA8wRpW5Y": {
+			"name": "Harter Block",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}-Bonus des Helden beträgt jetzt +2, und der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03gangingup00000]{Überzahlbonus} wird um 2 Punkte verringert.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Block",
+					"selector": "block",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"1tagwRRE0BDlmrNm": {
+			"name": "Aufwiegler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Hetzer kann mehrere Gegner auf einmal wütend machen.</p> <p>Einmal pro Zug kann dieser Charakter eine soziale @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} mit @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren} gegen alle Gegner in einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittleren Flächenschablone} machen. Die Ziele müssen den Helden deutlich sehen und hören können. Jeder Betroffene widersetzt sich der Herausforderung einzeln.</p>\n</div>",
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Edge Actions"
+		},
+		"28dCHrGmtPvd9AEZ": {
+			"name": "Geschickte Riposte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wie Riposte, doch erhält der Held einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03freeattacks000]{Freien Angriffe} gegen bis zu drei misslungene Angriffe pro Zug.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Counterattack",
+					"selector": "counterattack",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"2JJBnVuxeDGrWmLB": {
+			"name": "Eiserner Wille",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenige Dinge bringen diesen Charakter aus dem Gleichgewicht. Der Starker Wille-Bonus gilt nun für Verstand- und Willenskraft-Proben, um Mächten zu widerstehen und sich von ihren Auswirkungen zu erholen. Dieser Bonus ist nicht kumulativ mit dem Bonus von @UUID[Compendium.swade-core-rules.swade-edges.Item.hMTj68saxoF5i5Ul]{Mutig}. Er wird außerdem nicht auf Folgeproben angewendet, zum Beispiel auf solche um sich von einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}-Zustand zu erholen, den man durch eine schadenzufügende @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Macht}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Furcht}, oder ähnliches erhalten hat.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Brave",
+					"selector": "brave",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Strong Willed",
+					"selector": "strong-willed",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"2JVcFYPjKf87nEJo": {
+			"name": "Anheizen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Schon ein einziger Satz eines großen Anführers kann gewaltige Folgen haben. Ein Anführer mit dieser Fähigkeit kann seine Männer zu blutigem Eifer antreiben, indem er ein Motto, einen Schlachtruf oder andere inspirierende Worte ruft.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} im Befehlsradius addieren +1 auf ihre @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Schadenswürfe.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"2jhhhF9LSMAagTlG": {
+			"name": "Meister aller Waffen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Erhöhe die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Helden noch einmal um +1, und sein @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Bonusschadenswürfel ist jetzt ein W10.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "Weapon Master",
+					"selector": "weapon-master",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"2mbFmjLj5liENPVl": {
+			"name": "Großes Glück",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Spieler zieht zwei zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys} statt einem zu Beginn einer jeden Sitzung.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Luck",
+					"selector": "luck",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"2whgpOchV1t8Kotr": {
+			"name": "Kampfreflexe",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Krieger erholt sich schnell von Schock und Verletzungen. Er addiert +2 auf Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"3jFwJEuUKJJ7YLgz": {
+			"name": "Charismatisch",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist aus irgendeinem Grund sehr sympathisch. Er ist vielleicht vertrauenserweckend oder freundlich, oder strahlt einfach Selbstvertrauen und guten Willen aus. Du darfst @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben} einmal @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{wiederholen}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"4BkC7aj2yWHnQUjY": {
+			"name": "Schnellfeuer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Schütze ist darin geübt, schnelle und treffsichere Schüsse abzugeben. Solange er eine schnellfeuernde Fernkampfwaffe verwendet (wie einen Revolver oder eine Halbautomatik) und genug Munition hat, kann er die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} für einen seiner @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Angriffe in diesem Zug um 1 erhöhen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Shooting",
+					"selector": "shooting",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"4lf3EBFmxqPA6HTX": {
+			"name": "Raufbold",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Seine Fäuste schlagen ein wie Hämmer, seine Klauen schneiden wie eine Sense. Sein Körper fühlt sich an, als würde er aus Stein bestehen. Raufbolde erhöhen ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um 1 und verursachen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke}+W4 Schaden, wenn sie mit ihren Fäusten oder Füßen angreifen (oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili04]{Klauen}, wenn sie welche haben). Wenn sie bereits Schaden durch Klauen verursachen, das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.YVUeqfQ2v6hwnfrO]{Kampfkünstler} besitzen, etc., erhöhe den Schadenswürfel um einen Schritt.</p> <p>Das Talent Raufbold macht die Fäuste des Charakters nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürlichen Waffen}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "strength",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"4qxdGupOFAu3VWpL": {
+			"name": "Verbessertes Schnellfeuer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Schütze kann jetzt seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} zweimal im gleichen Zug (durch eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktion}) um 1 erhöhen.</p> <p class=\"embedded-example\"><strong>Beispiel:</strong> Gabe feuert ein Maschinengewehr ab und verfügt über Verbessertes Schnellfeuer. Die Waffe hat eine Feuerrate von 4, und Gabe entscheidet, sie bei all seinen drei erlaubten Aktionen abzufeuern.<br />Er wirft einen zusätzlichen @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel beim ersten und zweiten Angriff, was die Feuerrate der Waffe jedes Mal auf 5 erhöht. Er erhält den Bonus beim dritten Angriff nicht, daher bleibt dabei die Feuerrate seines Maschinengewehrs 4.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Rapid Fire",
+					"selector": "rapid-fire",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"5BwGakfjxHYDhVOD": {
+			"name": "Wirklich schwer zu töten",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist schwerer umzubringen als Rasputin. Wenn er jemals &bdquo;getötet&ldquo; wird, wirf einen Würfel. Bei einem ungeraden Ergebnis ist er tot wie üblich. Bei einem geraden Ergebnis ist er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet}, aber entkommt irgendwie dem Tod. Er wird vielleicht gefangen genommen, sein ganzer Besitz wird ihm abgenommen oder er wird als vermeintlich tot zurückgelassen, aber irgendwie überlebt er.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Hard To Kill",
+					"selector": "hard-to-kill",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"5XdIQiZgvA2ieAnh": {
+			"name": "Sechster Sinn",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held kann spüren, wenn Gefahr im Anzug ist. Wenn er auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03surprise000000]{Überraschung} würfelt, addiert er +2 auf seine @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe}, die entscheidet, ob er in der ersten Runde handeln darf. Bei einer Steigerung beginnt er die Begegnung mit einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{aufgesparten} Zug.</p> <p>In anderen Situationen, die nicht von den Überraschungsregeln abgewickelt werden (ein Heckenschütze, eine Grubenfalle, ein vergiftetes Getränk und so weiter) erlaubt Sechster Sinn eine Wahrnehmungsprobe mit -2 (oder +2, wenn normalerweise auch eine Wahrnehmungsprobe erlaubt wäre), um die Gefahr zu entdeckend und entsprechend zu handeln. Wenn dies ein Angriff ist, und der Held seine Wahrnehmungsprobe schafft, erhält der Gegner keinen Überraschungsangriff-Bonus.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"5sfBwuq0xgsQEppt": {
+			"name": "Aristokrat",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Charakter wurde privilegiert geboren oder stieg später im Leben im Stand auf. Er könnte Geld haben oder auch nicht (siehe die Talente @UUID[Compendium.swade-core-rules.swade-edges.Item.vNDguZFqPlgMo5qx]{Reich} und @UUID[Compendium.swade-core-rules.swade-edges.Item.KIXfH0MyiHVIDHrq]{Stinkreich}), aber auf jeden Fall bewegt er sich in der Elite der sozialen Kreise des Settings. Aristokraten addieren +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden}, wenn sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04networking0000]{Informationsbeschaffung} bei der örtlichen Elite, Industriellen, Adeligen oder anderen Aristokraten betreiben. Sie addieren außerdem +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.su7eyijoB0RFpRB1]{Allgemeinwissen}, wenn es um die Etikette der Oberschicht, Stammbäume und Heraldik oder lokale Gerüchte über andere Vertreter ihres Standes geht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"5ztdUMAvhYTALSQQ": {
+			"name": "Selbstlos",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Selbstlose Helden und entschlossene Anführer wissen, dass ihre größte Stärke oft von ihren Gefährten kommt, und sind bereit, einen Teil ihres Glücks oder Schicksals mit ihnen zu teilen. Ein Charakter mit diesem Talent kann seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys} jedem anderen Charakter geben, mit dem er kommunizieren kann. Der Spieler sollte erklären, wie das genau aussieht: Von einem kurzen ermunternden Ausruf bis hin zu einem freundlichen Schulterklopfen ist so einiges möglich.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"6J1UI7GYkHngpjbt": {
+			"name": "Chi",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Die Kampfkunstausbildung deines Helden geht über die Norm hinaus und fällt in den Bereich des Mystischen. Zu Beginn einer jeden Kampfbegegnung erhält er einen Chi-Punkt, den er ausgeben kann, um eines der folgenden Dinge zu tun:</p> <ul> <li>Er kann einen misslungenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Angriff} (sogar einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischen Fehlschlag}) neu würfeln.</li> <li>Er kann seinen Gegner einen Angriff gegen sich neu würfeln lassen.</li> <li>Er kann +W6 auf den Schaden eines erfolgreichen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffs addieren, den er mit seinen Händen, Füßen, Klauen oder anderen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{natürlichen Waffen} ausgeführt hat.</li> </ul> <p>Nicht verbrauchtes Chi geht am Ende der Kampfbegegnung verloren.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Martial Warrior",
+					"selector": "martial-warrior",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"7YiLlxxjD750ltXM": {
+			"name": "Schneller Angriff",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein Charaktere mit Schneller Angriff würfelt einen zweiten @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Würfel mit einem seiner Kämpfen-Angriffe in seinem Zug. Der Extrawürfel kann auf das gleiche Ziel oder ein anderes angewendet werden. Wickle jeden Treffer einzeln ab.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"7d5eiEX0NEiaCuCJ": {
+			"name": "Arkaner Hintergrund (Wunder)",
+			"Beschreibung": "<div class=\"swade-core\">\n<ul> <li><strong>ARKANE FERTIGKEIT:</strong> @UUID[Compendium.swade-core-rules.swade-skills.Item.5qXzjDHdjaeYnBod]{Glaube} (Willenskraft)</li> <li><strong>STARTMÄCHTE:</strong> 3</li> <li><strong>MACHTPUNKTE:</strong> 10</li> </ul> <p>Wunderwirker ziehen ihre Macht von einer göttlichen Präsenz, sei es ein buchstäblicher Gott, die Natur oder Geister. Ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte} werden normalerweise mit einem kurzen Gebet oder etablierten Ritualen hervorgerufen. Wunderwirker sind die Helden ihrer Religion. Sie haben normalerweise @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps}, die mit ihren Aufgaben zu tun haben, wie @UUID[Compendium.swade-core-rules.swade-hindrances.Item.97ulajnqpnVgGb63]{Schwur} oder @UUID[Compendium.swade-core-rules.swade-hindrances.Item.zw8zc79ydbceQVx8]{Verpflichtung}. Sie könnten auch Beziehungen zu anderen Vertretern ihrer Religion haben, die ihnen helfen können, wenn ihre göttlichen Energien ausgelaugt sind.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"7huwXlataZ2OaQXL": {
+			"name": "Glück",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Abenteurer scheint vom Schicksal, Karma, den Göttern oder an welche äußeren Kräften er auch immer glauben mag (oder welche an ihn glauben), gesegnet.</p> <p>Er zieht einen zusätzlichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} zu Beginn einer jeden Spielsitzung, so dass ihm wichtige Aufgaben leichter gelingen als den meisten, und er selbst extremste @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{Gefahren} überstehen kann.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"9Oa6MLB5LsoKYpZ1": {
+			"name": "Starke Arkane Resistenz",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Magie und übernatürliche Kräfte haben wenig Einfluss auf diesen Charakter. Egal ob es an seinem Wesen, seiner Abstammung oder einer besonderen Ausbildung liegt, auf jeden Fall ist der Charakter besonders resistent gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr02]{Magie}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr04]{Psionik}, und andere übernatürliche Energien.</p> <p>Arkane Fertigkeiten, die den Helden als Ziel haben, erleiden einen Abzug von <strong>-4</strong> (auch wenn sie von Verbündeten verwendet werden!), und magischer Schaden wird um <strong>4</strong> Punkte verringert.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Resistance",
+					"selector": "arcane-resistance",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"A9lIa2TeL4U9ZJLy": {
+			"name": "Zusätzliche Anstrengung",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einige @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr01]{Begabte} können tief in sich gehen, um ihre Mächte deutlich zu verstärken. Zusätzliche Anstrengung erhöht das Gesamtergebnis einer @UUID[Compendium.swade-core-rules.swade-skills.Item.3urCcNYxoelufQwp]{Fokusprobe}, nachdem sie gewürfelt wurde, für 1 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkt} um +1, für 3 Machtpunkte sogar um +2. Dies kann nicht verwendet werden, um einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{kritischen Fehlschlag} zu vermeiden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Gifted)",
+					"selector": "arcane-background-gifted",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Focus",
+					"selector": "focus",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"DAoyIq0kUq4Zi0tv": {
+			"name": "Profi",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Charakter ist ein Experte in einer bestimmten Fertigkeit oder einem Attribut (seine Wahl). Dies erhöht die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaft} und ihre Obergrenze um einen Schritt (W12+1 wird zu W12+2, zum Beispiel). Dieses Talent kann einmal pro Eigenschaft ausgewählt werden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "maximum die type possible in affected Trait",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"DmK4f86PtcCZPweS": {
+			"name": "Arkane Resistenz",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Magie und übernatürliche Kräfte haben wenig Einfluss auf diesen Charakter. Egal ob es an seinem Wesen, seiner Abstammung oder einer besonderen Ausbildung liegt, auf jeden Fall ist der Charakter besonders resistent gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr02]{Magie}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr04]{Psionik}, und andere übernatürliche Energien.</p> <p>Arkane Fertigkeiten, die den Helden als Ziel haben, erleiden einen Abzug von -2 (auch wenn sie von Verbündeten verwendet werden!), und magischer Schaden wird um 2 Punkte verringert. Scheitert eine feindliche Macht aufgrund dieses Abzugs daran, den Helden zu beeinflussen, wird sie dennoch ausgelöst und verbraucht Machtpunkte (und kann andere Ziele weiterhin betreffen). Das gilt auch für magische Boni, die Waffen verliehen werden, etwa durch die Macht <em>@UUID[Compendium.swade-core-rules.swade-powers.Item.AlGYtSZmjUDRfUGM]{Waffe verbessern}</em> oder den Schadensbonus magischer Waffen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"ERQAsTLhlA0gJU8W": {
+			"name": "Experte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wie das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.DAoyIq0kUq4Zi0tv]{Profi} steigert dieses Talent die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaft} und das Maximum um einen weiteren Schritt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "Professional in affected Trait",
+					"selector": "professional",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"EWWjzIMzO9ruxAnw": {
+			"name": "Großer Anführer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Eine kräftige Stimme, effektive Befehle, angeborenes Charisma oder einfach gute Ausbildung sorgen dafür, dass ein Kampftrupp viel effektiver koordiniert wird. Ein Held mit diesem Talent hat einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Befehlsradius} von 10&ldquo; (20 Metern).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"EfDJNQwZ15ksGYWc": {
+			"name": "Bekannt",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter ist eine kleinere Berühmtheit. Vielleicht ist er ein beliebter Barde, der in einem Lehen bekannt ist, ein kleinerer Rockstar oder ein beliebter Schauspieler in B-Movies.</p> <p>Er verdient doppelt so viel, wenn er für Bezahlung auftritt (siehe @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung}). Er kann seine Berühmtheit auch verwenden, um +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben} zu addieren, wenn das Ziel freundlich gesinnt ist und weiß, wer er ist (ein Wurf auf @UUID[Compendium.swade-core-rules.swade-skills.Item.su7eyijoB0RFpRB1]{Allgemeinwissen}, mit einem Modifikator, der davon abhängt, wie wahrscheinlich es ist, dass die Person schon von dem Charakter gehört hat).</p> <p>Der Nachteil von Ruhm ist, dass die Person oft erkannt wird, andere oft etwas von ihr haben wollen, sie von Fans und Bewunderern verfolgt wird, oder sie nicht dazu in der Lage ist, Engagements, Auftritte oder anderen Verpflichtungen zu vermeiden, ohne in Schwierigkeiten zu kommen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"F8du1WZuamD0K8VK": {
+			"name": "Mut in Flaschen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser gesellige Charakter verarbeitet Alkohol ganz anders als die meisten. In der ersten Runde, nachdem er sich einen hinter die Binde gekippt hat (ungefähr 200 ml starker Schnaps oder etwas Entsprechendes) steigt seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution} um einen Würfeltyp (was auch seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} erhöht). Der Trinker kann außerdem eine Stufe Wundabzüge ignorieren (was mit anderen Fähigkeiten, die diesen Effekt haben, kumulativ ist).</p> <p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Geschicklichkeit} und alle verknüpften Fertigkeiten erleiden aber für die Wirkungsdauer einen Abzug von&nbsp;-1.</p> <p>Der Effekt hält eine Stunde lang an, dann erleidet der Trinker für die nächsten vier Stunden eine Stufe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"FUxAAhs0U56DjC0b": {
+			"name": "Schneller Erstschlag",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einmal pro Runde erhält der Held, solange er nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} ist, einen freien @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriff gegen drei Feinde unmittelbar nachdem sich diese in seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} bewegt haben. (Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03freeattacks000]{Freie Angriffe}).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 3
+				},
+				{
+					"combinator": "and",
+					"label": "First Strike",
+					"selector": "first-strike",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"FjaMNXFbKC6WpTaM": {
+			"name": "Arkaner Hintergrund (Psionik)",
+			"Beschreibung": "<div class=\"swade-core\">\n<ul> <li><strong>ARKANE FERTIGKEIT:</strong> @UUID[Compendium.swade-core-rules.swade-skills.Item.bkrB9AajSCSA6eIY]{Psionik} (Verstand)</li> <li><strong>STARTMÄCHTE:</strong> 3</li> <li><strong>MACHTPUNKTE:</strong> 10</li> </ul> <p>Psioniker nutzen ihre eigene geistige Energie, um Materie zu beeinflussen, Gedanken zu lesen und vieles mehr. Einige sind Agenten in den Diensten einer großen Regierungsbehörde, andere flüchten vor ebensolchen Organisationen! Einige wurden jahrelang ausgebildet, andere haben ihre unglaublichen Kräfte in Isolation entwickelt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"G2Y2FrxcN1xo3n99": {
+			"name": "Seelenentzug",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Verzweifelte Zeiten erfordern verzweifelte Maßnahmen. Seelenentzug erlaubt es einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{arkanen Charakter}, seine körperliche Energie in seine Macht zu kanalisieren, wodurch er eine Stufe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung} erleidet und 5 Machtpunkte erhält. Er kann eine zusätzliche Stufe Erschöpfung erleiden (so dass er Entkräftet ist), um 5 weitere Machtpunkte zu erhalten. Er kann sich auf diese Weise nicht selbst in den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet}-Zustand bringen.</p> <p>Erschöpfung durch den Seelenentzug kommt tief aus dem Inneren und kann ausschließlich natürlich geheilt werden. Die Macht <em>@UUID[Compendium.swade-core-rules.swade-powers.Item.Gv4Koefqaap6qKbM]{Linderung}</em> und ähnliche Effekte haben keine Wirkung.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "arcane skill d10+",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"GDn1i0ixEMuArQKZ": {
+			"name": "Ermutigen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einen Feind zu erniedrigen kann auch einem Verbündeten Mut machen. Wenn dieser Charakter erfolgreich einen Gegner @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{herausfordert}, kann er zusätzliche den Zustand @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt oder Verwundbar} von einem seiner Verbündeten entfernen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"H1xRqRutivEASOge": {
+			"name": "Schnell",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Schnelle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Charaktere} haben blitzschnelle Reflexe und die Ruhe weg. Wenn du eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte} von 5 oder weniger ausgeteilt bekommst, kannst du sie abwerfen und neu ziehen, bis du eine Karte erhältst, die höher als 5 ist.</p> <p>Charaktere mit @UUID[Compendium.swade-core-rules.swade-edges.Item.zRpf7fTG1tykwKAs]{Kühler Kopf} und Schnell ziehen zuerst ihre zusätzliche Karte und entscheiden dann, welche sie nehmen. Wenn diese Karte eine 5 oder darunter ist, können sie dann das Talent Schnell verwenden, um eine Ersatzkarte zu ziehen, bis sie auf 6 oder höherkommen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"H9Yv5UZY6HMS1jIy": {
+			"name": "Improvisationsgabe",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Helden müssen oft mit Ausrüstungsgegenständen oder sogar Möbeln kämpfen, auch wenn diese nicht für einen Kampf ausgelegt sind. Ein Kämpfer mit diesem Talent hat kein Problem mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03improvisedwe00]{improvisierten Waffen}. Er ignoriert den üblichen Abzug von -2, wenn er sie verwendet.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"I5ezwjOsBFuoxEaN": {
+			"name": "Machtpunkte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr02]{Magier}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr05]{verrückte Wissenschaftler} und andere arkane Charaktere wollen immer mehr Macht. Dieses Talent gewährt ihnen 5 zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte}. Machtpunkte kann mehr als einmal gewählt werden, aber nur einmal pro @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Rang}. Es kann auf dem Legendären Rang beliebig oft gewählt werden, gewährt aber nur jeweils 2 zusätzliche Machtpunkte.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"ISMVPLk98QgC4eM0": {
+			"name": "Heiler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein Held mit diesem Talent addiert +2 auf alle @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilen}-Proben, egal ob sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{natürlicher} oder magischer Natur sind.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"IoAJtiObDgf46BQE": {
+			"name": "Neue Mächte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein arkaner Charakter kann zwei neue <em>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte}</em> erlernen, indem er dieses Talent erwirbt (das er mehrere Male auswählen kann). Er kann Mächte für seinen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Rang} und darunter auswählen, die normalerweise für seinen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Arkanen Hintergrund} verfügbar sind.</p> <p>Ein Charakter kann, anstatt einer neuen Macht, auch eine neue @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05trappings00000]{Ausprägung} für eine Macht wählen, die er schon hat. Er könnte zum Beispiel eine Eis-Ausprägung, zusätzlich zu seinem Feuer-Geschoss, erlenen und dann je nach Bedarf zwischen der Feuer und der Eis-Ausprägung wählen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"IuXkq8cDeell8UmE": {
+			"name": "Elan",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Elan bedeutet Begeisterung oder Wille. Wer dieses Talent hat, läuft zur Höchstform auf, wenn es hart auf hart kommt. Wenn du einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} ausgibst, um eine Eigenschaftsprobe zu wiederholen, addiere +2 auf das Gesamtergebnis. Der Bonus gilt nur auf den wiederholten Wurf. Er gilt nicht für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadenswürfe} (da sie keine Eigenschaftsproben sind), und auch nicht beim @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03soakrolls00000]{Schaden wegstecken}, wenn du nicht <em>noch einen</em> Benny verwendest, um die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe zu wiederholen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"Ix3IlOfBhOxm9rHI": {
+			"name": "Kanalisieren",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn der Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} bei einer Probe auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{arkane Fertigkeit} erzielt (oder auf den Wurf, um eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanedevice00#arkane-apparaturen]{arkane Apparatur} zu verwenden oder zu aktivieren), verringert er die Machtpunkt-Kosten um 1. Dies kann zu Kosten von 0 führen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"J3qRlezsSFqDIpjm": {
+			"name": "Meistertaktiker",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Taktiker erhält jetzt insgesamt zwei zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarten} pro Runde, die er verteilen kann.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Tactician",
+					"selector": "tactician",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"J5BIeQPPjPicz2Im": {
+			"name": "Bedrohlich",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Es ist nicht immer ein Nachteil, ein ungehobelter Klotz zu sein, wenn man weiß, wie man es einsetzen kann. Bedrohlich erlaubt es einem Charakter, sein übles Aussehen oder seine noch üblere Einstellung auszunutzen. Der Charakter erhält +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern}-Proben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "or",
+					"label": "Bloodthirsty",
+					"selector": "bloodthirsty",
+					"type": "hindrance",
+					"value": ""
+				},
+				{
+					"combinator": "or",
+					"label": "Mean",
+					"selector": "mean",
+					"type": "hindrance",
+					"value": ""
+				},
+				{
+					"combinator": "or",
+					"label": "Ruthless",
+					"selector": "ruthless",
+					"type": "hindrance",
+					"value": ""
+				},
+				{
+					"combinator": "or",
+					"label": "Ugly",
+					"selector": "ugly",
+					"type": "hindrance",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"J6zd9x09Smi51RSr": {
+			"name": "Ermittler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ermittler verbringen viel Zeit damit, über alte Legenden zu forschen, sich auf der Straße umzuhören oder teuflische Mysterien zu entschlüsseln. Einige dieser Helden sind tatsächliche Privatermittler, andere sind Magier-Detektive in Fantasywelten oder neugierige Collegeprofessoren, die auf Dinge stoßen, die die Menschheit niemals wissen sollte.</p> <p>Ermittler addieren +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y1HxgTeyvoqM3SGZ]{Recherche} und auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmung}, sofern sie auf einem Schreibtisch nach bedeutsamen Papieren suchen, einen Stapel Werbepost nach etwas Wichtigem durchwühlen oder versteckte Gegenstände in einem Haufen Schrott oder Schutt entdecken wollen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Research",
+					"selector": "research",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"KBa58S051pwQiC6z": {
+			"name": "Mächtiger Hieb",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn deine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte} ein Joker ist, verdopple den Gesamtschaden deines ersten erfolgreichen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffs in dieser Runde.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"KEKubb1pAHC4zeM4": {
+			"name": "Beziehungen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist mit Personen oder Organisationen verbunden, die ihm helfen können, wenn es hart auf hart kommt. Vielleicht ist es die Mafia, die Bundespolizei, eine Gewerkschaft oder sogar andere Abenteurer. Beziehungen kann mehr als einmal ausgewählt werden, um jedes Mal eine neue Fraktion oder einen neuen Kontakt auszuwählen. Einmal pro Sitzung, vorausgesetzt, der Held hat eine Möglichkeit mit seinen Freunden in Kontakt zu treten, kann er sie um einen Gefallen bitten.</p> <p>Der Gefallen hängt von der Art des Kontakts ab (Entscheidung der SL), könnte aber ein Darlehen, Ausrüstung, einige tatkräftige Verbündete, Transportmittel, Informationen oder sogar einen Spezialisten mit besonderen Fertigkeiten, die die Gruppe nicht hat, wie einen Hacker oder Gelehrten, umfassen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"KIXfH0MyiHVIDHrq": {
+			"name": "Stinkreich",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser glückliche Charakter hat wirklich sehr viel Geld. Verfünffache das @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Startkapital}&nbsp;für das Setting bei der Charaktererschaffung, und wenn es angemessen erscheint, erhält der Charakter ein Jahreseinkommen, das etwa modernen $500.000 entspricht.</p> <p>Es mag noch reichere Charaktere geben, doch solange das keinen Spieleffekt hat, ist es nicht so wichtig. Details hierfür sollten mit der SL ausgearbeitet werden und gleichzeitig viele weitere Ressourcen sowie lästige Verantwortung mit sich bringen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Rich",
+					"selector": "rich",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"KSAEBNeLGhkx22L4": {
+			"name": "Konzentration",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Durch Ausbildung und Fokus ist der Zauberwirker extrem effizient darin, arkane Mächte zu fokussieren. Die Basis-Wirkungsdauer von allen nicht augenblicklichen Mächten wird verdoppelt. Das gilt auch für das Aufrechterhalten von Mächten.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"LWcBqj2TGtAmlWB8": {
+			"name": "Arkaner Hintergrund (Magie)",
+			"Beschreibung": "<div class=\"swade-core\">\n<ul> <li><strong>ARKANE FERTIGKEIT:</strong> @UUID[Compendium.swade-core-rules.swade-skills.Item.Ii5r0pBeYHQvdYIp]{Zaubern} (Verstand)</li> <li><strong>STARTMÄCHTE:</strong> 3</li> <li><strong>MACHTPUNKTE:</strong> 10</li> </ul> <p>Magier reichen von mächtigen Zauberern bis zu verkommenen Kultisten. Sie nutzen rohe übernatürliche Energie, um ihr unheimliches Feuer zu speisen. Diese Energie erfüllt die Welt, in der sie leben, und wird mit Gesten, Worten der Macht oder uralten Runen hervorgelockt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"M2diZ7X4997YL2pa": {
+			"name": "Aufmerksamkeit",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dem Helden entgeht nicht viel. Er ist sehr aufmerksam und scharfsinnig und addiert +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}, wenn er die Welt, die ihn umgibt, hören, sehen oder anderweitig wahrnehmen möchte.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"MXVUdMPPS8VHcqrH": {
+			"name": "Schnelle Machtregeneration",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte} frischen sich normalerweise mit einer Geschwindigkeit von 5 Punkten pro Stunde Ruhe wieder auf (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05activation0000]{Aufladen}). Dieses Talent erhöht dies auf 10 Punkte pro Stunde.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"MxFjct2GOPDVKPF6": {
+			"name": "Taktiker",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Anführer hat ein natürliches Verständnis für die Taktik kleiner Einheiten und kann Situationen, die sich schnell verändern, ausnutzen.</p> <p>Ein Taktiker erhält in jeder Runde eines Kampfes oder einer Verfolgungsjagd eine zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte}. Diese legt er unabhängig von seinen eigenen Karten hin. Zu Beginn der Runde kann er sie abwerfen oder sie einem verbündeten @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} im @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Befehlsradius} geben. Der Spieler (oder die SL), der diesen Charakter kontrolliert, kann sie annehmen und die eigene Aktionskarte ersetzen oder sie abwerfen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Battle",
+					"selector": "battle",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"NIAMmHZYc3nqc7ag": {
+			"name": "Kontrollierter Rundumschlag",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Rundumschlag erlaubt es dem Charakter, einen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriff zu machen und das Ergebnis gegen alle Gegner innerhalb seiner @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} (Freund und Feind) anzuwenden. Ermittle den Schaden für jeden getroffenen Gegner einzeln.</p> <p>Ein Kämpfer kann nur einen Rundumschlag pro Zug durchführen. Er kann nicht mit @UUID[Compendium.swade-core-rules.swade-edges.Item.7YiLlxxjD750ltXM]{Schneller Angriff} kombiniert werden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Sweep",
+					"selector": "sweep",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"O3lse5ZxUZPTpwER": {
+			"name": "Gelehrter",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Gebildete Professoren, hingebungsvolle Studenten und enthusiastische Amateure verbringen viel Zeit und Energie auf das Studium eines bestimmten Themas. Sie werden Experten in diesem Feld, und nur selten fehlen ihnen Antworten, wenn es um eine Frage aus ihrem Fachgebiet geht.</p> <p>Wähle eine der folgenden Fertigkeiten aus: @UUID[Compendium.swade-core-rules.swade-skills.Item.m5TZJMJA0lePG3AB]{Geisteswissenschaften}, @UUID[Compendium.swade-core-rules.swade-skills.Item.B0IirU8L6QzIN2fI]{Kriegskunst}, @UUID[Compendium.swade-core-rules.swade-skills.Item.LMe7vPP4Y1n3c0Fb]{Naturwissenschaften}, @UUID[Compendium.swade-core-rules.swade-skills.Item.XMNmVhwrZmL47Vhg]{Okkultismus} oder eine auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand} basierende &bdquo;Wissensfertigkeit&ldquo;, die in deinem Setting erlaubt ist. Du kannst +2 addieren, wenn die Fertigkeit verwendet wird.</p> <p>Das Talent kann mehr als einmal gewählt werden, um verschiedene Fertigkeiten abzudecken.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Research",
+					"selector": "research",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"OD1Y1QwpyrO1fD8O": {
+			"name": "Heiliger/Unheiliger Krieger",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Gläubige stellen sich im Namen ihrer göttlichen Schutzherren großen Gefahren. Um solche schwierigen Situationen zu überleben gewähren die Mächte des Guten (oder Bösen) Wunder und die Fähigkeit, ihre Gunst in übernatürlichen Schutz zu verwandeln.</p> <p>Der Auserkorene darf für jeden ausgegebenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkt} +1 auf sein Ergebnis beim @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03soakrolls00000]{Schaden wegstecken} addieren, bis zu einem Maximum von +4.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Miracles)",
+					"selector": "arcane-background-miracles",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Faith",
+					"selector": "faith",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"OFYMoA1VLGus9xTb": {
+			"name": "Alleskönner",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Durch eine gute Ausbildung, Bücherwissen, computerverbesserte Fertigkeitenprogramme oder einfach unglaubliche intuitive Auffassungsgabe hat dein Held ein Talent dafür entwickelt, spontan Fertigkeiten aufzuschnappen. Es gibt wenig, was er nicht mit ein bisschen Zeit und einer Prise Glück kapieren kann.</p> <p>Nachdem er eine bestimmte Fertigkeit beobachtet oder studiert hat, macht der Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe}, welche als seine Aktion gilt. Bei einem Erfolg erhält er einen W4 in der Fertigkeit, bei einer Steigerung einen W6. Er kann es nach einer weiteren Stunde Studien und Herumprobieren oder Vertiefung in das Thema noch einmal versuchen, wenn der Wurf misslungen ist, oder er es auf eine Steigerung abgesehen hat. Dieser Effekt hält an, bis der Charakter versucht ein anderes Thema zu lernen, egal ob erfolgreich oder nicht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 10
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"OJ4t6S1cGamjJiLD": {
+			"name": "Beidhändig",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Krieger ist mit der linken Hand so geschickt wie mit der rechten. Er ignoriert den Abzug für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03offhandattac00]{Angriffe mit der falschen Hand}. Wenn beidhändige Charaktere in jeder Hand eine Waffe halten, dürfen sie die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Angriffe}-Boni beider Waffen addieren (wenn beide einen haben).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"OY6x5bBS6y9KGKuf": {
+			"name": "Rückzug",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn sich ein Charakter aus dem Nahkampf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03withdrawingf00]{zurückzieht}, erhalten angrenzende Charaktere einen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{freien Kämpfen-Angriff} gegen ihn. Dies ist für die meisten sehr gefährlich, aber nicht für deinen gewieften Recken.</p> <p>Wenn du dich von angrenzenden Gegnern wegbewegst, erhält einer von ihnen (Wahl des Spielers) keinen freien Angriff.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"POzzJK15FxkPTcUw": {
+			"name": "Artefakterschaffer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wer sich mit übernatürlichen Energien abgibt, findet manchmal Möglichkeiten, um Gegenstände mit Mächten zu erfüllen. Sie verwandeln eine gewöhnliche Klinge in ein magisches Schwert, brauen einen Trank, der die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} eines Verbündeten heilen kann oder segnen heilige Reliquien mit göttlicher Gnade.</p> <p>Artefakterschaffer können wundersame Gegenstände und Gerätschaften nach dem System @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanedevice00]{Arkane Apparaturen} herstellen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"Po7QiS7lMFtWFGQ8": {
+			"name": "Konter",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wer sich mit diesem spitzzüngigen Sprücheklopfer anlegt bekommt seine dummen Sprüche direkt selbst wieder um die Ohren gehauen.</p> <p>Wenn ein Charakter mit Konter eine Steigerung erzielt, wenn er einer @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern}- oder @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} widersteht, wird sein Gegner @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Taunt",
+					"selector": "taunt",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"RN6j11dayuBJyLoI": {
+			"name": "Beidhändiger Kampf",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn ein Charakter einen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Angriff} mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} und einen weiteren Kämpfen-Angriff mit einer anderen Hand in einer späteren Aktion ausführt, verursacht der zweite Angriff keinen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionsabzug}. Der Abzug für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03offhandattac00]{Angriffe mit der falschen Hand} gilt allerdings schon, es sei denn, der Charakter ist @UUID[Compendium.swade-core-rules.swade-edges.Item.OJ4t6S1cGamjJiLD]{Beidhändig}.</p> <p>Wenn der Charakter außerdem @UUID[Compendium.swade-core-rules.swade-edges.Item.pADpCohmbZTWzkmi]{Beidhändiger Fernkampf} besitzt, darf der zweite Angriff auch ein Fernkampfangriff sein.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"RpS9IJZNVXOfhGcM": {
+			"name": "Volltreffer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn deine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte} ein Joker ist, verdopple den Gesamtschaden deines ersten erfolgreichen Angriffs mit @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} (Werfen) oder @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen} in dieser Runde.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "or",
+					"label": "Athletics",
+					"selector": "athletics",
+					"type": "skill",
+					"value": 8
+				},
+				{
+					"combinator": "or",
+					"label": "Shooting",
+					"selector": "shooting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"RxHGrVFtf2LbLr8Y": {
+			"name": "Auserwählter",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Auserwählte sind heilige (oder unheilige) Männer und Frauen, die auserkoren wurden, für eine Gottheit oder Religion zu kämpfen. Die meisten sind fromme Seelen und bereit, ihr Leben für eine größere Sache zu opfern, doch einige wurden vielleicht in die Rolle hineingeboren und folgen ihrem Pfad eher zögerlich.</p> <p>Auserwählte bekämpfen die Kräfte der Dunkelheit (oder des Lichts). Sie addieren +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schaden}, wenn sie übernatürlich böse (oder gute, wenn sie böse sind) Kreaturen angreifen. Der Bonus gilt auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächenschaden}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Fernkampfangriffe}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte}, etc.</p> <p>Die SL muss entscheiden, auf welche Feinde dieser Bonus gilt, doch grundsätzlich sind es alle bösen (oder guten!) Kreaturen, die aus Magie entstanden sind oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06bestiary000000]{übernatürliche&nbsp;Fähigkeiten} haben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"SBF5G7442eJoVb9S": {
+			"name": "Block",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held hat auf die harte Tour gelernt Nahkampfangriffe abzuwehren. Erhöhe seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} um 1, und der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03gangingup00000]{Überzahlbonus} wird gegen ihn um 1 verringert.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"SQWwXROHkknpRJk9": {
+			"name": "Assassine",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Assassinen sind ausgebildete Mörder, die wissen, wie man auch die härtesten Gegner um die Ecke bringt. Sie addieren +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadenswürfe}, wenn ihre Gegner @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Verwundbar} sind oder sie einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03thedrop0000000]{Überraschungsangriff} machen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"label": "Stealth",
+					"selector": "stealth",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"TD4eXHAFnwOE6yAu": {
+			"name": "Reparaturgenie",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Mechaniker addiert +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenproben}. Mit einer Steigerung halbiert er die Zeit, die normalerweise nötig ist, um etwas zu reparieren. Das bedeutet, dass ein Reparaturgenie, wenn bei einer bestimmten Reparatur angegeben ist, dass sie bei einer Steigerung in der Hälfte der Zeit gelingt, sie in einem Viertel der Zeit erledigt ist, wenn er eine Steigerung erzielt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Repair",
+					"selector": "repair",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"TWHfdWhA29ZmJdED": {
+			"name": "Akrobat",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Akrobat kann Proben auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik}, die sich ums Gleichgewicht, Abrollen oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03grappling00000]{Ringen} drehen, einmal kostenlos wiederholen.</p> <p>Das hat keinen Einfluss auf Proben, um Aktionen zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{unterbrechen}, zu klettern, zu schwimmen oder zu werfen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Athletics",
+					"selector": "athletics",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"UDwIiL4sJnt5eI2t": {
+			"name": "Handlanger",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein Charakter, der wieder und wieder über das Böse triumphiert, wird eine Inspiration für andere. Dies könnte dazu führen, dass sich ein junger Streiter dem Helden auf seinen epischen Questen anschließen will.</p> <p>Der Held erhält einen Handlanger mit dem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Rang} Anfänger. Der Handlanger ist eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcard}, beginnt jede Spielsitzung mit zwei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys}, kann Aufstiege erhalten und hat Fähigkeiten, die die seines Mentors ergänzen. Der Spielercharakter kontrolliert den Handlanger wie jeden anderen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04allies00000000]{Verbündeten}, doch kann er manchmal Schwierigkeiten machen, weil er entführt wird, sich in Gefahr begibt, wenn er es nicht soll und so weiter. Der Spieler sollte sich darauf einstellen, dass dieses Talent manchmal ein Handicap werden kann!</p> <p>Wenn der Handlanger stirbt, wird er erst ersetzt, wenn der Held dieses Talent noch einmal wählt. Glücklicherweise können Helden Bennys für ihre Handlanger ausgeben, als hätten sie das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.5ztdUMAvhYTALSQQ]{Selbstlos}. Handlanger müssen dieses Talent wählen, um dasselbe für ihren Mentor zu tun.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"Uig6BBL3B42tq8Fb": {
+			"name": "Schmerzresistenz",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held hat gelernt, trotz extremer Schmerzen weiterzukämpfen. Er kann 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge} ignorieren.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"UmsiVBo1nCzBz9Tr": {
+			"name": "Echte Rampensau",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wie Rampensau, doch kann der Held bei bis zu zwei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{Unterstützen}-Aktionen in einem Zug einen zusätzlichen Charakter unterstützen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Work the Room",
+					"selector": "work-the-room",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"V1WWGHUtlFTVTAM9": {
+			"name": "Ausweichen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held kann Angriffe vorhersehen oder bewegt sich unter Feuer unberechenbar. Wenn er nicht Opfer eines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03thedrop0000000]{überraschenden Angriffs} wird und vollkommen unvorbereitet ist, zieht Ausweichen -2 von allen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Fernkampfangriffen} gegen den Charakter ab. Ausweichen ist aber nicht kumulativ mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"V69w37m9zcOKDILn": {
+			"name": "Geborener Anführer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Anführer hat sich wieder und wieder bewiesen und den Respekt jener erlangt, die an seiner Seite kämpfen.</p> <p>Alle Anführertalente, die sagen, dass sie nur für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} gelten, gelten nun auch für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcards}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"VaX3Hkqyv3z1rm6H": {
+			"name": "Verlässlich",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Die Leute wissen, dass sie sich auf deinen Helden verlassen können, wenn sie Hilfe brauchen. Er erhält eine freie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Wiederholung} bei allen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{Unterstützen}-Würfen die er macht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"Vw3TEy71082Aok9n": {
+			"name": "Mentalist",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ständiger Kontakt mit den Gedanken anderer gibt diesen psionischen Agenten einen Vorteil, wenn es darum geht, geistige Angriffe zu führen oder abzuwehren. Mentalisten addieren +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{vergleichende} @UUID[Compendium.swade-core-rules.swade-skills.Item.bkrB9AajSCSA6eIY]{Psionikproben}, egal ob sie ihre Mächte gegen einen Feind verwenden oder sich gegen einen Rivalen schützen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Psionics)",
+					"selector": "arcane-background-psionics",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Psionics",
+					"selector": "psionics",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"WCKJEPzUaUwyRHP9": {
+			"name": "Schnelles Ausweichen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held addiert +2, wenn er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächeneffekten} ausweichen will. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03evasion0000000]{Wegspringen}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Dodge",
+					"selector": "dodge",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"WUNQjbr2nbUlvnR9": {
+			"name": "Flink",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} des Helden steigt um +2, und sein Sprintwürfel wird um einen Typ verbessert (ein W6 wird beispielsweise ein W8).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"WYi7UhcoIsyn5KwW": {
+			"name": "Ruhige Hände",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Es ist schwierig, vom Rücken eines Pferdes oder einem sich bewegenden Fahrzeug aus zu schießen, aber dein Held weiß, wie es geht. Er ignoriert den Abzug für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unstableplat00]{Unsicherer Grund}.</p> <p>Dies hilft auch, wenn er sprintet, so dass der übliche Abzug fürs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprinten} von -2 auf -1 sinkt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"WcZwE0vSrn4FjtPF": {
+			"name": "Sammler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einmal pro Begegnung kann der Held ein Ausrüstungsteil, eine Handvoll Munition oder einen anderen nützlichen Gegenstand finden, beziehungsweise er &bdquo;erinnert sich&ldquo; das er ihn die ganze Zeit schon dabei hatte.</p> <p>Die Spielleiterin entscheidet, was als Begegnung zählt, und hat das letzte Wort darüber, was &bdquo;entdeckt&ldquo; werden kann und was nicht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Luck",
+					"selector": "luck",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"WhLfbUQQ0bs3oSyr": {
+			"name": "Kampfkunstmeister",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +2 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht Stärke+W6 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Volkseigenart Klauen oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren keinen Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Martial Artist",
+					"selector": "martial-artist",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"XAd0KeNilRWtut7R": {
+			"name": "Erstschlag",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einmal pro Runde erhält der Held, solange er nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} ist, einen freien @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriff gegen einen Feind unmittelbar nachdem sich dieser in seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} bewegt hat. (Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03freeattacks000]{Freie Angriffe}).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"XZbHY5YT0vFyL0D9": {
+			"name": "Berühmt",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist wirklich berühmt. Er ist vielleicht in einem großen Kreis bekannt, wie einem Land, einer großen Branche oder einem beliebten Medium (Film und Fernsehen, die Musikindustrie). Er verdient den fünffachen normalen Betrag für @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Auftritte} und addiert +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden}, wenn er mit freundlich gesinnten Personen spricht, die wissen, wer er ist.</p> <p>Der Preis, den man für echte Berühmtheit zahlt, ist auch deutlich höher. Eine echte Berühmtheit hat wenig Zeit, sie hat jede Menge Verpflichtungen, Rivalen, Skandale und kann sich nicht durch eine Menschenmenge bewegen, ohne erkannt zu werden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Fame",
+					"selector": "fame",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"Xv6TAc0VcnkEqt20": {
+			"name": "Berserker",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Berserker werden wild und fast unkontrollierbar, wenn der &bdquo;rote Zorn&ldquo; sie ergreift, doch ihr Zorn macht sie auch zu tödlichen Mordmaschinen! Unmittelbar nachdem er eine Wunde erlitten hat oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} wurde (nur durch körperlichen Schaden), muss dein Held eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} würfeln, um nicht in den Berserkerrausch zu verfallen. Er kann sich entscheiden die Probe freiwillig nicht zu schaffen, wenn er möchte.</p> <p>Der Berserkerrausch hat folgende Auswirkungen:</p> <ul> <li>WUT: Der Stärkewert des Charakters steigt um einen Würfeltyp und alle Angriffe müssen als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildattack0000]{Rücksichtslose Angriffe} ausgeführt werden. Er kann keine Fertigkeiten verwenden, die einen klaren Verstand oder Konzentration erfordern (Entscheidung der SL). Er könnte beispielsweise durchaus Drohungen brüllen und somit @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} verwenden.</li> <li>ZORNIG: Adrenalin und Zorn treiben die Muskeln des Berserkers an, wodurch er +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} erhält. Er ignoriert eine Stufe Wundabzüge (dies ist kumulativ mit anderen Fähigkeiten, die Wundabzüge verringern).</li> <li>UNGEZÜGELTE UNVORSICHTIGKEIT: Immer wenn der Berserker einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischen Fehlschlag} bei einer @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfenprobe} erzielt, trifft er ein zufälliges Ziel in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} seines Angriffs (nicht das eigentliche Ziel), egal ob Freund oder Feind. Wenn es keine passenden Ziele gibt, geht der Schlag einfach ins Leere, zertrümmert Gegenstände in der Umgebung oder etwas in der Art.</li> </ul> <p><span class=\"fontstyle0\">Nach fünf durchgehenden Runden des Berserkerzorns erleidet der Held eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfungsstufe}. Nach zehn Runden erleidet er weitere Stufe Erschöpfung, und der Zorn endet. Er kann seinen Zorn auch jederzeit bewusst abbrechen, indem er eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} mit -2 ablegt (dies ist eine freie Aktion, und macht es möglich, die Erschöpfung zu umgehen, wenn es dem Charakter gelingt, den Zorn zu beenden, ehe sie verursacht wird!). Beginne neu damit, Runden zu zählen, wenn er wieder in Berserkerrausch verfällt, selbst wenn es im selben Kampf ist.</span></p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"Xy1aMhEZlfA9j2CW": {
+			"name": "Volles Rohr",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Erfahrene Schützen lernen, den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß} einer vollautomatischen Waffe zu kompensieren. Wenn ein Charakter mit diesem Talent sich in seinem Zug nicht bewegt, ignoriert er den Rückstoß-Malus, wenn er mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 2 oder höher schießt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Shooting",
+					"selector": "shooting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"YVUeqfQ2v6hwnfrO": {
+			"name": "Kampfkünstler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +1 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke}+W4 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Volkseigenart @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili04]{Klauen} oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren <em>keinen</em> Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"Ylk2ksMIr7BSUqGo": {
+			"name": "Sehr attraktiv",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist atemberaubend. Er erhöht den Bonus auf @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung} und @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} auf +2.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Attractive",
+					"selector": "attractive",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"Z1baC21BzKawj6Ex": {
+			"name": "Aufwiegler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Hetzer kann mehrere Gegner auf einmal wütend machen.</p> <p>Einmal pro Zug kann dieser Charakter eine soziale @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} mit @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren} gegen alle Gegner in einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittleren Flächenschablone} machen. Die Ziele müssen den Helden deutlich sehen und hören können. Jeder Betroffene widersetzt sich der Herausforderung einzeln.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"Z2gdqy77ueRxL9yv": {
+			"name": "Naturbursche",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Naturburschen sind Waldläufer, Kundschafter und Jäger, die sich in der Wildnis wohler fühlen als in urbanen Gebieten. Sie sind geschickte Fährtenleser und Kundschafter, und wissen, wie man über Monate in der Wildnis überlebt.</p> <p>Naturburschen addieren +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.zf0tDkEA1afk1rcs]{Überlebensproben} und @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsproben} in der Wildnis (nicht in Städten, Ruinen oder unter der Erde).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"label": "Survival",
+					"selector": "survival",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"Z58LoURiMKVwdPsj": {
+			"name": "Waffenmeister",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Krieger erhöht seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} um +1, und der Bonusschadenswürfel bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Proben ist ein W8 anstelle eines W6 (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00#bonusschaden]{Bonusschaden}). Er muss bewaffnet sein, um diesen Vorteil zu erhalten, doch umfasst dies das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.YVUeqfQ2v6hwnfrO]{Kampfkünstler}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili04]{Klauen} oder andere Fähigkeiten, die als Waffen zählen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 12
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"ZSAXUVaOO0WnrAWT": {
+			"name": "Linguist",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser weitgereiste Charakter hat ein Ohr für Sprachen. Er beginnt das Spiel mit einer Anzahl von @UUID[Compendium.swade-core-rules.swade-skills.Item.YdnNJzqn96If0E1W]{Sprache}-Fertigkeiten gleich seinem halbem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand}-Würfel auf einem Wert von W6.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"ZpIjksF1FyLGoi56": {
+			"name": "Anführer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Anführer haben die grundlegende Fähigkeit, klare Anweisungen zu geben und Truppen in der Hitze des Gefechts zu befehligen. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} im @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Befehlsradius} (5\" bzw. 10 Meter) addieren +1 auf Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"awK4HEGjDA03NQ8u": {
+			"name": "Rampensau",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Die Worte deines Helden inspirieren nicht nur jene, an die sie gerichtet sind, sondern oft auch Leute in der Umgebung. Einmal pro Zug kannst du Rampensau verwenden, um einen zusätzlichen Fertigkeitswürfel zu werfen, wenn du mit @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{unterstützt}.</p> <p>Der zusätzliche Würfel unterstützt einen weiteren Verbündeten, der den Helden sehen oder hören kann, und gilt für seine nächste Aktion, was diese auch sein mag.</p>\n</div>",
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Edge Actions"
+		},
+		"azJZeFBvgo2hwcC8": {
+			"name": "Soldat",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Professionelle Soldaten sind daran gewöhnt, schwere Lasten zu tragen und raue Bedingungen zu ertragen. Nach einigen Tagen, um sich an ihre Ausrüstung zu gewöhnen (Entscheidung der SL), behandeln sie ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} als um einen Würfeltyp höher, wenn es um die Berechnung von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02gearnotes00000]{Belastung} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} für Rüstung, Waffen und Ausrüstung geht. (Dies ist kumulativ zum Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.wKCK3CuIuwEMzRKz]{Kräftig}).</p> <p>Sie erhalten auch eine freie Wiederholung für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sproben, um @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{Umweltgefahren }zu überstehen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "strength",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"c5BxAg54bjbf2AUU": {
+			"name": "Arkaner Hintergrund (Begabt)",
+			"Beschreibung": "<div class=\"swade-core\">\n<ul> <li><strong>ARKANE FERTIGKEIT:</strong> @UUID[Compendium.swade-core-rules.swade-skills.Item.3urCcNYxoelufQwp]{Fokus} (Willenskraft)</li> <li><strong>STARTMÄCHTE:</strong> 1</li> <li><strong>MACHTPUNKTE:</strong> 15</li> </ul> <p>Der Charakter hat angeborene Fähigkeiten, die nicht in die üblichen Vorstellungen von Magie, Wundern oder Psionik passen. Ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte} können schwache Superkräfte, göttliche Gaben oder sogar außerirdische Fähigkeiten sein, und sind oft sehr ungewöhnlich oder einzigartig im Setting.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"dRa0KiChKBSFhPgR": {
+			"name": "Schläger",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Kämpfer erhöht seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} noch einmal um +1, und der Schaden mit seinen Fäusten oder Klauen steigt um einen weiteren Würfeltyp.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Brawler",
+					"selector": "brawler",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"dZrVb62Cc7ksBAn6": {
+			"name": "Sehr kühler Kopf",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere, die ruhig bleiben, wenn alle anderen in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} springen, können tödliche Kämpfer sein. Ein Held mit diesem Talent zieht zwei zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarten} im Kampf und wählt aus, welche er verwenden möchte.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Level Headed",
+					"selector": "level-headed",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"dbr9BObOMm9B4SyZ": {
+			"name": "Arkaner Hintergrund (Verrückte Wissenschaft)",
+			"Beschreibung": "<div class=\"swade-core\">\n<ul class=\"red-bullet-list\"> <li><strong>ARKANE FERTIGKEIT:</strong> @UUID[Compendium.swade-core-rules.swade-skills.Item.VMM9LwHq3XEQFL9w]{Verrückte Wissenschaft} (Verstand)</li> <li><strong>STARTMÄCHTE:</strong> 2</li> <li><strong>MACHTPUNKTE:</strong> 15</li> </ul> <p>Verrückte Wissenschaftler verwenden seltsame und mächtige Erfindungen, die das technologische Niveau des Settings weit übersteigen. Solche Entwicklungen werden durch Supertreibstoff ermöglicht, außerirdische Entdeckungen oder den rohen Intellekt der seltenen Supergenies ermöglicht, die die Grenzen der Wissenschaft hinter sich lassen.</p> <p>Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05trappings00000]{Ausprägungen} eines Verrückten Wissenschaftlers müssen immer den Gegenstand enthalten, mit dem sie in Verbindung stehen. Die Macht <em>Strahl</em> könnte sich in <cite>Deadlands: The Weird West</cite> beispielsweise als magischer Flammenwerfer manifestieren, während &bdquo;Dr. Gabriels Wunderbares Wiederherstellungselixier!&ldquo; ein <em>@UUID[Compendium.swade-core-rules.swade-powers.Item.R7PJ0KAU43GgLQC9]{Heilungstrank}</em> ist.</p> <p>Verrückte Wissenschaftler müssen immer ihre Apparaturen zur Hand haben, um ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte} zu aktivieren (aber siehe Improvisieren, unten).</p> <p>Andere Charaktere können die Entwicklungen des Erfinders nicht aktivieren. Sie verstehen vielleicht nicht die seltsamen Mechanismen, durch die sie funktionieren, die Apparatur ist nicht für andere Nutzer &bdquo;kalibriert&ldquo;, oder sie brennen bei anderen einfach durch. Dies mag zwar während des Spiels manchmal seltsam erscheinen, doch kommt die &bdquo;Magie&ldquo;&nbsp;&ndash; und die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte}&nbsp;&ndash; vom Erfinder, und so kann nur er sie aktivieren.</p> <p>Es ist durchaus möglich, Gerätschaften für andere zu erschaffen &ndash; das erfordert eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanedevice00]{Arkane Apparatur}, und das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.POzzJK15FxkPTcUw]{Artefakterschaffer}.</p> <p>Der Erfinder kann seine Geräte natürlich auf andere verwenden&nbsp;&ndash; er kann sie von seinem magischen Elixier trinken lassen oder ihnen Injektionen mit einem unglaublichen Superserum geben, das er entwickelt hat. Wenn Dr. Gabriel sein Elixier anwendet, würfelt er normal, um die Macht zu aktivieren. Wenn er jemandem die Flasche gibt, damit er sie später verwendet, verliert sie ihre Wirksamkeit.</p> <p><strong>Improvisieren:</strong> Verrückte Wissenschaftler müssen normalerweise ihre Kräfte durch ein zugewiesenes Gerät aktivieren, aber sie können andere Wege improvisieren, mit einem Abzug von -2. Dies erfordert eine halbwegs logische Begründung im Setting und die Erlaubnis der SL.</p> <p class=\"embedded-example\"><strong>Beispiel:</strong> Gabe wird von bösen Aliens gefangen genommen, und sie nehmen ihm seine ganze Ausrüstung ab. Er wird in eine Arrestzelle gesperrt und entschließt sich, dass er die Deckenbeleuchtung und das, was die Aliens als Strom verwenden, nutzen wird, um einen improvisierten <em>@UUID[Compendium.swade-core-rules.swade-powers.Item.TPcYlGDTi3S42xbu]{Flächenschlag}</em> zu erschaffen. Die SL stimmt zu, dass das funktionieren wird, aber nur einmal, da es alle Lichter zerstören und die Energiezellen durchbrennen wird.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"f95OfY4Xdu1DaxpP": {
+			"name": "Absolute Lieblingswaffe",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held kennt eine einzigartige Waffe (Excalibur, Old Betsy, Stich) sehr genau. Wenn er sie verwendet, addiert er <strong>+2</strong> auf seine Proben mit @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} (Werfen), @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}, und erhält <strong>+2</strong> @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}, wenn er die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03readyingweap00]{Waffe bereitgemacht} hat (selbst bei einer Fernkampfwaffe).</p> <p>Ein Kämpfer kann dieses Talent mehrere Male wählen und jedes Mal für eine andere Waffe verwenden. Wenn eine Lieblingswaffe verloren geht, kann sie ersetzt werden, doch die Vorteile treten erst nach ein paar Tagen wieder in Kraft (solange wie die SL für angemessen hält).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Trademark Weapon",
+					"selector": "trademark-weapon",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"h1Ha00JBjtF4VivA": {
+			"name": "Wendiger Rückzug",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Bis zu drei Gegner (nach Wahl des Spielers) erhalten keine Angriffe, wenn sich der Krieger aus dem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03withdrawingf00]{Nahkampf zurückzieht}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Extraction",
+					"selector": "extraction",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"h5g76AOJrmHlv7yn": {
+			"name": "Ass am Steuer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein Ass am Steuer ist ein Pilot oder Fahrer mit einer besonderen Affinität für sein Auto, Boot, Flugzeug oder anderes @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02vehiclenotes00#anmerkungen-zu-fahrzeugen]{Fahrzeug}. Er ignoriert zwei Punkte Abzüge auf alle Proben mit @UUID[Compendium.swade-core-rules.swade-skills.Item.DW20NotDIt72nKwK]{Fahren}, @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.EUG8yRxxMLXxYpnv]{Seefahrt} und kann @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys} ausgeben, um damit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03soakrolls00000]{Schaden wegstecken} für Fahrzeuge anzuwenden, die er lenkt oder kommandiert, jeweils mit der passenden Fertigkeit Fahren, Pilot oder Seefahrt anstelle von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}. Ein Erfolg und jede Steigerung negieren eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"hHWCjcTfK7EAlI8M": {
+			"name": "Kampfakrobat",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Akrobat springt so schnell umher, dass Angriffe gegen ihn mit einem Abzug von -1 abgelegt werden, solange er sich des Angriffs bewusst ist, sich halbwegs frei bewegen kann und keine Abzüge auf Grund von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02gearnotes00000#anmerkungen-zur-ausrustung]{Traglast} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} erleidet.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Acrobat",
+					"selector": "acrobat",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"hMTj68saxoF5i5Ul": {
+			"name": "Mutig",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere mit diesem Talent haben gelernt, ihre Furcht zu meistern, oder sie haben so viele grauenvolle Dinge gesehen, dass sie abgestumpft sind. Diese tapferen Entdecker addieren +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Furchtproben} und ziehen 2 von Ergebnissen auf der Furchttabelle ab.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"hPTnnCCkTyfpto7R": {
+			"name": "Killerinstinkt",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held hasst es zu verlieren. Er erhält eine freie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Wiederholung} für vergleichenden Proben bei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderungen}, die er einleitet.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"hjnGewP94r0PC3DQ": {
+			"name": "Keine Gnade",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn dieser Killer einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} ausgibt, um einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadenswurf} zu wiederholen, addiert er +2 auf das Gesamtergebnis.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"iQ9C8bCJY1AUOkDw": {
+			"name": "Meisterschütze",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held ist sehr begabt mit allen Fernkampfwaffen. Wenn er sich in seinem Zug nicht bewegt und in seiner ersten @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} 1 angreift, erhält er entweder einen Bonus von +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} (Werfen) oder @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}, oder er kann bis zu 2 Punkte Abzüge durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größenkategorie} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03speed000000000]{Geschwindigkeit} ignorieren. Diese ist eine abgeschwächte Form des Manövers @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03aim00000000000]{Zielen} und kann nicht zusätzlich zu diesem angewendet werden. Die Boni gelten nicht für zusätzliche Angriffe im selben Zug, nur für den Ersten.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "or",
+					"label": "Athletics",
+					"selector": "athletics",
+					"type": "skill",
+					"value": 8
+				},
+				{
+					"combinator": "or",
+					"label": "Shooting",
+					"selector": "shooting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"icAwXIH2r0EN3noj": {
+			"name": "Stärkere Schmerzresistenz",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Held ignoriert 2 Punkte @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Nerves of Steel",
+					"selector": "nerves-of-steel",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"j2Y8rwi7mgavjJ7b": {
+			"name": "Gassenwissen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere, die dieses Talent besitzen, wissen, wie sie den örtlichen Schwarzmarkt finden, gestohlene Güter verhökern, den örtlichen Gesetzeshütern (oder den Verbrechern!) ausweichen können, sich bedeckt halten, wenn es heiß wird, illegale Waffen erwerben, herausfinden, welcher &bdquo;Boss&ldquo; Schläger anheuert oder ähnliche zwielichtige Aktivitäten.</p> <p>Charaktere mit diesem Talent addieren +2 auf Proben mit @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} zur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04networking0000]{Informationsbeschaffung}, sofern diese zwielichtige oder kriminelle Elemente involvieren. Sie addieren außerdem +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.su7eyijoB0RFpRB1]{Allgemeinwissen}-Proben, die mit zwielichtigen Aktivitäten (wie weiter oben beschrieben) zu tun haben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"ki4Zg6vAetuNL2vx": {
+			"name": "Riesentöter",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Je größer sie sind, umso schwerer sind sie zu töten. Zumindest für die meisten. Dein Held kennt allerdings die Schwachpunkte der gewaltigsten Feinde. Er addiert +1W6 Schaden, wenn er eine Kreatur angreift, deren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} seine um 3 oder mehr übersteigt. Ein Mensch (Größe 0) erhält den Bonus also gegen eine Kreatur mit Größe 3 oder mehr.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"lfOxzrDHmACw2UP0": {
+			"name": "Schnelle Heilung",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere mit diesem Talent addieren +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}proben für natürliche @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilung} und würfeln alle drei Tage, nicht nur alle fünf.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"lyCgmvvVAMN2nTGw": {
+			"name": "Schwer zu töten",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Abenteurer hat mehr Leben als eine Herde Katzen. Er kann seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge} ignorieren, wenn er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sproben macht, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Verbluten}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"mbuDd4nvPlG7vWrh": {
+			"name": "Parkour",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter geht der Sportart &bdquo;Parkour&ldquo; nach, oder ist einfach sehr geschickt darin, zu rennen, zu springen, zu schwingen, Wände emporzukrabbeln und über Hindernisse zu kommen. Solange es Hindernisse gibt, auf die er springen, von denen er abprallen oder an denen er sich schwingen kann, bewegt er sich auf dem Boden mit voller @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Schwieriges Gelände}, wenn er zu Fuß ist.</p> <p>Er addiert außerdem +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben}, sofern es etwas mit Klettern zu tun hat, und in Verfolgungsjagden zu Fuß (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Verfolgungsjagden und Fahrzeuge}).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Athletics",
+					"selector": "athletics",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"mxDtNIhJtmEkP7Xn": {
+			"name": "Berechnend",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn Dein Held ein paar Augenblicke hat, seine Feinde unter die Lupe zu nehmen, bringt ihm das einen enormen Vorteil. Wenn seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte} eine 5 oder weniger ist, ignoriert er bis zu 2 Punkte an Abzügen auf eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} in diesem Zug, was Abzüge für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionen}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernung} und sogar @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge} sein können.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"nu0GinMO3LS0nMiA": {
+			"name": "Doppelschuss",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Erfahrene Schützen können zwei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Schüsse} in schneller Folge abgeben, ohne dadurch an Treffgenauigkeit einzubüßen. Doppelschuss kann nur mit Waffen verwendet werden, die eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 1 haben und zwei Schüsse abgeben können, ohne @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{nachladen} zu müssen. Du addierst +1 auf den Treffer- und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadenswurf}, jedoch kostet dich das eine zusätzliche Patrone. Dies ist pro @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion}, so dass ein Schütze mehr als einen Doppelschuss machen kann, wenn er einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachangriff} ausführt.</p> <p>Doppelschuss kann nicht mit @UUID[Compendium.swade-core-rules.swade-edges.Item.4BkC7aj2yWHnQUjY]{Schnellfeuer} kombiniert werden.</p> <p>Wenn du die Fähigkeit mit einer Waffe verwendest, die einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3 Schuss Feuerstoß} erlaubt, addierst du +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen} und Schaden anstelle von +1, verbrauchst dabei aber sechs Kugeln.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Shooting",
+					"selector": "shooting",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"nzOFc4yyiVlEaLn5": {
+			"name": "Erzürnen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Clevere Charaktere können ihre Feinde manipulieren und ihre Aufmerksamkeit auf sich lenken, um ihre Freunde zu unterstützen. Einmal pro Zug kann dein Held, wenn er eine @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} verwendet und eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} erzielt. Neben den üblichen Effekten eines Erfolgs mit Steigerung erleidet der Gegner einen Abzug von -2, wenn er Ziele außer dem Charakter, der ihn erzürnt hat, beeinflussen will. Das ist zusätzlich zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt}, kann aber nicht mit weiteren Anwendungen von Erzürnen kombiniert werden.</p> <p>Erzürnen hält an, bis ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Joker} gezogen wird, jemand anderes Erzürnen gegen das Ziel verwendet, oder die Begegnung endet. Erzürnen kann mehrere Ziele beeinflussen indem es mit @UUID[Compendium.swade-core-rules.swade-edges.Item.Z1baC21BzKawj6Ex]{Aufwiegler} kombiniert wird.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Taunt",
+					"selector": "taunt",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"obd2gUeFy8lbYrJb": {
+			"name": "Zäh wie Leder",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter macht weiter, wenn andere fallen. Er kann vier @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} einstecken, ehe er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} ist (sein maximaler Wundabzug bleibt weiterhin -3).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"ojQXiIMbsHjPbXL0": {
+			"name": "Zauberer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Magie ist vielseitig und wundervoll, und Zauberer haben mit zahllosen Folianten, Schriftrollen und Anrufungen zu tun, während sie ihre Kunst meistern. Manchmal nutzen sie dieses Wissen, um sich an die Varianten ihrer verschiedenen Zaubersprüche zu erinnern.</p> <p>Ein Magier kann 1 zusätzlichen <em>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkt}</em> ausgeben, wenn er eine Macht wirkt, um die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05trappings00000]{Ausprägung} zu ändern. Ein Feuerball (@UUID[Compendium.swade-core-rules.swade-powers.Item.TPcYlGDTi3S42xbu]{Flächenschlag}) könnte sich so zum Beispiel auch als Entladung von Blitzen manifestieren. Das kann oft wichtige Konsequenzen haben, wenn ein Feind eine bestimmte Resistenz oder Schwäche gegenüber der normalen Ausprägung des Zaubers hat.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Magic)",
+					"selector": "arcane-background-magic",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Spellcasting",
+					"selector": "spellcasting",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"ov2Jw8vAzYmW48eT": {
+			"name": "Gefolgsleute",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Jedes Mal wenn dieses Talent gewählt wird, erhält der Charakter fünf Gefolgsleute die an seiner Seite kämpfen. Wenn er welche verliert, nehmen andere irgendwann ihren Platz ein (wie lange das dauert, entscheiden die Spielleiterin und die Umstände). Der Charakter muss sich um die Gefolgsleute kümmern, und sie wollen einen Anteil an der Beute, den Schätzen oder anderen Belohnungen, die der Held erhält. Ansonsten widmen sie sich voll und ganz ihrer Aufgabe. Sie werfen ihr Leben nicht weg, jedoch setzen sie es im Dienst des Charakters wieder und wieder aufs Spiel.</p> <p>Verwende die Spielwerte für Soldaten für die Gefolgsleute. Ein Held kann seine Verbündeten ausrüsten, wie er das möchte. Gefolgsleute durchlaufen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Aufstiege} genau wie Spielercharaktere.</p> <p>Verwende die Regeln für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04allies00000000]{Verbündete}, um ihnen eine eigene Persönlichkeit zu geben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"pADpCohmbZTWzkmi": {
+			"name": "Beidhändiger Fernkampf",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Beidhändiger Fernkampf funktioniert genau wie @UUID[Compendium.swade-core-rules.swade-edges.Item.RN6j11dayuBJyLoI]{Beidhändiger Kampf}, so dass du mit verschiedenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktionen} eine Waffe in jeder Hand abfeuern oder werfen kannst, ohne einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionsabzug} auszulösen.</p> <p>Wenn der Charakter außerdem @UUID[Compendium.swade-core-rules.swade-edges.Item.RN6j11dayuBJyLoI]{Beidhändiger Kampf} besitzt, darf der zweite Angriff auch ein Nahkampfangriff sein.</p> <p class=\"embedded-example\"><strong>Beispiel:</strong> Red hat ein Schwert in einer Hand, eine Pistole in der anderen. Sie verfügt über Beidhändiger Kampf und Beidhändiger Fernkampf, also kann sie mit einer Aktion einen Kämpfen-Angriff ausführen, und später in dem Zug einen weiteren Fernkampfangriff ohne Mehrfachaktionsabzug.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"pNKxmNWVDX7LfU8j": {
+			"name": "Zäher als Leder",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter macht weiter, wenn andere fallen. Er kann bis zu fünf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} einstecken, ehe er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} ist (sein maximaler Wundabzug bleibt weiterhin -3).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "Tough as Nails",
+					"selector": "tough-as-nails",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 12
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"pPIYAa7ntPtAwSsI": {
+			"name": "McGyver",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Ein McGyver kann ein Gerät aus leicht verfügbaren Ressourcen improvisieren, wenn es nötig ist. Mit ein paar einfachen Gegenständen kann er eine @UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenprobe} machen, um improvisierte Waffen, Sprengstoffe oder Werkzeuge herzustellen, die halten, bis sie verwendet werden oder bis zum Ende der Begegnung (Entscheidung der SL). Dies erfordert einen ganzen Zug, und er kann sich nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{bewegen} und keine anderen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktionen} ausführen, während er das Gerät konstruiert. Ein Fehlschlag bedeutet, dass das Gerät nicht fertig ist. Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} bedeutet, dass ihm die richtigen Materialien fehlen und er das Gerät in dieser Begegnung nicht bauen kann.</p> <p>Mit einem Erfolg kann er einen kleineren Sprengsatz (2W4 Explosionsschaden in einer kleinen Flächenschablone), eine Projektilwaffe mit einem Schuss (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{FRW} 5/10/20, Schaden 2W6), ein wackliges Floß, eine Stromquelle oder Ähnliches herstellen.</p> <p>Mit einer Steigerung baut er einen größeren Sprengsatz (2W6 in einer mittleren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächenangriffe} oder 2W4 in einer großen), eine bessere Fernkampfwaffe (fünf Schuss, 2W8 Schaden, FRW 10/20/40), ein stabileres Floß, eine stärkere Batterie und so weiter.</p> <p>Die Qualität seiner Schöpfung liegt in den Händen der Spielleiterin, doch Kreativität sollte belohnt werden, besonders in schwierigen und dramatischen Situationen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"label": "Notice",
+					"selector": "notice",
+					"type": "skill",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Repair",
+					"selector": "repair",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"pPnkMWqlGW9Lzi1o": {
+			"name": "Finte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wenn du deinen Gegner mit der @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Fertigkeit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{herausforderst}, kannst du den Feind den Widerstandswurf mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand} anstelle von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Geschicklichkeit} würfeln lassen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"qU0FPogZKEkGHn4u": {
+			"name": "Energieschub",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Charakter erhält 10 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte} zurück, wenn seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte} ein Joker ist. Dabei kann er sein Maximum nicht übersteigen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Any)",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "arcane skill d8+",
+					"selector": "",
+					"type": "other",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"rNOxB5lUz46R7AiY": {
+			"name": "Rohling",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Rohlinge konzentrieren sich mehr auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} und Fitness als auf Koordination und Flexibilität. Für sie ist @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} mit Stärke verknüpft, nicht mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Geschicklichkeit}, wenn es um @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Aufstiege} geht. Der Charakter kann Athletikproben auch mit Stärke widerstehen, wenn er das möchte.</p> <p>Außerdem erhöhen Rohlinge die kurze @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernung} von geworfenen Gegenständen um +1. Verdopple den Bonus, um die angepasste mittlere Entfernung zu erhalten, und noch einmal für die weite Entfernung. Wenn die Fernkampfreichweite eines geworfenen Gegenstands beispielsweise 3/6/12 beträgt, ist die Fernkampfreichweite des Rohlings 4/8/16.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "strength",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"rapmsfIAOVjXWTUX": {
+			"name": "Haltet die Stellung!",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Haltet die Stellung! stärkt den Willen der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten}, die unter dem Befehl des Helden stehen, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um +1 erhöht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		},
+		"ri6LWZTNjXgctgV0": {
+			"name": "Erniedrigen",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Wer viel Übung darin hat, fiese Sprüche zu klopfen, kann das Ego eines Rivalen mit einer einzigen Bemerkung oder bedeutungsvollen Geste regelrecht zerstören. Dein Held erhält eine freie Wiederholung für @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren}-Proben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"label": "Taunt",
+					"selector": "taunt",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"sWn1C1RiHQk9Htyy": {
+			"name": "Bastler",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einige Mechanik-Gurus können aus so gut wie allem unglaubliche Apparaturen bauen.</p> <p>Ein Bastler kann bis zu 3 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte} aufwenden, um eine Apparatur aus jeder halbwegs vernünftigen Sammlung an Ersatzteilen zu basteln. Das erlaubt es ihm, eine beliebige @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Macht} zu verwenden, die normalerweise @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr05]{verrückten Wissenschaftlern} seines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Ranges} und darunter im Setting zur Verfügung steht und deren Machtpunktekosten 3 oder weniger sind.</p> <p>Die Gesamtkosten der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Macht} (plus Modifikatoren) können nicht die Punkte übersteigen, die bei der Erschaffung aufgewendet worden sind, doch kann er mehrere Apparaturen erschaffen, solange er noch Punkte dafür übrig hat.</p> <p>Das dauert seinen ganzen Zug, während der er nichts tun kann als eine Probe auf @UUID[Compendium.swade-core-rules.swade-skills.Item.VMM9LwHq3XEQFL9w]{Verrückte Wissenschaft} mit -2 abzulegen (er kann in diesem Zug keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionen} verwenden).</p> <p>Der Erfinder verwendet Machtpunkte direkt aus seinem Vorrat für die Apparatur, aber sobald die anfängliche Wirkungsdauer beendet ist (sie kann nicht aufrechterhalten werden), zerfällt die Apparatur wieder in ihre Bestandteile.</p> <p class=\"embedded-example\"><strong>Beispiel:</strong>&nbsp;Gabe ist ein Erfinder in <em>Deadlands</em>. Er will <em>Eigenschaft erhöhen</em> nutzen, um Red beim Kampf gegen eine Riesenklapperschlange zu unterstützen, doch hat er nur die Kräfte <em>Geschoss</em> und <em>@UUID[Compendium.swade-core-rules.swade-powers.Item.TPcYlGDTi3S42xbu]{Flächenschlag}</em> zur Verfügung. Glücklicherweise ist er ein Bastler, und so kann Gabe für Eigenschaft verstärken einen &bdquo;elektrischen Bio-Regler&ldquo; basteln. Die Apparatur kann bis zu drei Machtpunkte aufnehmen, also fügt Gabe außerdem den Modifikator @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05hinderorhurr00]{Beschleunigen} hinzu, um Reds @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} um +2 zu erhöhen.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Arcane Background (Weird Science)",
+					"selector": "arcane-background-weird-science",
+					"type": "edge",
+					"value": ""
+				},
+				{
+					"combinator": "and",
+					"label": "Weird Science",
+					"selector": "weird-science",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"tS7aJtG9ZlTQokYS": {
+			"name": "Blitzschneller Angriff",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Kämpfer wirft einen zusätzlichen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Würfel bei bis zu zwei seiner Kämpfen-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000]{Angriffe} im gleichen Zug.</p> <p class=\"embedded-example\"><strong>Beispiel:</strong> Red greift verzweifelt eine riesige, krabbenartige Kreatur auf einem fremden Planeten an. Sie verfügt über Blitzschneller Angriff und entscheidet sich, dreimal anzugreifen (eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktion} mit dem üblichen Abzug). Sie wirft ihre Kämpfen-Fertigkeit mit einem zusätzlichen Würfel für den ersten Angriff und den zweiten Angriff. Sie bekommt den Zusatzwürfel nicht bei ihrem dritten Kämpfen-Wurf.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Frenzy",
+					"selector": "frenzy",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"teAlTo6nBCjydLuQ": {
+			"name": "Schnellere Machtregeneration",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Charakter erhält jetzt 20 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkte} pro Stunde Ruhe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05activation0000]{zurück}.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 2
+				},
+				{
+					"combinator": "and",
+					"label": "Rapid Recharge",
+					"selector": "rapid-recharge",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Power"
+		},
+		"u2Mlaku0V2DC5bPU": {
+			"name": "Rundumschlag",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Rundumschlag erlaubt es dem Charakter, einen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriff mit -2 zu machen und das Ergebnis gegen alle Gegner innerhalb seiner @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} (Freund und Feind) anzuwenden. Ermittle den Schaden für jeden getroffenen Gegner einzeln.</p> <p>Ein Kämpfer kann nur einen Rundumschlag pro Zug durchführen. Er kann nicht mit @UUID[Compendium.swade-core-rules.swade-edges.Item.7YiLlxxjD750ltXM]{Schneller Angriff} kombiniert werden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "strength",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"vMsxDtYquL4hPmjM": {
+			"name": "Tiermeister",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Tiere gewöhnen sich an deinen Charakter schnell und ohne große Mühe. Sie greifen ihn nicht an, wenn er sie nicht zuvor irgendwie wütend gemacht hat.</p> <p>Die tierische Anziehungskraft des Tiermeisters ist so groß, dass er außerdem ein loyales Tier hat das ihm folgt. Es ist normalerweise ein Tier von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größe} 0 oder kleiner, nach Zustimmung der Spielleiterin.</p> <p>Das Tier ist ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statist} und erhält keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Aufstiege}. Wenn das Haustier weggeschickt oder getötet wird, findet der Held innerhalb von 1W4 Tagen einen Ersatz.</p> <p><strong>Mächtigere Gefährten:</strong> Tiermeister kann mehr als einmal gewählt werden. Wähle einen der Effekte unten, jedes Mal, wenn das Talent ausgewählt wird.</p> <ul> <li>Du erhältst ein zusätzliches Haustier.</li> <li>Erhöhe eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaft} des Tiers um einen Würfeltyp (nur eine Eigenschaft pro Tier).</li> <li>Erhöhe die maximale Größe, die dein Tier haben kann, um +1, auf ein Maximum von 3.</li> <li>Mach ein Tier zur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcard}. (Der Held muss mindestens Heroisch sein).</li> </ul>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"vNDguZFqPlgMo5qx": {
+			"name": "Reich",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Egal ob diese Person mit dem Silberlöffel im Mund geboren wurde oder sich ihr Vermögen mit harter Arbeit verdient hat, sie hat auf jeden Fall mehr Geld als die meisten Leute. Reiche Helden beginnen das Spiel mit dem dreifachen normalen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Startkapital} für das Setting. Wenn ein regelmäßiges Einkommen für das Setting angemessen erscheint, erhält der Charakter die Entsprechung eines heutigen Jahresgehalts von $150.000.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"wE9hbwL1TV3KgVNW": {
+			"name": "Alleskönner",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Durch eine gute Ausbildung, Bücherwissen, computerverbesserte Fertigkeitenprogramme oder einfach unglaubliche intuitive Auffassungsgabe hat dein Held ein Talent dafür entwickelt, spontan Fertigkeiten aufzuschnappen. Es gibt wenig, was er nicht mit ein bisschen Zeit und einer Prise Glück kapieren kann.</p> <p>Nachdem er eine bestimmte Fertigkeit beobachtet oder studiert hat, macht der Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe}, welche als seine Aktion gilt. Bei einem Erfolg erhält er einen W4 in der Fertigkeit, bei einer Steigerung einen W6. Er kann es nach einer weiteren Stunde Studien und Herumprobieren oder Vertiefung in das Thema noch einmal versuchen, wenn der Wurf misslungen ist, oder er es auf eine Steigerung abgesehen hat. Dieser Effekt hält an, bis der Charakter versucht ein anderes Thema zu lernen, egal ob erfolgreich oder nicht.</p>\n</div>",
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Edge Actions"
+		},
+		"wKCK3CuIuwEMzRKz": {
+			"name": "Kräftig",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter ist sehr groß oder sehr fit. Seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größe} steigt um +1 (und somit auch seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit}), und er behandelt seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} als um einen Würfeltyp höher, wenn es um die Ermittlung von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02gearnotes00000]{Behinderung} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}, damit Rüstungen, Waffen und Ausrüstungsgegenstände ohne Abzug verwendet werden können, geht.</p> <p>Kräftig kann die Größe eines Charakters nicht über&nbsp;+3 anheben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "strength",
+					"type": "attribute",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"wlVsolk3JywJvt7V": {
+			"name": "Riposte",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Kämpfer mit diesem Talent bestrafen jeden Fehler, den ihr Gegner macht, sofort. Einmal pro Zug kann der Charakter (wenn er nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} ist) einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03freeattacks000]{Freien Angriff} gegen einen Feind machen, der einen misslungenen @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriff gegen ihn durchgeführt hat. Die Riposte findet sofort statt (ehe andere Treffer gegen den Helden auf der gleichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarte}, sofern es welche gibt, ausgeführt werden).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Fighting",
+					"selector": "fighting",
+					"type": "skill",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"xKABBE9bj7eYSXiJ": {
+			"name": "Eisenkiefer",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der Held kann auch extreme Treffer abschütteln. Er addiert +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03soakrolls00000]{Schaden wegstecken} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03thedrop0000000]{K.O.-Schläge} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sproben, um&nbsp; zu vermeiden.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"xOg2tNyShc591SPg": {
+			"name": "Meister",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Wildcard-Würfel} des Charakters steigt auf einen W10, wenn er auf die betroffene Eigenschaft würfelt.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "wildCard",
+					"value": true
+				},
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 4
+				},
+				{
+					"combinator": "and",
+					"label": "Expert in affected Trait",
+					"selector": "expert",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Legendary"
+		},
+		"xfMyvtWl378izFZQ": {
+			"name": "Starker Wille",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Selbstvertrauen ist eine starke Rüstung gegen jene, die diese Person kleinmachen wollen. Sie addiert +2 auf ihr Gesamtergebnis, wenn sie einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausforderung} mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Willenskraft} widersteht.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"xpl34PJUjUI0NU08": {
+			"name": "Dieb",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Diebe sind spezialisiert auf Täuschung, Verrat und Akrobatik. Sie sind unabdingbar, wenn es gilt Fallen zu entdecken, Wände zu erklimmen und Schlösser zu knacken.</p> <p>Diebe wissen, wie sie Vorsprünge an Wänden und Fenstersimsen verwenden können, um die höchsten Gebäude zu erklimmen und wie Katzen durch Straßen und Gassen zu huschen. Sie addieren +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben}, um in urbanen Gebieten zu klettern.</p> <p>Diebe wissen auch, wie man sich in der Dunkelheit zwischen Straßenlaternen bewegt, und addieren +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsproben} in urbanen Umgebungen. Außerdem sind diese Schurken, was kaum überrascht, sehr geschickt, wenn es um @UUID[Compendium.swade-core-rules.swade-skills.Item.RiG6qQrQoXtw3tvF]{Diebeskunst} geht, und addieren in allen Umständen +1 auf entsprechende Proben.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "agility",
+					"type": "attribute",
+					"value": 8
+				},
+				{
+					"combinator": "and",
+					"label": "Stealth",
+					"selector": "stealth",
+					"type": "skill",
+					"value": 6
+				},
+				{
+					"combinator": "and",
+					"label": "Thievery",
+					"selector": "thievery",
+					"type": "skill",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Professional"
+		},
+		"xxUPtMrq506W2WPL": {
+			"name": "Rampensau",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Die Worte deines Helden inspirieren nicht nur jene, an die sie gerichtet sind, sondern oft auch Leute in der Umgebung. Einmal pro Zug kannst du Rampensau verwenden, um einen zusätzlichen Fertigkeitswürfel zu werfen, wenn du mit @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung} oder @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{unterstützt}.</p> <p>Der zusätzliche Würfel unterstützt einen weiteren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04allies00000000]{Verbündeten}, der den Helden sehen oder hören kann, und gilt für seine nächste @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion}, was diese auch sein mag.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "spirit",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Social"
+		},
+		"xz177kIqekO2lRqz": {
+			"name": "Tierempathie",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Einige Leute haben eine starke Bindung zu ihren Tiergefährten. Diese Charaktere können ihre eigenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys} für Tiere unter ihrer Kontrolle ausgeben. Dazu gehören Reittiere, Haustiere, Vertraute und so weiter.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Weird"
+		},
+		"y94Z6SO3wlQlXqqB": {
+			"name": "Attraktiv",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Es ist kein Geheimnis, dass Leute hilfsbereiter sind, wenn sie ihr Gegenüber körperlich anziehend finden. Dein Charakter addiert +1 auf Würfe mit @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung} und @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden}, wenn das Ziel ihn generell anziehend findet (in Bezug auf Geschlecht, Spezies und so weiter).</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 0
+				},
+				{
+					"combinator": "and",
+					"selector": "vigor",
+					"type": "attribute",
+					"value": 6
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Background"
+		},
+		"zRpf7fTG1tykwKAs": {
+			"name": "Kühler Kopf",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere, die ruhig bleiben, wenn alle anderen in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} springen, können tödliche Kämpfer sein. Ein Held mit diesem Talent zieht eine zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarten} im Kampf und wählt aus, welche er verwenden möchte.</p>\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"selector": "smarts",
+					"type": "attribute",
+					"value": 8
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Combat"
+		},
+		"zTqeI6GiE0TqqKER": {
+			"name": "Inspirieren",
+			"Beschreibung": "<div class=\"swade-core\">\n<p>Außergewöhnliche Anführer inspirieren die Soldaten, die sie umgeben, und erfüllen sie mit Tapferkeit und Entschlossenheit. Einmal pro Zug kann der Held auf @UUID[Compendium.swade-core-rules.swade-skills.Item.B0IirU8L6QzIN2fI]{Kriegskunst} würfeln, um eine Art von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaft}sprobe zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{unterstützen}, und wendet das Ergebnis auf alle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} im @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Befehlsradius} an. Ein Anführer könnte alle @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Angriffe im Radius unterstützen, oder alle Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}.</p> <p>Inspirieren ist eine Aktion und erfordert eine Möglichkeit zur Kommunikation mit den betroffenen Charakteren.</p> <img src=\"modules/argas-swade-translation-german/assets/art/pg45_quote_edges.webp\" alt=\"&quot;One of my favorites&quot; -- Gabe\" width=\"534\" height=\"120\" />\n</div>",
+			"Rang": [
+				{
+					"combinator": "and",
+					"selector": "",
+					"type": "rank",
+					"value": 1
+				},
+				{
+					"combinator": "and",
+					"label": "Command",
+					"selector": "command",
+					"type": "edge",
+					"value": ""
+				}
+			],
+			"Quelle": "SWADE Core Rules",
+			"Kategorie": "Leadership"
+		}
+	}
+}

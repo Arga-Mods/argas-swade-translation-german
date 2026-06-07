@@ -1,0 +1,1325 @@
+{
+  "label": "Moderne Feuerwaffen",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "firearmsCategory"
+    },
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    },
+    "Notizen": {
+      "path": "system.notes",
+      "converter": "weaponNotes"
+    },
+    "Munition": {
+      "path": "system.ammo",
+      "converter": "weaponAmmo"
+    },
+    "Eigenschaft": "system.actions.trait",
+    "Aktionen": {
+      "path": "system.actions",
+      "converter": "armorActions"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "2J9Huj12hhMbtpkF": {
+      "name": "Colt 1911",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Halbautomatikwaffen werden aus einem Magazin gespeist. Die Standardgröße der Magazine ist unten aufgeführt. Zusätzliche Magazine können für 10% des Preises der Waffe erworben werden. Sie wiegen voll geladen ungefähr je 0,5 kg.</p>\n</div>",
+      "Notizen": ".45",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "2QR6pW3qw78NUYtw": {
+      "name": "Gatling",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate}&nbsp;von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong>&nbsp;Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": ".45 Cal",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "53ddkdbw3v": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "ytyundkxtg": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "4VVOddXz7mbj1757": {
+      "name": "Spencer Carbine",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".52",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "5627DEgWQZtUr2Hv": {
+      "name": "Minigun",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 3, erfordert Rucksackgeschirr mit Munition, das zusätzliche 42,5 kg wiegt, wenn es voll ist (enthält 4000 Schuss im Gurt).</p>\n<hr />\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong>&nbsp;Maschinengewehre haben eine Feuerrate von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong>&nbsp;Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": "7.62mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "d37x9ivel8": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "owz7czsqjn": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-3",
+            "name": "Schnellschuss-Malus FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "pcj2gzzwrr": {
+            "dice": 5,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 5 Angriff",
+            "resourcesUsed": 40,
+            "type": "trait",
+            "uuid": null
+          },
+          "sa4cmxswt8": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "vxu0ut9e9u": {
+            "dice": 5,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 5 Angriff",
+            "resourcesUsed": 40,
+            "type": "trait",
+            "uuid": null
+          },
+          "zp3qqymkfs": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "6JiiVGrMaQS9bVgf": {
+      "name": "Pistole (Laser)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
+      "Munition": "Laserbatterie, Pistole",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "l8016zc0cn": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+d6x",
+            "name": "Überladen",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "6Ru7HTGoq7jmxcWW": {
+      "name": "Barrett",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus}. Barrets verwenden ein 10-schüssiges, herausnehmbares Magazin, das beladen 1 kg wiegt. Sie werden fast immer mit einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.dv2u5jyavs3DNd9t]{Zielfernrohr} ausgestattet.</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".50",
+      "Munition": "Patronen, Groß",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "k3lppdpumw": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Schnellschuss-Malus",
+            "resourcesUsed": 1,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "6aFYNugXl2uLJQbp": {
+      "name": "M-16",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Version A&ndash;2 kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3 Schuss Feuerstöße} abgeben.</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": "5.56mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "5dm9tsph6p": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "dw89pbay4t": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+1",
+            "name": "3-Schuss-Feuerstoß",
+            "resourcesUsed": 3,
+            "type": "trait",
+            "uuid": null
+          },
+          "r4k2ta3di3": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "9mghTyPps7fj0M3o": {
+      "name": "Colt Peacemaker",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Revolver haben normalerweise sechs Kammern, die eine Kugel nach der anderen nachgeladen werden müssen, doch kann man auch eigenständige Zylinder namens &bdquo;Schnelllader&ldquo; für modernere Waffen für 10% des Preises der Waffe erwerben.</p>\n</div>",
+      "Notizen": ".45",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "BrxxNrpAJSzonqdZ": {
+      "name": "Desert Eagle",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Halbautomatikwaffen werden aus einem Magazin gespeist. Die Standardgröße der Magazine ist unten aufgeführt. Zusätzliche Magazine können für 10% des Preises der Waffe erworben werden. Sie wiegen voll geladen ungefähr je 0,5 kg.</p>\n</div>",
+      "Notizen": ".50",
+      "Munition": "Patronen, Groß",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ChuVGxN03IyZ4iy7": {
+      "name": "M60",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong>&nbsp;Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": "(7.62mm)",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "dw76k679ax": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "flzlrmkgob": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "twnpvhvce9": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "v72t1ul86x": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "DJovklcSKeGtihE6": {
+      "name": "Maschinenpistole (Laser)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
+      "Munition": "Laserbatterie, Gewehr / MP",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "2j8pylmbzt": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "e3ym7r9j3x": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "imydg4hjq5": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "wlryc5894c": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+d6x",
+            "name": "Überladen",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "Dwvi31u98ocbGicu": {
+      "name": "AK47",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": "7.62mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "0n12mqjsi3": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "override": "",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "uevib48jb1": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "override": "",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "EPYqKWj9hdiU4pVE": {
+      "name": "M2 Browning",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}</p>\n<hr />\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong> Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": "Schwere Waffe.",
+      "Munition": "Patronen, Groß",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "7r05pvxs8m": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "jnh5swl3sr": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "HGk1pIVfqVoKJBzZ": {
+      "name": "Streetsweeper",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schrotflinten feuern eine Wolke kleiner Geschosse (&bdquo;Schrote&ldquo; oder &bdquo;Schüttladungen&ldquo; genannt) ab, um die Chance des Schützen zu erhöhen, sein Ziel zu treffen. Aus der Nähe kann der Schuss verheerend sein. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten} für mehr Details.</p>\n</div>",
+      "Munition": "Schrotpatronen",
+      "Eigenschaft": "Schießen",
+      "Notizen": "",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "d7mti3a1d0": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "h3gy1rp1yu": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          },
+          "igj4e0kyzf": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "imhxlkhief": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "zug7y41wrq": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": "+2"
+      }
+    },
+    "HovVpILQA6jOQFHa": {
+      "name": "M1 Garand",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Das Standard-Infanteriegewehr der USA im Zweiten Weltkrieg.</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".30-06",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "JRkRvWNvUhpb5UvL": {
+      "name": "Steyr AUG",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3 Schuss Feuerstöße} abgeben.</p>\n</div>",
+      "Notizen": "5.56mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "8uz8v7onn3": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "r3vehrgy0t": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+1",
+            "name": "3-Schuss-Feuerstoß",
+            "resourcesUsed": 3,
+            "type": "trait",
+            "uuid": null
+          },
+          "u1x802d6ia": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "LjqqZvfFyVgZIoMJ": {
+      "name": "Abgesägte Doppelflinte",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schrotflinten feuern eine Wolke kleiner Geschosse (&bdquo;Schrote&ldquo; oder &bdquo;Schüttladungen&ldquo; genannt) ab, um die Chance des Schützen zu erhöhen, sein Ziel zu treffen. Aus der Nähe kann der Schuss verheerend sein. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten} für mehr Details.</p>\n</div>",
+      "Munition": "Schrotpatronen",
+      "Eigenschaft": "Schießen",
+      "Notizen": "",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "5wxefxe0wc": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "93c4552pi8": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          },
+          "ikdais1qo4": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "jjtol5mi9q": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          },
+          "k898kad686": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "kjmyk2umxg": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "lmznwdbi7o": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "vm991u5st6": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Doppellauf Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "wrge5qeel2": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "y8bmp1oiej": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": "+2"
+      }
+    },
+    "MQrIXYBET9XjF7YN": {
+      "name": "Pumpgun",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schrotflinten feuern eine Wolke kleiner Geschosse (&bdquo;Schrote&ldquo; oder &bdquo;Schüttladungen&ldquo; genannt) ab, um die Chance des Schützen zu erhöhen, sein Ziel zu treffen. Aus der Nähe kann der Schuss verheerend sein. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten} für mehr Details.</p>\n</div>",
+      "Munition": "Schrotpatronen",
+      "Eigenschaft": "Schießen",
+      "Notizen": "",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "2195beusva": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "ei40jb4zhw": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "p40x1h6ljf": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "tts11rijqd": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "usc5qe0738": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": "+2"
+      }
+    },
+    "QnHkPexPDUotkOfd": {
+      "name": "Gatling (Laser)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von <em>mindestens</em> 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02lasersfuturi00]{Kauterisieren, Überladen, Kein Rückstoß}</p>\n</div>",
+      "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
+      "Munition": "Laserbatterie, Gatling",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "1wmca7vx5i": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "1wqol5qn8h": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+d6x",
+            "name": "Überladen",
+            "type": "damage",
+            "uuid": null
+          },
+          "whqv1usyq4": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "ylps4cskeu": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "TF1Bp2cToLeUljpH": {
+      "name": "Gewehr (Laser)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
+      "Munition": "Laserbatterie, Gewehr / MP",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "0bd81htr9r": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "2s7u2vhzwa": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+d6x",
+            "name": "Überladen",
+            "type": "damage",
+            "uuid": null
+          },
+          "6w08dfsyjo": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "UMpIueDjfGDdXkPA": {
+      "name": "Uzi",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Typische Magazingrößen sind für jede Waffe angegeben. Zusätzliche Magazine sind für 10% der Kosten der Waffe verfügbar und wiegen voll geladen ungefähr 0,5 kg</p>\n</div>",
+      "Notizen": "9mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "t42xx1o1o9": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "y1b7ji2l4a": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "XIuTN2v8lzebjjLL": {
+      "name": "SAW",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong> Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": "5.56mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "ajd7g8p0k5": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "n5xdh4yh9v": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "nx78g0kg24": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "riyq89ve2w": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "x71vppzidp": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "xkkhqb6oda": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "XrtfXCTlQKSiSB0D": {
+      "name": "Tommy Gun",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Thompson-Maschinenpistolen können auch eine Trommel mit 50 Schuss verwenden. Das erhöht das Gewicht um 1 kg. Jede geladene Trommel kostet $50.</p>\n<hr />\n<p>Typische Magazingrößen sind für jede Waffe angegeben. Zusätzliche Magazine sind für 10% der Kosten der Waffe verfügbar und wiegen voll geladen ungefähr 0,5 kg</p>\n</div>",
+      "Notizen": ".45",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "ylhxrcrzpr": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "zum8xf76t6": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "ZDoQFA5n89kJIKVE": {
+      "name": "Smith & Wesson",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Revolver haben normalerweise sechs Kammern, die eine Kugel nach der anderen nachgeladen werden müssen, doch kann man auch eigenständige Zylinder namens &bdquo;Schnelllader&ldquo; für modernere Waffen für 10% des Preises der Waffe erwerben.</p>\n</div>",
+      "Notizen": ".357",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "anzEPjCEegdHzGJ9": {
+      "name": "Derringer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Revolver haben normalerweise sechs Kammern, die eine Kugel nach der anderen nachgeladen werden müssen, doch kann man auch eigenständige Zylinder namens &bdquo;Schnelllader&ldquo; für modernere Waffen für 10% des Preises der Waffe erwerben.</p>\n<p>-2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe} wenn verborgen.</p>\n</div>",
+      "Notizen": ".41",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "cWhD5Sx3zFh2qQw7": {
+      "name": "Doppelflinte",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schrotflinten feuern eine Wolke kleiner Geschosse (&bdquo;Schrote&ldquo; oder &bdquo;Schüttladungen&ldquo; genannt) ab, um die Chance des Schützen zu erhöhen, sein Ziel zu treffen. Aus der Nähe kann der Schuss verheerend sein. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten} für mehr Details.</p>\n</div>",
+      "Munition": "Schrotpatronen",
+      "Eigenschaft": "Schießen",
+      "Notizen": "",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "5wxefxe0wc": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "93c4552pi8": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          },
+          "ikdais1qo4": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "jjtol5mi9q": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Flintenlaufgeschosse",
+            "override": "2d10",
+            "type": "damage",
+            "uuid": null
+          },
+          "k898kad686": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "kjmyk2umxg": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "lmznwdbi7o": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "+4",
+            "name": "Doppellauf Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "vm991u5st6": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Doppellauf Flintenlaufgeschosse",
+            "type": "trait",
+            "uuid": null
+          },
+          "wrge5qeel2": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "y8bmp1oiej": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": "+2"
+      }
+    },
+    "gPXTXj7sJeVisYsz": {
+      "name": "Sharps Big 50",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus}</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".50",
+      "Munition": "Patronen, Groß",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "zl56kx0g2u": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Schnellschuss-Malus",
+            "resourcesUsed": 1,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "hRCIumfTkzOu8cp7": {
+      "name": "Jagdgewehr",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus}</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".308",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "ikd1tshj7n": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "Schnellschuss-Malus",
+            "resourcesUsed": 1,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "hRDiWJ7Lj8MGNTYE": {
+      "name": "MG42",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong>&nbsp;Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n<p><strong>Langsames Nachladen:</strong>&nbsp;Maschinengewehre haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2, was das Anbringen von Gurten oder Trommeln, das Spannen etc. umfasst.</p>\n</div>",
+      "Notizen": "(7.92mm)",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "28dl21hs2t": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "9mumti5swo": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "eknd2cr12u": {
+            "dice": 4,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 4 Angriff",
+            "resourcesUsed": 20,
+            "type": "trait",
+            "uuid": null
+          },
+          "gwilt1hxuc": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "s0g8bd0c6s": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "sanqlfdue4": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "mdvb1tznbiYSQiFm": {
+      "name": "Winchester ‘73",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "Notizen": ".45",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "nnbkfj1m1XH2q5dk": {
+      "name": "Ruger",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Halbautomatikwaffen werden aus einem Magazin gespeist. Die Standardgröße der Magazine ist unten aufgeführt. Zusätzliche Magazine können für 10% des Preises der Waffe erworben werden. Sie wiegen voll geladen ungefähr je 0,5 kg.</p>\n</div>",
+      "Notizen": ".22",
+      "Munition": "Patronen, Klein",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "plkoW6REnQscRlOV": {
+      "name": "Polizeirevolver",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Revolver haben normalerweise sechs Kammern, die eine Kugel nach der anderen nachgeladen werden müssen, doch kann man auch eigenständige Zylinder namens &bdquo;Schnelllader&ldquo; für modernere Waffen für 10% des Preises der Waffe erwerben.</p>\n</div>",
+      "Notizen": ".38",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "s7auGwVHIImWTEtU": {
+      "name": "H&K MP5",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Typische Magazingrößen sind für jede Waffe angegeben. Zusätzliche Magazine sind für 10% der Kosten der Waffe verfügbar und wiegen voll geladen ungefähr 0,5 kg</p>\n</div>",
+      "Notizen": "9mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "xyaqn22hrj": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "yk1n6d9cj1": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "xQv3bz4eKq7qpbue": {
+      "name": "Glock (9mm)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Halbautomatikwaffen werden aus einem Magazin gespeist. Die Standardgröße der Magazine ist unten aufgeführt. Zusätzliche Magazine können für 10% des Preises der Waffe erworben werden. Sie wiegen voll geladen ungefähr je 0,5 kg.</p>\n</div>",
+      "Notizen": "9mm",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ywaIjKefMOsVjKdE": {
+      "name": "Browning Automatic Rifle (BAR)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} 1 bis 3. Verwendet Magazine (eine Aktion zum @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} statt der üblichen 2).</p>\n<hr />\n<p>Maschinengewehre sind schwere, vollautomatische Waffen, die für langes Feuer ausgelegt sind. Die meisten werden mit Gurten oder Trommeln gespeist und haben somit eine viel höhere Munitionskapazität als Sturmgewehre, trotz vergleichbarem Kaliber und Feuerrate.</p>\n<p><strong>Montierte Waffen:</strong> Die meisten Maschinengewehre erfordern ein @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Zweibein/Dreibein} oder eine Fahrzeughalterung, um sie abzufeuern, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} negiert und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß-Malus} aufhebt. Die Mindeststärke ist dann als &bdquo;NA&ldquo; oder &bdquo;nicht anwendbar&ldquo; angegeben. Wenn eine Waffe eine Mindeststärke aufführt, kann sie mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02snapfire000000]{Schnellschuss-Malus} und Rückstoß-Malus aus der Hüfte abgefeuert werden.</p>\n<p><strong>Mindestfeuerrate:</strong> Maschinengewehre haben eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von mindestens 2, wenn nichts anderes angegeben ist.</p>\n</div>",
+      "Notizen": "Feuerrate 1 bis 3. Verwendet Magazine (eine Aktion zum Nachladen statt der üblichen 2).",
+      "Munition": "Patronen, Mittel",
+      "Eigenschaft": "Schießen",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "g2ebz1hc6j": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "nfp6zroqud": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          },
+          "ye0vrkxsyi": {
+            "dice": 3,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Schnellschuss-Malus FR 3 Angriff",
+            "resourcesUsed": 10,
+            "type": "trait",
+            "uuid": null
+          },
+          "zm7siilujz": {
+            "dice": 2,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-2",
+            "name": "FR 2 Angriff",
+            "resourcesUsed": 5,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "SWADE_CORE_RULES": {
+    "Cost": "Punktwert: {cost}",
+    "Filters": "Filter",
+    "ModEdgePl": "Talente",
+    "ModHindrancePl": "Handicaps",
+    "ModPowerPl": "Mächte",
+    "ModAbilityPl": "Sonderfähigkeiten",
+    "ModSkillPl": "Fertigkeiten",
+    "Ancestry": "Volk",
+    "Vehicle": "Fahrzeug",
+    "Superhero": "Superheld",
+    "SwadeBuilder": "SWADE-Builder",
+    "SpecialAbility": "Sonderfähigkeit",
+    "HindranceMinor": "Leichtes Handicap",
+    "HindranceMajor": "Schweres Handicap",
+    "HindranceEither": "Leichtes / Schweres Handicap",
+    "AncestryFieldName": "Name",
+    "AncestryFieldDescription": "Beschreibung",
+    "DisplayedCost": "Kosten: {value}",
+    "WarningCannotCreateItem": "Die Verwendung des Builders erfordert die Berechtigung, Items zu erstellen.",
+    "WarningCannotAddIdenticalSWID": "Du kannst kein weiteres Item mit derselben Savage Worlds ID hinzufügen.",
+    "Minor": "Leicht",
+    "Major": "Schwer",
+    "Either": "Egal",
+    "CurrentValue": "Aktueller Wert",
+    "TargetValue": "Zielwert",
+    "MaximumMods": "Maximale Modifikationen",
+    "ValuesHintAncestry": "Die aktuellen Werte, die sich aus den hinzugefügten Eigenschaften ergeben.",
+    "ValuesHintVehicle": "Die aktuellen Werte aller hinzugefügten Modifikationen an diesem Fahrzeug.",
+    "ValuesHintSuperhero": "TODO",
+    "AddedItems": "Hinzugefügte Items",
+    "Value": "Wert",
+    "PickHindranceType": "Handicap-Typ wählen",
+    "PickType": "Typ wählen",
+    "ButtonLabel": "{type} erstellen",
+    "NonCoreSkill": "Nicht-Grundfertigkeit",
+    "AuxSelectDialog": {
+      "Title": "{type} auswählen",
+      "Hint": "Wähle die {type} aus, die dir die Sonderfähigkeit {name} gewährt.",
+      "GROUP": "Kategorie",
+      "ITEM": "Eintrag"
+    },
+    "WarriorsGift": {
+      "DefaultItemName": "Kriegersegen",
+      "UnknownPackage": "Unbekanntes Paket",
+      "WarningNoCombatEdgesFound": "Keine Kampftalente in den verfügbaren Kompendien gefunden.",
+      "Description": "Wähle die Kampftalente aus, die du mit <strong>{itemName}</strong> gewähren möchtest. Beachte die Filterfunktion.",
+      "FiltersLegend": "Filter",
+      "SearchLabel": "Suche:",
+      "SearchPlaceholder": "Teil eines Talentnamens eingeben",
+      "CompendiumLabel": "Kompendium:",
+      "CombatEdgesLegend": "Kampftalente",
+      "CountShowing": "Zeige {visible} von {total} Talenten.",
+      "GrantButton": "Talente gewähren",
+      "RankNone": "Keine Rang-Voraussetzung",
+      "RankGeneric": "Rang {rank}",
+      "EdgeDisplay": "{name}, {source}, {rank}",
+      "GrantedEdgesInfo": "{actorName} wurden die Talente {edgeNames} gewährt."
+    },
+    "Tooltip": {
+      "NotMetTarget": "Der Zielwert wurde nicht erreicht.",
+      "RemoveItem": "Dieses Item entfernen"
+    },
+    "Status": {
+      "RendingAttack": {
+        "Name": "Zerfleischt",
+        "Title": "Zerfleischender Angriff: {name}",
+        "Prompt": "Diese Kreatur blutet durch einen zerfleischenden Angriff und muss als freie Aktion eine Konstitutionsprobe ablegen.",
+        "FailedPrompt": "Die Konstitutionsprobe ist fehlgeschlagen. Akzeptiere die Wunde oder gib einen Benny aus, um neu zu würfeln.",
+        "Roll": "Konstitution würfeln",
+        "Accept": "Fehlschlag akzeptieren",
+        "RollFlavor": "Konstitutionsprobe gegen zerfleischenden Angriff",
+        "Failure": "{name} erleidet 1 Wunde durch einen zerfleischenden Angriff und muss in der nächsten Runde erneut würfeln.",
+        "Success": "{name} vermeidet eine Wunde, aber die Blutung hält bis zur nächsten Runde an.",
+        "Raise": "{name} stoppt die Blutung des zerfleischenden Angriffs."
+      }
+    }
+  },
+  "SWADE": {
+    "GlobalMod": {
+      "Trait": "Alle eigenen Eigenschaften",
+      "Attack": "Eigene Angriffe",
+      "Damage": "Eigener Angriffsschaden",
+      "AP": "Eigener Panzerbrechend-Modifikator",
+      "GangUp": "Eigener Überzahl-Modifikator",
+      "Agility": "Geschicklichkeit und verknüpfte Fertigkeiten",
+      "Smarts": "Verstand und verknüpfte Fertigkeiten",
+      "Spirit": "Willenskraft und verknüpfte Fertigkeiten",
+      "Strength": "Stärke und verknüpfte Fertigkeiten",
+      "Vigor": "Konstitution und verknüpfte Fertigkeiten",
+      "TargetAttack": "Angriffe des Gegners",
+      "TargetAttackMelee": "Angriffe des Gegners (Nahkampf)",
+      "TargetAttackRanged": "Angriffe des Gegners (Fernkampf)",
+      "TargetDamage": "Schaden des Gegners",
+      "TargetGangUp": "Überzahl-Modifikator des Gegners"
+    },
+    "Expiration": {
+      "TabLabel": "Zugverhalten",
+      "Description": "<p>Effekte enden frühestens im <em>nächsten Zug des Ziels</em>, können aber auch länger anhalten.</p>",
+      "Behavior": "Effekt-Ende",
+      "None": "Effekt endet nicht",
+      "BeginAuto": "Zugbeginn (nächster Zug)",
+      "BeginPrompt": "Zugbeginn (mit Nachfrage)",
+      "EndAuto": "Zugende (nächster Zug)",
+      "EndPrompt": "Zugende (mit Nachfrage)",
+      "LooseTurnOnHold": "Aufgesparten Zug verlieren",
+      "Remaining": "Verbleibend"
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "label": "Tabellen",
+  "folders": {},
+  "entries": {
+    "Out of Control": {
+      "name": "Außer Kontrolle",
+      "description": "<div class=\"swade-core\">Schaden, der durch einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Außer Kontrolle-Wurf} verursacht wird, verursacht keinen weiteren Außer Kontrolle-Wurf, aber eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Wunde} löst ganz normal einen kritischen Fahrzeugtreffer aus.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><strong>Heftige Kollision:</strong> Jeder im Fahrzeug ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt}. Es erleidet [[1d4]] @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#wounds]{Wunden} und einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{kritischen Fahrzeugtreffer}.</div>"
+        },
+        "3-4": {
+          "description": "<div class=\"swade-core\"><strong>Leichte Kollision:</strong>Das Fahrzeug erleidet eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#wounds]{Wunde} und einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{kritischen Fahrzeugtreffer}.</div>"
+        },
+        "5-9": {
+          "description": "<div class=\"swade-core\"><strong>Abgelenkt:</strong> Bodenfahrzeuge kommen ins Schleudern oder rutschen. Flugzeuge oder Raumschiffe überziehen, gleiten ab, überschlagen sich oder führen eine unerwartete Rolle aus. Jeder an Bord ist bis zum Ende des nächsten Zugs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt}.</div>"
+        },
+        "10-11": {
+          "description": "<div class=\"swade-core\"><strong>Verwundbar:</strong> Das Fahrzeug und jeder an Bord ist bis zum Ende seines nächsten Zugs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Verwundbar}.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><strong>Macke:</strong> Etwas wird durch die grobe Behandlung losgerissen oder bricht. Das Fahrzeug erleidet einen kritischen Fahrzeugtreffer (würfle das Ergebnis Besatzung neu).</div>"
+        }
+      }
+    },
+    "Creative Combat": {
+      "name": "Kreativer Kampf",
+      "description": "<div class=\"swade-core\">Erfolgreiches @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03test0000000000]{Herausfordern} funktioniert wie üblich, doch wenn ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcard}-Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} erzielt, ist der Feind nicht automatisch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} – stattdessen würfelt er auf diese Tabelle.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><strong>Durchschnaufen:</strong> Die Reaktion des Feindes verleiht dem Helden Hoffnung oder erlaubt ihm, durchzuatmen. Er kann eine Stufe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung} oder eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#wounds]{Wunde} entfernen (seine Wahl). Wenn er keine Erschöpfung oder Wunden hat, ist der Feind stattdessen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Angeschlagen}.</div>"
+        },
+        "3-3": {
+          "description": "<div class=\"swade-core\"><strong>Inspiration:</strong> Das Glück ist mit den Mutigen. Der clevere Held erhält einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny}.</div>"
+        },
+        "4-5": {
+          "description": "<div class=\"swade-core\"><strong>Doppeltes Pech:</strong> Das Ziel ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03rules000000000#distracted-and-vulnerable]{Abgelenkt und Verwundbar}.</div>"
+        },
+        "6-8": {
+          "description": "<div class=\"swade-core\"><strong>Angeschlagen:</strong> Der Feind ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Angeschlagen}.</div>"
+        },
+        "9-10": {
+          "description": "<div class=\"swade-core\"><strong>Schlappe:</strong> Das Ziel erleidet eine Schlappe. Es könnte von einem Vorsprung fallen, das Vertrauen seiner Schergen verlieren (die ihn daraufhin im Stich lassen), eine überstürzte dumme Handlung ausführen, oder einfach seine nächste @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} verlieren, während es versucht, sich von der Situation zu erholen, in der es sich wiederfindet.</div>"
+        },
+        "11-11": {
+          "description": "<div class=\"swade-core\"><strong>Erkenntnis:</strong> Der Held hat eine neue Erkenntnis bezüglich des Wesens seines Ziels. Einmal während der Begegnung darf er +W6 auf eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Eigenschaftsprobe} addieren, wenn er das Ziel direkt angreifen, beeinflussen oder verletzen will. Wenn das Ergebnis während einer Begegnung ein zweites Mal erzielt wird, ist der Feind stattdessen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Angeschlagen}.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><strong>Carpe Diem:</strong> Nachdem der Held seinen Zug ausgeführt hat, kann er sofort noch einen Zug ausführen. Er kann sich dabei sogar bewegen. Er kann in diesen Zug auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{aufsparen}, wenn er das möchte.</div>"
+        }
+      }
+    },
+    "HeadInjury": {
+      "name": "Verletzungstabelle Kopf",
+      "description": "<div class=\"swade-core\"><p><strong>Kopf:</strong> Eine schwere Verletzung am Kopf.</p></div>",
+      "results": {
+        "1-3": {
+          "description": "<div class=\"swade-core\"><p><strong>Kopf:</strong> Eine schwere Verletzung am Kopf.</p><ul><li><strong>Scheußliche Narbe:</strong> Dein Held hat jetzt das Handicap @UUID[Compendium.swade-core-rules.swade-hindrances.Item.cgKdIeU474Fy2LFh]{Hässlich} (schwer).</li></ul></div>"
+        },
+        "4-5": {
+          "description": "<div class=\"swade-core\"><p><strong>Kopf:</strong> Eine schwere Verletzung am Kopf.</p><ul><li><strong>Geblendet:</strong> Eines deiner Augen wurde schwer verletzt. Du erleidest das Handicap @UUID[Compendium.swade-core-rules.swade-hindrances.Item.HOh80N3mCwwj3HqL]{Einäugig} (oder @UUID[Compendium.swade-core-rules.swade-hindrances.Item.6JQGOwz8OrGf4VMX]{Blind}, wenn du nur ein gutes Auge hattest).</li></ul></div>"
+        },
+        "6-6": {
+          "description": "<div class=\"swade-core\"><p><strong>Kopf:</strong> Eine schwere Verletzung am Kopf.</p><ul><li><strong>Gehirnschaden:</strong> Massive Verletzung am Kopf. Verstand wird um einen Würfeltyp verringert (Minimum W4).</li></ul></div>"
+        }
+      }
+    },
+    "Allied Personalites": {
+      "name": "Persönlichkeiten von Verbündeten",
+      "description": "<div class=\"swade-core\">Du kannst Verbündete ein bisschen interessanter gestalten, indem du die Tabelle Persönlichkeiten von Verbündeten verwendest. Schreibe dir das Stichwort auf dem Verbündetenbogen auf, damit du und die Spielleiterin einige Einsichten in den Charakter des Verbündeten haben.</div>",
+      "results": {
+        "1-1": {
+          "description": "<div class=\"swade-core\">Verräterisch</div>"
+        },
+        "2-2": {
+          "description": "<div class=\"swade-core\">Grausam</div>"
+        },
+        "3-3": {
+          "description": "<div class=\"swade-core\">Alt</div>"
+        },
+        "4-4": {
+          "description": "<div class=\"swade-core\">Glücklich</div>"
+        },
+        "5-5": {
+          "description": "<div class=\"swade-core\">Erfahren</div>"
+        },
+        "6-6": {
+          "description": "<div class=\"swade-core\">Kampfeslustig</div>"
+        },
+        "7-7": {
+          "description": "<div class=\"swade-core\">Faul</div>"
+        },
+        "8-8": {
+          "description": "<div class=\"swade-core\">Verschlagen</div>"
+        },
+        "9-9": {
+          "description": "<div class=\"swade-core\">Clever</div>"
+        },
+        "10-10": {
+          "description": "<div class=\"swade-core\">Jung</div>"
+        },
+        "11-11": {
+          "description": "<div class=\"swade-core\">Grob</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\">Wendig</div>"
+        },
+        "13-13": {
+          "description": "<div class=\"swade-core\">Aufmerksam</div>"
+        },
+        "14-14": {
+          "description": "<div class=\"swade-core\">Verpeilt</div>"
+        },
+        "15-15": {
+          "description": "<div class=\"swade-core\">Geheimnisvoll</div>"
+        },
+        "16-16": {
+          "description": "<div class=\"swade-core\">Kreativ</div>"
+        },
+        "17-17": {
+          "description": "<div class=\"swade-core\">Künstlerisch</div>"
+        },
+        "18-18": {
+          "description": "<div class=\"swade-core\">Furchtlos</div>"
+        },
+        "19-19": {
+          "description": "<div class=\"swade-core\">Feige</div>"
+        },
+        "20-20": {
+          "description": "<div class=\"swade-core\">Heroisch</div>"
+        }
+      }
+    },
+    "Injury Table": {
+      "name": "Verletzungstabelle",
+      "description": "<div class=\"swade-core\">Wenn ein Charakter durch Schaden oder Verletzungen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} wird, muss er sofort eine Konstitutionsprobe ablegen. Bei einem kritischen Fehlschlag stirbt er, ansonsten würfle auf diese Tabelle.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><b>Weichteile:</b> Wenn die Verletzung permanent ist, ist an Fortpflanzung, ohne ein Wunder der Medizin oder Magie, nicht mehr zu denken. Das Ergebnis hat keine anderen negativen Auswirkungen.</div>"
+        },
+        "3-4": {
+          "description": "<div class=\"swade-core\"><b>Arm:</b> Das Opfer kann den linken oder rechten Arm (zufällig bestimmt, wenn es kein gezielter Angriff war) nicht mehr verwenden.</div>"
+        },
+        "5-9": {
+          "description": "Verletzungstabelle Rumpf"
+        },
+        "10-11": {
+          "description": "<div class=\"swade-core\"><b>Bein:</b> Du erleidest das @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{Handicap} Langsam (leicht). Wenn dein Held bereits Langsam war, so ist er nun Langsam (schwer).</div>"
+        },
+        "12-12": {
+          "description": "Verletzungstabelle Kopf"
+        }
+      }
+    },
+    "Fear Table": {
+      "name": "Furchttabelle",
+      "description": "<div class=\"swade-core\">Charaktere können eine Willenskraftprobe ablegen, wenn sie es mit Kreaturen oder Situationen zu tun haben, die Furcht hervorrufen. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Furcht}.</div>",
+      "results": {
+        "1-3": {
+          "description": "<div class=\"swade-core\"><strong>Adrenalinschub:</strong> Der Kampfreflex des Helden übernimmt die Kontrolle. Er handelt in dieser Runde, als hätte er einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00#the-countdown]{Joker} gezogen!</div>"
+        },
+        "4-6": {
+          "description": "<div class=\"swade-core\"><strong>Abgelenkt:</strong> Der Held ist bis zum Ende seines nächsten Zugs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00#distracted-and-vulnerable]{Abgelenkt}.</div>"
+        },
+        "7-9": {
+          "description": "<div class=\"swade-core\"><strong>Verwundbar:</strong> Der Held ist bis zum Ende seines nächsten Zugs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00#distracted-and-vulnerable]{Verwundbar}.</div>"
+        },
+        "10-12": {
+          "description": "<div class=\"swade-core\"><strong>Angeschlagen:</strong> Der Charakter ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Angeschlagen}.</div>"
+        },
+        "13-13": {
+          "description": "<div class=\"swade-core\"><strong>Das Zeichen der Furcht:</strong> Der Held ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} und erleidet eine kosmetische körperliche Veränderung – eine weiße Strähne bildet sich in seinem Haar, seine Augen zucken die ganze Zeit, oder es manifestiert sich eine andere kleinere, körperliche Veränderung.</div>"
+        },
+        "14-15": {
+          "description": "<div class=\"swade-core\"><strong>Verängstigt:</strong> Der Charakter erhält für den Rest der Begegnung das Handicap @UUID[Compendium.swade-core-rules.swade-hindrances.Item.9499wdSSb248z9gq]{Zögerlich}. Wenn er dieses bereits hat, ist er stattdessen Panisch.</div>"
+        },
+        "16-17": {
+          "description": "<div class=\"swade-core\"><strong>Panisch:</strong> Der Charakter bewegt sich sofort seine volle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} plus @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} weg von der Gefahr und ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#shaken]{Angeschlagen}.</div>"
+        },
+        "18-19": {
+          "description": "<div class=\"swade-core\"><strong>Leichte Phobie:</strong> Der Charakter erhält eine @UUID[Compendium.swade-core-rules.swade-hindrances.Item.qg2JfyMripHqS1O0]{Phobie} (leicht), die irgendwie mit der Ursache seiner Furcht zusammenhängt.</div>"
+        },
+        "20-21": {
+          "description": "<div class=\"swade-core\"><strong>Schwere Phobie:</strong> Der Charakter erhält eine @UUID[Compendium.swade-core-rules.swade-hindrances.Item.qg2JfyMripHqS1O0]{Phobie} (schwer).</div>"
+        },
+        "22-9999": {
+          "description": "<div class=\"swade-core\"><strong>Herzinfarkt:</strong> Der Held ist so von Furcht überwältigt, dass sein Herz aussetzt. Er muss sofort eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe mit –2 ablegen. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Erfolg} ist er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Fehlschlag} ist er @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} und stirbt innerhalb von [[2d6]] Runden. In letzterem Fall kann eine @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilenprobe} mit –4 ihn retten, aber er bleibt Ausgeschaltet. Er kann danach normal behandelt werden.</div>"
+        }
+      }
+    },
+    "GutsInjury": {
+      "name": "Verletzungstabelle Rumpf",
+      "description": "<div class=\"swade-core\"><p>Dein Held fängt sich einen zwischen Kinn und Leiste ein.</p></div>",
+      "results": {
+        "1-2": {
+          "description": "<div class=\"swade-core\"><p><strong>Rumpf:</strong> Dein Held fängt sich einen zwischen Kinn und Leiste ein.</p><ul><li><strong>Knochen gebrochen:</strong> Geschicklichkeit wird um einen Würfeltyp verringert (Minimum W4).</li></ul></div>"
+        },
+        "3-4": {
+          "description": "<div class=\"swade-core\"><p><strong>Rumpf:</strong> Dein Held fängt sich einen zwischen Kinn und Leiste ein.</p><ul><li><strong>Organe malträtiert:</strong> Konstitution wird um einen Würfeltyp verringert (Minimum W4).</li></ul></div>"
+        },
+        "5-6": {
+          "description": "<div class=\"swade-core\"><p><strong>Rumpf:</strong> Dein Held fängt sich einen zwischen Kinn und Leiste ein.</p><ul><li><strong>Schwere Verletzungen:</strong> Stärke wird um einen Würfeltyp verringert (Minimum W4).</li></ul></div>"
+        }
+      }
+    },
+    "Dynamic Backlash": {
+      "name": "Dynamischer Rückschlag",
+      "description": "<div class=\"swade-core\">Ein Kritischer Fehlschlag in einem Wurf mit einer arkanen Fertigkeit führt zu Erschöpfung. Das funktioniert gut in traditionellen Fantasy-Settings oder Welten, in denen Magie weit verbreitet ist.\nWenn du der Ansicht bist, dass Magie einen höheren Preis haben sollte, verwende stattdessen diese Tabelle. Siehe <strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04dynamicbackl00]{Dynamischer Rückschlag}</strong>.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><strong>Katastrophe:</strong> Etwas geht schrecklich schief. Die SL muss entscheiden, was es ist, aber einige Ideen sind ein neues und permanentes leichtes @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{Handicap}, eine einige Tage anhaltende Unfähigkeit, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Mächte} zu verwenden, oder eine Explosion. Der Rückschlag sollte wenn möglich thematisch passend sein. Wenn der Held mit dunklen Mächten herumspielt, die seine Fähigkeiten übersteigen, könnte er korrumpiert werden oder etwas Finsteres in die Welt beschwören. Wenn er ein verrückter Wissenschaftler ist, könnte seine Apparatur explodieren und 3W6 Schaden in einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittleren Flächenschablone} verursachen, oder er entwickelt eine @UUID[Compendium.swade-core-rules.swade-hindrances.Item.qg2JfyMripHqS1O0]{Phobie}, einen @UUID[Compendium.swade-core-rules.swade-hindrances.Item.sTH6Vfaa5Ole9Lqw]{Tick} oder anderen „@UUID[Compendium.swade-core-rules.swade-hindrances.Item.IDI7UKK8AjOTbN7Q]{Wahnsinn}“.</div>"
+        },
+        "3-3": {
+          "description": "<div class=\"swade-core\"><strong>Eigentor:</strong> Die Macht ist mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} erfolgreich, jedoch trifft sie ein anderes Ziel mit den schlimmstmöglichen Auswirkungen. Ein Geschoss trifft einen zufällig ausgewählten Verbündeten, Eigenschaft stärken erhöht die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Fertigkeit oder das Attribut} eines Feindes, und so weiter. Wenn es kein geeignetes Ziel gibt, ist der Zauberer stattdessen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}. Wenn die Macht eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Wirkungsdauer} außer Sofort hat, hält sie die volle Wirkungsdauer lang an und kann nicht aufgehoben werden (ihr Auslöser kann sie nicht freiwillig selbst beenden).</div>"
+        },
+        "4-5": {
+          "description": "<div class=\"swade-core\"><strong>Kurzschluss:</strong> Die Macht misslingt, jedoch gehen alle vorgesehenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Machtpunkte} verloren, und zusätzlichen noch 1W6 weitere @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Machtpunkte}.</div>"
+        },
+        "6-8": {
+          "description": "<div class=\"swade-core\"><strong>Betäubt:</strong> Der Wirker ist @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}. Er erleidet für den Rest der Begegnung einen Abzug von –2 auf Arkane Fertigkeiten (der Abzug bleibt –2, auch wenn er dieses Ergebnis noch einmal erzielt).</div>"
+        },
+        "9-10": {
+          "description": "<div class=\"swade-core\"><strong>Überladung:</strong> Die Synapsen des Charakters knistern und werden mit Energie überladen. Er erleidet [[2d6]] Schaden plus die Kosten der Macht in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Machtpunkten} inklusive aller angesagten @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powermodifie00]{Machtmodifikatoren}.</div>"
+        },
+        "11-11": {
+          "description": "<div class=\"swade-core\"><strong>Erschöpfung:</strong> Der Charakter erleidet @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung}.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><strong>Energieaufladung:</strong> Die Macht zieht Umgebungsenergie aus der Luft, ist automatisch mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} gegen das Ziel erfolgreich und kostet keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Machtpunkte}!</div>"
+        }
+      }
+    },
+    "Vehicle Critical Hits": {
+      "name": "Kritische Fahrzeugtreffer",
+      "description": "<div class=\"swade-core\">Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Verfolgungsjagden & Fahrzeuge}.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><strong>Kratzer und Beulen:</strong> Der Angriff verursacht nur einen Kratzer im Lack oder geht direkt durch die Karosserie, ohne jemanden oder etwas Wichtiges zu treffen. Es entsteht kein dauerhafter Schaden.</div>"
+        },
+        "3-3": {
+          "description": "<div class=\"swade-core\"><strong>Lenkung/Bodenhaftung:</strong> Die Räder, Ketten, Segel, Schubdüsen und so weiter wurden getroffen. Verringere die Manövrierfähigkeit jedes Mal um eins, wenn es zu diesem Treffer kommt (der maximale Abzug ist –4).</div>"
+        },
+        "4-5": {
+          "description": "<div class=\"swade-core\"><strong>Antrieb:</strong> Der Motor, das Hauptsegel, der Boiler oder ähnliches wurde getroffen. Die Höchstgeschwindigkeit sinkt jedes Mal um 10%, wenn es zu diesem Treffer kommt (bis zu einem Minimum von 60% der anfänglichen Höchstgeschwindigkeit).</div>"
+        },
+        "6-8": {
+          "description": "<div class=\"swade-core\"><strong>Rumpf:</strong> Das Fahrzeug erleidet einen Karosserietreffer ohne besondere Auswirkungen.</div>"
+        },
+        "9-10": {
+          "description": "<div class=\"swade-core\"><strong>Besatzung:</strong> Bei direktem Schaden ziehe die Panzerung des Fahrzeugs ab (wenn das für die Position des Opfers im Fahrzeug passend ist) und wende den Rest auf ein zufälliges Besatzungsmitglied an. Flächenwaffen beeinflussen jeden in einem Bereich, den die SL festlegt. Wenn dies das Ergebnis einer Kollision ist, sind die Insassen Angeschlagen.</div>"
+        },
+        "11-11": {
+          "description": "<div class=\"swade-core\"><strong>Waffe:</strong> Eine zufällige Waffe wird zerstört. Wenn es keine Waffe gibt, ist dies ein Rumpf-Treffer.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><strong>System:</strong> Das Fahrzeug verliert ein elektronisches System, die Airbags, oder ein anderes System, das die SL bestimmt. Wenn es keine besonderen Merkmale hat, gilt dies als Rumpf-Treffer.</div>"
+        }
+      }
+    },
+    "Reaction Table": {
+      "name": "Reaktionstabelle",
+      "description": "<div class=\"swade-core\">Die SL kann auf dieser Tabelle würfeln (oder eine Zeile auswählen) um die Anfangseinstellung eines Charakters oder einer Gruppe zu bestimmen.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><b>Feindselig:</b> Der Charakter ist offen feindselig. Er greift an, wenn er kann, oder wird die Gruppe anderweitig verraten, melden oder behindern, sobald sich eine Gelegenheit ergibt. Er hilft nicht, es sei denn er bekommt eine sehr große Belohnung angeboten oder wird massiv bedroht.</div>"
+        },
+        "3-3": {
+          "description": "<div class=\"swade-core\"><b>Unfreundlich:</b> Der Charakter ist nicht daran interessiert, zu helfen, es sei denn, er hat keine Wahl und/oder wird mit einer beträchtlichen Belohnung bestochen.</div>"
+        },
+        "4-5": {
+          "description": "<div class=\"swade-core\"><b>Unkooperativ:</b> Der Charakter ist nicht daran interessiert, sich einzumischen, wenn er nicht einen großen Vorteil für sich selbst herausschlagen kann.</div>"
+        },
+        "6-8": {
+          "description": "<div class=\"swade-core\"><b>Neutral:</b> Der Charakter hat keine bestimmte Einstellung zur Gruppe. Er erwartet Bezahlung für jede Art von Gefallen oder Information.</div>"
+        },
+        "9-10": {
+          "description": "<div class=\"swade-core\"><b>Kooperativ:</b> Der Charakter ist grundsätzlich wohlgesonnen. Er hilft, wenn er kann, für eine kleine Gebühr, einen Gefallen oder gute Behandlung.</div>"
+        },
+        "11-11": {
+          "description": "<div class=\"swade-core\"><b>Freundlich:</b> Der Charakter gibt sich Mühe, um dem Helden zu helfen. Er wird kleinere Aufgaben für sehr wenig Aufwandsentschädigung übernehmen und ist bereit, für faire Bezahlung oder einen Gefallen auch gefährlichere Aufgaben anzugehen.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><b>Hilfsbereit:</b> Das Ziel will dem Helden unbedingt helfen und tut dies wahrscheinlich für wenig oder gar keine Bezahlung.</div>"
+        }
+      }
+    },
+    "Battle Effects": {
+      "name": "Schlachteffekte",
+      "description": "<div class=\"swade-core\">Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04massbattles000]{Massenschlachten} für Regeln bei denen diese Tabelle zum tragen kommt.</div>",
+      "results": {
+        "2-2": {
+          "description": "<div class=\"swade-core\"><b>Anspornen:</b> Die Streiterin kämpft unermüdlich und spornt die verletzten Truppen zu immer neuen Heldentaten an. Ihre Seite erhält auf der Stelle einen Schlachtmarker zurück.</div>"
+        },
+        "3-4": {
+          "description": "<div class=\"swade-core\"><b>Erschrecken:</b> Die Wut dieser Kriegerin erschreckt ihre Gegner. Der gegnerische Anführer zieht –2 von seinem Moralwurf ab.</div>"
+        },
+        "5-9": {
+          "description": "<div class=\"swade-core\"><b>Ermutigen:</b> Die Unterstützung durch den Streiter gewährt seinem Anführer den üblichen Bonus von +2 auf seinen Kampfkunstwurf.</div>"
+        },
+        "10-11": {
+          "description": "<div class=\"swade-core\"><b>Schlächter:</b> Der Feind erzittert unter dem Ansturm dieser Furie. Ziehe –2 vom Kampfkunstwurf des gegnerischen Anführers ab.</div>"
+        },
+        "12-12": {
+          "description": "<div class=\"swade-core\"><b>Ein-Mann-Armee:</b> Die Heldentaten dieser Streiterin werden in Geschichten niedergeschrieben und in Liedern besungen werden. Die gegnerische Armee verliert auf der Stelle einen Schlachtmarker (dies bedeutet keinen Abzug vom Kriegskunstwurf, führt aber zu einem Moralwurf, sogar wenn die vergleichende Probe mit einer Steigerung gewonnen wird).</div>"
+        }
+      }
+    }
+  }
+}

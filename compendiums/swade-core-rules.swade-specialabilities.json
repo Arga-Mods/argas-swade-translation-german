@@ -1,0 +1,207 @@
+{
+  "label": "Spezialfähigkeiten",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "abilityCategory"
+    },
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "0av1Wx4ULWAMb1wW": {
+      "name": "Schwarm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>+2 auf Erholung von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} +2. Schwärme bestehen aus vielen kleinen Kreaturen, daher richten Hieb- und Stichwaffen keinen echten Schaden an. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächeneffektangriffe} funktionieren normal, und ein Charakter kann zutreten, um jede Runde seinen Schaden in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} zu verursachen. Manche Schwärme (Bienen, Hornissen, Vögel) können durch vollständiges Untertauchen in Wasser abgewehrt werden.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ckc8WGlXl9uWsyWH": {
+      "name": "Widerstandsfähig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Elite-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} sind widerstandsfähiger als üblich. Dazu könnten besonders gezüchtete @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.AbCvyUk4cSZKMjv1]{Orks} in einem Fantasy-Setting, besonders harte Schläger oder Agenten in der Moderne, oder sogar mutierte Tiere, die im Labor eines verrückten Wissenschaftlers&nbsp;erschaffen wurden, gehören.</p>\n<p>Widerstandsfähige @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Statisten} können eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} erleiden, ehe sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} sind. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcards} können nicht Widerstandsfähig oder @UUID[Compendium.swade-core-rules.swade-specialabilities.Item.ckc8WGlXl9uWsyWH]{Sehr Widerstandsfähig} sein. Die Fähigkeiten existieren, um ausgewählte Statisten etwas näher an die Helden und Schurken heranzubringen, die sie anführen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "2uSwOIunhYr4RA7G": {
+      "name": "Konstrukt",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Roboter, Golems und andere belebte Objekte werden kollektiv als Konstrukte bezeichnet. Einige sind intelligente Wesen, andere bloße Automaten, die dem Willen ihres Meisters folgen.</p>\n<p>Was auch immer ihre Ursprünge und ihr Material sind, Konstrukte haben mehrere Vorteile gegenüber Kreaturen aus Fleisch und Blut.</p>\n<p>Konstrukte addieren +2, wenn sie Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} ablegen, ignorieren 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}, atmen nicht, essen nicht und sind immun gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheiten} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifte}, verbluten nicht, und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} werden mit @UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparieren} anstelle von @UUID[Compendium.swade-core-rules.swade-powers.Item.R7PJ0KAU43GgLQC9]{Heilung} entfernt, ohne &bdquo;@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Goldene Stunde}&ldquo;.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "8KRADAvd2ae8L39I": {
+      "name": "Regeneration",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Legenden besagen, dass @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.d6BRrhO1CjyIqq28]{Trolle}, @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.qgtnhc1nsLWLiWeD]{Vampire} und bestimmte andere Arten von legendären Kreaturen Verletzungen regenerieren können. Es gibt zwei Arten von Regeneration: Schnell und Langsam.</p>\n<p><strong>SCHNELL:</strong> Verwundete Kreaturen legen jede Runde eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} ab &ndash; auch wenn sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} sind. Ein erfolgreicher Wurf heilt eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} (oder lässt sie nicht mehr Ausgeschaltet sein), und eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} heilt eine zusätzliche Wunde: Wunden, die von bestimmten Schadensarten verursacht werden (angegeben in der Beschreibung der Kreatur) werden nicht regeneriert, können aber normal heilen. Trolle können beispielsweise keine Wunden regenerieren, die durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fire0000000000]{Feuer} verursacht wurden.</p>\n<p><strong>LANGSAM:</strong> Die Kreatur legt einmal pro Tag einen Wurf auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000#naturliche-heilung]{Natürliche Heilung} ab.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "8Rx9jpcII09FcCxk": {
+      "name": "Graben",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Von gewaltigen Würmern bis zu im Sand lebenden Humanoiden können sich viele Kreaturen unter die Erde graben und sich darin bewegen. Gräber können einen Tunnel in die Erde bohren und anderswo wiedererscheinen, um verheerende @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03thedrop0000000]{Überraschungsangriffe} gegen ihre Feinde durchzuführen. Die Entfernung, die sich eine Kreatur in ihrem Zug graben kann, findest du unmittelbar hinter der Graben-Fähigkeit.</p>\n<p>Eine grabende Kreatur kann sich in ihrer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} eingraben und im gleichen Zug an einem beliebigen Punkt innerhalb ihrer Graben-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} wieder hervorbrechen. Sie kann nicht angegriffen werden, solange sie unter der Erde ist, es sei denn, der Angreifer hat besondere Mittel, um sie zu entdecken und die Erde zu durchdringen.</p>\n<p>Grabende Kreaturen brechen unter ihrem Gegner hervor und können sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03surprise000000]{überraschen}. Wenn das Ziel nicht weiß, dass die grabende Kreatur anwesend ist, legt diese eine vergleichende @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsprobe} gegen die @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmung} ihres Opfers ab. Wenn der Gräber gewinnt, ist das Ziel <em>nur ihm gegenüber</em> @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Verwundbar}. Bei einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#steigerungen]{Steigerung} erhält der Grabende einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03thedrop0000000]{Überraschungsangriff}. Ziele, die ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03hold0000000000]{Aktion aufgespart} haben, können versuchen, den Angriff zu unterbrechen, ehe er stattfindet.</p>\n<p>Gräber können einen Feind nicht überraschen, wenn ihre Anwesenheit bekannt ist, können aber graben, um sich geschützt zu bewegen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9CFCHhjKfclxHolb": {
+      "name": "Gestaltwandeln",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Als Aktion kann sich ein Vampir in einen Wolf oder eine Fledermaus verwandeln, indem er eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} mit &minus;2 ablegt. Um wieder seine normale Gestalt anzunehmen, ist ebenfalls eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} nötig.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9rKLaNe5EnqCpPai": {
+      "name": "Furchterregend",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Besonders schreckliche Monster verursachen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Furchtproben} bei allen, die sie sehen. Einige wirklich erschreckende Monster können auch einen Abzug auf die Furchtprobe erfordern. Eine Kreatur, die beispielsweise Furcht &ndash;2 hat, sorgt dafür, dass alle, die sie sehen, ihre Furchtproben mit &ndash;2 ablegen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Dv2xM8QDR4uEJKCe": {
+      "name": "Gift",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schlangen, Spinnen und andere Kreaturen injizieren mit einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Biss oder Kratzer} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gift}. Dazu müssen sie dem Opfer mindestens ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}-Ergebnis zufügen, und das Opfer legt eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} mit einem Abzug gleich der Stärke des Giftes (in Klammern hinter der Gift-Fähigkeit der Kreatur angegeben) ab. Die Effekte eines Fehlschlags sind ausführlicher im Abschnitt <b>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{Gefahren}</b> beschrieben.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "GZYO1iFXi1fzbbhH": {
+      "name": "Immunität",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kreaturen, die im @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fire0000000000]{Feuer} geboren wurden, sind von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04heat0000000000]{Hitze} nicht betroffen, und ein Schrecken, der aus Blitzen besteht, erleidet keinen Schaden durch ein @UUID[Compendium.swade-core-rules.swade-powers.Item.DmaBkW6YbpYoYBPB]{Geschoss} mit elektrischer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05trappings00000]{Ausprägung}. Immunitäten gelten für bestimmte Arten von Angriffen, wie Feuer, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04cold0000000000]{Kälte}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04electricity000]{Elektrizität} und so weiter. Solche Kreaturen haben keine @UUID[Compendium.swade-core-rules.swade-specialabilities.Item.MB8qorZIX9jPiuwt]{Unverwundbarkeit}, sie ignorieren einfach @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubung} durch die genannten Angriffe.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Gi40rfiVoAjGMPWv": {
+      "name": "Bezaubern",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Vampire können die Macht @UUID[Compendium.swade-core-rules.swade-powers.Item.oRef4wp8YizkFo8u]{Marionette} auf jene verwenden, die sich von ihnen angezogen fühlen (Entscheidung der SL), indem sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand} als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{arkane Fertigkeit} verwenden. Sie können die Macht wirken und beliebig lange aufrechterhalten, aber nur auf ein Opfer auf einmal.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "M8PbJm7sAMlUpiG3": {
+      "name": "Elementar",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Erde, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fire0000000000]{Feuer}, Luft und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04drowning000000]{Wasser} stellen die Grundlage der Elementarreiche dar, in denen seltsame, unergründliche Kreaturen leben.</p>\n<p>Elementare haben Körper aus purer Erde, Feuer, Luft oder Wasser, und ignorieren somit zusätzlichen Schaden durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele}, ignorieren 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}, atmen nicht, essen nicht und sind immun gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifte} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheiten}. Sie können nur über Magie oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Natürliche Heilung} geheilt werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "MB8qorZIX9jPiuwt": {
+      "name": "Unverwundbarkeit",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Einige Savage Tales enthalten unverwundbare Schrecken, die nur besiegt werden können, indem man ihre Schwäche entdeckt.</p>\n<p>Unverwundbare Kreaturen ignorieren Schaden entsprechend ihrer Beschreibung. Wenn es nicht anderweitig angegeben ist, können sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} werden, erleiden aber durch andere Formen von Schaden keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden}. Ein uralter dunkler Gott, dem fehlgeleitete Kultisten Leben geschenkt haben, könnte beispielsweise nur empfindlich gegen- über Scherben aus Buntglas sein, die in einer Kirche gesammelt wurden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "MD0NjyxafjV8S85d": {
+      "name": "Wärmesicht",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Nachtaktive Bestien sehen oft im Infrarotspektrum &ndash; was bedeutet, dass sie &bdquo;sehen&ldquo; können, indem sie Wärme wahrnehmen. Kreaturen mit Wärmesicht halbieren Abzüge für schlechte @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03illumination00]{Beleuchtung}, wenn sie Ziele angreifen, die Wärme ausstrahlen (auch <em>unsichtbare</em> Gegner).</p>\n<p>Clevere Charaktere könnten Wege finden, ihre Wärme vor solchen Kreaturen zu verbergen. Kalter Schlamm auf der Haut oder besondere wärmefilternde Anzüge verbergen das Ziel normalerweise vor Wärmesicht.</p>\n<p>Humanoide mit Wärmesicht haben normalerweise auch normale Augen.</p>\n<p><em>Hinweis: Wärmesicht kann in den Token-Einstellungen als Sichtmodus ausgewählt werden.</em></p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "OhNDsFXsFJvZsIwc": {
+      "name": "Wasserwesen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur ist im Wasser heimisch. Sie ist ein geborener Schwimmer und kann nicht ertrinken. Ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} im Wasser ist nach dem Merkmal Wasserwesen angegeben.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "PeJLgvhsNJRgeyYr": {
+      "name": "Untot",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-bestiary.Actor.CFTqZFD29ecgs9ng]{Zombies}, @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.fvo4bjrQbIr2wSAg]{Skelette} und ähnliche fleischgewordene Schrecken sind besonders schwer zu zerstören.</p>\n<p>Sie addieren +2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheits}- und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Willenskraftproben} zur Erholung von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}, ignorieren zusätzlichen Schaden durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele}, ignorieren 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}, müssen nicht atmen oder essen und sind immun gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifte} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheit}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Verbluten} nicht und können nur mit magischer @UUID[Compendium.swade-core-rules.swade-powers.Item.R7PJ0KAU43GgLQC9]{Heilung} geheilt werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Rjfno780L3eDe93f": {
+      "name": "Infektion",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Der Biss eines @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.qgtnhc1nsLWLiWeD]{Vampirs}, eine grauenvolle @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.j3Cf1zUyZGwiAS8c]{spinnenartige Kreatur}, die Eier in die Haut des Opfers pflanzt oder sogar die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{krankheitserregenden} Kratzer von @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.RZYtjkpYZpjRZlUR]{Ratten} sind Beispiele für Infektionen. Ein Charakter, der von solch einer Kreatur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} wird oder eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} erleidet, muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} ablegen. Modifikatoren für den Wurf sind in der Beschreibung der Kreatur angegeben, so wie die Effekte eines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Fehlschlags}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Vw83SZWDVLs8aVrx": {
+      "name": "Furchtlos",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Geistlose Kreaturen, einige Untote, Roboter und dergleichen leiden nicht unter der Schwäche des sterblichen Geistes. Furchtlose Kreaturen sind immun gegen @UUID[Compendium.swade-core-rules.swade-tables.RollTable.jhkI6HatGAeyflta]{Furchteffekte} und @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern}.</p>\n<p>Sie können allerdings @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provoziert} werden (normalerweise indem man ihre Aufmerksamkeit auf sich zieht, nicht indem man ihnen emotionales Unbehagen bereitet).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Vx1JCrFdjHX9AV4W": {
+      "name": "Sickern",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Kann durch poröse Oberflächen wie durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Schwieriges Gelände} dringen.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "XBZBMcRuhK6uNDRf": {
+      "name": "Zombie",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Lichs sind in erster Linie Nekromanten. Die Untoten, die sie mit dem Zauber @UUID[Compendium.swade-core-rules.swade-powers.Item.ZENjNl2yp0p6zX7C]{Zombie} erheben, sind permanent und sie können auch @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.fvo4bjrQbIr2wSAg]{Skelette} auf die gleiche Art wie @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.CFTqZFD29ecgs9ng]{Zombies} erschaffen, wenn sie wollen. Einige Lichs befehligen ganze Armeen von Untoten.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ZiuaRuXUwjWfbL0C": {
+      "name": "Nachtsicht",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Nachtsicht ignoriert Abzüge für Düstere und Dunkle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03illumination00]{Beleuchtung} (aber nicht Vollständige Finsternis).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "aYtVfOZMxmSeaF3l": {
+      "name": "Wandkrabbler",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Einige Kreaturen haben die Fähigkeit, an Wänden zu laufen. Sie können automatisch an vertikalen Oberflächen oder der Decke laufen wie ein Mensch auf dem Boden.</p>\n<p>Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Bewegungsrate} eines Wandkrabblers an Wänden entspricht seiner normalen Bewegungsrate. Er kann wie üblich an Wänden sprinten, wenn die Beschreibung der Kreatur nichts anderes besagt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "bNuQaW1c4mRofaqd": {
+      "name": "Furchterregend (−2)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Besonders schreckliche Monster verursachen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000]{Furchtproben} bei allen, die sie sehen. Einige wirklich erschreckende Monster können auch einen Abzug auf die Furchtprobe erfordern. Eine Kreatur, die beispielsweise Furcht &ndash;2 hat, sorgt dafür, dass alle, die sie sehen, ihre Furchtproben mit &ndash;2 ablegen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "bvNxxTm14d8tD9aF": {
+      "name": "Fliegen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur kann mit der angegebenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} fliegen. Sie verwendet @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} für Manöverproben in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04chasesandveh00]{Verfolgungsjagden} und anderen Situationen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "0sxEdBfTBDKwpN5S": {
+      "name": "Zäh",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Sehr zähe oder entschlossene Kreaturen fallen nicht durch kleinere Verletzungen, egal wie viele sie erleiden. Ein ordentlicher Treffer ist notwendig, um eine dieser hartnäckigen Kreaturen zu Fall zu bringen. Wenn die Bestie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} ist, verursacht ein zweites Angeschlagen-Ergebnis keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "d9gnPooiw5y0jLb6": {
+      "name": "Erschaffer",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Jeder, der von einem Vampir erschlagen wird, erhebt sich mit einer Wahrscheinlichkeit von 50% innerhalb von [[/r 1d4]] Tagen als Vampir.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "eDVtzpCYz3RN2UZx": {
+      "name": "Ätherisch",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Gespenster, Schatten, Irrlichter und ähnliche ungreifbare Kreaturen haben keine Gestalt in der physischen Welt (oder können diese willentlich an- und abschalten). Sie können sich durch physische Objekte bewegen, können von nicht-magischen Angriffen nicht verletzt werden und können nicht gesehen werden, wenn sie es nicht wollen. Ätherische Kreaturen sind von den Auswirkungen von magischen Gegenständen und Waffen sowie übernatürlichen Mächten ganz normal betroffen.</p>\n<p>Wenn eine Beschreibung es nicht anders sagt, können ätherische Kreaturen Gegenstände werfen, Waffen führen oder sogar verängstigte Helden lange dunkle Treppen hinab @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03push0000000000]{schubsen}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ed9nKyoYjgwEoeub": {
+      "name": "Würgen",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>+2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik}- und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärkeproben} für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03grappling00000]{Ringen}.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "hRUbd5gaRgZzm2Xq": {
+      "name": "Wegklatschen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur hat gelernt, mit den lästigen Kreaturen umzugehen, die kleiner sind als sie selbst. Sie ignoriert 4 Punkte Abzüge für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größenkategorie}, wenn sie Kreaturen mit bestimmten Fähigkeiten angreift, die in der Beschreibung erwähnt sind (und nur mit diesen Fähigkeiten).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "hTeNt5gaRgZzm2Xq": {
+      "name": "Tentakel",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur verfügt über eine bestimmte Anzahl (normalerweise 2 oder 4) von &bdquo;Tentakelaktionen&ldquo;. Tentakelaktionen gelten zusammen nur als eine der drei möglichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktionen} der Kreatur pro Runde. Diese Aktionen müssen nach Maßgabe der SL mit dem Tentakel in Zusammenhang stehen, etwa @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}, @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03grappling00000]{Ringen}. Falls die Kreatur eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Wildcard} ist, nutzt sie auch den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Wildcard-Würfel} bei jeder dieser Aktionen.</p>\n<p>Wenn die Kreatur weitere Aktionen wie @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} oder das Wirken einer Macht in der gleichen Runde ausführen möchte, so gelten die Abzüge für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionen} auch für alle Tentakelaktionen. Ringenproben durch Tentakel erhalten +2, mit einem Schaden gleich der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} der Kreatur, falls nichts anderes angegeben ist.</p>\n<p>Einen Tentakel abzutrennen läuft über @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele}. Falls der Schaden die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} der Kreatur übertrifft, ist das Körperteil abgetrennt und sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen}. Wenn sie bereits Angeschlagen war, so erleidet sie eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "hr0C5a3GiHQ4HCfX": {
+      "name": "Nebel",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Uralte Vampire haben die Fähigkeit, sich in Nebel zu verwandeln. Dies erfordert eine Aktion und eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} mit &minus;2 (ebenso für die Rückverwandlung in ihre humanoide Gestalt).</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "jbJv2kOvMTXLYhfW": {
+      "name": "Schnelle Regeneration",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Einige Kreaturen können jede Runde auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Natürliche Heilung} würfeln, auch wenn sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00#ausgeschaltet]{Ausgeschaltet} sind, es sei denn, ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} wurden von etwas verursacht, gegen das die Kreatur besonders verwundbar ist (z.B. Silber bei Vampiren oder Feuer bei Trollen).</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "lr8R6nmyZ8hsdlWZ": {
+      "name": "Gasförmige Gestalt",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Kann sich durch jede nicht feste Oberfläche bewegen, durch Fugen in Türen oder Fenstern dringen, durch Wasser blubbern und so weiter.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "mVah5ZnYtu4oqJCG": {
+      "name": "Nachtsicht",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Ignoriert Abzüge für <em>Düstere</em> und <em>Dunkle</em> @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03illumination00]{Beleuchtung}.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "nmsR1n9LRHzw41DU": {
+      "name": "Schnell",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>W10 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel}.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "np9o8eIZri2i5vNN": {
+      "name": "Starrsinnig",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Manche Reittiere sind eigensinnige Kreaturen. Charaktere müssen &minus;1 von ihren @UUID[Compendium.swade-core-rules.swade-skills.Item.CGECIfK29PAeTupp]{Reitenproben} abziehen, wenn sie auf ihnen reiten.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "qGuPWgbTEx65qQiz": {
+      "name": "Schwäche",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Einige Kreaturen erleiden zusätzlichen Schaden oder können nur von ihren Schwächen verletzt werden. Eine Kreatur aus Eis könnte beispielsweise doppelten Schaden durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fire0000000000]{Feuer} erleiden. Siehe die Beschreibung der Kreatur für besondere Effekte.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "wSP1lOJRAyOI6YCA": {
+      "name": "Aufteilen",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Einige Schwärme teilen sich in zwei kleinere Schwärme auf, wenn sie eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} erleiden (Entscheidung der SL). Verringere die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Flächenschablone} nach einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} um eine Größenkategorie; kleine Schwärme werden zerstört.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "xWwoGuxM9oe0urSf": {
+      "name": "Kinder der Nacht",
+      "Beschreibung": "<article class=\"swade-core\">\n<p>Uralte Vampire haben die Fähigkeit, Wölfe oder Ratten zu beschwören und zu kontrollieren. Dies erfordert eine Aktion und eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstandsprobe} mit &minus;2. Bei Erfolg erscheinen [[1d6]] Wölfe oder [[1d6]] Schwärme aus Ratten (siehe @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.RZYtjkpYZpjRZlUR]{Schwarm}), die innerhalb von [[1d6+2]] Runden aus der Umgebung eintreffen.</p>\n</article>",
+      "Quelle": "SWADE Core Rules"
+    }
+  }
+}

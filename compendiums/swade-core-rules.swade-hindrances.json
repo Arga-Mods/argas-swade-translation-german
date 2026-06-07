@@ -1,0 +1,298 @@
+{
+  "label": "Handicaps",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "1JPn6z46jsx4slgJ": {
+      "name": "Feind",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Irgendjemand da draußen hasst den Charakter und will ihn ruinieren, einsperren oder tot sehen. Die Schwere des @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps} hängt davon ab, wie mächtig der Feind ist und wie oft er auftaucht. Ein Feind (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leicht}) könnte ein einsamer Revolverheld sein, der auf Rache aus ist, oder eine verratene Bruderschaft, die zwar tödlich ist, sich aber nur selten zeigt.</p>\n<p>Ein Feind (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwer}) könnte mächtige Obrigkeiten, eine Bande von Gesetzlosen oder einen einzelnen sehr mächtigen und sehr hart&shy;näckigen Rivalen bedeuten.</p>\n<p>Wenn der Gegner eines Tages bezwungen wird, sollte der SL nach und nach einen Ersatzfeind ins Spiel bringen, oder der Held wird das @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} los, indem er einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01advancement000]{Aufstieg} opfert.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "1NFYIxXLjVyPUUxJ": {
+      "name": "Klein",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Abenteurer ist ziemlich dürr, ziemlich klein oder beides. Seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} wird um 1 verringert, wodurch auch seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} sinkt. Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} kann nicht unter -1 sinken, doch der Abzug auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} ist kumulativ. Ein kleiner Halbling beispielsweise hat Größe -1, verliert aber einen zusätzlichen Punkt Robustheit.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "2N6dfdOhp1voszqn": {
+      "name": "Sanftmütig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Warmduscher ist einfach nicht besonders bedrohlich. Vielleicht ist er ein bisschen speckig um die Körpermitte, hat ein zu nettes Gesicht oder eine sehr sanfte Stimme. Was auch immer das Problem ist, er hat Schwierigkeiten damit, wie ein harter Kerl auszusehen. Er zieht 2 ab, wenn er @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern}-@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Proben} ablegt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "2fIS0BZ8JFIClynB": {
+      "name": "Angewohnheit",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Charakter hat eine nervtötende oder gefährliche Angewohnheit. Eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichte} Angewohnheit irritiert die Leute in seiner Umgebung, ist aber nicht gefährlich. Vielleicht bohrt er in der Nase, kann nicht aufhören, mit seinem Handy herumzuspielen oder sagt &bdquo;weißte&ldquo; mitten in jedem Satz, oder aber er kaut laut und oft Kaugummi. Verbündete meiden ihn, wenn möglich.</p>\n<p>Eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwere} Angewohnheit ist eine körperliche oder geistige Abhängigkeit, die verheerend oder sogar tödlich sein kann. Dazu gehören Drogenabhängigkeit, chronischer Alkoholismus oder vielleicht eine Sucht nach virtueller Realität in einem Hightech-Setting.</p>\n<p>Ein Abhängiger, der seine Dosis nicht bekommt, muss alle 24 Stunden, die er ohne auskommen muss, eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} ablegen, um nicht eine Stufe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung} zu erleiden.</p>\n<p>Einmal pro 24 Stunden ist eine @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilung} mit irgendeiner passenden Medizin möglich, die eine Stufe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung} für vier Stunden aufhebt. Danach kehrt die Erschöpfung zurück und kann nur mit der Substanz, von der der Charakter abhängig ist, wieder geheilt werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "3TveHrFMTPSI9iA4": {
+      "name": "Ehrenkodex",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ehre ist deinem Charakter sehr wichtig. Er hält sein Wort, misshandelt oder tötet keine Gefangenen, und versucht sich insgesamt im Rahmen dessen zu verhalten, was er einem Gentleman (oder einer Dame) für angemessen erachtet.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "4yRhL7Lkqagxzrn2": {
+      "name": "Vorsichtig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Planer verkörpert Zurückhaltung und Vorsicht. Er trifft niemals überstürzte Entscheidungen und plant gerne im Voraus.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "5iDZMAgmSLvBqhg2": {
+      "name": "Jung",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Der Held ist 12&nbsp;bis 15 Jahre alt (in menschlichen Jahren &ndash; passe dies für andere Völker an). Er hat nur 4&nbsp;Punkte für seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribute} anstelle der üblichen&nbsp;5, und 10 Fertigkeitspunkte anstelle von 12. Er könnte auch unter rechtlichen Einschränkungen leiden, die vom Setting abhängen (er darf nicht Auto fahren, keine Waffe besitzen oder Ähnliches).</p>\n<p>Andererseits haben junge Leute oft ziemlich viel Glück. Sie erhalten zu Beginn einer jeden Spielsitzung einen zusätzlichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} (dies ist kumulativ zu anderen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Talenten} wie @UUID[Compendium.swade-core-rules.swade-edges.Item.7huwXlataZ2OaQXL]{Glück} oder @UUID[Compendium.swade-core-rules.swade-edges.Item.2mbFmjLj5liENPVl]{Großes Glück}). Die meisten jungen Charaktere sollten auch das @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} @UUID[Compendium.swade-core-rules.swade-hindrances.Item.1NFYIxXLjVyPUUxJ]{Klein} wählen, doch ist dies nicht verpflichtend.</p>\n<p>Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist der Charakter sehr jung (8 bis 11 Jahre alt). Er hat nur 3 Punkte für seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribute} und 10 für Fertigkeiten, sowie das Handicap @UUID[Compendium.swade-core-rules.swade-hindrances.Item.1NFYIxXLjVyPUUxJ]{Klein}. Sehr junge Helden ziehen zu Beginn einer jeden Spielsitzung zwei zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Bennys}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "6JQGOwz8OrGf4VMX": {
+      "name": "Blind",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Der Charakter kann überhaupt nicht sehen. Er erleidet einen Abzug von -6 auf körperliche Aufgaben, die Sicht erfordern (Entscheidung der SL). Andererseits bekommen blinde Charaktere ein freies @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Talent} ihrer Wahl, um dieses besonders schwere @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} auszugleichen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "7iPkey9XUQHXioCh": {
+      "name": "Stur",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Sture Personen wollen immer ihren Kopf durchsetzen und geben niemals zu, dass sie Unrecht haben. Selbst wenn es quälend offensichtlich ist, dass sie einen Fehler gemacht haben, versuchen sie ihr Handeln mit Halbwahrheiten und Rationalisierungen zu rechtfertigen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "8XTER2uGAGlF988n": {
+      "name": "Zweifler",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Einige Leute glauben nicht an das Übernatürliche &ndash; bis sie dann Hals über Kopf im Schlund irgendeiner Kreatur stecken. Zweifler sind Skeptiker, die ihr Bestes geben, um eine rationale Erklärung für übernatürliche Ereignisse zu finden. Sie laufen direkt in die Gefahr, an die sie nicht glauben, und suchen nach Erklärungen für das Unerklärliche.</p>\n<p>Selbst wenn sie mit der unleugbaren Wahrheit konfrontiert werden, beginnen Zweifler unweigerlich zu hinterfragen, was sie gesehen haben, rationalisieren es weg oder tun die Geschehnisse als &bdquo;einzigartigen Fall&ldquo; ab, um dann das nächste seltsame Ereignis wieder in Frage zu stellen zu können.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9499wdSSb248z9gq": {
+      "name": "Zögerlich",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held zögert in Stresssituationen. Ziehe zwei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarten} im @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03combat00000000]{Kampf} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{verwende} die schlechtere. Wenn du einen Joker ziehst, kannst du ihn normal verwenden und das @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} für die Runde ignorieren (deshalb ist es auch nur ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichtes} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap}, weil es tatsächlich die Chancen erhöht, einen Joker zu ziehen!).</p>\n<p>Zögerliche Charaktere können nicht die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01edges000000000]{Talente} @UUID[Compendium.swade-core-rules.swade-edges.Item.H1xRqRutivEASOge]{Schnell} oder @UUID[Compendium.swade-core-rules.swade-edges.Item.zRpf7fTG1tykwKAs]{Kühler Kopf} wählen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "97ulajnqpnVgGb63": {
+      "name": "Schwur",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Der Charakter hat jemandem oder etwas, an das er glaubt, einen Eid geschworen. Wie gefährlich es ist, den Schwur zu erfüllen, und wie oft er ins Spiel kommt, bestimmt die Schwere des @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps}. Ein Schwur (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leicht}) könnte sein, einem Orden mit breit gefasstem Aufgabengebiet zu dienen, das selten in Konflikt mit den Zielen der Gruppe kommt.</p>\n<p>Bei einem Schwur (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwer}) muss der Charakter oft viel Zeit auf seine Aufgaben verwenden und bringt sich dabei in Gefahr.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9cXIBRS4q3ryJJBJ": {
+      "name": "Blutrünstig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held macht niemals Gefangene&nbsp;&ndash; sofern er nicht unmittelbar von einem Vorgesetzten überwacht wird. Seine kaltblütige Skrupellosigkeit lässt seine Widersacher gleichermaßen reagieren, kostet ihn oft wichtige Informationen, sorgt für ständig neue Feinde und bringt ihn in Schwierigkeiten mit seinen Vorgesetzten oder der Obrigkeit, abhängig vom Setting.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "EwGReIUw3BvyH95Y": {
+      "name": "Große Klappe",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Geschwätzigkeit kann tödlich sein. Das Mundwerk dieses Helden könnte Massenmord begehen.</p>\n<p>Das Plappermaul kann einfach keine Geheimnisse bewahren. Er enthüllt Pläne und verrät Dinge, die am besten unter Freunden bleiben sollten, normalerweise im schlimmstmöglichen Zeitpunkt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "GiZM1puRY923k29v": {
+      "name": "Angetrieben",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Ein @UUID[Compendium.swade-core-rules.swade-hindrances.Item.97ulajnqpnVgGb63]{Schwur} ist eine Verpflichtung anderen gegenüber. Angetriebene Charaktere wollen etwas für sich selbst. Vielleicht wollen sie das Reich beschützen, ein hochdekorierter Offizier werden, beweisen, dass sie der beste Gladiator in Rom sind oder der beste Pilot in der galaktischen Flotte. Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichte} Version formt den Charakter und beeinflusst seine Entscheidungen, jedoch eher selten oder auf harmlose Weise. Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweres} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist ein starkes Verlangen, das häufig ins Spiel kommt oder große Schwierigkeiten für die Heldin und die Leute um sie herum bedeutet.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "HOh80N3mCwwj3HqL": {
+      "name": "Einäugig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Veteran hat ein Auge verloren, was ihm Schwierigkeiten macht, wenn es um Tiefenschärfe geht. Er zieht 2 von allen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Eigenschaftsproben} ab, die von Sicht abhängen und auf mehr als 5&ldquo; (10 Meter) Entfernung stattfinden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "IDI7UKK8AjOTbN7Q": {
+      "name": "Wahnvorstellungen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Held glaubt etwas, das alle anderen als seltsam erachten. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{Leichte} Wahnvorstellungen sind harmlos, oder der Charakter behält sie für sich (zum Beispiel: die Regierung gibt Beruhigungsmittel in Softdrinks, Hunde können reden, wir sind alle nur Charaktere in einem bizarren Spiel).</p>\n<p>Bei einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Wahnvorstellung bringt er seine Ansichten zu der Situation oft zum Ausdruck, und das kann gelegentlich gefährlich werden (zum Beispiel: die Regierung wird von Aliens geleitet, Krankenhäuser sind tödlich, ich bin allergisch gegen Rüstung, Zombies sind meine Freunde).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "IQgZkCUMklDKYV9x": {
+      "name": "Außenseiter",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>In einer Gesellschaft, in der bestimmte Arten von Personen vorherrschen, gehört dein Held nicht dazu. Ein amerikanischer Ureinwohner in einer Westernstadt, ein Alien in einem Sci-Fi-Spiel voller menschlicher Marines oder ein Halbork in einer Gruppe von Elfen, Zwergen und Menschen sind mögliche Beispiele. Die Einheimischen werden vermutlich höhere Preise verlangen, Bitten um Hilfe ignorieren und den Charakter als Bürger zweiter Klasse behandeln.</p>\n<p>Außenseiter ziehen 2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben} ab, mit denen sie Personen beeinflussen wollen, die nicht zu ihrer Art gehören. Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwere} Version bedeutet zusätzlich, dass der Charakter wenige oder keine Rechte in dem Gebiet hat, in dem die Kampagne stattfindet. Er könnte unter Xenophoben einer anderen Spezies angehören, die Zivilisation könnte Fremden gegenüber grausam und intolerant handeln, oder er ist vielleicht sogar eine künstliche Intelligenz, deren Bewusstsein vom Gesetz nicht anerkannt wird.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Ij7M2X5xk1ai3oxR": {
+      "name": "Arrogant",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held glaubt nicht nur, der Beste zu sein &ndash; er weiß es. Egal ob es um Schwertkunst geht, um Kung Fu oder Malerei, wenige sind seinem Können gewachsen, und er gibt damit bei jeder sich bietenden Gelegenheit an. Für diesen Helden ist es nicht genug zu gewinnen. Er will seinen Gegner dominieren und beweisen, dass niemand besser ist als er. Er ist die Art von Kämpfer, der einen Gegner in einem Duell entwaffnet, nur um das Schwert aufzuheben und zurückzugeben. In einer Schlacht suchen arrogante Individuen nach der größtmöglichen Gefahr und hacken sich nur durch die niederen Schergen, weil sie im Weg stehen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "IxJZwBvTgn81YW9q": {
+      "name": "Misstrauisch",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Charakter ist allen Leuten gegenüber misstrauisch. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} sorgt seine Paranoia häufig für Vertrauensprobleme. Er könnte die volle Bezahlung verlangen, ehe er einen Auftrag annimmt, jede Übereinkunft schriftlich festhalten oder glauben, dass es sogar seine Freunde auf ihn abgesehen haben.</p>\n<p>Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} werden @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03support0000000]{Unterstützungsproben} die einem misstrauischen Charakter zu Gute kommen sollen mit -2 abgelegt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "KRAbnwbi2ayRkiMS": {
+      "name": "Schwerzüngig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Abenteurer versaut coole Sprüche (oder sie fallen ihm erst nachher ein!), schweift ab, wenn er jemanden von etwas überreden will, und bringt so gut wie alles, was er sagt, falsch rüber.</p>\n<p>Er erleidet einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Abzug} von -1 auf Proben mit @UUID[Compendium.swade-core-rules.swade-skills.Item.UVdSzNvdAPmGk0iO]{Darbietung}, @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern}, @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren} und @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden}, die Sprechen erfordern.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "MmUW6E56ZQck2KSu": {
+      "name": "Fettleibig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Charaktere, die gut mit ihrem Gewicht zurechtkommen, wählen das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.wKCK3CuIuwEMzRKz]{Kräftig}. Andere sind fettleibig. Ein Charakter kann nicht gleichzeitig @UUID[Compendium.swade-core-rules.swade-edges.Item.wKCK3CuIuwEMzRKz]{Kräftig} und Fettleibig sein, und dieses @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} kann deine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} nicht über +3 anheben.</p>\n<p>Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} (und somit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit}) eines fettleibigen Helden steigt um +1. Seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} sinkt um 1, und sein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} wird um einen Typ verringert (Minimum W4). Wenn es um getragene Rüstung und Ausrüstung (nicht Waffen) geht, wird seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke} als um einen Würfeltyp niedriger behandelt. Er hat auch unter Umständen Schwierigkeiten, Rüstung und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02commongearta00]{Kleidung} zu finden, die passt, oder sich an enge Orte zu begeben.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "O7dLbvOPW9W4QtrQ": {
+      "name": "Skrupellos",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dieser Fanatiker wird fast alles tun, um seine Ziele zu erreichen. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} hat er keine Hemmungen, jedem zu schaden, der ihm in die Quere kommt. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} Handicap wird er nur jenen schaden, die sich ihm direkt in den Weg stellen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "OmM2LkqV9q8EKbb7": {
+      "name": "Gierig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Ein Geizhals sieht den Wert seines Lebens in den materiellen Besitztümern die er anhäufen kann. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} Handicap argumentiert er erbittert dafür, mehr als seinen gerechten Anteil von jeder Beute oder Belohnung zu erhalten, die die Charaktere bekommen. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} fängt er Streit an, wenn er die Aufteilung ungerecht findet, und könnte sogar töten, wenn er sich benachteiligt fühlt oder etwas haben will, dass er nicht bekommen kann.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Otu4F2NALEfKnIYE": {
+      "name": "Impulsiv",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Draufgänger wird fast immer erst drauflosstürmen und dann schauen wo es hin geht. Er denkt eine Situation selten durch ehe er handelt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "PKotIVFKwYhF9zO9": {
+      "name": "Kränklich",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kränkliche Charaktere sind besonders anfällig gegenüber @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheiten}, Infektionen, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{Gefahren} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung}. Sie ziehen 2 von Konstitutionsproben ab, um Erschöpfung zu widerstehen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Q3MLtDBtwcYiFfQR": {
+      "name": "Rachsüchtig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Rache ist Blutwurst, wie man so sagt. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} sucht ein Charakter seine Rache auf legale Weise. Die Methode hängt von der Situation ab. Einige intrigieren und planen für Monate, während andere sofortige Ergebnisse verlangen.</p>\n<p>Wer die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwere} Version dieses @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps} hat, wird seiner Abrechnung nichts im Wege stehen lassen. Das bedeutet nicht, dass er sofort gewalttätig wird, doch sein Handeln tendiert immer in Richtung Eskalation, bis seine Rachsucht vollständig befriedigt ist.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "QLAROQMVBQaxCM4q": {
+      "name": "Pech",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held hat ein bisschen weniger Glück als die meisten. Er erhält einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} weniger pro Spielsitzung als normal. Ein Charakter kann nicht gleichzeitig Pech und @UUID[Compendium.swade-core-rules.swade-edges.Item.7huwXlataZ2OaQXL]{Glück} haben.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "S1ZceKjgKXlNGcZY": {
+      "name": "Pazifist",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Held verabscheut Gewalt. Die leichte Version bedeutet, dass er nur kämpft, wenn er wirklich keine andere Wahl hat. Außerdem würde er niemals zulassen, dass Gefangene oder andere wehrlose Opfer getötet werden. Bei der schweren Version kämpfen Pazifisten unter keinen Umständen gegen lebende Charaktere. Sie können sich verteidigen, werden aber nichts tun, das einem denkenden, lebenden Wesen dauerhaft Schaden zufügt. Sie können Nicht-tödlichen Schaden verwenden, aber nur zur Selbstverteidigung oder um andere zu beschützen.</p>\n<p>Beachte dabei, dass Pazifisten (auch wenn sie die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwere} Version des Handicaps haben) sehr wohl gegen eindeutig böse Kreaturen, Untote, Dämonen und dergleichen kämpfen können!</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "SN9wpZHz7aOdKCpB": {
+      "name": "Nichtschwimmer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dank Schwimmbädern, mühelosen Reisen zu Seen und Stränden oder bewusster Erziehung können die meisten Leute im 21. Jahrhundert schwimmen. Historisch gesehen allerdings konnten Leute, die nicht an einem gemäßigten Gewässer aufgewachsen sind, das nicht.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Charaktere} mit diesem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} erleiden einen Abzug von -2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben}, wenn sie schwimmen, und jeder Zoll, den sie sich im Wasser bewegen, kostet sie 3&ldquo; @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite}. Siehe auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04drowning000000]{Ertrinken}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Sxbix2xSDyWxwxdB": {
+      "name": "Lebensaufgabe",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Eine Lebensaufgabe zu haben bedeutet nicht, dass dein Held Selbstmord begehen will. Er glaubt vielmehr einfach, dass sein Leben weniger wert ist als ein edles, aber eindeutig tödliches Ziel.</p>\n<p>Charaktere mit einer Lebensaufgabe werfen ihr Leben nicht grundlos weg, aber wenn eine Chance besteht, ihr Ziel zu erfüllen, tun sie alles, und nehmen jedes Risiko in Kauf, um es zu erreichen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "TPcH1KBrAWmzRKHb": {
+      "name": "Eifersüchtig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Aus Unsicherheit beneidet der Charakter die Leistungen anderer oder ist übermäßig besitzergreifend, wenn es um eine Sachen geht, die er als seinen Besitz betrachtet. Er beschwert sich oft, schmollt, giert nach den Besitztürmern oder Auszeichnungen anderer, beansprucht die Arbeit anderer für sich, gehorcht Anweisungen nicht und sorgt allgemein für Schwierigkeiten.</p>\n<p>Als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichtes} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} fokussiert sich die Eifersucht des Charakters auf einen bestimmten Bereich (wie sein &bdquo;unvergleichliches&ldquo; Können als Pilot oder einen geliebten Menschen).</p>\n<p>Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist der Charakter eifersüchtig auf jeden und alles, dem es besser zu ergehen scheint, als ihm. Er spricht die ganze Zeit schlecht von seinen Rivalen, versucht sie in den Schatten zu stellen oder verfolgt aktiv Pläne, die jene in Verruf bringen sollen, die sein Ego bedrohen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "UYmPkPwy6Xm7rimW": {
+      "name": "Fies",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser Griesgram ist übellaunig und streitlustig. Es fällt ihm schwer, etwas Nettes für andere zu tun, er lässt sich für seine Mühen bezahlen, benimmt sich daneben, selbst wenn man ihn belohnt oder ihm einen Gefallen tut. Neben den zu erwartenden rollenspielerischen Problemen ziehen fiese Charaktere 1 von @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben} ab.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Uh29ZWh6ZV9lVRfv": {
+      "name": "Tollpatschig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held ist ein unkoordinierter Tollpatsch, der über Luft stolpert und den im Sportunterricht niemand im Team haben wollte. Er erleidet einen Abzug von -2 bei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Proben} auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} und @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "UywEtvLtzWGS6j4Z": {
+      "name": "Feige",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Nicht jeder hat Eiswasser in den Adern. Dein Held kann kein Blut sehen und hat große Angst davor, verletzt zu werden. Er erleidet einen Abzug von -2 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fear0000000000#furchtproben]{Furchtproben} und wenn er @UUID[Compendium.swade-core-rules.swade-skills.Item.TlMOxNi4U4YOnHId]{Einschüchtern} widersteht.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ZOKt3UI6Dc53XT9r": {
+      "name": "Einarmig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter hat einen Arm verloren, entweder von Geburt an oder im Kampf. Glücklicherweise ist sein anderer Arm (mittlerweile) sein &bdquo;guter&ldquo;. Aufgaben, die beide Hände erfordern, wie einige @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben} (Entscheidung der SL) oder die Verwendung von zweihändig geführten Waffen, erleiden einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Abzug} von -4.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "cbp6V35gEbPkOxj2": {
+      "name": "Geheimnis",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Held hat ein Geheimnis, das er für sich behält, um sich oder andere zu beschützen. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist das Geheimnis lästig, aber nicht lebensbedrohlich. Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schwere} Version würde dem Charakter wirklich große Schwierigkeiten machen, wenn das Geheimnis jemals aufgedeckt wird. In diesem Fall sollte der Charakter es gegen @UUID[Compendium.swade-core-rules.swade-hindrances.Item.rkkO0IANAxTqK2K4]{Beschämt}, @UUID[Compendium.swade-core-rules.swade-hindrances.Item.1JPn6z46jsx4slgJ]{Feind}, @UUID[Compendium.swade-core-rules.swade-hindrances.Item.yKLuEQ8AyzX6VSvk]{Gesucht} oder ein anderes passendes @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} nach Wahl der SL eintauschen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "cgKdIeU474Fy2LFh": {
+      "name": "Hässlich",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Wie man aussieht, so wird man angesehen. Allerdings ist das für diese unglückselige Person nicht von Vorteil. Er erleidet einen Abzug von -1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben}, oder -2, wenn er ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweres} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ausgewählt hat.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "cgrXu6s8zMxRwUog": {
+      "name": "Alt",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Abenteurer hat schon einige Jahre auf dem Buckel, aber er ist auch noch nicht reif fürs Altersheim. Seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} sinkt um 1, und er verringert das Ergebnis seines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfels} um 1 (Minimum 1). Er erleidet außerdem einen Abzug von -1 auf Proben mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Geschicklichkeit}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Stärke}, aber nicht bei verknüpften @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000#fertigkeiten]{Fertigkeiten}. Auf der positiven Seite erhält der Charakter durch die Weisheit des Alters 5 zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Fertigkeitspunkte}, die er für alle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000#fertigkeiten]{Fertigkeiten} verwenden kann, die mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Verstand} verknüpft sind.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "fcpi7DwrE1aFc8iW": {
+      "name": "Langsam",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Eine Behinderung oder eine alte Verletzung schränken die Bewegungsfähigkeit des Helden ein. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} sinkt seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} um 1 und sein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} verringert sich um einen Würfeltyp (wenn er bereits einen W4 hat, verringere ihn auf W4-1). Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Handicap sinkt die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} um 2, der Sprintwürfel verringert sich um einen Würfeltyp und er zieht 2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben} und Proben ab, um @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} zu widerstehen (wie zum Beispiel bei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Herausforderungen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03grappling00000]{Ringen}).</p>\n<p>Langsame Charaktere dürfen nicht gleichzeitig @UUID[Compendium.swade-core-rules.swade-edges.Item.WUNQjbr2nbUlvnR9]{Flink} sein.</p>\n<p><strong>Prothesen:</strong> Ein Charakter mit der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} Version dieses @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps} könnte eine Prothese haben. Wenn die Prothese verloren geht, erleidet er die Auswirkungen der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Version von Langsam.</p>\n<p><strong>Rollstuhl:</strong> Ab dem viktorianischen Zeitalter können langsame Helden ohne Kosten das Spiel mit einem manuellen Rollstuhl beginnen. In der Moderne (1980 und später) kann der Charakter auch einen ultraleichten oder energiebetriebenen Rollstuhl verwenden.</p>\n<ul>\n<li>MANUELL: Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} ist der halbe @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikwert} (Maximum 3), und du kannst nicht sprinten.</li>\n<li>ULTRALEICHT: Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} entspricht dem @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikwürfel}, und du kannst mit einem W4 (leicht) oder einem W4-1 (schwer) sprinten.</li>\n<li>ENERGIEBETRIEBEN: @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} 6 auf flachem Boden, Bewegungsweite 3 auf unebenem Boden, Sprinten ist nicht möglich. Die meisten energiebetriebenen Rollstühle können ungefähr 15 km weit fahren, ehe sie wieder aufgeladen werden müssen.</li>\n</ul>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "gq0nppr2NEKEDw2y": {
+      "name": "Heldenhaft",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Diese edle Seele sagt niemals nein zu Menschen in Not. Er muss nicht froh darüber sein, aber er kommt immer zur Rettung jener, die sich nicht selbst helfen können. Er ist der erste, der in ein brennendes Gebäude läuft, stimmt normalerweise zu, Monster für wenig oder gar kein Geld zu jagen, und ist sehr empfänglich für ein tränenreich vorgetragene Geschichte.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "gthdOC9jBDihNfd1": {
+      "name": "Arm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Man sagt: Ein Narr und sein Geld sind bald geschieden. Dein Held ist ein solcher Narr. Er beginnt mit der Hälfte des üblichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Startkapitals} und scheint auch nach Spielbeginn einfach nicht gut mit seinem Geld umgehen zu können. Grundsätzlich halbiert der Spieler jede Woche sein Gesamtvermögen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "hFbO0LpbVmABCb3t": {
+      "name": "Verpeilt",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held achtet nicht besonders auf die Welt, die ihn umgibt, und findet nicht einmal einen Heuhaufen in einem Häufchen Nadeln.</p>\n<p>Er erleidet -1 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Proben} mit @UUID[Compendium.swade-core-rules.swade-skills.Item.su7eyijoB0RFpRB1]{Allgemeinwissen} und @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmung}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "mk2E5OYlq9wlvtZZ": {
+      "name": "Schwerhörig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Charaktere, die ihr Gehör ganz oder zum Teil verloren haben, haben diesen Nachteil. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} erleidet der Charakter einen Abzug von -4 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}, die mit Gehör zu tun haben, zum Beispiel wenn er bei lauten Geräuschen aufwachen soll. Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweres} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} bedeutet, dass der Charakter taub ist. Er kann nicht hören und scheitert automatisch bei allen @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}, die auf Gehör basieren.</p>\n<p>Hörgeräte verringern den Abzug um 2, erfordern aber Batterien, und wenn der Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} einsteckt, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{stürzt} oder eine andere Art @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04hazards0000000]{Verletzung} erleidet, besteht eine Chance von 50%, dass sie herausfallen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "o4oifIiqk0rBJBFj": {
+      "name": "Dünnhäutig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Persönliche Angriffe gehen dem Charakter wirklich unter die Haut. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} erleidet er einen Abzug von -2, wenn er @UUID[Compendium.swade-core-rules.swade-skills.Item.yFPvkPIm0IR6eqch]{Provozieren}-Angriffen widerstehen will. Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Handicap beträgt der Abzug -4.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "pCIHB2FMUv7wZsHC": {
+      "name": "Analphabet",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Held kann nicht lesen und schreiben. Er kann unterschreiben und weiß, was ein Stoppschild ist, aber das war es auch schon. Er weiß auch nicht viel über Mathe. Er weiß wahrscheinlich, dass zwei plus zwei gleich vier ist, aber Multiplikation und dergleichen sind ihm zu hoch.</p>\n<p>Übrigens können Analphabeten in keiner Sprache lesen oder schreiben, egal wie viele sie sprechen können.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "qewwhoV3m3CV0c21": {
+      "name": "Schlechte Augen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Die Augen deines Helden sind nicht mehr, was sie einmal waren. Er erleidet einen Abzug von -1 auf alle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Eigenschaftswürfe}, die von Sicht abhängen (wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Fernkampfangriffe} und @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}), oder -2, wenn du ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweres} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} hast.</p>\n<p>In Settings, in denen Brillen verfügbar sind, negieren sie den Abzug, solange du sie trägst. Wenn eine Brille im Kampf verloren geht oder zerbricht (die Wahrscheinlichkeit beträgt 50%, wenn der Charakter eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunde} einsteckt, stürzt oder ein andere Art von Verletzung erleidet), ist der Charakter bis zum Ende seines nächsten Zugs @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Abgelenkt} (und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03distractedan00]{Verwundbar} im Fall eines @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps}).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "qg2JfyMripHqS1O0": {
+      "name": "Phobie",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Phobien sind überwältigende und irrationale Ängste, die den Verstand eines Helden heimsuchen. Wenn er sich in Gegenwart seiner Phobie befindet (Entscheidung der SL, aber normalerweise in Sichtweite) zieht er bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} 1 von allen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Eigenschaftsproben} ab, bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Handicap 2.</p>\n<p>Phobien sollten nicht zu offensichtlich sein &ndash; jeder sollte beispielsweise Angst vor Vampiren haben, also ist das keine Phobie, sondern gesunder Menschenverstand. Stattdessen sollte sich eine Phobie auf ein zufälliges Element fokussieren, das sein Verstand mit dem verursachenden Ereignis in Verbindung bringt. Denk daran: Phobien sind irrationale Ängste.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "rkkO0IANAxTqK2K4": {
+      "name": "Beschämt",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Etwas sucht deinen Abenteurer heim. Vielleicht hat er einen Schwur geleistet und nicht gehalten. Vielleicht wurde er in einem ehrenhaften Kampf besiegt und hat, um einem größeren Prinzip zu folgen, trotzdem den Tod seines Feindes befohlen. Vielleicht ist er eigentlich kein Feigling, ist aber einmal aus einer Schlacht weggerannt und hat andere sterben lassen.</p>\n<p>Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichten} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist die beschämende Situation nicht allgemein bekannt &ndash; sie sucht nur den Helden selbst heim. Er könnte wider aller Vernunft handeln, um seinen Fehler nicht zu wiederholen. Oder er erliegt seiner Schwäche ein weiteres Mal und hasst sich selbst dafür.</p>\n<p>Bei einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicap} ist seine Tat allgemein bekannt &ndash; zumindest bei jenen, bei denen es ihm wichtig ist. Die anderen Spielercharaktere sollten die Geschichte so schnell wie möglich erfahren (im Idealfall bei der Charaktererschaffung). Wenn nicht, sollte sie irgendwann von einem @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03wildcardsand00]{Nichtspielercharakter} offenbart und gelegentlich gegen den Helden verwendet werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "sTH6Vfaa5Ole9Lqw": {
+      "name": "Tick",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Diese Person hat eine kleinere Macke, die normalerweise amüsant ist, aber ihm manchmal auch wirklich Schwierigkeiten machen kann. Ein Fechter versucht vielleicht immer, seine Initialen in seine Feinde zu ritzen, ein Zwerg prahlt die ganze Zeit mit der Überlegenheit seiner Kultur, oder eine versnobte Debütantin weigert sich, mit der Unterschicht zu essen, zu trinken oder sich auch nur mit ihr abzugeben.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "u1aGDicFDWdMHc3F": {
+      "name": "Neugierig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Wer seine Nase in anderer Leute Angelegenheiten steckt, für den gibt es oft ein böses Erwachen. Neugierige Charaktere wollen alles anschauen und immer wissen, was hinter einem potenziellen Mysterium oder Geheimnis steckt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "un8FNwybGbMDEaJA": {
+      "name": "Zwei linke Hände",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Aufgrund ihrer Erziehung, geringem Kontakt oder einfach Pech haben einige Leute zwei linke Hände, wenn es um mechanische oder technologische Gerätschaften geht.</p>\n<p>Zwei linke Hände verursacht einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#eigenschaftsproben]{Abzug} von -2, wenn der Charakter mechanische oder elektrische Geräte verwendet. Wenn er einen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischen Fehlschlag} bei der Verwendung eines solchen Geräts würfelt (und das Gerät nicht bereits einen vorgesehen Effekt für einen solchen Fall hat), dann geht es kaputt. Wenn der SL der Meinung ist, dass es passend ist, kann es danach mit einer @UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenprobe} und 1W6 Stunden Zeit wieder einsatzbereit gemacht werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "wNZ3T6elufAP731p": {
+      "name": "Stumm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dein Charakter kann nicht sprechen, entweder von Geburt an oder wegen irgendeines Traumas oder einer Verletzung. Er kann bei Bedarf anderen schriftliche Nachrichten zukommen lassen, Zeichensprache oder eine Kombination visueller Kommunikationsmittel verwenden.</p>\n<p>Auf Sicht basierende Kommunikation erfordert möglicherweise eine @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe}, um sie richtig zu sehen (@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03illumination00]{Beleuchtung} und ähnliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Abzüge} werden eingerechnet).</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "yKLuEQ8AyzX6VSvk": {
+      "name": "Gesucht",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Held hat ein Verbrechen begangen und wird verhaftet, wenn die Obrigkeiten ihn entdecken. Dies geht davon aus, dass das Setting tatsächlich Gesetze und eine Polizei hat, die diese durchsetzt.</p>\n<p>Die Schwere des @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01hindrances0000]{Handicaps} hängt davon ab, wie schwer das Verbrechen war und wie aktiv nach dem Charakter gefahndet wird. Ein Held mit vielen unbezahlten Strafzetteln (in einem Spiel, in dem er gelegentlich fahren muss) hat ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{leichtes} Handicap, das gleiche gilt für jemanden, der schwerere Verbrechen in einem Land begangen hat, das weit weg vom Hauptstandort der Kampagne liegt. Des Mordes beschuldigt zu werden ist in den meisten Settings ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweres} Handicap, wenn es jemanden gibt, der Gerechtigkeit (oder Rache) sucht.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ymsBrZWA46856xO7": {
+      "name": "Übermütig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Es gibt nichts, was dein Held nicht schaffen kann. Zumindest glaubt er das. Er denkt auch, dass er so gut wie alles leisten kann und würde niemals von einer Herausforderung zurückschrecken. Er ist nicht selbstmörderisch, doch traut er sich ohne Frage mehr zu, als ratsam ist.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "znBNDQXRiwlO0nk4": {
+      "name": "Loyal",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Dieser treue Beschützer riskiert ohne zu zögern sein Leben für seine Freunde. Einige loyale Helden geben das zwar nicht zu, sind aber die Ersten, die ihren Freunden zu Hilfe kommen, wenn sie bedroht werden.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "zw8zc79ydbceQVx8": {
+      "name": "Verpflichtung",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>(Leicht oder Schwer)</p>\n<p>Dein Held hat eine Verpflichtung, der er täglich oder zumindest regelmäßig nachkommen muss. Es könnte ein Job sein, freiwillige Arbeit, vielleicht muss er sich auch um eine Familie oder Freunde kümmern, etc. Die Verpflichtung erfordert in den meisten Wochen 20 Stunden, oder 40+ Stunden, bei der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#handicaps]{schweren} Version. Was genau die Verpflichtung umfasst sollten Spieler und Spielleiterin gemeinsam besprechen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    }
+  }
+}

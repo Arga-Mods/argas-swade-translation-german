@@ -1,0 +1,648 @@
+{
+  "label": "Waffen (allgemein)",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "weaponCategory"
+    },
+    "Notizen": {
+      "path": "system.notes",
+      "converter": "weaponNotes"
+    },
+    "Munition": {
+      "path": "system.ammo",
+      "converter": "weaponAmmo"
+    },
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    },
+    "Aktionen": {
+      "path": "system.actions",
+      "converter": "armorActions"
+    },
+    "Eigenschaft": "system.actions.trait"
+  },
+  "folders": {},
+  "entries": {
+    "0cUJn6dNmiVyhvDA": {
+      "name": "Molekularmesser",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kann nicht geworfen werden.</p>\n</div>",
+      "Notizen": "Kann nicht geworfen werden.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "0mYIQIzD4w3zBodj": {
+      "name": "Steinschlosspistole",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n</div>",
+      "Notizen": "Schwarzpulverwaffen haben Nachladen 3.",
+      "Munition": "Kugel (mit Schwarzpulver)",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "0x9Ep5cUJoWEMsHv": {
+      "name": "Bajonett",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Stä+W6 und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} +1 wenn an einem Gewehr befestigt, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite (RW)} 1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Stä+W6 und Parade +1 wenn an einem Gewehr befestigt, Reichweite 1, Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "97tgmmqmxf": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "An Gewehr befestigt",
+            "override": "@str+d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "g4d7gbmnbf": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "1TUtzm0rkTg1gyXo": {
+      "name": "Klauen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kreaturen mit Natürlichen Waffen gelten immer als bewaffnet. Das bedeutet, dass sie keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{Unbewaffneten Verteidiger} sind, und dass Feinde, die mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03twoweapons0000]{Zwei Waffen} kämpfen, keinen Vorteil gegen sie haben.</p>\n<ul class=\"red-bullet-list\">\n<li><strong>KLAUEN:</strong> +2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletik} (Klettern) an rauen oder weichen Oberflächen (nicht glatter Stahl, Glas und so weiter).</li>\n</ul>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "1b9v6bbN1CupePOK": {
+      "name": "Schwert, Langschwert",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Standardschwerter und Krummschwerter</p>\n</div>",
+      "Notizen": "Standardschwerter und Krummschwerter",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "1bCvA5SXwUz5kjQE": {
+      "name": "Axt, Zweihandaxt",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} &ndash;1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Parade –1, Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "kwepx6kqhf": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "override": "",
+            "resourcesUsed": null,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "2B6s1XRkBcHXBG1j": {
+      "name": "Überlebensmesser",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Einfache Werkzeuge im Griff, +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.zf0tDkEA1afk1rcs]{Überlebensproben}.</p>\n</div>",
+      "Notizen": "Einfache Werkzeuge im Griff, +1 auf Überlebensproben.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "3oTR2CuRcksBbeJK": {
+      "name": "Zweihandhammer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}, +2 Schaden gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Gegenstände}</p>\n</div>",
+      "Notizen": "Zweihändig, +2 Schaden gegen Gegenstände",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "au687uqfb3": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "7BbNZTld40MxGeGv": {
+      "name": "Spieß",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} 2, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Reichweite 2, Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "75qvseul8x": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "7b7kvu9hqPXwup4U": {
+      "name": "Improvisierte Waffe (mittel)",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "p0sizbjx38": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Kämpfen",
+            "override": "Kämpfen",
+            "resourcesUsed": null,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Athletik",
+        "traitMod": "-2"
+      }
+    },
+    "8PER9oFwhwGFaSNS": {
+      "name": "Langbogen",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "B5jgXSAJ7FQWOFsO": {
+      "name": "Schleuder",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Munition": "Schleudersteine",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Athletik"
+    },
+    "Bd5K9QCXCa6tdUTd": {
+      "name": "Netz (beschwert)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Bei einem erfolgreichen Treffer ist das Ziel @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03boundandenta00]{Festgehalten}. Das Netz hat @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00]{Härte} 10 und ist nur durch Schnittangriffe zu zerstören.</p>\n</div>",
+      "Notizen": "Bei einem erfolgreichen Treffer ist das Ziel Festgehalten. Das Netz hat Härte 10 und ist nur durch Schnittangriffe zu zerstören.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Athletik"
+    },
+    "BfI4nE26cwmdZtfz": {
+      "name": "Dolch/Messer",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "24m3p44ver": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Werfen",
+            "override": "Athletik",
+            "resourcesUsed": null,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "Bn6LIz3dAqQKPXGH": {
+      "name": "Donnerbüchse",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n<p>Regeln wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten}.</p>\n</div>",
+      "Notizen": "Schwarzpulverwaffen haben Nachladen 3.",
+      "Munition": "Kugel (mit Schwarzpulver)",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "3xh91v7ntt": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Mittlere Entfernung",
+            "override": "2d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "i07k6eqydr": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Lange Entfernung",
+            "override": "1d6",
+            "type": "damage",
+            "uuid": null
+          },
+          "r5coi7165y": {
+            "dice": 1,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Kurze Entfernung",
+            "override": "3d6",
+            "type": "damage",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": "+2"
+      }
+    },
+    "BpwEqVGa0KUKtBiR": {
+      "name": "Hörner",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kreaturen mit Natürlichen Waffen gelten immer als bewaffnet. Das bedeutet, dass sie keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{Unbewaffneten Verteidiger} sind, und dass Feinde, die mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03twoweapons0000]{Zwei Waffen} kämpfen, keinen Vorteil gegen sie haben.</p>\n<ul class=\"red-bullet-list\">\n<li><strong>HÖRNER:</strong> Addiere +4 Schaden bei einer Kämpfen-Aktion, in der der Charakter sprintet, sich mindestens 5&ldquo;&nbsp;(10 Meter) weit bewegt und mit seinen Hörnern trifft.</li>\n</ul>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "C8kwgHOuNhTx85DJ": {
+      "name": "Speer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} 1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} +1 bei Verwendung mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{zwei Händen}.</p>\n</div>",
+      "Notizen": "Reichweite 1, Parade +1 bei Verwendung mit zwei Händen.",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "aryl7v6r72": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Werfen",
+            "override": "Athletik",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "CI74S31KQomXrRPq": {
+      "name": "Rapier",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} +1</p>\n</div>",
+      "Notizen": "Parade +1",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "F17d8xvcXETVB5VJ": {
+      "name": "Speer/Wurfspeer",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Athletik"
+    },
+    "F46eyvlJGgj2qsIL": {
+      "name": "Kampfstab",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} +1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} 1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Parade +1, Reichweite 1, Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "1kz1l846vs": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "JErhPJEbai7LDvMg": {
+      "name": "Improvisierte Waffe (schwer)",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "p0sizbjx38": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Kämpfen",
+            "override": "Kämpfen",
+            "resourcesUsed": null,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Athletik",
+        "traitMod": "-2"
+      }
+    },
+    "Ju97RZ7hEsoy436X": {
+      "name": "Kompositbogen",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "M2qDCD71Pd1zw8Lw": {
+      "name": "Morgenstern",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ignoriert Boni durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02shields0000000]{Schilde}</p>\n</div>",
+      "Notizen": "Ignoriert Boni durch Schilde",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "MKLNpRATfiHceDU3": {
+      "name": "Keule, Schwer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für arme Schlucker und Kriminelle</p>\n</div>",
+      "Notizen": "Für arme Schlucker und Kriminelle",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "NOA98ElhCtJc4XaX": {
+      "name": "Biss",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kreaturen mit Natürlichen Waffen gelten immer als bewaffnet. Das bedeutet, dass sie keine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{Unbewaffneten Verteidiger} sind, und dass Feinde, die mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03twoweapons0000]{Zwei Waffen} kämpfen, keinen Vorteil gegen sie haben.</p>\n<ul class=\"red-bullet-list\">\n<li><strong>BISS:</strong> Die Kreatur kann ihr Ziel beißen, wenn sie es zuvor niedergerungen hat (die meisten Angreifer zerquetschen ihre Beute bloß, siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03grappling00000]{Ringen}).</li>\n</ul>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "NXsqdZfpTl2epZ4F": {
+      "name": "Hellebarde",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} 1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Reichweite 1, Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "pqye3bth39": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "OCDdsDplq5r6ht0w": {
+      "name": "Dolch/Messer (geworfen)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "24m3p44ver": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "name": "Werfen",
+            "override": "Athletik",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "QMwmPX4NEF44ZFP7": {
+      "name": "Armbrust, Schwer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Wird mit Kurbel gespannt. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 2.</p>\n</div>",
+      "Notizen": "Wird mit Kurbel gespannt. Nachladen 2.",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "SiFBOv2CNDUw9UKJ": {
+      "name": "Molekularschwert",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "SmUEWUyV89aBg4Hx": {
+      "name": "Laserschwert",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "TEELi7gDWcLWIkQT": {
+      "name": "Schwert, Zweihandschwert",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "2qjc4g4y1m": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "aQssIXb62LXaEwNn": {
+      "name": "Bogen",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "abgJOQ1X4NDYtzny": {
+      "name": "Lanze",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend} 2 bei @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03mountedcomba00]{Sturmangriff}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite} 2, nur einsetzbar im berittenen Kampf</p>\n</div>",
+      "Notizen": "PB 2 bei Sturmangriff, Reichweite 2, nur einsetzbar im berittenen Kampf",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "c6PibjBVz0Q1Hqb6": {
+      "name": "Kettensäge",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000#kritischer-fehlschlag]{Kritischer Fehlschlag} trifft den Angreifer.</p>\n</div>",
+      "Notizen": "Kritischer Fehlschlag trifft den Angreifer.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "dgl7y8dXZSqA4krX": {
+      "name": "Schwert, Kurzschwert",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Beinhaltet Reitersäbel</p>\n</div>",
+      "Notizen": "Beinhaltet Reitersäbel",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "eBfaBb1yLOtVfA1S": {
+      "name": "Improvisierte Waffe (leicht)",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "p0sizbjx38": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Kämpfen",
+            "override": "Kämpfen",
+            "resourcesUsed": null,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Athletik",
+        "traitMod": "-2"
+      }
+    },
+    "j8z4Ng6T9P7Mahqy": {
+      "name": "Keule, Leicht",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für arme Schlucker und Kriminelle</p>\n</div>",
+      "Notizen": "Für arme Schlucker und Kriminelle",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "jsosTHK0r6CtNdEi": {
+      "name": "Unbewaffnet",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Siehe auch Regeln für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{Unbewaffneter Verteidiger}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "l2mWx2iVwlD7zGPt": {
+      "name": "Bangstick",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotpatrone} an einem Stock, der im Nahkampf verwendet wird; muss mit einer neuen Patrone nachgeladen werden (eine Aktion)</p>\n</div>",
+      "Notizen": "Ein Schrotpatrone an einem Stock, der im Nahkampf verwendet wird; muss mit einer neuen Patrone nachgeladen werden (eine Aktion)",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "lMmtITlpN7t0je70": {
+      "name": "Schlagstock",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Oft die Waffe von Gesetzeshütern</p>\n</div>",
+      "Notizen": "Oft die Waffe von Gesetzeshütern",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "m2NQs7b86bQ5zcfS": {
+      "name": "Armbrust",
+      "Beschreibung": "<div class=\"swade-core\">@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen}</div>",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "m5DblPijjoyMqBr8": {
+      "name": "Schlagring",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Zählt nicht als Waffe für die Regel @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{Unbewaffneter Verteidiger}</p>\n</div>",
+      "Notizen": "Zählt nicht als Waffe für die Regel Unbewaffneter Verteidiger.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "mBGqBU6LgWVVqjct": {
+      "name": "Kriegshammer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Mit Schlagdorn, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{Panzerbrechend} 1</p>\n</div>",
+      "Notizen": "Mit Schlagdorn, PB 1",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "nMvz1MFgrLZduRGq": {
+      "name": "Axt, Wurfaxt",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Athletik"
+    },
+    "p3dXUiZdTEdr1Q0L": {
+      "name": "Springfield Model 1861",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n</div>",
+      "Notizen": "Schwarzpulverwaffen haben Nachladen 3.",
+      "Munition": "Kugel (mit Schwarzpulver)",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "rc9edHzrfcr1M5ps": {
+      "name": "Armbrust (handgespannt)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Handgespannt.</p>\n</div>",
+      "Notizen": "Handgespannt",
+      "Munition": "Pfeile/Bolzen",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "s7v9oeFIxj7H7J7d": {
+      "name": "Axt, Kriegsbeil",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "su5j0N6Fr7b3TXxu": {
+      "name": "Kentucky Rifle",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 4. Der gezogene Lauf erfordert vier Aktionen zum Nachladen statt der üblichen drei.</p>\n</div>",
+      "Notizen": "Nachladen 4. Der gezogene Lauf erfordert vier Aktionen zum Nachladen statt der üblichen drei.",
+      "Munition": "Kugel (mit Schwarzpulver)",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "uMzodPLrcHbsRwYU": {
+      "name": "Axt, Handbeil",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "vp5lWFSWyZopBv3m": {
+      "name": "Katana",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Zweihändig",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "casd2f6k9v": {
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "-4",
+            "name": "Einhändig",
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Kämpfen",
+        "traitMod": ""
+      }
+    },
+    "wf5GvDVQAOPxnFFk": {
+      "name": "Brown Bess oder ähnliche Musketen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n</div>",
+      "Notizen": "Schwarzpulverwaffen haben Nachladen 3.",
+      "Munition": "Kugel (mit Schwarzpulver)",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Schießen"
+    },
+    "wkNT7xFlqYjghBxv": {
+      "name": "Springmesser",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>&ndash;2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe} wenn versteckt.</p>\n</div>",
+      "Notizen": "-2 auf Wahrnehmungsprobe wenn versteckt.",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    },
+    "xIInD24aXcP1KApy": {
+      "name": "Streitkolben",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules",
+      "Eigenschaft": "Kämpfen"
+    }
+  }
+}

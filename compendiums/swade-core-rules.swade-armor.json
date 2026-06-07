@@ -1,0 +1,647 @@
+{
+  "label": "Rüstungen",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "armorCategory"
+    },
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    },
+    "Notizen": "system.notes",
+    "Eigenschaft": "system.trait",
+    "Aktionen": {
+      "path": "system.actions",
+      "converter": "armorActions"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "0XaBM3JcyY2fslVQ": {
+      "name": "Infanteriekampfanzug",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "0qSeIGGE4xjE0GS7": {
+      "name": "Robe",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Winterkleidung, geschmeidige Lederrüstungen, weiche Felle.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "27yvARs2hByayDEl": {
+      "name": "Kevlarhelm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "2DAKJq4qIo84UNu0": {
+      "name": "Polymerschild, Groß",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Polymerschilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte}&nbsp;10 und bieten +4 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "00njamxonm": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "2Iz5jQNfsmLwun4g": {
+      "name": "Platten-Rossharnisch (Pferd)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "2chfeQ9fBH6K6wn2": {
+      "name": "Beinlinge (Kettenrüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kettenhemd, Schienenpanzer, Ringpanzer, Samurairüstung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "56LcjUDEexWodpIR": {
+      "name": "Beinlinge (Tuch/Leichtes Leder)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Winterkleidung, geschmeidige Lederrüstungen, weiche Felle.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "8ZwWDSl1ndCCcJvF": {
+      "name": "Kappe (Tuch/Leichtes Leder)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Winterkleidung, geschmeidige Lederrüstungen, weiche Felle.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "8gKRroVw55eniZJQ": {
+      "name": "Beinschienen (Bronzerüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normalerweise nur in der Antike und Zivilisationen ohne Eisenverarbeitung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "Af815PqjxFNMOrlD": {
+      "name": "Kettenhaube oder Helm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kettenhemd, Schienenpanzer, Ringpanzer, Samurairüstung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "BjMgzEicIN61VX2R": {
+      "name": "Kevlarweste mit Keramikplatten",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "D6XF3yWgeFLaJWKR": {
+      "name": "Schild, Klein",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Mittelalterliche Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 10 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "97x0icqf0a": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "DbjrXdPTJzeETjDw": {
+      "name": "Kappe (Dickes Leder/Robuste Felle)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Gehärtetes Leder, Lederrüstung, Alligatorenhaut.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "E4hQ1qevbfs5yYVp": {
+      "name": "Kevlarweste",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "Es7SUJvh6keNf8DB": {
+      "name": "Schwerer Helm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "GymBqm3JM8gVNgpe": {
+      "name": "Motorradhose aus Kevlar",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "QVlY1ghxrKIyU1Ja": {
+      "name": "Kampfhelm mit E-Überzug",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "QbENe7MWy0rq40Jq": {
+      "name": "Bronzehelm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normalerweise nur in der Antike und Zivilisationen ohne Eisenverarbeitung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "QgPLNbYVHZXTPfww": {
+      "name": "Polymerschild, Mittel",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Polymerschilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte}&nbsp;10 und bieten +4 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "8x1g4vg5j4": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "SypPvLgJwor2FJ6j": {
+      "name": "Schild, Groß",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Mittelalterliche Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 10 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "jnkpnzaoje": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "TmmrZ9aJcrUGFCeG": {
+      "name": "Kampfhelm",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Rüstung, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "U1gLd5s2ufRLhDgH": {
+      "name": "Motorradjacke aus Kevlar",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "VhJB3pSyL6jZsMeV": {
+      "name": "Fahrradhelm",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "WcFLhJQGIjLGdV1i": {
+      "name": "Armschienen (Plattenrüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "WrsMg5wJTdFF6UTk": {
+      "name": "Beinschienen (Plattenrüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "XfoJKpMGXRLJE12C": {
+      "name": "Jacke (Dickes Leder/Robuste Felle)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Gehärtetes Leder, Lederrüstung, Alligatorenhaut.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "Y4oNkemRkqbOalET": {
+      "name": "Infanteriekampfanzug mit E-Überzug",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong> Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Notizen": "Eine vollständige Rüstung mit Stiefeln und Handschuhen.",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "Z14xDpmAGAteybFN": {
+      "name": "Schwerer Helm, geschlossen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n<p>&ndash;1 auf Sicht-basierte @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}.</p>\n</div>",
+      "Notizen": "–1 auf Sicht-basierte Wahrnehmungsproben.",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "ZOV0uE08wzYNiB2W": {
+      "name": "Splitterschutzjacke (Vietnam-Ära)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "ZsbDBospN3xy1JnD": {
+      "name": "Dicker Mantel, Lederjacke",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "bNylsBG8xbzwunnQ": {
+      "name": "Armschienen (Bronzerüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normalerweise nur in der Antike und Zivilisationen ohne Eisenverarbeitung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "bOI2yJakgPuminbe": {
+      "name": "Bronze-Rossharnisch (Pferd)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normalerweise nur in der Antike und Zivilisationen ohne Eisenverarbeitung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "bZmL5leRJnaNYeEb": {
+      "name": "Reitchaps aus Leder",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "cpOF3C8OIav97yDf": {
+      "name": "Hemd (Kettenrüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kettenhemd, Schienenpanzer, Ringpanzer, Samurairüstung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "fqjQyAqtIearu6Pc": {
+      "name": "Einsatzschild",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Moderne Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 12 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "rd7qecvrb4": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "g3aMHScgnoZhgWAG": {
+      "name": "Bombenschutzanzug",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Bombenschutzanzüge sind mit Ausnahme der Hände, die unbedeckt sind, nicht für Beweglichkeit gebaut. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000#attribute]{Geschicklichkeit} und verknüpfte Fertigkeiten, die mehr als Fingerfertigkeit erfordern, können nicht höher sein als W6, solange der Anzug getragen wird, und die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Bewegung} sinkt um &ndash;2 (zusätzlich zu den Abzügen für die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}).</p>\n</div>",
+      "Notizen": "Bombenschutzanzüge sind nicht auf Beweglichkeit ausgelegt, außer an den unbedeckten Händen. Geschicklichkeit und verknüpfte Fertigkeiten, die mehr als reine Fingerfertigkeit erfordern, können beim Tragen des Anzugs nicht höher als W6 sein; die Bewegungsweite ist um 2 reduziert (zusätzlich zu Abzügen durch Mindeststärke).",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "im0ncHWBtfy1TLtP": {
+      "name": "Körperpanzerung",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder modernem ballistischem Gewebe.",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "k9cBlaV1OuTs3Nqe": {
+      "name": "Motorradhelm",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "mefRkcK1zybkZau8": {
+      "name": "Ballistischer Schild",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Moderne Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 12 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n<hr />\n<p>Verringert den Schaden von Feuerwaffen um &ndash;4, wenn ein Angreifer durch den Schild schießen will.</p>\n</div>",
+      "Notizen": "Verringert den Schaden durch Schusswaffen um 4, wenn ein Angreifer versucht, hindurchzuschießen.",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "fseghrgaoh": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "n7Ainv1bv47od27e": {
+      "name": "Brustharnisch (Plattenrüstung)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "nNvJJyd5iQFODGES": {
+      "name": "Polymerschild, Klein",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Polymerschilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte}&nbsp;10 und bieten +4 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "x5phucsl3w": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "nzLIrdAzulYJ6KWG": {
+      "name": "Körperpanzerung mit E-Überzug",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder modernem ballistischem Gewebe.",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "rzWckmrKxo0tnUo1": {
+      "name": "Jacke (Tuch/Leichtes Leder)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Winterkleidung, geschmeidige Lederrüstungen, weiche Felle.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "uolv7m6Rn19GrIdM": {
+      "name": "Bronze-Brustharnisch (Torso)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normalerweise nur in der Antike und Zivilisationen ohne Eisenverarbeitung.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "wJU1LmB1UMz3ejrv": {
+      "name": "Beinlinge (Dickes Leder/Robuste Felle)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Gehärtetes Leder, Lederrüstung, Alligatorenhaut.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {},
+        "trait": "",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    },
+    "y0vhb8XtIP9JoBZu": {
+      "name": "Schild, Mittel",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Mittelalterliche Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 10 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n</div>",
+      "Notizen": "",
+      "Aktionen": {
+        "dmgMod": "",
+        "additional": {
+          "4j0g2h3w5k": {
+            "name": "Zuschlagen",
+            "type": "damage",
+            "override": "@str+d4",
+            "macroActor": "default",
+            "isHeavyWeapon": false,
+            "uuid": null
+          }
+        },
+        "trait": "Kämpfen",
+        "traitMod": ""
+      },
+      "Quelle": "SWADE Core Rules"
+    }
+  }
+}

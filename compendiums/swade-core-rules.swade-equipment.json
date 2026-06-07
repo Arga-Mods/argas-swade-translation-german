@@ -1,0 +1,490 @@
+{
+  "label": "Ausrüstung",
+  "mapping": {
+    "Beschreibung": "system.description",
+    "Kategorie": {
+      "path": "system.category",
+      "converter": "equipmentCategory"
+    },
+    "Quelle": {
+      "path": "system.source",
+      "converter": "sourceTranslation"
+    },
+    "Aktionen": {
+      "path": "system.actions",
+      "converter": "armorActions"
+    }
+  },
+  "folders": {},
+  "entries": {
+    "0TsSvOQWnYDTyIjC": {
+      "name": "Patronen, Mittel",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kaliber 9mm bis .45.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "19FAqwaDjd3KbsxT": {
+      "name": "Streitross",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Siehe @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.WORQHLmzguiov4tH]{Streitross} für Werte.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "1FhE842lwQCoZIxz": {
+      "name": "Schaufel",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "1iwMkxYKUBfEZl7j": {
+      "name": "Patronen, Klein",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kaliber .22 bis .32.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "1kQNftB9MX6nt3aY": {
+      "name": "Uzi-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "23o8y7R75PP6AVzQ": {
+      "name": "Nachtsichtbrille",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Kein Abzug für </span><span class=\"fontstyle2\">Düstere </span><span class=\"fontstyle0\">oder </span><span class=\"fontstyle2\">Dunkle @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03illumination00]{Beleuchtung}</span><span class=\"fontstyle0\">. Für den doppelten Preis ist die Brille &bdquo;aktiv&ldquo; und ignoriert alle Abzüge durch Beleuchtung.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "24gCF5mCYtymcwP6": {
+      "name": "Sattel",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "2uNGPVZDdAHWtCY2": {
+      "name": "\"Wanze\" (Microtransmitter)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>12 Stunden durchgehender Betrieb.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "36Yc5af8ImkAPeHF": {
+      "name": "Wanderstiefel",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "3v8dTw5IatcdnOtX": {
+      "name": "Kleidung, formell",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "4LE9glYtcUkurkJK": {
+      "name": "Rucksack",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "5ailVLAUCgFZNaQS": {
+      "name": "Seife",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "5pG776Ai0wkErL9m": {
+      "name": "Kugel (mit Schwarzpulver)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für Schwarzpulverwaffen.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "6c5yGb7tgsFK4Rq8": {
+      "name": "Verzierter Sattel",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "6zfJ7biF0GQ7bElP": {
+      "name": "Fackel",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>1 Stunde, 4&rdquo; Radius.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "74Oa6Y4MyFjXQITZ": {
+      "name": "Fläschchen (Keramik)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "78Evu1SopLIjyg2q": {
+      "name": "Handschellen",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "7LaPSeAfhswiIyj0": {
+      "name": "Laptop",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "89Lt8GqZPll47sBl": {
+      "name": "Taser",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Verwendet @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle0\">. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{FRW} 1/2/4. 3 Schuss, dann muss die Waffe mindestens zwei Stunden lang aufgeladen werden. Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} mit &ndash;2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} </span><span class=\"fontstyle0\">zu werden.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {},
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "8TV0wlEfVeUiaGDN": {
+      "name": "Reiserationen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>5 Mahlzeiten; hält sich eine Woche.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9Ks5ME2DwzM6pmaB": {
+      "name": "Werkzeugkoffer",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "9vrpqmXwRCAAo3te": {
+      "name": "Störtelefon",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenprobe} um sich in Telefonleitung einzuklinken.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "B5iQ4AdQONJdPLkQ": {
+      "name": "Kerze",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Eine Stunde, 2&ldquo; Radius.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "CQzF1jGmcQ6vGNIv": {
+      "name": "EPA (Einmannpackung)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "D9eHkYpIZpuOQJHx": {
+      "name": "Taschencomputer",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "DbAjrSlgxQnQN8Wx": {
+      "name": "Öl",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für Laterne, 0,5 Liter.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "DbcBIK1wDKYgOZIH": {
+      "name": "Ruger-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "EC5kLxGrSQjxjmnZ": {
+      "name": "Glock (9mm)-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "EwDYVGoonlooujn2": {
+      "name": "M-16-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "FDgQYw71zAMHjSdH": {
+      "name": "Schutzbrille",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "GOy065vQvIvNUUEm": {
+      "name": "Seil, Hanf",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>10&rdquo;/20 m.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "HUeFYCjfaVdb5Ltb": {
+      "name": "Handy-Abhörer",
+      "Beschreibung": "",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Gyx1BpbL7wwAOyzX": {
+      "name": "Kartätsche (Kanone)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kartätschen sind Geschosse, die im Lauf einer Kanone explodieren und einen Strahl tödlicher Splitter und Kugeln abfeuern wie eine riesige Schrotflinte. Der Angriff verwendet die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittlere Flächenschablone} und bewegt sich bis zu 24&ldquo; in einer geraden Linie (es trifft W6 Ziele, wenn ihr keine Miniaturen verwendet, oder 2W6, wenn sie eng beieinander stehen). Vergleiche die @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Probe mit jedem Ziel innerhalb der Fläche, wobei ein Grund-ZW von 4 verwendet wird, der für die Deckung jedes Ziels, Spezialfähigkeiten wie das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.V1WWGHUtlFTVTAM9]{Ausweichen} usw. angepasst wird. Ein Treffer verursacht 2W6 Schaden, eine Steigerung 3W6.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "GmcRXBQI7EFHYAr2": {
+      "name": "Telefonanzapfung",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Hcjubk18tPH9F2ju": {
+      "name": "Laser-/Rotpunktvisier",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>+1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen} auf kurze und mittlere @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Entfernung}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "I9gx7yItDdgoEkjH": {
+      "name": "Pfeile/Bolzen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Pfeile für @UUID[Compendium.swade-core-rules.swade-personal-weapons.Item.aQssIXb62LXaEwNn]{Bögen}, Bolzen für @UUID[Compendium.swade-core-rules.swade-personal-weapons.Item.m2NQs7b86bQ5zcfS]{Armbrüste}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "IPPoyLeCK9S9fqto": {
+      "name": "Knopfkamera",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>12 Stunden durchgehender Betrieb.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "JtuVXR3apss7ZWDl": {
+      "name": "Seil, Nylon",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>10&rdquo;/20 m.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "K2ancODQGdN3vjiZ": {
+      "name": "Laterne",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>4 Stunden, 4&rdquo; Radius.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "L6fAhCBhkSv0tU6Y": {
+      "name": "H&K MP5-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "LHjLCS2c9kP2lTuX": {
+      "name": "Tommy Gun-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "PJxnFjpdBuere4t9": {
+      "name": "Patronen, Groß",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kaliber .50 und größer.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "QCAv6fRPzbqxn4n7": {
+      "name": "GPS",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "RN7OtpQdicXclEAt": {
+      "name": "Wurfanker",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Rhtguzko135PH7i2": {
+      "name": "Laserbatterie, Gewehr/Maschinenpistole",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Bietet ein volles Magazin für die angegebene</span>&nbsp;Waffe.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "TqyGavUQ0TySTcvf": {
+      "name": "Laserbatterie, Pistole",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Bietet ein volles Magazin für die angegebene</span>&nbsp;Waffe.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Ttvvp3rnkAlvdLJT": {
+      "name": "Tommy Gun-Trommelmagazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "U0PvY4FY2QkySPyv": {
+      "name": "Rundgeschoss (Kanone)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Kugeln aus Eisen, Blei oder Stein, die darauf ausgelegt sind, Mauern einzureißen oder durch eng stehende Soldatengruppen zu pflügen. Der Anführer der Besatzung muss wie üblich eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} ablegen. Wirf bei einem Erfolg einen Würfel. Bei einem geraden Ergebnis prallt die Kugel zu einem weiteren Opfer hinter dem ersten Ziel (innerhalb von 6&ldquo;) und trifft es ebenfalls. Fahre auf diese Weise fort, bis der Würfel ein ungerades Ergebnis erzielt.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "UyYrSqxxfXzWbxTy": {
+      "name": "Kleidung, Alltag",
+      "Beschreibung": "",
+      "Quelle": "SWADE Core Rules"
+    },
+    "VIA6ozi0cngZgrga": {
+      "name": "Fastfood-Mahlzeit",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "VSRjUocL8MBgD0Pp": {
+      "name": "Dietriche",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Vd67rwrsQev53N3m": {
+      "name": "Colt 1911-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "WkPWmb1ZBRbmu2cb": {
+      "name": "Trillerpfeife",
+      "Beschreibung": "",
+      "Quelle": "SWADE Core Rules"
+    },
+    "X1yJTnH2IuFrteTu": {
+      "name": "Laserbatterie, Gatling",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Bietet ein volles Magazin für die angegebene</span> Waffe.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "Y9hAyquBCG4rvU4M": {
+      "name": "Flintenlaufgeschosse",
+      "Beschreibung": "<article class=\"swade-core\"><p>Massive einzelne Geschosse (sog. Slugs) für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten}.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "YM2eZBZtj9ZUwsKF": {
+      "name": "Regenschirm",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "YoijgofDBuBKhe85": {
+      "name": "Winterkleidung (Mantel/Parka)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ZZXiypqirUlvBga9": {
+      "name": "Taschenlampe",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Lichtstrahl von 10&Prime;/20m.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "aRl0yKvgeLo6iMoa": {
+      "name": "Tarnkleidung",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "asoeGTenETMfyqHp": {
+      "name": "Schrapnell (Kanone)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Explosivgeschosse, die mit kleinen Metallkugeln gefüllt sind und Splitter in alle Richtungen schleudern. Dies ist ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächenangriff} und verwendet die mittlere @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Flächenschablone}, wenn es nicht anderweitig angegeben ist.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "bGCKkASLuGGpS1Ta": {
+      "name": "Senderdetektor",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "bfsvMu4LOceI6Z1K": {
+      "name": "Feuerstein und Stahl",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "dNLuRL4UKqHOJZ2B": {
+      "name": "Wolldecke",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "dv2u5jyavs3DNd9t": {
+      "name": "Zielfernrohr",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Negiert beim </span><span class=\"fontstyle2\">@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03aim00000000000]{Zielen} </span><span class=\"fontstyle0\">2 Punkte zusätzliche Abzüge.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "dvbJc3vcY61Tq70O": {
+      "name": "Winterstiefel",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "fA9y7cQ3sf2vPg3H": {
+      "name": "Gute Mahlzeit (Restaurant)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "g93JJpI7Wl7da7D7": {
+      "name": "Zweibein/Dreibein",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actions0000000]{Aktion} zum Ausklappen. Negiert Abzüge für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "gsDRcuEMfhnLXgzK": {
+      "name": "Desktop",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "gyN6HZOBGwubaGct": {
+      "name": "Brechstange",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "jZsoj5F6Iyv566Xd": {
+      "name": "Steyr AUG-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "jbLlb9dDsjPqfgeS": {
+      "name": "Parabolmikrophon",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Flüstern auf 200 m Entfernung hören.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ksz3ryjLvTlO2MwZ": {
+      "name": "Schleudersteine",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "lFnvdGz6J8V18VRs": {
+      "name": "Kamera (normal)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "loezLmbB4uzkReW4": {
+      "name": "Kamera (Einweg)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "nO025WMfjQ3UxzNG": {
+      "name": "Köcher",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für 20 @UUID[Compendium.swade-core-rules.swade-equipment.Item.I9gx7yItDdgoEkjH]{Pfeile/Bolzen}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "o6wcWFWPB5O9viMH": {
+      "name": "Wasserflasche (Wasserschlauch)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "oBS4W4VoHv2N3cmP": {
+      "name": "Sanitätskoffer",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Fünf Anwendungen, +1 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilen}</span><span class=\"fontstyle0\">; $25 zum Nachfüllen.</span> &nbsp;</p>\n<p>Siehe auch Regeln zur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Heilung}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "odMG3Hgo85pBlOtm": {
+      "name": "AK47-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "op4U0I01Oh5LiB7M": {
+      "name": "Pfefferspray",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Anmerkungen: </span><span class=\"fontstyle2\">Verwende @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">(oder @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">im Nahkampf). Kein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernungsabzug}, doch maximale Reichweite ist 2&ldquo; (ungefähr 4 m), 5 Schuss, Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} mit &ndash;2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}</span><span class=\"fontstyle2\">&nbsp;zu werden.</span></p>\n</div>",
+      "Quelle": "SWADE Core Rules",
+      "Aktionen": {
+        "additional": {
+          "7q7m8whv0d": {
+            "dice": null,
+            "isHeavyWeapon": false,
+            "macroActor": "default",
+            "modifier": "",
+            "name": "Kämpfen",
+            "override": "Kämpfen",
+            "resourcesUsed": 1,
+            "type": "trait",
+            "uuid": null
+          }
+        },
+        "dmgMod": "",
+        "trait": "Schießen",
+        "traitMod": ""
+      }
+    },
+    "pXjx5pi93qUh2njb": {
+      "name": "Erste-Hilfe-Tasche",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Drei Anwendungen, siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Heilung}.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "rR8tulie3bTgzedB": {
+      "name": "Desert Eagle-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "sZckdihQYjf2Kt4J": {
+      "name": "Hammer",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "sgnTmUJ2M1Fr7lq2": {
+      "name": "Feuerzeug",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "snrLAQnGLyOX1HvS": {
+      "name": "Schrotpatronen",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Normale Schrotladung.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "tawFrLP7mFOd1kv3": {
+      "name": "Barrett-Magazin",
+      "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "ujS3VPsjaJtLHgFg": {
+      "name": "Schlafsack",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schlafsack, winterfest.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "wgvZlgrnBkf4q94n": {
+      "name": "Pferd",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Siehe @UUID[Compendium.swade-core-rules.swade-bestiary.Actor.IBoqX3yt1KAw9yFy]{Pferd} für Werte.</p>\n</div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "wzwl95tQwbzDMvID": {
+      "name": "Kamera (digital)",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    },
+    "zMMqK7ZqGrmtPdxm": {
+      "name": "Wetzstein",
+      "Beschreibung": "<div class=\"swade-core\"></div>",
+      "Quelle": "SWADE Core Rules"
+    }
+  }
+}

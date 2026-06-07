@@ -1,0 +1,45 @@
+{
+  "label": "Makros",
+  "folders": {},
+  "entries": {
+    "Boost // Lower Trait": {
+      "name": "Eigenschaft erhöhen // senken"
+    },
+    "Patch All Actors": {
+      "name": "Alle Akteure aktualisieren"
+    },
+    "Poison": {
+      "name": "Vergiftung anwenden"
+    },
+    "Status Changer": {
+      "name": "Status-Änderungen"
+    },
+    "Place Template": {
+      "name": "Schablone platzieren"
+    },
+    "Healing": {
+      "name": "Heilung"
+    },
+    "Add Warrior's Gift Edges": {
+      "name": "Kriegersegen anwenden"
+    },
+    "Damage": {
+      "name": "Sonderschaden"
+    },
+    "Fear Table": {
+      "name": "Furcht-Tabelle"
+    },
+    "Apply Smite": {
+      "name": "Waffe verbessern"
+    },
+    "Tactician Edge": {
+      "name": "Taktiker-Talent (Aktionskarte)"
+    },
+    "Wild Attack": {
+      "name": "Rücksichtsloser Angriff"
+    },
+    "Jack of All Trades": {
+      "name": "Alleskönner"
+    }
+  }
+}
