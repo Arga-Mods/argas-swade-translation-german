@@ -2409,3 +2409,39 @@ Hooks.on('renderCompendiumTOC', (app, html) => {
 
   runFilter();
 });
+
+const ARGA_SCR_BANNER_DIR = 'modules/swade-core-rules/assets/art/banners';
+
+function argaResortSwadeBanners(root) {
+  const rows = root.querySelectorAll('li[data-pack^="swade-core-rules."]');
+  let pos = 0;
+  for (const row of rows) {
+    const img = row.querySelector('img.compendium-banner');
+    if (!img) continue;
+    pos += 1;
+    if (pos > 19) break;
+    const file = `banner_${String(pos).padStart(2, '0')}.webp`;
+    if (!img.getAttribute('src')?.endsWith(`/${file}`)) {
+      img.setAttribute('src', `${ARGA_SCR_BANNER_DIR}/${file}`);
+    }
+  }
+}
+
+Hooks.on('renderCompendiumDirectory', (app, html) => {
+  const root = html instanceof HTMLElement ? html
+             : html?.[0] instanceof HTMLElement ? html[0]
+             : app?.element instanceof HTMLElement ? app.element
+             : null;
+  if (!root) return;
+  argaResortSwadeBanners(root);
+});
+
+Hooks.once('i18nInit', () => {
+  if (game.i18n.lang !== 'de') return;
+  const value = 'UUID eingeben oder {type} hineinziehen';
+  const t = game.i18n.translations;
+  foundry.utils.setProperty(t, 'HTMLDocumentTagsElement.PLACEHOLDER', value);
+  if (Object.prototype.hasOwnProperty.call(t, 'HTMLDocumentTagsElement.PLACEHOLDER')) {
+    t['HTMLDocumentTagsElement.PLACEHOLDER'] = value;
+  }
+});
