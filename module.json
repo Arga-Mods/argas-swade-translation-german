@@ -22,6 +22,9 @@
     "esmodules": [
         "register.js"
     ],
+    "styles": [
+        "styles/branding.css"
+    ],
     "languages": [
         {
             "lang": "de",
