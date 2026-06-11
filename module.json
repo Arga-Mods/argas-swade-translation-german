@@ -32,6 +32,18 @@
             "path": "lang/de.json"
         }
     ],
+    "packs": [
+        {
+            "name": "makros",
+            "label": "Makros (Arga)",
+            "path": "packs/makros",
+            "type": "Macro",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        }
+    ],
     "relationships": {
         "requires": [
             {

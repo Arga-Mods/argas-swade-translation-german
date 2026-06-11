@@ -1,5 +1,46 @@
 const MODULE_ID = 'argas-swade-translation-german';
 
+function argaModuleDisabled() {
+  try { return game.settings.get(MODULE_ID, 'moduleDisabled') === true; } catch (e) { return false; }
+}
+
+function argaActive() {
+  if (game.settings.get('core', 'language') !== 'de') return false;
+  return !argaModuleDisabled();
+}
+
+let argaSettingsRegistered = false;
+function argaRegisterSettings() {
+  if (argaSettingsRegistered) return;
+  argaSettingsRegistered = true;
+  game.settings.register(MODULE_ID, 'moduleDisabled', {
+    name: 'Modul deaktivieren',
+    hint: 'Deaktiviert die deutsche Übersetzung, unabhängig von der eingestellten Sprache. Charaktere und Items, die unter Nutzung der übersetzten Kompendien in der Spielwelt erstellt wurden, bleiben jedoch weiterhin deutsch. Zum schnellen Wechsel zwischen Deutsch und Englisch wird das bereitgestellte Makro empfohlen.',
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: false,
+    requiresReload: true,
+  });
+  game.settings.register(MODULE_ID, 'hideMacroPack', {
+    name: '"Makros (Arga)" ausblenden',
+    hint: 'Die Anzeige des Kompendiums mit Arga\'s Makros in der Sidebar wird unterbunden. Bereits in die Makroleiste gezogene Makros stehen aber weiterhin zur Verfügung.',
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: false,
+    onChange: () => { try { ui.compendium?.render(); } catch (e) {} },
+  });
+  game.settings.register(MODULE_ID, 'welcomeDismissed', {
+    name: 'Begrüßungsfenster ausblenden',
+    hint: 'Das Begrüßungsfenster wird nur noch bei Vorliegen wichtiger Neuerungen angezeigt.',
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: false,
+  });
+}
+
 const converters = {
   // system.actions bei Rüstungen/Schilden komplett übersetzen.
   // Babele 2.9.1 lehnt Objekt-Payloads bei statischen Pfad-Mappings ab
@@ -935,7 +976,7 @@ const converters = {
 // Damit neue Charaktere die übersetzten Fertigkeiten aus dem
 // swade-core-rules Kompendium erhalten (mit dt. Name + Beschreibung).
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   const current = game.settings.get('swade', 'coreSkillsCompendium');
   if (current !== 'swade-core-rules.swade-skills') {
     game.settings.set('swade', 'coreSkillsCompendium', 'swade-core-rules.swade-skills');
@@ -943,6 +984,8 @@ Hooks.once('ready', () => {
 });
 
 Hooks.once('babele.init', (babele) => {
+  argaRegisterSettings();
+  if (argaModuleDisabled()) return;
   babele.registerConverters(converters);
 
   // ActiveEffect.changes: Standard-"structured"-Converter durch einfaches
@@ -1166,7 +1209,7 @@ function translateEffectDescriptions(htmlEl) {
 
 for (const hook of ['renderActorSheet', 'renderItemSheet', 'renderChatMessage']) {
   Hooks.on(hook, (app, html) => {
-    if (game.settings.get('core', 'language') !== 'de') return;
+    if (!argaActive()) return;
     if (!sortedEffectKeys.length) return;
     const htmlEl = html instanceof jQuery ? html[0] : html;
     translateEffectNames(htmlEl);
@@ -1175,7 +1218,7 @@ for (const hook of ['renderActorSheet', 'renderItemSheet', 'renderChatMessage'])
 }
 
 Hooks.on('renderDocumentSheetV2', (app, html) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const actor = app?.document ?? app?.object;
   if (!actor || actor.type !== 'vehicle') return;
@@ -1216,7 +1259,7 @@ Hooks.on('renderDocumentSheetV2', (app, html) => {
 });
 
 Hooks.on('renderActiveEffectConfig', (app, html) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   const htmlEl = html instanceof jQuery ? html[0] : html;
   if (!htmlEl) return;
 
@@ -1457,6 +1500,17 @@ const ambiguousEffectIdNames = {
   "fOCC3PU2YmRCtLXh": ["Menacing", "Mentalist"],
 };
 
+// Volksgewährte Effekte, die den volksspezifischen Item-Text spiegeln sollen statt des
+// generischen Texts (geteilte Handicap-IDs + Panzerung-Volk-IDs).
+const ANCESTRY_GRANT_EFFECT_IDS = new Set([
+  "qco7WaIGiyhFSZlM",
+  "fUoz3zZ3fcf4Ozjb",
+  "n4MZb733hAoLQdWg",
+  "AncestryArmor001",
+  "AncestryArmor002",
+  "AncestryArmor003",
+]);
+
 const reverseEffectTranslations = {};
 for (const [en, de] of Object.entries(effectTranslations)) {
   if (!(de in reverseEffectTranslations)) reverseEffectTranslations[de] = en;
@@ -1505,7 +1559,7 @@ function findEffectDescription(details) {
 }
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const observer = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
@@ -1566,7 +1620,7 @@ cardNameMap["Red Joker"] = "Roter Joker";
 const cardNameKeys = Object.keys(cardNameMap).sort((a, b) => b.length - a.length);
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   function translateCards(root) {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
@@ -1601,7 +1655,7 @@ Hooks.once('ready', () => {
 // Daher übersetzen wir per DOM-Hooks, preCreate-Hooks und MutationObserver.
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const style = document.createElement('style');
   style.textContent = `.dialog-form .form-group > label { white-space: nowrap !important; flex: 0 0 auto !important; }`;
@@ -1843,7 +1897,7 @@ function translateMacroDOM(element) {
 
 for (const hook of ['renderDialogV2', 'renderDialog']) {
   Hooks.on(hook, (app, html) => {
-    if (game.settings.get('core', 'language') !== 'de') return;
+    if (!argaActive()) return;
     const el = html instanceof HTMLElement ? html : html[0] || html;
     translateMacroDOM(el);
   });
@@ -1899,7 +1953,7 @@ function translateMacroNotification(msg) {
 }
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const origInfo = ui.notifications.info.bind(ui.notifications);
   const origWarn = ui.notifications.warn.bind(ui.notifications);
@@ -1923,13 +1977,15 @@ Hooks.once('ready', () => {
 // Dieser Hook fängt die Item-Erstellung auf Akteuren ab und übersetzt
 // Effekt-Namen + Beschreibungen, damit sie auf Deutsch gespeichert werden.
 Hooks.on('preCreateItem', (item, data, options, userId) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   // Nur Items, die auf einen Akteur importiert werden (Drag & Drop / Makro)
   if (!item.parent) return;
 
   const effects = data.effects;
   if (!effects?.length) return;
+
+  const parentDesc = data.system?.description ?? item.system?.description ?? '';
 
   let changed = false;
   const updatedEffects = effects.map(e => {
@@ -1941,7 +1997,9 @@ Hooks.on('preCreateItem', (item, data, options, userId) => {
       changed = true;
     }
 
-    const descHtml = (eff._id && AMBIGUOUS_EFFECT_IDS.has(eff._id))
+    const descHtml = (eff._id && ANCESTRY_GRANT_EFFECT_IDS.has(eff._id) && parentDesc)
+                   ? parentDesc
+                   : (eff._id && AMBIGUOUS_EFFECT_IDS.has(eff._id))
                    ? (origName ? effectDescriptionsByName[origName] : null)
                    : (eff._id && effectDescriptionsByID[eff._id])
                    ? effectDescriptionsByID[eff._id]
@@ -1976,7 +2034,7 @@ const _aquaPick = (item) => {
 };
 
 Hooks.on('preCreateItem', (item) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   const p = _aquaPick(item);
   if (p && (item.name !== p.name || item.system?.description !== p.description)) {
     item.updateSource({ name: p.name, 'system.description': p.description });
@@ -1984,7 +2042,7 @@ Hooks.on('preCreateItem', (item) => {
 });
 
 Hooks.on('updateItem', (item, changes) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   if (!foundry.utils.hasProperty(changes, 'system.choiceSets')) return;
   const p = _aquaPick(item);
   if (p && (item.name !== p.name || item.system?.description !== p.description)) {
@@ -2033,8 +2091,16 @@ const macroEffectNamePatterns = [
   { regex: /^Lower (.+)$/, replace: (m) => `Eigenschaft senken: ${m[1]}` },
 ];
 
+// Panzerungs-Effekte (Volk): den generischen armorDesc NICHT setzen, wenn der Effekt
+// bereits eine Beschreibung trägt (volksspezifischer Text aus preCreateItem).
+const ANCESTRY_ARMOR_EFFECT_NAMES = new Set([
+  "Armor 1 (Ancestry)",
+  "Armor 2 (Ancestry)",
+  "Armor 3 (Ancestry)",
+]);
+
 Hooks.on('preCreateActiveEffect', (effect) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const name = effect.name;
   if (!name) return;
@@ -2055,7 +2121,7 @@ Hooks.on('preCreateActiveEffect', (effect) => {
   }
 
   const descDE = macroEffectDescriptions.get(name);
-  if (descDE) {
+  if (descDE && !(ANCESTRY_ARMOR_EFFECT_NAMES.has(name) && effect.description)) {
     updates.description = descDE;
   }
 
@@ -2090,7 +2156,7 @@ const macroChatPatterns = [
 ];
 
 Hooks.on('preCreateChatMessage', (msg) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const content = msg.content;
   if (!content || typeof content !== 'string') return;
@@ -2108,7 +2174,7 @@ Hooks.on('preCreateChatMessage', (msg) => {
 // --- "Rounds Verbleibend" → "Runden verbleibend" Fix ---
 // Das SWADE-System mischt englische und deutsche Begriffe bei der Effektdauer.
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const roundsObserver = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
@@ -2132,7 +2198,7 @@ Hooks.once('ready', () => {
 });
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const expiryLabels = new Map([
     ['', 'Effekt endet nicht'],
@@ -2170,7 +2236,7 @@ Hooks.once('ready', () => {
 });
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const attrNames = new Map([
     ['Agility', 'Geschick'],
@@ -2218,7 +2284,7 @@ Hooks.once('ready', () => {
 });
 
 Hooks.once('ready', () => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const localizeCurrency = (root) => {
     if (!root || root.nodeType !== Node.ELEMENT_NODE) return;
@@ -2265,7 +2331,7 @@ Hooks.once('ready', () => {
 });
 
 Hooks.on('renderApplicationV2', (app, element) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   const root = (element instanceof HTMLElement) ? element : app?.element;
   if (!(root instanceof HTMLElement) || !root.classList.contains('choice-dialog')) return;
   const title = root.querySelector('.window-title');
@@ -2279,7 +2345,7 @@ Hooks.on('renderApplicationV2', (app, element) => {
 // Anzeige-only: der gespeicherte Tabellenname bleibt unverändert (z. B.
 // "Außer Kontrolle"), die Schrift rendert "ss" als Versal-SS.
 Hooks.on('renderApplicationV2', (app, element) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
   if (((app?.document ?? app?.object)?.documentName) !== 'RollTable') return;
   const root = (element instanceof HTMLElement) ? element : app?.element;
   if (!(root instanceof HTMLElement)) return;
@@ -2313,7 +2379,7 @@ function argaTocNormalize(s) {
 }
 
 Hooks.on('renderCompendiumTOC', (app, html) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const root = html instanceof HTMLElement ? html
              : html?.[0] instanceof HTMLElement ? html[0]
@@ -2369,7 +2435,7 @@ Hooks.on('renderCompendiumTOC', (app, html) => {
 //  argaTocNormalize stammt aus dem li.page-Block weiter oben.
 // =====================================================================
 Hooks.on('renderCompendiumTOC', (app, html) => {
-  if (game.settings.get('core', 'language') !== 'de') return;
+  if (!argaActive()) return;
 
   const root = html instanceof HTMLElement ? html
              : html?.[0] instanceof HTMLElement ? html[0]
@@ -2411,20 +2477,59 @@ Hooks.on('renderCompendiumTOC', (app, html) => {
 });
 
 const ARGA_SCR_BANNER_DIR = 'modules/swade-core-rules/assets/art/banners';
+const ARGA_OWN_BANNER_20 = 'modules/argas-swade-translation-german/assets/banners/banner_20.webp';
 
 function argaResortSwadeBanners(root) {
-  const rows = root.querySelectorAll('li[data-pack^="swade-core-rules."]');
+  const rows = root.querySelectorAll('li[data-pack^="swade-core-rules."], li[data-pack="argas-swade-translation-german.makros"]');
   let pos = 0;
   for (const row of rows) {
     const img = row.querySelector('img.compendium-banner');
     if (!img) continue;
     pos += 1;
-    if (pos > 19) break;
-    const file = `banner_${String(pos).padStart(2, '0')}.webp`;
-    if (!img.getAttribute('src')?.endsWith(`/${file}`)) {
-      img.setAttribute('src', `${ARGA_SCR_BANNER_DIR}/${file}`);
+    if (pos > 20) break;
+    const src = pos === 20
+      ? ARGA_OWN_BANNER_20
+      : `${ARGA_SCR_BANNER_DIR}/banner_${String(pos).padStart(2, '0')}.webp`;
+    if (img.getAttribute('src') !== src) {
+      img.setAttribute('src', src);
     }
   }
+}
+
+function argaSortSwadeDirectory(root) {
+  const collator = new Intl.Collator(game.i18n.lang);
+  const titleOf = (li) => {
+    const el = li.querySelector('.compendium-name, .entry-name, .document-name, h3, h4, a');
+    return (el?.textContent ?? '').trim();
+  };
+  const targets = root.querySelectorAll('li[data-pack^="swade-core-rules."], li[data-pack="argas-swade-translation-german.makros"]');
+  if (targets.length < 2) return;
+  const byParent = new Map();
+  for (const li of targets) {
+    const parent = li.parentElement;
+    if (!parent) continue;
+    if (!byParent.has(parent)) byParent.set(parent, []);
+    byParent.get(parent).push(li);
+  }
+  for (const [parent, items] of byParent) {
+    if (items.length < 2) continue;
+    if (items.some((li) => !titleOf(li))) continue;
+    const sorted = items.slice().sort((a, b) => collator.compare(titleOf(a), titleOf(b)));
+    if (items.every((li, i) => li === sorted[i])) continue;
+    const anchor = items[0].previousSibling;
+    for (const li of items) li.remove();
+    const ref = anchor ? anchor.nextSibling : parent.firstChild;
+    for (const li of sorted) parent.insertBefore(li, ref);
+  }
+}
+
+function argaHideMacroPack(root) {
+  let hide = argaModuleDisabled();
+  if (!hide) {
+    try { hide = game.settings.get(MODULE_ID, 'hideMacroPack') === true; } catch (e) {}
+  }
+  if (!hide) return;
+  root.querySelector(`li[data-pack="${MODULE_ID}.makros"]`)?.remove();
 }
 
 Hooks.on('renderCompendiumDirectory', (app, html) => {
@@ -2433,15 +2538,194 @@ Hooks.on('renderCompendiumDirectory', (app, html) => {
              : app?.element instanceof HTMLElement ? app.element
              : null;
   if (!root) return;
+  argaHideMacroPack(root);
+  if (argaModuleDisabled()) return;
+  argaSortSwadeDirectory(root);
   argaResortSwadeBanners(root);
 });
 
 Hooks.once('i18nInit', () => {
-  if (game.i18n.lang !== 'de') return;
+  if (!argaActive()) return;
   const value = 'UUID eingeben oder {type} hineinziehen';
   const t = game.i18n.translations;
   foundry.utils.setProperty(t, 'HTMLDocumentTagsElement.PLACEHOLDER', value);
   if (Object.prototype.hasOwnProperty.call(t, 'HTMLDocumentTagsElement.PLACEHOLDER')) {
     t['HTMLDocumentTagsElement.PLACEHOLDER'] = value;
+  }
+});
+
+const ARGA_WIN_RESTORE_KEY = 'argas-swade-translation-german.windows';
+
+async function argaRestoreWindows(list) {
+  for (const entry of list) {
+    try {
+      let app = null;
+      if (entry.uuid) {
+        const doc = await fromUuid(entry.uuid);
+        const sheet = doc?.sheet;
+        if (!sheet) continue;
+        const opts = entry.pageId ? { pageId: entry.pageId } : {};
+        if (sheet instanceof foundry.applications.api.ApplicationV2) {
+          await sheet.render({ force: true, ...opts });
+        } else {
+          await sheet.render(true, opts);
+        }
+        app = sheet;
+      } else if (entry.pack) {
+        const pack = game.packs.get(entry.pack);
+        if (!pack) continue;
+        await pack.render(true);
+        app = [...foundry.applications.instances.values()].find((a) => a.collection === pack)
+           ?? Object.values(ui.windows).find((w) => w.collection === pack)
+           ?? null;
+        if (!app) continue;
+      } else {
+        continue;
+      }
+      if (entry.pos && Object.keys(entry.pos).length) app.setPosition(entry.pos);
+      if (entry.min) await app.minimize();
+    } catch (e) {}
+  }
+}
+
+function argaApplySidebar(expanded) {
+  if (typeof expanded !== 'boolean') return;
+  try {
+    const sb = ui.sidebar;
+    if (!sb) return;
+    const isExpanded = typeof sb.expanded === 'boolean' ? sb.expanded
+                     : typeof sb._collapsed === 'boolean' ? !sb._collapsed
+                     : null;
+    if (isExpanded === expanded) return;
+    if (expanded) {
+      if (typeof sb.expand === 'function') sb.expand();
+      else if (typeof sb.toggleExpanded === 'function') sb.toggleExpanded(true);
+    } else {
+      if (typeof sb.collapse === 'function') sb.collapse();
+      else if (typeof sb.toggleExpanded === 'function') sb.toggleExpanded(false);
+    }
+  } catch (e) {}
+}
+
+function argaApplySidebarTab(tab) {
+  if (!tab) return;
+  try {
+    const sb = ui.sidebar;
+    if (!sb) return;
+    if (typeof sb.changeTab === 'function') sb.changeTab(tab, 'primary');
+    else if (typeof sb.activateTab === 'function') sb.activateTab(tab);
+  } catch (e) {}
+}
+
+Hooks.once('ready', () => {
+  let raw = null;
+  try { raw = sessionStorage.getItem(ARGA_WIN_RESTORE_KEY); } catch (e) { return; }
+  if (!raw) return;
+  try { sessionStorage.removeItem(ARGA_WIN_RESTORE_KEY); } catch (e) {}
+  let data = null;
+  try { data = JSON.parse(raw); } catch (e) { return; }
+  const windows = Array.isArray(data) ? data
+                : Array.isArray(data?.windows) ? data.windows : [];
+  const sidebarExpanded = Array.isArray(data) ? undefined : data?.sidebarExpanded;
+  const sidebarTab = Array.isArray(data) ? undefined : data?.sidebarTab;
+  if (!windows.length && typeof sidebarExpanded !== 'boolean' && !sidebarTab) return;
+  setTimeout(() => {
+    argaApplySidebarTab(sidebarTab);
+    argaApplySidebar(sidebarExpanded);
+    if (windows.length) argaRestoreWindows(windows);
+  }, 500);
+});
+
+Hooks.once('init', () => {
+  argaRegisterSettings();
+});
+
+Hooks.once('ready', async () => {
+  if (argaModuleDisabled()) return;
+  try {
+    if (game.settings.get(MODULE_ID, 'welcomeDismissed')) return;
+  } catch (e) {
+    return;
+  }
+
+  const isGerman = game.settings.get('core', 'language') === 'de';
+  const LOGO = `modules/${MODULE_ID}/assets/icons/Savage-Worlds-Fanprodukt-Logo.webp`;
+  const RED = '#aa0000';
+
+  const dynamic = isGerman
+    ? `<div style="text-align:center;">Da dein Interface bereits auf Deutsch eingestellt ist, kannst du sofort loslegen. Viel Spaß – Arga.</div>`
+    : `<div style="text-align:center;color:${RED};">Dein Interface ist derzeit noch auf Englisch eingestellt.<br>Zum Umstellen nutze den Button unterhalb des Textes.<br>Viel Spaß – Arga.</div>`;
+
+  const content = `
+    <div style="display:flex;flex-direction:column;gap:0.7rem;">
+      <div style="text-align:center;"><img src="${LOGO}" alt="" style="display:block;max-width:240px;height:auto;margin:0 auto;border:none;"></div>
+      <div style="text-align:center;">Danke für das Installieren von</div>
+      <div style="text-align:center;font-size:1.3em;font-weight:bold;">Arga's SWADE Translation (German)</div>
+      <div>Es handelt sich um ein inoffizielles Fan-Produkt, welches (mit vorliegender Genehmigung) das kostenpflichtige englische Originalmodul</div>
+      <div style="text-align:center;font-weight:bold;">Savage Worlds Adventure Edition Core Rules (swade-core-rules)</div>
+      <div>mittels des Moduls <strong>Babele</strong> ins Deutsche übersetzt. Bitte nimm in den Spieleinstellungen <span style="color:${RED};font-weight:bold;">keine Änderungen</span> bei der Parade-Fertigkeit (Fighting) oder den Fahrzeugfertigkeiten (Boating, Driving, Piloting, Riding) vor. Die Werte werden im Spiel automatisch übersetzt.</div>
+      ${dynamic}
+      <hr style="width:100%;margin:0;">
+      <label style="display:flex;align-items:center;justify-content:center;gap:0.4rem;">
+        <input type="checkbox" name="dismiss"> Nicht mehr anzeigen
+      </label>
+    </div>
+  `;
+
+  const buttons = [];
+  if (!isGerman) {
+    buttons.push({
+      action: 'switch',
+      label: 'Interface auf DE umstellen',
+      default: true,
+      callback: async () => {
+        try { await game.settings.set('core', 'language', 'de'); } catch (e) {}
+        location.reload();
+      },
+    });
+  }
+  buttons.push({
+    action: 'close',
+    label: 'Schließen',
+    default: isGerman,
+  });
+
+  const onRenderWelcome = (app) => {
+    const ours = app?.element?.classList?.contains('arga-welcome-dialog')
+      || app?.options?.window?.title === "Arga's SWADE Translation (German)";
+    if (!ours) return;
+    Hooks.off('renderDialogV2', onRenderWelcome);
+    const el = app.element;
+    if (!el) return;
+    const dismiss = el.querySelector('input[name="dismiss"]');
+    if (dismiss) {
+      dismiss.addEventListener('change', () => {
+        try { game.settings.set(MODULE_ID, 'welcomeDismissed', dismiss.checked); } catch (e) {}
+      });
+    }
+    requestAnimationFrame(() => {
+      try {
+        const w = el.offsetWidth || 520;
+        const h = el.offsetHeight || 0;
+        app.setPosition({
+          left: Math.max(0, Math.round((window.innerWidth - w) / 2)),
+          top: Math.max(0, Math.round((window.innerHeight - h) / 2) - 80),
+        });
+      } catch (e) {}
+    });
+  };
+  Hooks.on('renderDialogV2', onRenderWelcome);
+
+  try {
+    await foundry.applications.api.DialogV2.wait({
+      window: { title: "Arga's SWADE Translation (German)" },
+      classes: ['arga-welcome-dialog'],
+      position: { width: 520 },
+      content,
+      buttons,
+      rejectClose: false,
+    });
+  } catch (e) {
+    Hooks.off('renderDialogV2', onRenderWelcome);
   }
 });
