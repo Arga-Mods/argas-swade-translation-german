@@ -12,7 +12,7 @@
 # Arga's SWADE Translation (German)
 
 Dieses inoffizielle Modul übersetzt alle Kompendien-Inhalte des offiziellen englischen ***SWADE Core Rules***-Moduls von Pinnacle für Foundry VTT zur Laufzeit ins Deutsche. Die Übersetzung wird über das Modul ***Babele*** realisiert und die Originalinhalte werden dabei nicht verändert.<br>
-Die deutschsprachigen Texte basieren auf dem deutschen Grundregelwerk (aktuelle 6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage des Grundregelwerkes als Grundlage. Die Texte des vorliegenden Moduls werden sukzessive auf die 6. Auflage angehoben. 
+Die deutschsprachigen Texte basieren auf dem deutschen Grundregelwerk (aktuelle 6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage des Regelwerkes als Grundlage. Die Texte des vorliegenden Moduls werden sukzessive auf die 6. Auflage aktualisiert. Eine Genehmigung zur Nutzung der Texte und Bilder liegt vor. 
 
 <p align="center">
   <img src="screenshots/compendium.webp" alt="Kompendium" width="300">
@@ -24,10 +24,10 @@ Alle Kompendien sind deutsch sortiert und die Suchfelder funktionieren mit deuts
   <img src="screenshots/search.webp" alt="Suchfunktion" width="340">
 </p>
 
-## Zusätzliche Features ##
-In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich 2 Makros: 
-- Mit dem einen kann das Foundry-Interface zwischen Deutsch und Englisch umgeschaltet werden. Dabei merkt sich das Makro alle geöffneten Fenster sowie deren Position und öffnet sie in der jeweils anderen Sprache erneut. So können die übersetzten Regeln und Items schnell mit dem englischen Original vergleich werden.
-- Das andere Makro (nur für die SL) startet einen Konverter, mit dem alle über das englische Modul erstellten Akteure und Gegenstände ins Deutsche übertragen werden. Der Konverter nimmt zunächst eine Bestandsaufnahme vor und zeigt an, welche Items er wie übersetzten würde und wo es Probleme gibt. Man kann alle Items in einem Rutsch übersetzten lassen, oder nach Belieben nur ausgewählte Inhalte.
+## Zusätzliche Features
+In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich zwei Makros: 
+- Mit dem einen kann das Foundry-Interface zwischen Deutsch und Englisch umgeschaltet werden. Dabei merkt sich das Makro alle geöffneten Fenster sowie deren Position und öffnet sie in der jeweils anderen Sprache erneut. So können die übersetzten Regeln und Items schnell mit dem englischen Original verglichen werden.
+- Das andere Makro (nur für die SL) startet einen Konverter, mit dem alle über das englische Modul erstellten Akteure und Gegenstände ins Deutsche übertragen werden. Der Konverter nimmt zunächst eine Bestandsaufnahme vor und zeigt an, welche Items er wie übersetzen würde und wo es Probleme gibt. Man kann alle Items in einem Rutsch übersetzen lassen, oder nach Belieben nur ausgewählte Inhalte.
 
  <p align="center">
   <img src="screenshots/konverter.webp" alt="Konverter" width="600">
@@ -36,7 +36,7 @@ In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich 2 Makros:
 Die Konvertierung der Welt kann auch über die Spieleinstellungen gesteuert werden:
 
 <p align="center">
-  <img src="screenshots/settings.webp" alt="Setings" width="580">
+  <img src="screenshots/settings.webp" alt="Settings" width="580">
 </p>
 
 
