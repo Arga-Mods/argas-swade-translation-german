@@ -5,10 +5,40 @@
   <a href="https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest"><img src="https://img.shields.io/github/downloads/Arga-Mods/argas-swade-translation-german/latest/total?label=Downloads%20%28Latest%29&color=f5a623" alt="Downloads Latest"></a>
 </p>
 
+<p align="center">
+  <img src="screenshots/fan-logo.webp" alt="SWADE Fanprodukt" width="300">
+</p>
+
 # Arga's SWADE Translation (German)
 
-Dieses Modul übersetzt alle Kompendien-Inhalte des offiziellen ***SWADE Core Rules***-Moduls von Pinnacle für Foundry VTT zur Laufzeit ins Deutsche. Die Übersetzung läuft über das Modul ***Babele***, und die Originalinhalte werden dabei nicht verändert.
-Die deutschsprachigen Texte basieren ausschließlich auf dem deutschen Grundregelwerk (SWAE) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage von SWAE als Grundlage. Die Texte im vorliegenden Modul werden in einem der nächsten Updates mit den Texten aus der aktuellen 6. Auflage aktualisiert.
+Dieses inoffizielle Modul übersetzt alle Kompendien-Inhalte des offiziellen englischen ***SWADE Core Rules***-Moduls von Pinnacle für Foundry VTT zur Laufzeit ins Deutsche. Die Übersetzung wird über das Modul ***Babele*** realisiert und die Originalinhalte werden dabei nicht verändert.<br>
+Die deutschsprachigen Texte basieren auf dem deutschen Grundregelwerk (aktuelle 6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage des Grundregelwerkes als Grundlage. Die Texte des vorliegenden Moduls werden sukzessive auf die 6. Auflage angehoben. 
+
+<p align="center">
+  <img src="screenshots/compendium.webp" alt="Kompendium" width="300">
+</p>
+
+Alle Kompendien sind deutsch sortiert und die Suchfelder funktionieren mit deutschen Begriffen (auch mit Umlauten). 
+
+<p align="center">
+  <img src="screenshots/search.webp" alt="Suchfunktion" width="340">
+</p>
+
+## Zusätzliche Features ##
+In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich 2 Makros: 
+- Mit dem einen kann das Foundry-Interface zwischen Deutsch und Englisch umgeschaltet werden. Dabei merkt sich das Makro alle geöffneten Fenster sowie deren Position und öffnet sie in der jeweils anderen Sprache erneut. So können die übersetzten Regeln und Items schnell mit dem englischen Original vergleich werden.
+- Das andere Makro (nur für die SL) startet einen Konverter, mit dem alle über das englische Modul erstellten Akteure und Gegenstände ins Deutsche übertragen werden. Der Konverter nimmt zunächst eine Bestandsaufnahme vor und zeigt an, welche Items er wie übersetzten würde und wo es Probleme gibt. Man kann alle Items in einem Rutsch übersetzten lassen, oder nach Belieben nur ausgewählte Inhalte.
+
+ <p align="center">
+  <img src="screenshots/konverter.webp" alt="Konverter" width="600">
+</p>
+
+Die Konvertierung der Welt kann auch über die Spieleinstellungen gesteuert werden:
+
+<p align="center">
+  <img src="screenshots/settings.webp" alt="Setings" width="580">
+</p>
+
 
 ## Voraussetzungen
 - [Babele](https://foundryvtt.com/packages/babele) – Übersetzungs-Framework
@@ -17,11 +47,6 @@ Die deutschsprachigen Texte basieren ausschließlich auf dem deutschen Grundrege
   
 ## Rechte
 **Savage Worlds** und **SWADE** sind Eigentum der **Pinnacle Entertainment Group**; die deutschsprachigen Rechte liegen bei **Ulisses Spiele**. Dieses inoffizielle Fan-Projekt liefert die deutschen Regeltexte von Ulisses Spiele (verwendet mit Genehmigung) als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, das installiert sein muss und nicht ersetzt wird.
-
-<p align="center">
-  <img src="Logo/Savage-Worlds-Fanprodukt-Logo.png" alt="Savage Worlds Fanprodukt" width="300">
-</p>
-
 
 ## Wirf auch gerne einen Blick auf meine anderen Module
 
