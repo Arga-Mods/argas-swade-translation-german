@@ -137,9 +137,9 @@ const converters = {
 
   "ancestralCategory": (category) => {
     const map = {
-      "Core Ancestry": "Volk (Grundeigenarten)",
-      "Negative": "Volk (negativ)",
-      "Positive": "Volk (positiv)",
+      "Core Ancestry": "Abstammung (Grundeigenarten)",
+      "Negative": "Abstammung (negativ)",
+      "Positive": "Abstammung (positiv)",
       "": ""
     };
     return map[category] ?? category;
@@ -882,6 +882,25 @@ const converters = {
       "Reduced Pace": "Verringerte Bewegungsweite (Boden)",
       "Armor - Choose Amount": "Panzerung - Anzahl wählen",
       "Choose Heritage.": "Erbe wählen",
+      "Poor Parry - Choose one.": "Schlechte Parade - Wert wählen",
+      "Parry Increase - Choose one.": "Parade erhöhen - Wert wählen",
+      "Claws - Choose one.": "Klauen - Wert wählen",
+      "Horn Type - Choose one.": "Hörner - Wert wählen",
+      "Choose Rank of Edge Taken.": "Rang des Talents wählen",
+      "Power Choice.": "Macht wählen",
+      "Choose Ancestries' Reach.": "Reichweite der Abstammung wählen",
+      "Choose Regeneration Type.": "Regenerationsart wählen",
+      "Choose Size.": "Größe wählen",
+      "Choose Sleep Reduction Type.": "Art der Schlafreduktion wählen",
+      "Poison, Disease, or Both - Choose one.": "Gift, Krankheit oder beides – Wähle eins",
+      "Poisonous Touch - Choose one.": "Giftige Berührung - Wähle eins",
+      "Hindrance Type - Choose one.": "Handicap-Typ - Wähle eins",
+      "Pick a Skill.": "Fertigkeit wählen",
+      "Choose a Skill.": "Fertigkeit wählen",
+      "Choose Skill to Remove.": "Zu entfernende Fertigkeit wählen",
+      "Attribute Increase": "Attributserhöhung",
+      "Attribute Penalty": "Attributsabzug",
+      "Pick if Skill is Common or Uncommon In Campaign.": "Nützlichkeit der Fertigkeit in dieser Kampagne",
     };
     const choiceMap = {
       "Pace 6": "Bewegungsweite 6",
@@ -899,17 +918,122 @@ const converters = {
       "Armor 3": "Panzerung 3 (+6)",
       "Adaptable": "Anpassungsfähig",
       "Agile": "Geschickt",
+      "Poor Parry -1": "Schlechte Parade -1",
+      "Poor Parry -2": "Schlechte Parade -2",
+      "Poor Parry -3": "Schlechte Parade -3",
+      "Parry +1": "Parade +1",
+      "Parry +2": "Parade +2",
+      "Parry +3": "Parade +3",
+      "Claws Str+d4": "Klauen Stärke+W4",
+      "Claws Str+d6": "Klauen Stärke+W6",
+      "Claws Str+d6 AP 2": "Klauen Stärke+W6 PB 2",
+      "Str+d4": "Stärke+W4",
+      "Str+d6": "Stärke+W6",
+      "Novice": "Anfänger",
+      "Seasoned": "Fortgeschritten",
+      "Veteran": "Veteran",
+      "Heroic": "Heroisch",
+      "One Power": "Eine Macht",
+      "Two Powers": "Zwei Mächte",
+      "Three Powers": "Drei Mächte",
+      "Four Powers": "Vier Mächte",
+      "Five Powers": "Fünf Mächte",
+      "Reach 1": "Reichweite 1",
+      "Reach 2": "Reichweite 2",
+      "Reach 3": "Reichweite 3",
+      "Regeneration (Slow)": "Regeneration (Langsam)",
+      "Regeneration (Slow + Injuries)": "Regeneration (Langsam + Verletzungen)",
+      "Size 1": "Größe 1",
+      "Size 2": "Größe 2",
+      "Size 3": "Größe 3",
+      "Half Normal Amount": "Halb so viel wie normal",
+      "Never Sleeps": "Schläft nie",
+      "Poison": "Gift",
+      "Disease": "Krankheit",
+      "Both": "Beides",
+      "Mild": "Leichtes Gift",
+      "Knockout": "K.O. - Gift",
+      "Lethal": "Tödliches Gift",
+      "Paralyzing": "Lähmendes Gift",
+      "Minor": "leicht",
+      "Major": "schwer",
+      "Common Skill": "Wird häufiger verwendet",
+      "Uncommon Skill": "Wird seltener verwendet",
+      "Agility": "Geschicklichkeit",
+      "Smarts": "Verstand",
+      "Spirit": "Willenskraft",
+      "Strength": "Stärke",
+      "Vigor": "Konstitution",
+      "Agility Penalty": "Geschicklichkeit",
+      "Smarts Penalty": "Verstand",
+      "Spirit Penalty": "Willenskraft",
+      "Strength Penalty": "Stärke",
+      "Vigor Penalty": "Konstitution",
+      "Academics": "Geisteswissenschaften",
+      "Athletics": "Athletik",
+      "Battle": "Kriegskunst",
+      "Boating": "Seefahrt",
+      "Common Knowledge": "Allgemeinwissen",
+      "Driving": "Fahren",
+      "Electronics": "Elektronik",
+      "Faith": "Glaube",
+      "Fighting": "Kämpfen",
+      "Focus": "Fokus",
+      "Gambling": "Glücksspiel",
+      "Hacking": "Hacken",
+      "Healing": "Heilen",
+      "Intimidation": "Einschüchtern",
+      "Language": "Sprache",
+      "Notice": "Wahrnehmung",
+      "Occult": "Okkultismus",
+      "Performance": "Darbietung",
+      "Persuasion": "Überreden",
+      "Piloting": "Pilot",
+      "Psionics": "Psionik",
+      "Repair": "Reparieren",
+      "Research": "Recherche",
+      "Riding": "Reiten",
+      "Science": "Naturwissenschaften",
+      "Shooting": "Schießen",
+      "Spellcasting": "Zaubern",
+      "Stealth": "Heimlichkeit",
+      "Survival": "Überleben",
+      "Taunt": "Provozieren",
+      "Thievery": "Diebeskunst",
+      "Weird Science": "Verrückte Wissenschaft",
     };
     const effectMap = {
       "Flight Pace 6": "Bewegungsweite (Fliegen) 6",
       "Flight Pace 12": "Bewegungsweite (Fliegen) 12",
       "Flight Pace 24 Run 2d6": "Bewegungsweite (Fliegen) 24, Sprintwürfel 2W6",
-      "Ancestry Toughness": "Robustheit (Volk)",
+      "Ancestry Toughness": "Robustheit (Abstammung)",
       "Reduced Pace": "Verringerte Bewegungsweite",
-      "Armor 1 (Ancestry)": "Panzerung 1 (Volk)",
-      "Armor 2 (Ancestry)": "Panzerung 2 (Volk)",
-      "Armor 3 (Ancestry)": "Panzerung 3 (Volk)",
+      "Armor 1 (Ancestry)": "Panzerung 1 (Abstammung)",
+      "Armor 2 (Ancestry)": "Panzerung 2 (Abstammung)",
+      "Armor 3 (Ancestry)": "Panzerung 3 (Abstammung)",
       "Heritage": "Erbe",
+      "Parry Increase (Ancestry)": "Parade (Abstammung)",
+      "Poor Parry (Ancestry)": "Schlechte Parade (Abstammung)",
+      "Agility Increase (Ancestry)": "Geschicklichkeit erhöht (Abstammung)",
+      "Smarts Increase (Ancestry)": "Verstand erhöht (Abstammung)",
+      "Spirit Increase (Ancestry)": "Willenskraft erhöht (Abstammung)",
+      "Strength Increase (Ancestry)": "Stärke erhöht (Abstammung)",
+      "Vigor Increase (Ancestry)": "Konstitution erhöht (Abstammung)",
+      "Agility Penalty (Ancestry)": "Geschicklichkeit Abzug (Abstammung)",
+      "Smarts Penalty (Ancestry)": "Verstand Abzug (Abstammung)",
+      "Spirit Penalty (Ancestry)": "Willenskraft Abzug (Abstammung)",
+      "Strength Penalty (Ancestry)": "Stärke Abzug (Abstammung)",
+      "Vigor Penalty (Ancestry)": "Konstitution Abzug (Abstammung)",
+      "Size 1": "Größe 1",
+      "Size 2": "Größe 2",
+      "Size 3": "Größe 3",
+      "Ancestry Skill d6 (Athletics)": "Abstammungsfertigkeit W6 (Athletik)",
+      "Ancestry Skill d6 (Common Knowledge)": "Abstammungsfertigkeit W6 (Allgemeinwissen)",
+      "Ancestry Skill d6 (Notice)": "Abstammungsfertigkeit W6 (Wahrnehmung)",
+      "Ancestry Skill d6 (Persuasion)": "Abstammungsfertigkeit W6 (Überreden)",
+      "Ancestry Skill d6 (Stealth)": "Abstammungsfertigkeit W6 (Heimlichkeit)",
+      "Skill Bonus (+1)": "Fertigkeitsbonus (+1)",
+      "Skill Bonus (+2)": "Fertigkeitsbonus (+2)",
     };
     const renameMap = {
       "Toughness +1": "Robustheit +1",
@@ -917,6 +1041,37 @@ const converters = {
       "Toughness +3": "Robustheit +3",
       "Reduced Pace (-1)": "Verringerte Bewegungsweite (-1)",
       "Reduced Pace (-2)": "Verringerte Bewegungsweite (-2)",
+      "Poor Parry (-1)": "Schlechte Parade (-1)",
+      "Poor Parry (-2)": "Schlechte Parade (-2)",
+      "Poor Parry (-3)": "Schlechte Parade (-3)",
+      "Parry (+1)": "Parade (+1)",
+      "Parry (+2)": "Parade (+2)",
+      "Parry (+3)": "Parade (+3)",
+      "Power (One Choice)": "Macht (Eine Wahl)",
+      "Power (Two Choices)": "Macht (Zwei Wahlen)",
+      "Power (Three Choices)": "Macht (Drei Wahlen)",
+      "Power (Four Choices)": "Macht (Vier Wahlen)",
+      "Power (Five Choices)": "Macht (Fünf Wahlen)",
+      "Reach (1)": "Reichweite (1)",
+      "Reach (2)": "Reichweite (2)",
+      "Reach (3)": "Reichweite (3)",
+      "Regeneration (Slow)": "Regeneration (Langsam)",
+      "Regeneration (Slow + Injuries)": "Regeneration (Langsam + Verletzungen)",
+      "Size 1": "Größe 1",
+      "Size 2": "Größe 2",
+      "Size 3": "Größe 3",
+      "Immune (Poison)": "Immun (Gift)",
+      "Immune (Disease)": "Immun (Krankheit)",
+      "Immune (Posion & Disease)": "Immun (Gift & Krankheit)",
+      "Poisonous Touch (Mild)": "Giftige Berührung (Leicht)",
+      "Poisonous Touch (Knockout)": "Giftige Berührung (K.O.)",
+      "Poisonous Touch (Lethal)": "Giftige Berührung (Tödlich)",
+      "Poisonous Touch (Paralyzing)": "Giftige Berührung (Lähmend)",
+      "Skill Penalty (-1)": "Fertigkeitsabzug (-1)",
+      "Skill Penalty (-2)": "Fertigkeitsabzug (-2)",
+      "Skill Penalty (-4)": "Fertigkeitsabzug (-4)",
+      "Skill Bonus (+1)": "Fertigkeitsbonus (+1)",
+      "Skill Bonus (+2)": "Fertigkeitsbonus (+2)",
     };
     const armorDesc = "<p>Die Spezies hat eine dicke Haut oder ist mit festem Material wie Schuppen oder sogar Fels bedeckt. Dies gewährt für jedes Mal, welches du diese Eigenschaft auswählst, +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}.</p>";
     const descMap = {
@@ -1141,7 +1296,7 @@ const effectTranslations = {
   "Ancestral Enemy": "Volksfeind",
   "Construct": "Konstrukt",
   "Frail": "Zerbrechlich",
-  "Pace (Ancestry)": "Bewegungsweite (Volk)",
+  "Pace (Ancestry)": "Bewegungsweite (Abstammung)",
   "Size -1": "Größe -1",
   "Elemental": "Elementar",
   "Hardy": "Zäh",
@@ -1310,8 +1465,8 @@ const effectDescriptionsByID = {
   "dHqIrpXx8rA1HUYG": "<div class=\"swade-core\">\n<p>Der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}-Bonus des Helden beträgt jetzt +2, und der @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03gangingup00000]{Überzahlbonus} wird um 2 Punkte verringert.</p>\n</div>",
   "hWEu2pgoT4yCDxiO": "<div class=\"swade-core\">\n<p>Gläubige stellen sich im Namen ihrer göttlichen Schutzherren großen Gefahren. Um solche schwierigen Situationen zu überleben gewähren die Mächte des Guten (oder Bösen) Wunder und die Fähigkeit, ihre Gunst in übernatürlichen Schutz zu verwandeln.</p> <p>Der Auserkorene darf für jeden ausgegebenen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr00]{Machtpunkt} +1 auf sein Ergebnis beim Schaden wegestecken addieren, bis zu einem Maximum von +4.</p>\n</div>",
   "tZfeHaS9PxaIn0mX": "<div class=\"swade-core\">\n<p>Helden müssen oft mit Ausrüstungsgegenständen oder sogar Möbeln kämpfen, auch wenn diese nicht für einen Kampf ausgelegt sind. Ein Kämpfer mit diesem Talent hat kein Problem mit @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03improvisedwe00]{improvisierten Waffen}. Er ignoriert den üblichen Abzug von -2, wenn er sie verwendet.</p>\n</div>",
-  "0n4zlJ3cSXp8vNj0": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +2 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht Stärke+W6 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Volkseigenart Klauen oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren keinen Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
-  "8GuAKkQxOUCIgz5k": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +1 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht Stärke+W4 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Volkseigenart @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili04]{Klauen} oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren <em>keinen</em> Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
+  "0n4zlJ3cSXp8vNj0": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +2 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht Stärke+W6 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Abstammungseigenart Klauen oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren keinen Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
+  "8GuAKkQxOUCIgz5k": "<div class=\"swade-core\">\n<p>Der Kämpfer hat die Grundlagen einer Kampfkunst erlernt. Seine Fäuste und Füße sind Waffen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen}) und somit gilt er immer als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03unarmeddefen00]{bewaffnet}. Er addiert +1 bei @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}-Angriffen mit ihnen und verursacht Stärke+W4 Schaden. Wenn er bereits einen Stärke-Schadenswürfel durch die Abstammungseigenart @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06specialabili04]{Klauen} oder das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.4lf3EBFmxqPA6HTX]{Raufbold} erhält, erhöhe den Schadenswürfel um einen Würfeltyp. Kampfkünstler addieren <em>keinen</em> Schaden auf andere Natürliche Waffen wie Fänge oder Hörner.</p>\n</div>",
   "Yo4QABeieRwTm0H7": "<div class=\"swade-core\">\n<p>Dein Krieger erholt sich schnell von Schock und Verletzungen. Er addiert +2 auf Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}.</p>\n</div>",
   "elSPHAiFU2C34XoO": "<div class=\"swade-core\">\n<p>Dein Charakter ist sehr groß oder sehr fit. Seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größe} steigt um +1 (und somit auch seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit}), und er behandelt seine Stärke als um einen Würfeltyp höher, wenn es um die Ermittlung von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02gearnotes00000]{Behinderung} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}, damit Rüstungen, Waffen und Ausrüstungsgegenstände ohne Abzug verwendet werden können, geht.</p> <p>Kräftig kann die Größe eines Charakters nicht über&nbsp;+3 anheben.</p>\n</div>",
   "Autx8trPTM7LfBwU": "<div class=\"swade-core\">\n<p>Charaktere, die ruhig bleiben, wenn alle anderen in @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} springen, können tödliche Kämpfer sein. Ein Held mit diesem Talent zieht eine zusätzliche @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03actioncardsi00]{Aktionskarten} im Kampf und wählt aus, welche er verwenden möchte.</p>\n</div>",
@@ -1372,7 +1527,7 @@ const effectDescriptionsByID = {
   "LpBn1TUzHNV3VFRW": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Bewegungsweite} des Charakters steigt um +2, und sein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} wird um einen Würfeltyp verbessert.</span></p>\n<p><strong>Wert:</strong> 2</p>\n<p><strong>Maximum:</strong> 2</p>\n</div>",
   "iTV63p0YQXWZF3rt": "<article class=\"swade-core\">Halblinge bekommen einen zusätzlichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03bennies0000000]{Benny} pro Spielsitzung.</article>",
   "zQkvgqw1kUtgBIij": "<div class=\"swade-core\">\n<p>Die Wesenheit ist kleiner als der Durchschnitt, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000]{Robustheit} um &ndash;1 verringert (siehe die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größentabelle}).</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
-  "fUoz3zZ3fcf4Ozjb": "<div class=\"swade-core\">\n<p>Die Mitglieder dieses Volkes haben eine Abneigung gegen ein anderes Volk, das in dem Setting recht weit verbreitet ist. Sie erleiden einen Abzug von &ndash;2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben}, wenn sie mit ihren Rivalen sprechen müssen, und sie werden auch bei kleinen Provokationen schnell feindselig. Dies kann nur einmal pro Volk ausgewählt werden.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
+  "fUoz3zZ3fcf4Ozjb": "<div class=\"swade-core\">\n<p>Die Mitglieder dieser Abstammung haben eine Abneigung gegen ein anderes Volk, das in dem Setting recht weit verbreitet ist. Sie erleiden einen Abzug von &ndash;2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben}, wenn sie mit ihren Rivalen sprechen müssen, und sie werden auch bei kleinen Provokationen schnell feindselig. Dies kann nur einmal pro Abstammung ausgewählt werden.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
   "zk4W4mwYBCR70M1H": "<div class=\"swade-core\">\n<p>Erde, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04fire0000000000]{Feuer}, Luft und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04drowning000000]{Wasser} stellen die Grundlage der Elementarreiche dar, in denen seltsame, unergründliche Kreaturen leben.</p>\n<p>Elementare haben Körper aus purer Erde, Feuer, Luft oder Wasser, und ignorieren somit zusätzlichen Schaden durch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03calledshots000]{Angesagte Ziele}, ignorieren 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}, atmen nicht, essen nicht und sind immun gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifte} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheiten}. Sie können nur über Magie oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Natürliche Heilung} geheilt werden.</p>\n</div>",
   "kLw0l3pGFffK3kGc": "<div class=\"swade-core\">\n<p>Roboter, Golems und andere belebte Objekte werden kollektiv als Konstrukte bezeichnet. Einige sind intelligente Wesen, andere bloße Automaten, die dem Willen ihres Meisters folgen.</p>\n<p>Was auch immer ihre Ursprünge und ihr Material sind, Konstrukte haben mehrere Vorteile gegenüber Kreaturen aus Fleisch und Blut.</p>\n<p>Konstrukte addieren +2, wenn sie Erholungsproben gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Angeschlagen} ablegen, ignorieren 1 Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wundabzüge}, atmen nicht, essen nicht und sind immun gegen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04disease0000000]{Krankheiten} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifte}, verbluten nicht, und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{Wunden} werden mit @UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparieren} anstelle von @UUID[Compendium.swade-core-rules.swade-skills.Item.Syo1BvITMeRV2Aat]{Heilen} entfernt, ohne &bdquo;@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03healing0000000]{Goldene Stunde}&ldquo;.</p>\n</div>",
   "URRGGtopX2gc5a8M": "<article class=\"swade-core\">\n<ul>\n<li><strong>Schnell:</strong> W10 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel}.</li>\n</ul>\n</article>",
@@ -1500,8 +1655,8 @@ const ambiguousEffectIdNames = {
   "fOCC3PU2YmRCtLXh": ["Menacing", "Mentalist"],
 };
 
-// Volksgewährte Effekte, die den volksspezifischen Item-Text spiegeln sollen statt des
-// generischen Texts (geteilte Handicap-IDs + Panzerung-Volk-IDs).
+// Abstammungsgewährte Effekte, die den abstammungsspezifischen Item-Text spiegeln sollen statt des
+// generischen Texts (geteilte Handicap-IDs + Panzerung-Abstammung-IDs).
 const ANCESTRY_GRANT_EFFECT_IDS = new Set([
   "qco7WaIGiyhFSZlM",
   "fUoz3zZ3fcf4Ozjb",
@@ -2059,11 +2214,11 @@ const macroEffectNameMap = new Map([
   ["Perished",           "Gestorben"],
   ["Bleeding Out",       "Verblutend"],
   ["Rending",            "Zerfleischt"],
-  // Volk-choiceSet-Effekte (Fallback, falls der Converter den erzeugten Effekt nicht erreicht)
-  ["Armor 1 (Ancestry)", "Panzerung 1 (Volk)"],
-  ["Armor 2 (Ancestry)", "Panzerung 2 (Volk)"],
-  ["Armor 3 (Ancestry)", "Panzerung 3 (Volk)"],
-  ["Ancestry Toughness", "Robustheit (Volk)"],
+  // Abstammung-choiceSet-Effekte (Fallback, falls der Converter den erzeugten Effekt nicht erreicht)
+  ["Armor 1 (Ancestry)", "Panzerung 1 (Abstammung)"],
+  ["Armor 2 (Ancestry)", "Panzerung 2 (Abstammung)"],
+  ["Armor 3 (Ancestry)", "Panzerung 3 (Abstammung)"],
+  ["Ancestry Toughness", "Robustheit (Abstammung)"],
   ["Flight Pace 6",      "Bewegungsweite (Fliegen) 6"],
   ["Flight Pace 12",     "Bewegungsweite (Fliegen) 12"],
   ["Flight Pace 24 Run 2d6", "Bewegungsweite (Fliegen) 24, Sprintwürfel 2W6"],
@@ -2091,8 +2246,8 @@ const macroEffectNamePatterns = [
   { regex: /^Lower (.+)$/, replace: (m) => `Eigenschaft senken: ${m[1]}` },
 ];
 
-// Panzerungs-Effekte (Volk): den generischen armorDesc NICHT setzen, wenn der Effekt
-// bereits eine Beschreibung trägt (volksspezifischer Text aus preCreateItem).
+// Panzerungs-Effekte (Abstammung): den generischen armorDesc NICHT setzen, wenn der Effekt
+// bereits eine Beschreibung trägt (abstammungsspezifischer Text aus preCreateItem).
 const ANCESTRY_ARMOR_EFFECT_NAMES = new Set([
   "Armor 1 (Ancestry)",
   "Armor 2 (Ancestry)",
@@ -2653,8 +2808,8 @@ Hooks.once('ready', async () => {
   const RED = '#aa0000';
 
   const dynamic = isGerman
-    ? `<div style="text-align:center;">Da dein Interface bereits auf Deutsch eingestellt ist, kannst du sofort loslegen. Viel Spaß – Arga.</div>`
-    : `<div style="text-align:center;color:${RED};">Dein Interface ist derzeit noch auf Englisch eingestellt.<br>Zum Umstellen nutze den Button unterhalb des Textes.<br>Viel Spaß – Arga.</div>`;
+    ? `<div style="text-align:center;">Da dein Interface bereits auf Deutsch eingestellt ist, kannst du sofort loslegen.<p style="margin:0.6rem 0 0;">Viel Spaß – Arga.</p></div>`
+    : `<div style="text-align:center;color:${RED};">Dein Interface ist derzeit noch auf Englisch eingestellt.<br>Zum Umstellen nutze den Button unterhalb des Textes.<p style="margin:0.6rem 0 0;">Viel Spaß – Arga.</p></div>`;
 
   const content = `
     <div style="display:flex;flex-direction:column;gap:0.7rem;">
@@ -2728,4 +2883,19 @@ Hooks.once('ready', async () => {
   } catch (e) {
     Hooks.off('renderDialogV2', onRenderWelcome);
   }
+});
+
+Hooks.once('init', () => {
+  const mod = game.modules.get(MODULE_ID);
+  if (!mod) return;
+  mod.api = Object.assign(mod.api ?? {}, {
+    effectTranslations,
+    resolveEffectDescriptionFor(effectId, enName, parentDesc) {
+      if (effectId && ANCESTRY_GRANT_EFFECT_IDS.has(effectId) && parentDesc) return parentDesc;
+      if (effectId && AMBIGUOUS_EFFECT_IDS.has(effectId)) return (enName && effectDescriptionsByName[enName]) || null;
+      if (effectId && effectDescriptionsByID[effectId]) return effectDescriptionsByID[effectId];
+      if (enName && effectDescriptionsByName[enName]) return effectDescriptionsByName[enName];
+      return null;
+    },
+  });
 });

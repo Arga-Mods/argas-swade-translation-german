@@ -20,7 +20,9 @@
         "verified": "14"
     },
     "esmodules": [
-        "register.js"
+        "register.js",
+        "scripts/convert-world.js",
+        "scripts/toggle-language.js"
     ],
     "styles": [
         "styles/branding.css"
