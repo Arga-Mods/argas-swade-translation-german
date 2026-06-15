@@ -46,10 +46,10 @@ Die Konvertierung der Welt kann auch über die Spieleinstellungen gesteuert werd
 - [SWADE Core Rules](https://foundryvtt.com/packages/swade-core-rules) – kostenpflichtiges Premium-Modul von Pinnacle
   
 ## Rechte
-**Savage Worlds** und **SWADE** sind Eigentum der **Pinnacle Entertainment Group**; die deutschsprachigen Rechte liegen bei **Ulisses Spiele**. Dieses inoffizielle Fan-Projekt liefert die deutschen Regeltexte von Ulisses Spiele (verwendet mit Genehmigung) als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, das installiert sein muss und nicht ersetzt wird.
+**Savage Worlds** und **SWADE** sind Eigentum der ***Pinnacle Entertainment Group***; die deutschsprachigen Rechte liegen bei ***Ulisses Spiele***. Dieses inoffizielle Fan-Projekt liefert (mit vorliegender Genehmigung) die deutschen Regeltexte von Ulisses Spiele als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, welches installiert sein muss und durch ***Arga's SWADE Translation (German)*** nicht ersetzt wird.
 
 ## Wirf auch gerne einen Blick auf meine anderen Module
 
-* **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein grundsätzlich ***systemunabhängiges*** Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie Funktionen und Würfelmechaniken für das Savage-Worlds-System, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
-* **[Arga's Benny & Wound Panel (SWADE)](https://github.com/Arga-Mods/argas-benny-and-wound-panel-swade)** – Ein Panel für Savage Worlds zum schnellen Anpassen von Bennys, Wunden und Erschöpfung.
+* **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein grundsätzlich *systemunabhängiges* Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie Funktionen und Würfelmechaniken speziell für das ***Savage-Worlds-System***, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
+* **[Arga's Benny & Wound Panel (SWADE)](https://github.com/Arga-Mods/argas-benny-and-wound-panel-swade)** – Ein Panel für ***Savage Worlds*** zum schnellen Anpassen von Bennys, Wunden und Erschöpfung.
 * **[Arga's Day-Night Slider](https://github.com/Arga-Mods/argas-day-night-slider)** – Ein Schieberegler für einen sanften Tag-Nacht-Übergang in deinen Szenen.
