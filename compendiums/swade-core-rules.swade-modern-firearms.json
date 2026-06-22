@@ -152,7 +152,7 @@
     },
     "6JiiVGrMaQS9bVgf": {
       "name": "Pistole (Laser)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe}, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
       "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
       "Munition": "Laserbatterie, Pistole",
       "Eigenschaft": "Schießen",
@@ -199,8 +199,8 @@
       }
     },
     "6aFYNugXl2uLJQbp": {
-      "name": "M-16",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Version A&ndash;2 kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3 Schuss Feuerstöße} abgeben.</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
+      "name": "M16",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Version A-2 kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3-Schuss-Feuerstöße} abgeben.</p>\n<hr />\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
       "Notizen": "5.56mm",
       "Munition": "Patronen, Mittel",
       "Eigenschaft": "Schießen",
@@ -316,7 +316,7 @@
     },
     "DJovklcSKeGtihE6": {
       "name": "Maschinenpistole (Laser)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe}, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
       "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
       "Munition": "Laserbatterie, Gewehr / MP",
       "Eigenschaft": "Schießen",
@@ -365,7 +365,7 @@
       }
     },
     "Dwvi31u98ocbGicu": {
-      "name": "AK47",
+      "name": "AK-47",
       "Beschreibung": "<div class=\"swade-core\">\n<p>Zusätzliche Magazine oder Ladestreifen kosten 10% des Preises des Gewehrs und wiegen ungefähr 0,5 kg.</p>\n</div>",
       "Notizen": "7.62mm",
       "Munition": "Patronen, Mittel",
@@ -506,7 +506,7 @@
     },
     "JRkRvWNvUhpb5UvL": {
       "name": "Steyr AUG",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3 Schuss Feuerstöße} abgeben.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kann auch @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02threeroundbu00]{3-Schuss-Feuerstöße} abgeben.</p>\n</div>",
       "Notizen": "5.56mm",
       "Munition": "Patronen, Mittel",
       "Eigenschaft": "Schießen",
@@ -716,8 +716,8 @@
     },
     "QnHkPexPDUotkOfd": {
       "name": "Gatling (Laser)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Fahrzeugwaffen mit einer @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Feuerrate} von 3 oder höher haben eine Feuerrate von <em>mindestens</em> 2.</p>\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02lasersfuturi00]{Kauterisieren, Überladen, Kein Rückstoß}</p>\n</div>",
-      "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe}, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p>Anders als andere Laserwaffen erleiden Gatling-Laser den Abzug für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n<p><strong><u>HINWEIS:</u></strong> Werden Gatling-Laser als <em>Fahrzeugwaffe</em> montiert, gelten sie nicht als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02heavyweaponh00]{Schwere Waffe}. Dafür haben sie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB 4} und eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02rateoffire0000]{Minimale Feuerrate} von mindestens 2.</p>\n</div>",
+      "Notizen": "Kauterisieren, Überladen",
       "Munition": "Laserbatterie, Gatling",
       "Eigenschaft": "Schießen",
       "Quelle": "SWADE Core Rules",
@@ -766,7 +766,7 @@
     },
     "TF1Bp2cToLeUljpH": {
       "name": "Gewehr (Laser)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitution}sprobe, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Laser feuern extrem fokussierte Lichtstrahlen ab, um ihre Ziele zu durchschlagen und zu verbrennen.</p>\n<p><strong>Kauterisieren:</strong> Jeder, der durch einen Laser Ausgeschaltet wird, erhält +2 auf seine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe}, um nicht zu @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03damageeffect00]{verbluten}.</p>\n<p><strong>Überladen:</strong> Laserwaffen können überladen werden, um einen zusätzlichen W6 Schaden zu verursachen, doch wenn einer der @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Würfel eine 1 zeigt, muss die Waffe danach eine volle Runde abkühlen, ehe sie wieder abgefeuert werden kann.</p>\n<p><strong>Kein Rückstoß:</strong> Pistolen, Maschinenpistolen und Gewehre ignorieren @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03recoil00000000]{Rückstoß}. Gatling-Laser erleiden den Abzug allerdings, weshalb sie normalerweise auf einem @UUID[Compendium.swade-core-rules.swade-equipment.Item.g93JJpI7Wl7da7D7]{Dreibein} montiert sind.</p>\n</div>",
       "Notizen": "Kauterisieren, Überladen, Kein Rückstoß",
       "Munition": "Laserbatterie, Gewehr / MP",
       "Eigenschaft": "Schießen",
@@ -1259,7 +1259,7 @@
       }
     },
     "xQv3bz4eKq7qpbue": {
-      "name": "Glock (9mm)",
+      "name": "Glock (9 mm)",
       "Beschreibung": "<div class=\"swade-core\">\n<p>Halbautomatikwaffen werden aus einem Magazin gespeist. Die Standardgröße der Magazine ist unten aufgeführt. Zusätzliche Magazine können für 10% des Preises der Waffe erworben werden. Sie wiegen voll geladen ungefähr je 0,5 kg.</p>\n</div>",
       "Notizen": "9mm",
       "Munition": "Patronen, Mittel",

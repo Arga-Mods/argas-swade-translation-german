@@ -21,7 +21,7 @@
   "entries": {
     "0XaBM3JcyY2fslVQ": {
       "name": "Infanteriekampfanzug",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -45,7 +45,7 @@
     },
     "27yvARs2hByayDEl": {
       "name": "Kevlarhelm",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -150,7 +150,7 @@
     },
     "BjMgzEicIN61VX2R": {
       "name": "Kevlarweste mit Keramikplatten",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -195,7 +195,7 @@
     },
     "E4hQ1qevbfs5yYVp": {
       "name": "Kevlarweste",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -231,7 +231,7 @@
     },
     "QVlY1ghxrKIyU1Ja": {
       "name": "Kampfhelm mit E-Überzug",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um -4. Glänzt sehr stark, was -2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsproben} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -297,7 +297,7 @@
     },
     "TmmrZ9aJcrUGFCeG": {
       "name": "Kampfhelm",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Rüstung, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Rüstung, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
       "Notizen": "",
       "Aktionen": {
         "dmgMod": "",
@@ -369,7 +369,7 @@
     },
     "Y4oNkemRkqbOalET": {
       "name": "Infanteriekampfanzug mit E-Überzug",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong> Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Rüstung}, die von privaten oder staatlichen Streitkräften verwendet wird.</p>\n<p>Ein Ganzkörperanzug mit Stiefeln und Handschuhen.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong> Senkt den Schaden von Lasern um -4. Glänzt sehr stark, was -2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsproben} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
       "Notizen": "Eine vollständige Rüstung mit Stiefeln und Handschuhen.",
       "Aktionen": {
         "dmgMod": "",
@@ -381,8 +381,8 @@
     },
     "Z14xDpmAGAteybFN": {
       "name": "Schwerer Helm, geschlossen",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n<p>&ndash;1 auf Sicht-basierte @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}.</p>\n</div>",
-      "Notizen": "–1 auf Sicht-basierte Wahrnehmungsproben.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Stahlrüstung mit &bdquo;Platten&ldquo; aus Metall.</p>\n<p>-1 auf Sicht-basierte @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsproben}.</p>\n</div>",
+      "Notizen": "-1 auf Sicht-basierte Wahrnehmungsproben.",
       "Aktionen": {
         "dmgMod": "",
         "additional": {},
@@ -486,8 +486,8 @@
     },
     "g3aMHScgnoZhgWAG": {
       "name": "Bombenschutzanzug",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Bombenschutzanzüge sind mit Ausnahme der Hände, die unbedeckt sind, nicht für Beweglichkeit gebaut. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000#attribute]{Geschicklichkeit} und verknüpfte Fertigkeiten, die mehr als Fingerfertigkeit erfordern, können nicht höher sein als W6, solange der Anzug getragen wird, und die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Bewegung} sinkt um &ndash;2 (zusätzlich zu den Abzügen für die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}).</p>\n</div>",
-      "Notizen": "Bombenschutzanzüge sind nicht auf Beweglichkeit ausgelegt, außer an den unbedeckten Händen. Geschicklichkeit und verknüpfte Fertigkeiten, die mehr als reine Fingerfertigkeit erfordern, können beim Tragen des Anzugs nicht höher als W6 sein; die Bewegungsweite ist um 2 reduziert (zusätzlich zu Abzügen durch Mindeststärke).",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Bombenschutzanzüge sind mit Ausnahme der Hände, die unbedeckt sind, nicht für Beweglichkeit gebaut. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000#attribute]{Geschicklichkeit} und verknüpfte Fertigkeiten, die mehr als Fingerfertigkeit erfordern, können nicht höher sein als W6, solange der Anzug getragen wird, und die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Bewegungsweite} sinkt um -2 (zusätzlich zu den Abzügen für die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke}).</p>\n</div>",
+      "Notizen": "Bombenschutzanzüge sind nicht auf Beweglichkeit ausgelegt, außer an den unbedeckten Händen. Geschicklichkeit und verknüpfte Fertigkeiten, die mehr als reine Fingerfertigkeit erfordern, können beim Tragen des Anzugs nicht höher als W6 sein; die Bewegungsweite ist um -2 reduziert (zusätzlich zu Abzügen durch Mindeststärke).",
       "Aktionen": {
         "dmgMod": "",
         "additional": {},
@@ -498,8 +498,8 @@
     },
     "im0ncHWBtfy1TLtP": {
       "name": "Körperpanzerung",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an</p>\n</div>",
-      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder modernem ballistischem Gewebe.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>Ballistischer Schutz:</strong> Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n</div>",
+      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.",
       "Aktionen": {
         "dmgMod": "",
         "additional": {},
@@ -522,8 +522,8 @@
     },
     "mefRkcK1zybkZau8": {
       "name": "Ballistischer Schild",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Moderne Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 12 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n<hr />\n<p>Verringert den Schaden von Feuerwaffen um &ndash;4, wenn ein Angreifer durch den Schild schießen will.</p>\n</div>",
-      "Notizen": "Verringert den Schaden durch Schusswaffen um 4, wenn ein Angreifer versucht, hindurchzuschießen.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schilde erhöhen die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade} des Charakters, wie unten angegeben. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00]{Deckung} wird von Fernkampfangriffen von vorne und von der Schildseite abgezogen (Angriffe von hinten oder der ungeschützten Seite ignorieren die Deckung).</p>\n<hr />\n<p>Moderne Schilde haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03breakingthin00#objektharte]{Härte} 12 und bieten +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}, sollte jemand versuchen, durch sie zu schießen (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03coverandobst00#hindernisse]{Hindernisse}).</p>\n<p>Solange Schilde getragen werden, können sie zum Zuschlagen verwendet werden und verursachen Stä+W4 Schaden.</p>\n<hr />\n<p>Verringert den Schaden von Feuerwaffen um -4, wenn ein Angreifer durch den Schild schießen will.</p>\n</div>",
+      "Notizen": "Verringert den Schaden durch Schusswaffen um -4, wenn ein Angreifer versucht, hindurchzuschießen.",
       "Aktionen": {
         "dmgMod": "",
         "additional": {
@@ -576,8 +576,8 @@
     },
     "nzLIrdAzulYJ6KWG": {
       "name": "Körperpanzerung mit E-Überzug",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um &ndash;4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um &ndash;4. Glänzt sehr stark, was &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeit} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
-      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder modernem ballistischem Gewebe.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02ballisticpro00]{Ballistischer Schutz}:</strong>&nbsp;Verringert den Schaden von Kugeln um -4. &bdquo;Kugeln&ldquo; umfasst hierbei jedes physische Projektil, das aus einer Feuerwaffe abgeschossen wird. Rechne den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armorpiercin00]{PB}-Wert einer Waffe nur gegen den eigentlichen Panzerungswert der Rüstung an.</p>\n<p><strong>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02energyskin0000]{Energieüberzug}:</strong>&nbsp;Senkt den Schaden von Lasern um -4. Glänzt sehr stark, was -2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.bFaYnzftXwQ9p4Si]{Heimlichkeitsproben} abzieht, wenn Sichtbarkeit eine Rolle spielt.</p>\n</div>",
+      "Notizen": "Leichte, gepanzerte Kleidung aus komplexen Polymeren oder fortschrittlichem ballistischem Tuch.",
       "Aktionen": {
         "dmgMod": "",
         "additional": {},

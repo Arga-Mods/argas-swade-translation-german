@@ -29,7 +29,7 @@
     },
     "ADDAsFXsFJvZsIwc": {
       "name": "Zusätzliche Aktion",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Das Wesen hat zusätzliche Gliedmaßen, beschleunigte Reflexe oder eine außergewöhnliche Hand-Auge-Koordination. Es kann pro Zug 2 Punkte Abzüge für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionen} ignorieren.</p>\n<p><strong>Wert:</strong> 3</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Das Wesen hat zusätzliche Gliedmaßen, beschleunigte Reflexe oder eine außergewöhnliche Hand-Auge-Koordination. Es kann pro Zug 2 Punkte Abzug für @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03multiactions00]{Mehrfachaktionen} ignorieren.</p>\n<p><strong>Wert:</strong> 3</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "AINCsFXsFJvZsIwc": {
@@ -38,8 +38,8 @@
       "Quelle": "SWADE Core Rules"
     },
     "APELsFXsFJvZsIwc": {
-      "name": "Attributsabzug −1",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribut} (aber nicht die verknüpften Fertigkeiten) erleidet einen Abzug von &ndash;1.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "name": "Attributsabzug -1",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribut} (aber nicht die verknüpften Fertigkeiten) erleidet einen Abzug von -1.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "AQUAsFXsFJvZsIwc": {
@@ -49,17 +49,17 @@
     },
     "ARMOsFXsFJvZsIwc": {
       "name": "Panzerung",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Spezies hat eine dicke Haut oder ist mit festem Material wie Schuppen oder sogar Fels bedeckt. Dies gewährt für jedes Mal, welches du diese Eigenschaft auswählst, +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Spezies hat eine dicke Haut oder ist mit festem Material wie Schuppen oder sogar Fels bedeckt. Dies gewährt für jedes Mal, wenn du diese Eigenschaft auswählst, +2 @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02armor000000000]{Panzerung}.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "BIGWsFXsFJvZsIwc": {
       "name": "Wuchtig",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung ist besonders groß in einer Welt, in der es die meisten anderen nicht sind. Der Charakter zieht &ndash;2 von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaftswürfen} ab, wenn er Ausrüstung verwendet, die nicht speziell für seine Abstammung ausgelegt ist. Rüstung oder Kleidung, die nicht für seine Abstammung ausgelegt ist, kann er gar nicht tragen. Ausrüstung, Nahrung und Kleidung kosten für ihn den doppelten angegebenen Preis.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung ist besonders groß in einer Welt, in der es die meisten anderen nicht sind. Der Charakter zieht -2 von @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Eigenschaftswürfen} ab, wenn er Ausrüstung verwendet, die nicht speziell für seine Abstammung ausgelegt ist. Rüstung oder Kleidung, die nicht für seine Abstammung ausgelegt ist, kann er gar nicht tragen. Ausrüstung, Nahrung und Kleidung kosten für ihn den doppelten angegebenen Preis.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "BITEsFXsFJvZsIwc": {
       "name": "Biss",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Die Abstammung hat @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Reißzähne}, die </span><span class=\"fontstyle2\">Stärke </span><span class=\"fontstyle0\">+ W4 Schaden verursachen.</span></p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Die Abstammung hat @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Reißzähne}, die </span><span class=\"fontstyle2\">Stärke </span><span class=\"fontstyle0\">+ W4 Schaden verursachen. Siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03naturalweapo00]{Natürliche Waffen} für mehr Informationen.</span></p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "BREAsFXsFJvZsIwc": {
@@ -104,7 +104,7 @@
     },
     "FRAIsFXsFJvZsIwc": {
       "name": "Zerbrechlich",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur ist weniger widerstandsfähig. Verringere ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um &ndash;1.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 2</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur ist weniger widerstandsfähig. Verringere ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um -1.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 2</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "HARDsFXsFJvZsIwc": {
@@ -164,17 +164,17 @@
     },
     "POITsFXsFJvZsIwc": {
       "name": "Giftige Berührung",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Nach einem erfolgreichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03touchattack000]{Berührungsangriff}, @UUID[Compendium.swade-core-rules.swade-racial-abilities.Item.BITEsFXsFJvZsIwc]{Biss}- oder @UUID[Compendium.swade-core-rules.swade-racial-abilities.Item.CLAWsFXsFJvZsIwc]{Klauenangriff} muss das Opfer eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} ablegen, um nicht die Auswirkungen eines leichten @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifts} zu erleiden. Für 3 Punkte kann das Gift auf Betäubungsgift, tödliches Gift oder lähmendes Gift aufgewertet werden, doch jede Anwendung verursacht bei dem angreifenden Charakter @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung}. Der Charakter kann sich immer entscheiden, ob er seine giftige Berührung verwenden will oder nicht.</p>\n<p><strong>Wert:</strong> 1/3</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Nach einem erfolgreichen @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03touchattack000]{Berührungsangriff}, @UUID[Compendium.swade-core-rules.swade-racial-abilities.Item.BITEsFXsFJvZsIwc]{Biss}- oder @UUID[Compendium.swade-core-rules.swade-racial-abilities.Item.CLAWsFXsFJvZsIwc]{Klauenangriff} muss das Opfer eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe} ablegen, um nicht die Auswirkungen eines leichten @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04poison00000000]{Gifts} zu erleiden. Für 3 Punkte kann das Gift auf Betäubungsgift, tödliches Gift oder lähmendes Gift aufgewertet werden, doch jede Anwendung verursacht bei dem angreifenden Charakter @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03fatigue0000000]{Erschöpfung}. Der Charakter kann sich immer entscheiden, ob er seine giftige Berührung verwenden will oder nicht.</p>\n<p><strong>Wert:</strong> 1/3</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "POORsFXsFJvZsIwc": {
       "name": "Schlechte Parade",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Wesen sind nicht gut darin, sich im Nahkampf zu verteidigen, und erleiden &ndash;1 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Wesen sind nicht gut darin, sich im Nahkampf zu verteidigen, und erleiden -1 auf @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Parade}.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "POWEsFXsFJvZsIwc": {
       "name": "Macht",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung hat eine angeborene Fähigkeit, die wie eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Macht} funktioniert. Für 2 Punkte hat der Charakter den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr01]{Arkanen Hintergrund (Begabt)} und eine Macht, die seine ungewöhnliche Fähigkeit widerspiegelt. Jedes weitere Mal, welches du diese Eigenart nach dem ersten Mal auswählst, kostet 1 Punkt und gewährt eine weitere Macht. Dies erhöht <em>nicht</em> deine Machtpunkte &ndash; verwende dafür das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.I5ezwjOsBFuoxEaN]{Machtpunkte}.</p>\n<p><strong>Wert:</strong> 2/1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung hat eine angeborene Fähigkeit, die wie eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05powers00000000]{Macht} funktioniert. Für 2 Punkte hat der Charakter den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor05powers.JournalEntryPage.05arcanebackgr01]{Arkanen Hintergrund (Begabt)} und eine Macht, die seine ungewöhnliche Fähigkeit widerspiegelt. Jedes weitere Mal, wenn du diese Eigenart nach dem ersten Mal auswählst, kostet 1 Punkt und gewährt eine weitere Macht. Dies erhöht <em>nicht</em> deine Machtpunkte &ndash; verwende dafür das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.I5ezwjOsBFuoxEaN]{Machtpunkte}.</p>\n<p><strong>Wert:</strong> 2/1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "RCORsFXsFJvZsIwc": {
@@ -184,7 +184,7 @@
     },
     "REACsFXsFJvZsIwc": {
       "name": "Reichweite",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Lange Gliedmaßen, Tentakel, oder etwas in der Art gewähren der Kreatur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} +1. Addiere +1 für jedes weitere Mal, wenn du diese Eigenart auswählst.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Lange Gliedmaßen, Tentakel oder etwas in der Art gewähren der Kreatur @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reach000000000]{Reichweite} +1. Addiere +1 für jedes weitere Mal, wenn du diese Eigenart auswählst.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "REGEsFXsFJvZsIwc": {
@@ -194,32 +194,32 @@
     },
     "RENMsFXsFJvZsIwc": {
       "name": "Volksfeind",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Mitglieder dieser Abstammung haben eine Abneigung gegen ein anderes Volk, das in dem Setting recht weit verbreitet ist. Sie erleiden einen Abzug von &ndash;2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben}, wenn sie mit ihren Rivalen sprechen müssen, und sie werden auch bei kleinen Provokationen schnell feindselig. Dies kann nur einmal pro Abstammung ausgewählt werden.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Mitglieder dieser Abstammung haben eine Abneigung gegen ein anderes Volk, das in dem Setting recht weit verbreitet ist. Sie erleiden einen Abzug von -2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überredenproben}, wenn sie mit ihren Rivalen sprechen müssen, und sie werden auch bei kleinen Provokationen schnell feindselig. Dies kann nur einmal pro Abstammung ausgewählt werden.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "RESIsFXsFJvZsIwc": {
       "name": "Widerstand gegen Naturgewalten",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Diese Spezies erhält einen Bonus von +4 beim Widerstand gegen einen negativen Umgebungseffekt, wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04heat0000000000]{Hitze}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04cold0000000000]{Kälte}, Luftmangel, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04radiation00000]{Strahlung} etc. Schaden aus entsprechenden Quellen wird ebenfalls um &ndash;4 verringert.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Diese Spezies erhält einen Bonus von +4 beim Widerstand gegen einen negativen Umgebungseffekt, wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04heat0000000000]{Hitze}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04cold0000000000]{Kälte}, Luftmangel, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04radiation00000]{Strahlung} etc. Schaden aus entsprechenden Quellen wird ebenfalls um -4 verringert.</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "RPACsFXsFJvZsIwc": {
       "name": "Verringerte Bewegungsweite",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Für &ndash;1 Punkt verringere die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} um &ndash;1 und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} um einen Würfeltyp (ein W4 wird zu einem W4&ndash;1). Für &ndash;2 Punkte verringere die Bewegungsweite um weitere &ndash;2 Punkte und ziehe &ndash;2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben} ab. Der Malus von &ndash;2 kommt auch zur Anwendung, wenn der Charakter einer auf Athletik basierenden Probe widersteht, bei der Bewegung oder Beweglichkeit eine Rolle spielt (Entscheidung des SLs).</p>\n<p><strong>Wert:</strong> -1/-2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Für -1 Punkt verringere die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Bewegungsweite} um -1 und den @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03movement000000]{Sprintwürfel} um einen Würfeltyp (ein W4 wird zu einem W4-1). Für -2 Punkte verringere die Bewegungsweite um weitere -2 Punkte und ziehe -2 von @UUID[Compendium.swade-core-rules.swade-skills.Item.qc2GOKFIXIJEpTw1]{Athletikproben} ab. Der Malus von -2 kommt auch zur Anwendung, wenn der Charakter einer auf Athletik basierenden Probe widersteht, bei der Bewegung oder Beweglichkeit eine Rolle spielt (Entscheidung der SL).</p>\n<p><strong>Wert:</strong> -1/-2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
-    "Attribute Penalty -2": {
-      "name": "Attributsabzug −2",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribut} (aber nicht die verknüpften Fertigkeiten) erleidet einen Abzug von &ndash;2.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+    "RmJDpDJtgG19p0CJ": {
+      "name": "Attributsabzug -2",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Attribut} (aber nicht die verknüpften Fertigkeiten) erleidet einen Abzug von -2.</p>\n<p><strong>Wert:</strong> -3</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "SIZEaFXsFJvZsIwc": {
       "name": "Größe +1",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur ist größer als normal. Jeder Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} wird direkt auf die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} angerechnet und erhöht die maximale Stärke um einen Schritt. Große Spezies haben manchmal Schwierigkeiten, Ausrüstung zu verwenden, die für traditionellere Humanoiden hergestellt wurde (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größentabelle}).</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Kreatur ist größer als normal. Jeder Punkt @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} wird direkt auf die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} angerechnet und erhöht die maximale Stärke um einen Schritt. Große Spezies haben manchmal Schwierigkeiten, Ausrüstung zu verwenden, die für traditionellere Humanoide hergestellt wurde (siehe @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größentabelle}).</p>\n<p><strong>Wert:</strong> 1</p>\n<p><strong>Maximum:</strong> 3</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "SIZEsFXsFJvZsIwc": {
       "name": "Größe -1",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Wesenheit ist kleiner als der Durchschnitt, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um &ndash;1 verringert (siehe die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größentabelle}).</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Wesenheit ist kleiner als der Durchschnitt, was ihre @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03sizeandscale00]{Größe} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01characters0000#abgeleitete-werte]{Robustheit} um -1 verringert (siehe die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor06bestia.JournalEntryPage.06sizetable00000]{Größentabelle}).</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "SLEEsFXsFJvZsIwc": {
@@ -229,7 +229,7 @@
     },
     "SUPErFXsFJvZsIwc": {
       "name": "Superkräfte",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung hat wirklich außergewöhnliche Fähigkeiten aus dem <em>Savage Worlds Superkräfte Kompendium</em>. Die Kosten betragen 2 &mdash; für den Arkanen Hintergrund (Superkräfte) &mdash; plus die eigentlichen Kosten der ausgewählten Superkraft (X). Frage die SL in jedem Fall um Erlaubnis, ehe du diese mächtige Abstammungseigenart auswählst.</p>\n<p><strong>Wert:</strong> 2+X</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung hat wirklich außergewöhnliche Fähigkeiten aus dem <em>Savage Worlds Superkräfte-Kompendium</em>. Die Kosten betragen 2 &mdash; für den Arkanen Hintergrund (Superkräfte) &mdash; plus die eigentlichen Kosten der ausgewählten Superkraft (X). Frage die SL in jedem Fall um Erlaubnis, ehe du diese mächtige Abstammungseigenart auswählst.</p>\n<p><strong>Wert:</strong> 2+X</p>\n<p><strong>Maximum:</strong> 1</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "TOUGhFXsFJvZsIwc": {
@@ -244,17 +244,17 @@
     },
     "WEAKsFXsFJvZsIwc": {
       "name": "Anfälligkeit für Naturgewalten",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von &ndash;4, um einem bestimmten Umgebungseffekt zu widerstehen, wie zum Beispiel @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04heat0000000000]{Hitze} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04cold0000000000]{Kälte}. Wenn das Wesen einen Angriff erleidet, der auf diesem Effekt basiert, wird der Abzug als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadensbonus} eingerechnet.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von -4, um einem bestimmten Umgebungseffekt zu widerstehen, wie zum Beispiel @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04heat0000000000]{Hitze} oder @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor04theadv.JournalEntryPage.04cold0000000000]{Kälte}. Wenn das Wesen einen Angriff erleidet, der auf diesem Effekt basiert, wird der Abzug als @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03dealingdamag00]{Schadensbonus} eingerechnet.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> Unbegrenzt</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "jnTBiw2VeTh62Nvt": {
-      "name": "Fertigkeitsabzug (−1/−2)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von &ndash;1 auf eine sehr häufig verwendete Fertigkeit wie @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}, @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} oder sogar @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot}, wenn das Spiel auf Flugzeuge fokussiert ist. (Die SL entscheidet dies abhängig von der Kampagne.) Wenn die Fertigkeit weniger verbreitet ist und nur in bestimmten Situationen zum Tragen kommt, beträgt der Abzug &ndash;2. Für 2 Punkte beträgt der Abzug stattdessen &ndash;2/&ndash;4.</p>\n<p><strong>Wert:</strong> -1/-2</p>\n<p><strong>Maximum:</strong> 1/Fertigkeit</p>\n</div>",
+      "name": "Fertigkeitsabzug (-1/-2)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von -1 auf eine sehr häufig verwendete Fertigkeit wie @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}, @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} oder sogar @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot}, wenn das Spiel auf Flugzeuge fokussiert ist. (Die SL entscheidet dies abhängig von der Kampagne.) Wenn die Fertigkeit weniger verbreitet ist und nur in bestimmten Situationen zum Tragen kommt, beträgt der Abzug -2. Für 2 Punkte beträgt der Abzug stattdessen -2/-4.</p>\n<p><strong>Wert:</strong> -1</p>\n<p><strong>Maximum:</strong> 1/Fertigkeit</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
-    "Skill Penalty (-2/-4)": {
-      "name": "Fertigkeitsabzug (−2/−4)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von &ndash;1 auf eine sehr häufig verwendete Fertigkeit wie @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}, @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} oder sogar @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot}, wenn das Spiel auf Flugzeuge fokussiert ist. (Die SL entscheidet dies abhängig von der Kampagne.) Wenn die Fertigkeit weniger verbreitet ist und nur in bestimmten Situationen zum Tragen kommt, beträgt der Abzug &ndash;2. Für 2 Punkte beträgt der Abzug stattdessen &ndash;2/&ndash;4.</p>\n<p><strong>Wert:</strong> -1/-2</p>\n<p><strong>Maximum:</strong> 1/Fertigkeit</p>\n</div>",
+    "rWuzUlNhO4hBo9yu": {
+      "name": "Fertigkeitsabzug (-2/-4)",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Die Abstammung erleidet einen Abzug von -1 auf eine sehr häufig verwendete Fertigkeit wie @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}, @UUID[Compendium.swade-core-rules.swade-skills.Item.k7fIVOghEx6y44xE]{Überreden} oder sogar @UUID[Compendium.swade-core-rules.swade-skills.Item.5RB13H0P7WvxVDBr]{Pilot}, wenn das Spiel auf Flugzeuge fokussiert ist. (Die SL entscheidet dies abhängig von der Kampagne.) Wenn die Fertigkeit weniger verbreitet ist und nur in bestimmten Situationen zum Tragen kommt, beträgt der Abzug -2. Für 2 Punkte beträgt der Abzug stattdessen -2/-4.</p>\n<p><strong>Wert:</strong> -2</p>\n<p><strong>Maximum:</strong> 1/Fertigkeit</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "yaAfJYLC2kS2qCAp": {

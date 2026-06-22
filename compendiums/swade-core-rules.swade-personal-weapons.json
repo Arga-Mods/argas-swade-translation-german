@@ -86,8 +86,8 @@
     },
     "1bCvA5SXwUz5kjQE": {
       "name": "Axt, Zweihandaxt",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} &ndash;1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
-      "Notizen": "Parade –1, Zweihändig",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02parry000000000]{Parade} -1, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02twohands000000]{Zweihändig}</p>\n</div>",
+      "Notizen": "Parade -1, Zweihändig",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {
@@ -159,7 +159,7 @@
     },
     "7b7kvu9hqPXwup4U": {
       "name": "Improvisierte Waffe (mittel)",
-      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber -2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {
@@ -226,8 +226,8 @@
     },
     "Bn6LIz3dAqQKPXGH": {
       "name": "Donnerbüchse",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n<p>Regeln wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinten}.</p>\n</div>",
-      "Notizen": "Schwarzpulverwaffen haben Nachladen 3.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Schwarzpulverwaffen haben @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02reload00000000]{Nachladen} 3.</p>\n<p>Regeln wie @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotflinte}.</p>\n</div>",
+      "Notizen": "Schwarzpulverwaffen haben Nachladen 3. Regeln wie Schrotflinte.",
       "Munition": "Kugel (mit Schwarzpulver)",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
@@ -331,7 +331,7 @@
     },
     "JErhPJEbai7LDvMg": {
       "name": "Improvisierte Waffe (schwer)",
-      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber -2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {
@@ -491,7 +491,7 @@
     },
     "eBfaBb1yLOtVfA1S": {
       "name": "Improvisierte Waffe (leicht)",
-      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber &ndash;2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
+      "Beschreibung": "<article class=\"swade-core\">\n<h2>Improvisierte Waffen</h2>\n<p>Helden müssen oft mit Gegenständen kämpfen, die gar nicht als Waffe gedacht sind. Fackeln, Vasen, Stühle, Bierkrüge, Flaschen, Werkzeuge und andere Alltagsgegenstände werden oft im Kampf eingesetzt.</p>\n<p>Charaktere mit improvisierten Waffen werden als bewaffnet betrachtet, ziehen aber -2 von ihren Angriffswürfen ab. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{Reichweite}, @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02damage00000000]{Schaden} und @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02minimumstren00]{Mindeststärke} hängen vom Typ der Waffe ab:</p>\n<ul class=\"red-bullet-list\">\n<li><strong>LEICHT:</strong> Bierkrug aus Metall, faustgroßer Steinbrocken, Pistole (als Schlagwaffe). Reichweite 3/6/12, Schaden Stä+W4, Mindeststärke W4.</li>\n<li><strong>MITTEL:</strong> Bowlingkugel, Maschinenpistole (als Schlagwaffe), Holzstuhl. Reichweite 2/4/8, Schaden Stä+W6, Mindeststärke W6.</li>\n<li><strong>SCHWER:</strong> Kopfgroßer Felsbrocken, Metallstuhl, Seesack voller Knarren. Reichweite 1/2/4, Schaden Stä+W8, Mindeststärke W8.</li>\n</ul>\n<p>Die SL kann den Schaden um ein oder zwei Stufen verringern, wenn der Gegenstand weicher ist als diese Beispiele, wie zum Beispiel ein Seesack voller Geld.</p>\n</article>",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {
@@ -528,7 +528,7 @@
     "l2mWx2iVwlD7zGPt": {
       "name": "Bangstick",
       "Beschreibung": "<div class=\"swade-core\">\n<p>Eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03shotguns000000]{Schrotpatrone} an einem Stock, der im Nahkampf verwendet wird; muss mit einer neuen Patrone nachgeladen werden (eine Aktion)</p>\n</div>",
-      "Notizen": "Ein Schrotpatrone an einem Stock, der im Nahkampf verwendet wird; muss mit einer neuen Patrone nachgeladen werden (eine Aktion)",
+      "Notizen": "Eine Schrotpatrone an einem Stock, der im Nahkampf verwendet wird; muss mit einer neuen Patrone nachgeladen werden (eine Aktion)",
       "Quelle": "SWADE Core Rules",
       "Eigenschaft": "Kämpfen"
     },
@@ -633,7 +633,7 @@
     },
     "wkNT7xFlqYjghBxv": {
       "name": "Springmesser",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>&ndash;2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe} wenn versteckt.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>-2 auf @UUID[Compendium.swade-core-rules.swade-skills.Item.Y0545TlaAqRRE2P0]{Wahrnehmungsprobe} wenn versteckt.</p>\n</div>",
       "Notizen": "-2 auf Wahrnehmungsprobe wenn versteckt.",
       "Quelle": "SWADE Core Rules",
       "Eigenschaft": "Kämpfen"

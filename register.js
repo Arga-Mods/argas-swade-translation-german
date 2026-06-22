@@ -4,8 +4,16 @@ function argaModuleDisabled() {
   try { return game.settings.get(MODULE_ID, 'moduleDisabled') === true; } catch (e) { return false; }
 }
 
+// Originalmodul (kostenpflichtig) aktiv? HARTE Voraussetzung – ohne das Original
+// findet keine Übersetzung statt. Die `requires`-Angabe in module.json lässt sich
+// leicht entfernen, daher zusätzlich dieser Laufzeit-Check.
+function coreRulesActive() {
+  try { return game.modules.get('swade-core-rules')?.active === true; } catch (e) { return false; }
+}
+
 function argaActive() {
   if (game.settings.get('core', 'language') !== 'de') return false;
+  if (!coreRulesActive()) return false;
   return !argaModuleDisabled();
 }
 
@@ -727,6 +735,8 @@ const converters = {
       "Nonlethal damage": "Betäubungsschaden",
       "Used by trolls.": "",
       "Small Blast Template": "Kleine Flächenschablone",
+      "Uses Shooting. Range 1/2/4. Shots 3 before needing to be recharged for at least two hours. Victims must make a Vigor roll at –2 or be Stunned.": "Verwendet Schießen. FRW 1/2/4. 3 Schuss, dann muss die Waffe mindestens zwei Stunden lang aufgeladen werden. Opfer muss eine Konstitutionsprobe mit -2 ablegen, um nicht Betäubt zu werden.",
+      "Use Shooting (or Fighting if engaged). No Range Penalty but max range is 2″ (about 10 feet), Shots 5, victim must make Vigor roll at –2 or be Stunned.": "Verwende Schießen (oder Kämpfen im Nahkampf). Kein Entfernungsabzug, doch maximale Reichweite ist 2“ (4 m), 5 Schuss, Opfer muss eine Konstitutionsprobe mit -2 ablegen, um nicht Betäubt zu werden.",
     };
     // Exakter Treffer (notes in map: greift auch bei leerem Zielwert, z.B. "Used by trolls." → "")
     if (notes in map) return map[notes];
@@ -1138,9 +1148,54 @@ Hooks.once('ready', () => {
   }
 });
 
+// ===== Auto-erzeugte Kartenstapel des Systems eindeutschen (DE <-> EN) =====
+// Das System "swade" legt beim Welt-Setup zwei Kartenstapel an:
+//   - Aktionsdeck  -> Settings-ID swade.actionDeck,            EN-Default "Action Deck"
+//   - Ablagestapel -> Settings-ID swade.actionDeckDiscardPile, EN-Name "Action Cards Discard Pile"
+// Der Ablagestapel-Name ist im System hart codiert (KEIN i18n); zudem stecken beide
+// in keinem Kompendium, daher kann Babele sie nicht uebersetzen. Wir benennen sie
+// nach Abschluss des System-Setups (Hook "swadeReady" wird direkt nach setupWorld()
+// gefeuert) ueber ihre Settings-IDs direkt in der Welt um.
+// Beidseitig: ist die Uebersetzung aktiv (argaActive) -> deutsche Namen, sonst ->
+// englische Default-Namen. Der Sprachumschalter laedt die Welt neu, daher feuert
+// "swadeReady" erneut und dieser Hook wechselt mit. Sicher: nur der Spielleiter,
+// und nur wenn der Stapel exakt den jeweils anderen bekannten Namen traegt -> ein
+// bewusst vergebener eigener Name wird nie ueberschrieben.
+Hooks.once('swadeReady', async () => {
+  if (!game.user?.isGM) return;
+  const wantGerman = argaActive();
+  const renames = [
+    { setting: 'actionDeck',            en: 'Action Deck',               de: 'Aktionskartendeck' },
+    { setting: 'actionDeckDiscardPile', en: 'Action Cards Discard Pile', de: 'Aktionskarten-Ablagestapel' },
+  ];
+  for (const r of renames) {
+    try {
+      const id = game.settings.get('swade', r.setting);
+      const doc = id ? game.cards?.get(id) : null;
+      if (!doc) continue;
+      if (wantGerman && doc.name === r.en) {
+        await doc.update({ name: r.de });
+      } else if (!wantGerman && doc.name === r.de) {
+        await doc.update({ name: r.en });
+      }
+    } catch (e) {
+      console.error(`${MODULE_ID}: Umbenennen von Kartenstapel "${r.setting}" fehlgeschlagen`, e);
+    }
+  }
+});
+
+// Harte Voraussetzung: Fehlt das (kostenpflichtige) Originalmodul, dauerhaft warnen.
+Hooks.once('ready', () => {
+  if (argaModuleDisabled()) return;
+  if (!coreRulesActive()) {
+    ui.notifications?.error('Arga\'s SWADE Translation (German): Das Originalmodul „SWADE Core Rules" ist nicht aktiv – es findet keine Übersetzung statt. Bitte aktiviere das kostenpflichtige Originalmodul.', { permanent: true });
+  }
+});
+
 Hooks.once('babele.init', (babele) => {
   argaRegisterSettings();
-  if (argaModuleDisabled()) return;
+  // Ohne aktives Originalmodul KEINE Übersetzung registrieren (Voraussetzung).
+  if (argaModuleDisabled() || !coreRulesActive()) return;
   babele.registerConverters(converters);
 
   // ActiveEffect.changes: Standard-"structured"-Converter durch einfaches
@@ -1183,6 +1238,7 @@ Hooks.once('babele.init', (babele) => {
     'Item.hindrance': { description: 'system.description' },
     'Item.armor': {
       description: 'system.description',
+      notes: { path: 'system.notes', converter: 'weaponNotes' },
     },
     'Item.action': {
       description: 'system.description',
@@ -2717,6 +2773,11 @@ async function argaRestoreWindows(list) {
       let app = null;
       if (entry.uuid) {
         const doc = await fromUuid(entry.uuid);
+        // Sicherheitsnetz: einzelne Journal-Seiten NIE öffnen (auch nicht im
+        // Bearbeiten-Modus). Genau das hat zuvor die deutsche Übersetzung in das
+        // gesperrte Basis-Kompendium zurückgeschrieben. Nur den Journal-Eintrag
+        // selbst öffnen wir wieder (er erscheint im Nur-Lesen-Modus der Kompendie).
+        if (doc?.documentName === "JournalEntryPage") continue;
         const sheet = doc?.sheet;
         if (!sheet) continue;
         const opts = entry.pageId ? { pageId: entry.pageId } : {};
@@ -2806,10 +2867,42 @@ Hooks.once('ready', async () => {
   const isGerman = game.settings.get('core', 'language') === 'de';
   const LOGO = `modules/${MODULE_ID}/assets/icons/Savage-Worlds-Fanprodukt-Logo.webp`;
   const RED = '#aa0000';
+  const GREEN = '#1f6b35';
 
-  const dynamic = isGerman
-    ? `<div style="text-align:center;">Da dein Interface bereits auf Deutsch eingestellt ist, kannst du sofort loslegen.<p style="margin:0.6rem 0 0;">Viel Spaß – Arga.</p></div>`
-    : `<div style="text-align:center;color:${RED};">Dein Interface ist derzeit noch auf Englisch eingestellt.<br>Zum Umstellen nutze den Button unterhalb des Textes.<p style="margin:0.6rem 0 0;">Viel Spaß – Arga.</p></div>`;
+  // Drei Status-Checks fuer das Begruessungsfenster.
+  const coreActive = game.modules.get('swade-core-rules')?.active === true;
+  let isMetric = false;
+  try { isMetric = game.settings.get('swade', 'weightUnit') === 'metric'; } catch (e) {}
+  const isGM = game.user?.isGM === true;
+
+  // Aufzählung als 3-Spalten-Raster (Bullet | Text | Haken). checkRow liefert die
+  // drei Zellen EINER Zeile; das Raster (siehe dynamic) richtet alle Haken in einer
+  // Spalte aus, mit festem 1-cm-Abstand hinter dem längsten Text.
+  // ✓/✗ als reine Textzeichen (U+2713/U+2717) – sie haben KEINE Emoji-Variante
+  // und nehmen daher zuverlässig die per CSS gesetzte Farbe (grün/rot) an.
+  const checkRow = (ok, text) =>
+    `<span style="padding-right:0.4rem;">•</span>`
+    + `<span>${text}</span>`
+    + `<span style="color:${ok ? GREEN : RED};font-weight:bold;font-size:1.2em;padding-left:1cm;">${ok ? '✓' : '✗'}</span>`;
+
+  const coreHint = coreActive ? ''
+    : `<div style="color:${RED};">Das kostenpflichtige Originalmodul <strong>SWADE Core Rules</strong> ist nicht aktiv.<br>Ohne das Original findet <strong>keine Übersetzung</strong> statt – bitte aktiviere es in der Modulverwaltung (anschließend startet die Welt neu).</div>`;
+  const langHint = isGerman ? ''
+    : `<div style="color:${RED};">Ohne deutsche Anzeigesprache übersetzt das Modul nicht – bitte umstellen.</div>`;
+  const metricHint = (!isMetric && !isGM)
+    ? `<div style="color:${RED};">Die Gewichtseinheit kann nur der Spielleiter umstellen.</div>` : '';
+
+  const dynamic = `
+      <hr style="width:100%;margin:0;">
+      <div style="font-weight:bold;text-align:center;">Prüfung der Voraussetzungen</div>
+      <div style="display:grid;grid-template-columns:auto auto auto;align-items:center;row-gap:0.55rem;width:fit-content;align-self:center;">
+        ${checkRow(coreActive, 'SWADE Core Rules geladen')}
+        ${checkRow(isGerman, 'Anzeigesprache auf „Deutsch“')}
+        ${checkRow(isMetric, 'Metrische Gewichtseinheiten (optional)')}
+      </div>
+      ${coreHint}
+      ${langHint}
+      ${metricHint}`;
 
   const content = `
     <div style="display:flex;flex-direction:column;gap:0.7rem;">
@@ -2818,7 +2911,8 @@ Hooks.once('ready', async () => {
       <div style="text-align:center;font-size:1.3em;font-weight:bold;">Arga's SWADE Translation (German)</div>
       <div>Es handelt sich um ein inoffizielles Fan-Produkt, welches (mit vorliegender Genehmigung) das kostenpflichtige englische Originalmodul</div>
       <div style="text-align:center;font-weight:bold;">Savage Worlds Adventure Edition Core Rules (swade-core-rules)</div>
-      <div>mittels des Moduls <strong>Babele</strong> ins Deutsche übersetzt. Bitte nimm in den Spieleinstellungen <span style="color:${RED};font-weight:bold;">keine Änderungen</span> bei der Parade-Fertigkeit (Fighting) oder den Fahrzeugfertigkeiten (Boating, Driving, Piloting, Riding) vor. Die Werte werden im Spiel automatisch übersetzt.</div>
+      <div>mittels des Moduls <strong>Babele</strong> ins Deutsche übersetzt. Die Originaldateien werden dabei nicht verändert.<br>Bitte nimm in den Spieleinstellungen <span style="color:${RED};font-weight:bold;">keine Änderungen</span> bei der Parade-Fertigkeit (Fighting) oder den Fahrzeugfertigkeiten (Boating, Driving, Piloting, Riding) vor. Die Werte werden im Spiel automatisch übersetzt.</div>
+      <div style="text-align:center;margin-top:0.4rem;">Viel Spaß – Arga.</div>
       ${dynamic}
       <hr style="width:100%;margin:0;">
       <label style="display:flex;align-items:center;justify-content:center;gap:0.4rem;">
@@ -2828,13 +2922,44 @@ Hooks.once('ready', async () => {
   `;
 
   const buttons = [];
+  if (!coreActive) {
+    buttons.push({
+      action: 'modules',
+      label: 'Modulverwaltung öffnen',
+      callback: () => {
+        try {
+          new foundry.applications.sidebar.apps.ModuleManagement().render({ force: true });
+        } catch (e) {
+          try { game.settings.sheet.render(true); } catch (e2) {}
+        }
+      },
+    });
+  }
   if (!isGerman) {
     buttons.push({
       action: 'switch',
-      label: 'Interface auf DE umstellen',
-      default: true,
+      label: 'Anzeigesprache auf Deutsch umstellen',
       callback: async () => {
         try { await game.settings.set('core', 'language', 'de'); } catch (e) {}
+        location.reload();
+      },
+    });
+  }
+  if (isGM && !isMetric) {
+    buttons.push({
+      action: 'metric',
+      label: 'Auf metrisch (kg) umstellen',
+      callback: async () => {
+        try {
+          await game.settings.set('swade', 'weightUnit', 'metric');
+          // Vorhandene Item-Gewichte direkt mit umrechnen (vor dem Neuladen abwarten).
+          const wapi = game.modules.get(MODULE_ID)?.api?.weight;
+          if (wapi?.convertAllItemWeights) await wapi.convertAllItemWeights(true);
+          ui.notifications?.info('Gewichtseinheit auf metrisch (kg) umgestellt.');
+        } catch (e) {
+          ui.notifications?.warn('Umstellen fehlgeschlagen – das kann nur der Spielleiter.');
+        }
+        // Neu laden, damit das Begrüßungsfenster für die übrigen Punkte erneut erscheint.
         location.reload();
       },
     });
@@ -2842,7 +2967,7 @@ Hooks.once('ready', async () => {
   buttons.push({
     action: 'close',
     label: 'Schließen',
-    default: isGerman,
+    default: true,
   });
 
   const onRenderWelcome = (app) => {

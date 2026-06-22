@@ -2,6 +2,7 @@
   "label": "Ausrüstung",
   "mapping": {
     "Beschreibung": "system.description",
+    "Notizen": "system.notes",
     "Kategorie": {
       "path": "system.category",
       "converter": "equipmentCategory"
@@ -53,7 +54,7 @@
       "Quelle": "SWADE Core Rules"
     },
     "2uNGPVZDdAHWtCY2": {
-      "name": "\"Wanze\" (Microtransmitter)",
+      "name": "\"Wanze\" (Mikrotransmitter)",
       "Beschreibung": "<div class=\"swade-core\">\n<p>12 Stunden durchgehender Betrieb.</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
@@ -109,7 +110,8 @@
     },
     "89Lt8GqZPll47sBl": {
       "name": "Taser",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Verwendet @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle0\">. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{FRW} 1/2/4. 3 Schuss, dann muss die Waffe mindestens zwei Stunden lang aufgeladen werden. Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} mit &ndash;2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} </span><span class=\"fontstyle0\">zu werden.</span></p>\n</div>",
+      "Notizen": "Verwendet Schießen. FRW 1/2/4. 3 Schuss, dann muss die Waffe mindestens zwei Stunden lang aufgeladen werden. Opfer muss eine Konstitutionsprobe mit -2 ablegen, um nicht Betäubt zu werden.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Verwendet @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle0\">. @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor02gear00.JournalEntryPage.02range000000000]{FRW} 1/2/4. 3 Schuss, dann muss die Waffe mindestens zwei Stunden lang aufgeladen werden. Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe} mit -2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt} </span><span class=\"fontstyle0\">zu werden.</span></p>\n</div>",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {},
@@ -130,7 +132,7 @@
     },
     "9vrpqmXwRCAAo3te": {
       "name": "Störtelefon",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenprobe} um sich in Telefonleitung einzuklinken.</p>\n</div>",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>@UUID[Compendium.swade-core-rules.swade-skills.Item.lTxygYQbGn9OoxFz]{Reparierenprobe}, um sich in Telefonleitung einzuklinken.</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "B5iQ4AdQONJdPLkQ": {
@@ -159,12 +161,12 @@
       "Quelle": "SWADE Core Rules"
     },
     "EC5kLxGrSQjxjmnZ": {
-      "name": "Glock (9mm)-Magazin",
+      "name": "Glock (9 mm)-Magazin",
       "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
       "Quelle": "SWADE Core Rules"
     },
     "EwDYVGoonlooujn2": {
-      "name": "M-16-Magazin",
+      "name": "M16-Magazin",
       "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
       "Quelle": "SWADE Core Rules"
     },
@@ -185,7 +187,8 @@
     },
     "Gyx1BpbL7wwAOyzX": {
       "name": "Kartätsche (Kanone)",
-      "Beschreibung": "<div class=\"swade-core\">\n<p>Kartätschen sind Geschosse, die im Lauf einer Kanone explodieren und einen Strahl tödlicher Splitter und Kugeln abfeuern wie eine riesige Schrotflinte. Der Angriff verwendet die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittlere Flächenschablone} und bewegt sich bis zu 24&ldquo; in einer geraden Linie (es trifft W6 Ziele, wenn ihr keine Miniaturen verwendet, oder 2W6, wenn sie eng beieinander stehen). Vergleiche die @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Probe mit jedem Ziel innerhalb der Fläche, wobei ein Grund-ZW von 4 verwendet wird, der für die Deckung jedes Ziels, Spezialfähigkeiten wie das Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.V1WWGHUtlFTVTAM9]{Ausweichen} usw. angepasst wird. Ein Treffer verursacht 2W6 Schaden, eine Steigerung 3W6.</p>\n</div>",
+      "Notizen": "24“ Pfad, 2W6 Schaden, MFS",
+      "Beschreibung": "<div class=\"swade-core\">\n<p>Kartätschen sind Geschosse, die im Lauf einer Kanone explodieren und einen Strahl tödlicher Splitter und Kugeln abfeuern wie eine riesige Schrotflinte. Der Angriff verwendet die @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{mittlere Flächenschablone} und bewegt sich bis zu 24&ldquo; in einer geraden Linie (es trifft W6 Ziele, wenn ihr keine Miniaturen verwendet, oder 2W6, wenn sie eng beieinander stehen). Vergleiche die @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}-Probe für jedes Ziel mit einem Basis-ZW von 4, gegebenenfalls angepasst für Deckung, Spezialfähigkeiten wie dem Talent @UUID[Compendium.swade-core-rules.swade-edges.Item.V1WWGHUtlFTVTAM9]{Ausweichen} etc. Ein Treffer verursacht 2W6, bei einer Steigerung 3W6 Schaden.</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
     "GmcRXBQI7EFHYAr2": {
@@ -260,6 +263,7 @@
     },
     "U0PvY4FY2QkySPyv": {
       "name": "Rundgeschoss (Kanone)",
+      "Notizen": "50/100/200, 3W6+1, PB 4",
       "Beschreibung": "<div class=\"swade-core\">\n<p>Schwere Kugeln aus Eisen, Blei oder Stein, die darauf ausgelegt sind, Mauern einzureißen oder durch eng stehende Soldatengruppen zu pflügen. Der Anführer der Besatzung muss wie üblich eine @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießenprobe} ablegen. Wirf bei einem Erfolg einen Würfel. Bei einem geraden Ergebnis prallt die Kugel zu einem weiteren Opfer hinter dem ersten Ziel (innerhalb von 6&ldquo;) und trifft es ebenfalls. Fahre auf diese Weise fort, bis der Würfel ein ungerades Ergebnis erzielt.</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
@@ -320,6 +324,7 @@
     },
     "asoeGTenETMfyqHp": {
       "name": "Schrapnell (Kanone)",
+      "Notizen": "50/100/200, 3W6, MFS",
       "Beschreibung": "<div class=\"swade-core\">\n<p>Explosivgeschosse, die mit kleinen Metallkugeln gefüllt sind und Splitter in alle Richtungen schleudern. Dies ist ein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03areaeffectat00]{Flächenangriff} und verwendet die mittlere @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03blasttemplat00]{Flächenschablone}, wenn es nicht anderweitig angegeben ist.</p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
@@ -374,7 +379,7 @@
       "Quelle": "SWADE Core Rules"
     },
     "jbLlb9dDsjPqfgeS": {
-      "name": "Parabolmikrophon",
+      "name": "Parabolmikrofon",
       "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Flüstern auf 200 m Entfernung hören.</span></p>\n</div>",
       "Quelle": "SWADE Core Rules"
     },
@@ -409,13 +414,14 @@
       "Quelle": "SWADE Core Rules"
     },
     "odMG3Hgo85pBlOtm": {
-      "name": "AK47-Magazin",
+      "name": "AK-47-Magazin",
       "Beschreibung": "<article class=\"swade-core\"><p>Ein volles Magazin der jeweiligen Waffe.</p></article>",
       "Quelle": "SWADE Core Rules"
     },
     "op4U0I01Oh5LiB7M": {
       "name": "Pfefferspray",
-      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Anmerkungen: </span><span class=\"fontstyle2\">Verwende @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">(oder @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">im Nahkampf). Kein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernungsabzug}, doch maximale Reichweite ist 2&ldquo; (ungefähr 4 m), 5 Schuss, Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor01charac.JournalEntryPage.01traits00000000]{Konstitutionsprobe} mit &ndash;2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}</span><span class=\"fontstyle2\">&nbsp;zu werden.</span></p>\n</div>",
+      "Notizen": "Verwende Schießen (oder Kämpfen im Nahkampf). Kein Entfernungsabzug, doch maximale Reichweite ist 2“ (4 m), 5 Schuss, Opfer muss eine Konstitutionsprobe mit -2 ablegen, um nicht Betäubt zu werden.",
+      "Beschreibung": "<div class=\"swade-core\">\n<p><span class=\"fontstyle0\">Anmerkungen: </span><span class=\"fontstyle2\">Verwende @UUID[Compendium.swade-core-rules.swade-skills.Item.UOYD9aoLPoTZamDS]{Schießen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">(oder @UUID[Compendium.swade-core-rules.swade-skills.Item.jixNprOk5ao0aDyI]{Kämpfen}</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle2\">im Nahkampf). Kein @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03attacks0000000#fernkampfangriffe]{Entfernungsabzug}, doch maximale Reichweite ist 2&ldquo; (ungefähr 4 m), 5 Schuss, Opfer muss eine @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03traitrolls0000]{Konstitutionsprobe} mit -2 ablegen, um nicht @UUID[Compendium.swade-core-rules.swade-rules.JournalEntry.swadecor03rules0.JournalEntryPage.03stunned0000000]{Betäubt}</span><span class=\"fontstyle2\">&nbsp;zu werden.</span></p>\n</div>",
       "Quelle": "SWADE Core Rules",
       "Aktionen": {
         "additional": {

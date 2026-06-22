@@ -22,7 +22,8 @@
     "esmodules": [
         "register.js",
         "scripts/convert-world.js",
-        "scripts/toggle-language.js"
+        "scripts/toggle-language.js",
+        "scripts/weight-conversion.js"
     ],
     "styles": [
         "styles/branding.css"
@@ -44,6 +45,16 @@
                 "PLAYER": "OBSERVER",
                 "ASSISTANT": "OWNER"
             }
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "SWADE Core Rules",
+            "sorting": "m",
+            "color": "#7C6840",
+            "packs": [
+                "makros"
+            ]
         }
     ],
     "relationships": {

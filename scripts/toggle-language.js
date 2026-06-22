@@ -32,6 +32,11 @@ async function argaToggleLanguage() {
         const uuid = app.document?.uuid;
         const packId = app.collection?.metadata?.id;
         if (uuid) {
+          // Eingebettete Journal-Seiten (die Kapitelseiten eines geöffneten
+          // Regel-Journals) nicht als eigenes Fenster merken: sonst öffnet das
+          // Wiederherstellen beim Sprachwechsel jede Seite einzeln als Editor.
+          // Der Journal-Eintrag selbst wird weiter normal gemerkt.
+          if (uuid.includes(".JournalEntryPage.") || app.document?.documentName === "JournalEntryPage") return;
           if (seen.has("u:" + uuid)) return;
           seen.add("u:" + uuid);
           entry.uuid = uuid;

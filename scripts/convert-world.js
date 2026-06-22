@@ -1084,6 +1084,19 @@ async function argaConvertWorld() {
     }
   }
 
+  // Item-Gewichte passend zur Gewichtseinheit umrechnen (lb -> kg), falls metrisch.
+  // Der Transfer oben fasst nur Texte an; die Gewichte blieben sonst in Pfund.
+  let weightNote = '';
+  try {
+    const weightApi = game.modules.get(MODULE_ID)?.api?.weight;
+    if (weightApi?.isMetric?.() && weightApi.convertAllItemWeights) {
+      const nW = await weightApi.convertAllItemWeights(true);
+      if (nW) weightNote = ` · ${nW} Item-Gewicht${nW === 1 ? '' : 'e'} auf kg umgerechnet.`;
+    }
+  } catch (e) {
+    console.error('Convert World | Gewichts-Umrechnung fehlgeschlagen', e);
+  }
+
   let journalNote = '';
   if (state.journal) {
     try {
@@ -1105,7 +1118,7 @@ async function argaConvertWorld() {
   }
 
   clearStartHint();
-  const result = `Konvertierung abgeschlossen: ${nWord(doneItems, 'Item', 'Items')}, ${nWord(doneEffects, 'Effekt', 'Effekte')} und ${nWord(doneHeads, 'Akteur-Feld', 'Akteur-Felder')} übersetzt.${journalNote}`;
+  const result = `Konvertierung abgeschlossen: ${nWord(doneItems, 'Item', 'Items')}, ${nWord(doneEffects, 'Effekt', 'Effekte')} und ${nWord(doneHeads, 'Akteur-Feld', 'Akteur-Felder')} übersetzt.${journalNote}${weightNote}`;
   if (applyErrors) {
     ui.notifications.warn(`${result} ${applyErrors} Fehler \u2013 Details in der Konsole (F12).`);
   } else {
