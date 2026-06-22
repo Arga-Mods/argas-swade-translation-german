@@ -12,7 +12,7 @@
 # Arga's SWADE Translation (German)
 
 Dieses inoffizielle Modul übersetzt alle Kompendien-Inhalte des offiziellen (kostenpflichtigen) englischen ***SWADE Core Rules***-Moduls von Pinnacle für Foundry VTT zur Laufzeit ins Deutsche. Die Übersetzung wird über das Modul ***Babele*** realisiert und die Originalinhalte werden dabei nicht verändert.<br>
-Die deutschsprachigen Texte basieren auf dem deutschen Grundregelwerk (6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage des Regelwerkes als Grundlage. Die Texte des vorliegenden Moduls werden sukzessive auf die 6. Auflage aktualisiert. Eine Genehmigung zur Nutzung der Texte und Bilder liegt vor. 
+Die deutschsprachigen Texte basieren auf dem deutschen Grundregelwerk (6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Letzteres hatte noch die 3. Auflage des Regelwerkes als Grundlage. Die Texte des vorliegenden Moduls entsprechen aber vollständig der 6. Auflage. Eine Genehmigung zur Nutzung der Texte und Bilder liegt vor. 
 
 <p align="center">
   <img src="screenshots/compendium.webp" alt="Kompendium" width="300">
