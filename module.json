@@ -26,7 +26,8 @@
         "scripts/weight-conversion.js"
     ],
     "styles": [
-        "styles/branding.css"
+        "styles/branding.css",
+        "styles/swade-fixes.css"
     ],
     "languages": [
         {

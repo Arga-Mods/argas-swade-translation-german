@@ -49,6 +49,120 @@ function argaRegisterSettings() {
   });
 }
 
+// Englische Aktionsnamen -> Deutsch. Genutzt vom actionButtons-Converter (Babele,
+// Kompendien) UND vom Anzeige-Patch fuer system-injizierte Activity-Buttons (Frenzy
+// & Co.) weiter unten. Eine Tabelle, damit beide Wege identisch uebersetzen.
+const ACTION_NAME_MAP = {
+  "Damage": "Schaden",
+  "Disarm Limb (Strength)": "Entwaffnen vermeiden (Treffer Gliedmaße)",
+  "Disarm Hand (Strength)": "Entwaffnen vermeiden (Treffer Hand)",
+  "Fear Check": "Furchtprobe",
+  "Fear Roll": "Wurf auf Furchttabelle",
+  "Frenzy": "Schneller Angriff",
+  "Oppose Grapple": "Verteidigen",
+  "Crush": "Zerquetschen",
+  "Improved Frenzy": "Blitzschneller Angriff",
+  "Heal Self": "Heilung anwenden (Token auswählen)",
+  "Money Talks": "Lass Geld fließen (+2)",
+  "Busting Heads": "Schädel einschlagen (+2)",
+  "Resist (Vigor)": "Widerstehen (Konstitution)",
+  "Knockout Poison": "Betäubendes Gift (K.O.)",
+  "Lethal Poison": "Tödliches Gift",
+  "Mild Poison": "Leichtes Gift",
+  "Paralyzing Poison": "Lähmendes Gift",
+  "Athletics": "Athletik",
+  "Oppose (Strength)": "Verteidigen (Stärke)",
+  "Oppose (Athletics)": "Verteidigen (Athletik)",
+  "Avoid Prone": "Sturz vermeiden",
+  "Avoid Prone (raise)": "Sturz vermeiden (gg. Steigerung)",
+  "Heal Selected": "Heilung anwenden (Token auswählen)",
+  "Resist": "Widerstehen",
+  "Unwilling Target": "Unwilliges Ziel",
+  "Apply Status": "Status anwenden",
+  "Apply Effect": "Effekt anwenden",
+  "Remove Status": "Status entfernen",
+  "Shake Off": "Effekt abschütteln",
+  "Shake Off (Strong)": "Effekt abschütteln (gg. Steigerung)",
+  "Spirit": "Willenskraft",
+  "Spirit (Raise)": "Willenskraft (gg. Steigerung)",
+  "Vigor": "Konstitution",
+  "Vigor (Raise)": "Konstitution (gg. Steigerung)",
+  "Touch Attack": "Berührungsangriff",
+  "Damage (3d6)": "Schaden (3W6)",
+  "Smite Weapons": "Waffen verzaubern",
+  "Add Edges": "Talent hinzufügen",
+  "Bash (d12)": "Rammen (W12+W6) - [Steigerung]",
+  "d10+d6": "Stoßen (W10+W6)",
+  "Push": "Stoßen",
+  "RoF 2 Attack": "FR 2 Angriff",
+  "RoF 3 Attack": "FR 3 Angriff",
+  "RoF 4 Attack": "FR 4 Angriff",
+  "RoF 5 Attack": "FR 5 Angriff",
+  "RoF 2 Reaction Fire": "FR 2 Reaktionsfeuer",
+  "RoF 3 Reaction Fire": "FR 3 Reaktionsfeuer",
+  "RoF 4 Reaction Fire": "FR 4 Reaktionsfeuer",
+  "Snapfire": "Schnellfeuer",
+  "Snapfire RoF 2": "Schnellfeuer FR 2",
+  "Snapfire RoF 3": "Schnellfeuer FR 3",
+  "Snapfire RoF 4": "Schnellfeuer FR 4",
+  "Snapfire RoF 5": "Schnellfeuer FR 5",
+  "Short Range": "Kurze Reichweite",
+  "Medium Range": "Mittlere Reichweite",
+  "Long Range": "Lange Reichweite",
+  "Close Range": "Kurze Reichweite",
+  "Close Range AP": "Kurze Reichweite PB",
+  "Slugs": "Flintenlaufgeschosse",
+  "Double Barrel Slugs": "Doppellauf Flintenlaufgeschosse",
+  "Double-Barrel Short Range": "Doppellauf Kurze Reichweite",
+  "Double-Barrel Medium Range": "Doppellauf Mittlere Reichweite",
+  "Double-Barrel Long Range": "Doppellauf Lange Reichweite",
+  "Single Shot": "Einzelschuss",
+  "One-handed": "Einhändig",
+  "Attached to Rifle": "Am Gewehr befestigt",
+  "Fighting": "Kämpfen",
+  "Athletics (throwing)": "Athletik (Werfen)",
+  "Overcharge": "Überladung",
+  "Three-Round Burst": "Dreier-Feuerstoß",
+  "A-2 Three-Round Burst": "A-2 Dreier-Feuerstoß",
+  "Nonlethal Damage": "Betäubungsschaden",
+  "Rollover (Raise Damage)": "Todesrolle (Steigerungsschaden)",
+  "Bombard, Precise Location": "Bombardieren, Genaue Position",
+  "Bombard, Rough Location": "Bombardieren, Ungefähre Position",
+  "Inflict Poison": "Gift injizieren",
+  "Resist Poison": "Gift widerstehen",
+  "Resist Poison (-4)": "Gift widerstehen (−4)",
+  "Wild Attack": "Rücksichtsloser Angriff",
+  "Apply Cards": "Aktionskarte anbieten",
+  "Attempt to Acquire Skill": "Fertigkeit erwerben",
+  "Support (Performance)": "Unterstützung (Darstellung)",
+  "Support (Persuasion)": "Unterstützung (Überreden)",
+  "Test (Intimidation)": "Herausforderung (Einschüchtern)",
+  "Test (Taunt)": "Herausforderung (Provozieren)",
+  "Resist Test (Smarts)": "Herausforderung widerstehen (Verstand)",
+  "Resist Test (Spirit)": "Herausforderung widerstehen (Willenskraft)",
+  "ROF2": "FR 2",
+  "ROF3": "FR 3",
+  "ROF4": "FR 4",
+  "ROF5": "FR 5",
+  "ROF6": "FR 6",
+  "Double Tap": "Doppelschuss",
+  "Double Tap with 3RB": "Doppelschuss mit Dreier-Feuerstoß",
+  "Dual-Linked": "Gekoppelte Waffe (2-fach)",
+  "Dual-Linked Damage": "Gekoppelte Waffe (2-fach) Schaden",
+  "Quad-Linked": "Gekoppelte Waffe (4-fach)",
+  "Quad-Linked Damage": "Gekoppelte Waffe (4-fach) Schaden",
+  "Shotgun — Bonus": "Schrotflinte — Bonus",
+  "Shotgun — Short Range (Base)": "Schrotflinte — Kurze Reichweite (Basis)",
+  "Shotgun — Medium Range (Base)": "Schrotflinte — Mittlere Reichweite (Basis)",
+  "Shotgun — Long Range (Base)": "Schrotflinte — Lange Reichweite (Basis)",
+  "Shotgun — DB Short Range": "Schrotflinte — Doppellauf Kurze Reichweite",
+  "Shotgun — DB Medium Range": "Schrotflinte — Doppellauf Mittlere Reichweite",
+  "Shotgun — DB Long Range": "Schrotflinte — Doppellauf Lange Reichweite",
+  "Shotgun — Slugs (Trait)": "Schrotflinte — Flintenlaufgeschosse (Probe)",
+  "Shotgun — Slugs (Damage)": "Schrotflinte — Flintenlaufgeschosse (Schaden)",
+  "Shotgun — Double Barrel Slugs (Damage)": "Schrotflinte — Doppellauf Flintenlaufgeschosse (Schaden)",
+};
+
 const converters = {
   // system.actions bei Rüstungen/Schilden komplett übersetzen.
   // Babele 2.9.1 lehnt Objekt-Payloads bei statischen Pfad-Mappings ab
@@ -128,19 +242,32 @@ const converters = {
       "Computers & Electronics": "Computer & Elektronik",
       "Firearms Accessories": "Feuerwaffenzubehör",
       "Food": "Nahrung",
-      "Laser Battery": "Muni (Laser)",
+      "Laser Battery": "Munition (Laser)",
       "Personal Defense": "Selbstverteidigung",
-      "Shotgun": "Muni (Schrot)",
+      "Shotgun": "Munition (Schrot)",
       "Surveillance": "Überwachung",
-      "Ammo": "Muni (primitiv)",
+      "Ammo": "Munition (primitiv)",
       "Animals and Tack": "Tiere und Zubehör",
-      "Weapon Magazine": "Muni (Magazine)",
-      "Bullet": "Muni (Patronen)",
-      "Cannon": "Muni (Kanonen)",
+      "Weapon Magazine": "Munition (Magazine)",
+      "Bullet": "Munition (Patronen)",
+      "Cannon": "Munition (Kanonen)",
       "Clothing": "Kleidung",
       "": ""
     };
     return map[category] ?? category;
+  },
+
+  // Ladungs-Namen in Verbrauchsgegenständen (Munition etc.): der im Item gespeicherte
+  // Standardname "Charges" -> "Ladungen". Nur exakt "Charges" wird ersetzt, damit selbst
+  // vergebene Ladungsnamen unangetastet bleiben; alle übrigen Felder (value/max/
+  // rechargeType …) bleiben erhalten.
+  "chargeNames": (charges) => {
+    if (!Array.isArray(charges)) return charges;
+    return charges.map((c) =>
+      (c && typeof c === 'object' && c.name === 'Charges')
+        ? { ...c, name: 'Ladungen' }
+        : c
+    );
   },
 
   "ancestralCategory": (category) => {
@@ -496,116 +623,7 @@ const converters = {
   },
 
   "actionButtons": (additional) => {
-    const nameMap = {
-      "Damage": "Schaden",
-      "Disarm Limb (Strength)": "Entwaffnen vermeiden (Treffer Gliedmaße)",
-      "Disarm Hand (Strength)": "Entwaffnen vermeiden (Treffer Hand)",
-      "Fear Check": "Furchtprobe",
-      "Fear Roll": "Wurf auf Furchttabelle",
-      "Frenzy": "Schneller Angriff",
-      "Oppose Grapple": "Verteidigen",
-      "Crush": "Zerquetschen",
-      "Improved Frenzy": "Blitzschneller Angriff",
-      "Heal Self": "Heilung anwenden (Token auswählen)",
-      "Money Talks": "Lass Geld fließen (+2)",
-      "Busting Heads": "Schädel einschlagen (+2)",
-      "Resist (Vigor)": "Widerstehen (Konstitution)",
-      "Knockout Poison": "Betäubendes Gift (K.O.)",
-      "Lethal Poison": "Tödliches Gift",
-      "Mild Poison": "Leichtes Gift",
-      "Paralyzing Poison": "Lähmendes Gift",
-      "Athletics": "Athletik",
-      "Oppose (Strength)": "Verteidigen (Stärke)",
-      "Oppose (Athletics)": "Verteidigen (Athletik)",
-      "Avoid Prone": "Sturz vermeiden",
-      "Avoid Prone (raise)": "Sturz vermeiden (gg. Steigerung)",
-      "Heal Selected": "Heilung anwenden (Token auswählen)",
-      "Resist": "Widerstehen",
-      "Unwilling Target": "Unwilliges Ziel",
-      "Apply Status": "Status anwenden",
-      "Apply Effect": "Effekt anwenden",
-      "Remove Status": "Status entfernen",
-      "Shake Off": "Effekt abschütteln",
-      "Shake Off (Strong)": "Effekt abschütteln (gg. Steigerung)",
-      "Spirit": "Willenskraft",
-      "Spirit (Raise)": "Willenskraft (gg. Steigerung)",
-      "Vigor": "Konstitution",
-      "Vigor (Raise)": "Konstitution (gg. Steigerung)",
-      "Touch Attack": "Berührungsangriff",
-      "Damage (3d6)": "Schaden (3W6)",
-      "Smite Weapons": "Waffen verzaubern",
-      "Add Edges": "Talent hinzufügen",
-      "Bash (d12)": "Rammen (W12+W6) - [Steigerung]",
-      "d10+d6": "Stoßen (W10+W6)",
-      "Push": "Stoßen",
-      "RoF 2 Attack": "FR 2 Angriff",
-      "RoF 3 Attack": "FR 3 Angriff",
-      "RoF 4 Attack": "FR 4 Angriff",
-      "RoF 5 Attack": "FR 5 Angriff",
-      "RoF 2 Reaction Fire": "FR 2 Reaktionsfeuer",
-      "RoF 3 Reaction Fire": "FR 3 Reaktionsfeuer",
-      "RoF 4 Reaction Fire": "FR 4 Reaktionsfeuer",
-      "Snapfire": "Schnellfeuer",
-      "Snapfire RoF 2": "Schnellfeuer FR 2",
-      "Snapfire RoF 3": "Schnellfeuer FR 3",
-      "Snapfire RoF 4": "Schnellfeuer FR 4",
-      "Snapfire RoF 5": "Schnellfeuer FR 5",
-      "Short Range": "Kurze Reichweite",
-      "Medium Range": "Mittlere Reichweite",
-      "Long Range": "Lange Reichweite",
-      "Close Range": "Kurze Reichweite",
-      "Close Range AP": "Kurze Reichweite PB",
-      "Slugs": "Flintenlaufgeschosse",
-      "Double Barrel Slugs": "Doppellauf Flintenlaufgeschosse",
-      "Double-Barrel Short Range": "Doppellauf Kurze Reichweite",
-      "Double-Barrel Medium Range": "Doppellauf Mittlere Reichweite",
-      "Double-Barrel Long Range": "Doppellauf Lange Reichweite",
-      "Single Shot": "Einzelschuss",
-      "One-handed": "Einhändig",
-      "Attached to Rifle": "Am Gewehr befestigt",
-      "Fighting": "Kämpfen",
-      "Athletics (throwing)": "Athletik (Werfen)",
-      "Overcharge": "Überladung",
-      "Three-Round Burst": "Dreier-Feuerstoß",
-      "A-2 Three-Round Burst": "A-2 Dreier-Feuerstoß",
-      "Nonlethal Damage": "Betäubungsschaden",
-      "Rollover (Raise Damage)": "Todesrolle (Steigerungsschaden)",
-      "Bombard, Precise Location": "Bombardieren, Genaue Position",
-      "Bombard, Rough Location": "Bombardieren, Ungefähre Position",
-      "Inflict Poison": "Gift injizieren",
-      "Resist Poison": "Gift widerstehen",
-      "Resist Poison (-4)": "Gift widerstehen (−4)",
-      "Wild Attack": "Rücksichtsloser Angriff",
-      "Apply Cards": "Aktionskarte anbieten",
-      "Attempt to Acquire Skill": "Fertigkeit erwerben",
-      "Support (Performance)": "Unterstützung (Darstellung)",
-      "Support (Persuasion)": "Unterstützung (Überreden)",
-      "Test (Intimidation)": "Herausforderung (Einschüchtern)",
-      "Test (Taunt)": "Herausforderung (Provozieren)",
-      "Resist Test (Smarts)": "Herausforderung widerstehen (Verstand)",
-      "Resist Test (Spirit)": "Herausforderung widerstehen (Willenskraft)",
-      "ROF2": "FR 2",
-      "ROF3": "FR 3",
-      "ROF4": "FR 4",
-      "ROF5": "FR 5",
-      "ROF6": "FR 6",
-      "Double Tap": "Doppelschuss",
-      "Double Tap with 3RB": "Doppelschuss mit Dreier-Feuerstoß",
-      "Dual-Linked": "Gekoppelte Waffe (2-fach)",
-      "Dual-Linked Damage": "Gekoppelte Waffe (2-fach) Schaden",
-      "Quad-Linked": "Gekoppelte Waffe (4-fach)",
-      "Quad-Linked Damage": "Gekoppelte Waffe (4-fach) Schaden",
-      "Shotgun — Bonus": "Schrotflinte — Bonus",
-      "Shotgun — Short Range (Base)": "Schrotflinte — Kurze Reichweite (Basis)",
-      "Shotgun — Medium Range (Base)": "Schrotflinte — Mittlere Reichweite (Basis)",
-      "Shotgun — Long Range (Base)": "Schrotflinte — Lange Reichweite (Basis)",
-      "Shotgun — DB Short Range": "Schrotflinte — Doppellauf Kurze Reichweite",
-      "Shotgun — DB Medium Range": "Schrotflinte — Doppellauf Mittlere Reichweite",
-      "Shotgun — DB Long Range": "Schrotflinte — Doppellauf Lange Reichweite",
-      "Shotgun — Slugs (Trait)": "Schrotflinte — Flintenlaufgeschosse (Probe)",
-      "Shotgun — Slugs (Damage)": "Schrotflinte — Flintenlaufgeschosse (Schaden)",
-      "Shotgun — Double Barrel Slugs (Damage)": "Schrotflinte — Doppellauf Flintenlaufgeschosse (Schaden)",
-    };
+    const nameMap = ACTION_NAME_MAP;
     const traitMap = {
       "Persuasion": "Überreden",
       "Intimidation": "Einschüchtern",
@@ -1137,7 +1155,7 @@ const converters = {
   }
 };
 
-// ===== Core-Skills-Kompendium auf Premium-Modul umstellen =====
+// Core-Skills-Kompendium auf Premium-Modul umstellen
 // Damit neue Charaktere die übersetzten Fertigkeiten aus dem
 // swade-core-rules Kompendium erhalten (mit dt. Name + Beschreibung).
 Hooks.once('ready', () => {
@@ -1148,19 +1166,14 @@ Hooks.once('ready', () => {
   }
 });
 
-// ===== Auto-erzeugte Kartenstapel des Systems eindeutschen (DE <-> EN) =====
-// Das System "swade" legt beim Welt-Setup zwei Kartenstapel an:
-//   - Aktionsdeck  -> Settings-ID swade.actionDeck,            EN-Default "Action Deck"
-//   - Ablagestapel -> Settings-ID swade.actionDeckDiscardPile, EN-Name "Action Cards Discard Pile"
-// Der Ablagestapel-Name ist im System hart codiert (KEIN i18n); zudem stecken beide
-// in keinem Kompendium, daher kann Babele sie nicht uebersetzen. Wir benennen sie
-// nach Abschluss des System-Setups (Hook "swadeReady" wird direkt nach setupWorld()
-// gefeuert) ueber ihre Settings-IDs direkt in der Welt um.
-// Beidseitig: ist die Uebersetzung aktiv (argaActive) -> deutsche Namen, sonst ->
-// englische Default-Namen. Der Sprachumschalter laedt die Welt neu, daher feuert
-// "swadeReady" erneut und dieser Hook wechselt mit. Sicher: nur der Spielleiter,
-// und nur wenn der Stapel exakt den jeweils anderen bekannten Namen traegt -> ein
-// bewusst vergebener eigener Name wird nie ueberschrieben.
+// Auto-erzeugte Kartenstapel des Systems eindeutschen (DE <-> EN).
+// "swade" legt beim Welt-Setup zwei Stapel an (Settings-IDs swade.actionDeck,
+// swade.actionDeckDiscardPile). Sie stecken in keinem Kompendium und der
+// Ablagestapel-Name ist hart codiert (kein i18n) -> Babele erreicht sie nicht.
+// Umbenennung daher nach dem System-Setup (Hook "swadeReady") direkt ueber die
+// Settings-IDs. Beidseitig (argaActive -> deutsch, sonst englisch); der
+// Sprachumschalter laedt neu, "swadeReady" feuert erneut. Nur GM, und nur wenn der
+// Stapel exakt den anderen bekannten Namen traegt -> eigener Name bleibt unberuehrt.
 Hooks.once('swadeReady', async () => {
   if (!game.user?.isGM) return;
   const wantGerman = argaActive();
@@ -1199,14 +1212,11 @@ Hooks.once('babele.init', (babele) => {
   babele.registerConverters(converters);
 
   // ActiveEffect.changes: Standard-"structured"-Converter durch einfaches
-  // Pfad-Mapping ersetzen. Babele 2.9.1 übersetzt Effects automatisch mit
-  // (Default-Item-Mapping → effects); der structured-Converter baut aus dem
-  // changes-Array ein nach den change-keys benanntes Objekt. Bei SWADE-Effekten
-  // mit präfix-kollidierenden Keys (z.B. "system.pace" UND
-  // "system.pace.running.die") scheitert das spätere mergeObject mit
-  // "Cannot create property 'running' on number '-1'" → Babele bricht die
-  // Übersetzung dieses Dokuments ab (betrifft Handicaps Fettleibig/Alt/Langsam).
-  // changes sind reine Mechanik (Keys + Zahlen), enthalten nichts Übersetzbares.
+  // Pfad-Mapping ersetzen. Der structured-Converter baut aus changes ein nach den
+  // change-keys benanntes Objekt; bei präfix-kollidierenden Keys (z.B. "system.pace"
+  // UND "system.pace.running.die") scheitert das mergeObject ("Cannot create property
+  // 'running' on number '-1'") → Babele bricht die Übersetzung des Dokuments ab
+  // (Handicaps Fettleibig/Alt/Langsam). changes sind reine Mechanik, nichts Übersetzbares.
   babele.registerMapping({
     ActiveEffect: {
       changes: 'changes',
@@ -1254,6 +1264,17 @@ Hooks.once('babele.init', (babele) => {
     },
   });
 
+  // Verbrauchsgegenstände (Munition etc.): wie alle physischen SWADE-Items liegt die
+  // Beschreibung als String unter system.description (nicht .value – das ist der falsche
+  // Babele-Default, dem consumable bisher mangels Override folgte). Zusätzlich die
+  // gespeicherten Ladungsnamen via chargeNames-Converter ("Charges" -> "Ladungen").
+  babele.registerMapping({
+    'Item.consumable': {
+      description: 'system.description',
+      charges: { path: 'system.charges.charges', converter: 'chargeNames' },
+    },
+  });
+
   babele.register({
     module: MODULE_ID,
     lang: 'de',
@@ -1261,7 +1282,7 @@ Hooks.once('babele.init', (babele) => {
   });
 });
 
-// ===== ActiveEffect-Übersetzungen (Babele kann diese nicht nativ übersetzen) =====
+// ActiveEffect-Übersetzungen (Babele kann diese nicht nativ übersetzen).
 // Neue Einträge einfach in der Map ergänzen: "Englischer Name": "Deutscher Name",
 const effectTranslations = {
   "Alertness": "Aufmerksamkeit",
@@ -1802,7 +1823,7 @@ Hooks.once('ready', () => {
 });
 
 // Babele kann Enum-Werte wie "hearts" und Chat-Kartennamen nicht übersetzen,
-// daher ersetzen wir die Texte direkt im DOM per MutationObserver.
+// daher werden die Texte direkt im DOM per MutationObserver ersetzt.
 
 const suitTranslations = {
   "hearts": "Herz",
@@ -1862,8 +1883,57 @@ Hooks.once('ready', () => {
   observer.observe(document.body, { childList: true, subtree: true });
 });
 
+// Anzeige-Patch fuer system-injizierte Activity-Aktionen (Frenzy, Improved
+// Frenzy, Wild Attack ...). Hat der Charakter ein passendes Talent, legt das
+// SWADE-System dessen Aktion auf JEDE Waffe und beschriftet den Button fest als
+// `<engl. Aktionsname> (<Quell-Item-Name>)`, z.B. "Frenzy (Schneller Angriff)".
+// Ersetzt wird NUR der sichtbare Text durch das deutsche ACTION_NAME_MAP; das
+// funktionale data-action ("<swid>-<key>", z.B. "frenzy-frenzyAttack") und alle
+// Aktionsdaten bleiben unangetastet -> Wurf/Makro laufen unveraendert weiter.
+// Erkennung sicher ueber den Bindestrich im data-action: injizierte Schluessel
+// sind immer "<swid>-<key>"; normale Aktions-Keys haben nie einen Bindestrich.
+const ACTIVITY_DATA_ACTION_SKIP = new Set(['arcane-device', 'pp-adjust', 'arcane-device-pp-adjust']);
+
+function argaFixActivityButtons(root) {
+  if (!root || root.nodeType !== 1) return;
+  const buttons = root.matches?.('.card-buttons button[data-action]')
+    ? [root]
+    : Array.from(root.querySelectorAll?.('.card-buttons button[data-action]') ?? []);
+  for (const btn of buttons) {
+    const da = btn.getAttribute('data-action') || '';
+    if (!da.includes('-') || ACTIVITY_DATA_ACTION_SKIP.has(da)) continue;
+    // letzten nicht-leeren Textknoten nehmen (ein evtl. vorangestelltes <i>-Icon bleibt)
+    const textNode = Array.from(btn.childNodes).reverse()
+      .find((n) => n.nodeType === 3 && n.textContent.trim());
+    if (!textNode) continue;
+    const label = textNode.textContent.trim();
+    // "<Aktionsname> (<Quelle>)" -> nur die LETZTE Klammer abtrennen, damit
+    // Aktionsnamen mit eigener Klammer (z.B. "Disarm Hand (Strength)") erhalten bleiben
+    const m = label.match(/^(.*\S)\s+\(([^()]*)\)$/);
+    if (!m) continue;
+    // 1) bekannter engl. Aktionsname -> deutsche Uebersetzung
+    // 2) bereits doppelt deutsch ("X (X)") -> einmal stehen lassen
+    const de = ACTION_NAME_MAP[m[1]] ?? (m[1] === m[2] ? m[2] : null);
+    if (!de || de === label) continue;
+    textNode.textContent = textNode.textContent.replace(label, de);
+  }
+}
+
+Hooks.once('ready', () => {
+  if (!argaActive()) return;
+  argaFixActivityButtons(document.body);
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (node.nodeType === 1) argaFixActivityButtons(node);
+      }
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+
 // Das swade-core-rules Modul nutzt kein i18n für Makro-Dialoge.
-// Daher übersetzen wir per DOM-Hooks, preCreate-Hooks und MutationObserver.
+// Die Übersetzung erfolgt daher per DOM-Hooks, preCreate-Hooks und MutationObserver.
 
 Hooks.once('ready', () => {
   if (!argaActive()) return;
@@ -1972,7 +2042,7 @@ const macroDialogTranslations = new Map([
                                      "Art des Gifts auswählen."],
   ["Pick Your Poison",               "Gift auswählen"],
   ["Lethal Poison",                  "Tödliches Gift"],
-  ["Mild Poison",                    "Mildes Gift"],
+  ["Mild Poison",                    "Leichtes Gift"],
   ["Paralyzing Poison",              "Lähmendes Gift"],
   ["Knockout Poison",                "K.O.-Gift"],
   ["Paralysis Duration (Rounds)",    "Lähmungsdauer (Runden)"],
@@ -2017,6 +2087,50 @@ const macroDialogTranslations = new Map([
   ["Enable Chi",                     "Chi aktivieren"],
   ["Adds Chi as an additional stat (enable in Tweaks)",
                                      "Fügt 'Chi' als weiteren Wert hinzu (kann in den Charakter-Optionen aktiviert werden)"],
+
+  // Taktiker-Talent (Aktionskarte): Dialog + Canvas-Meldungen (Strings aus index.js)
+  ["No eligible combatants to offer cards to.",
+                                     "Keine geeigneten Ziele, denen Karten angeboten werden können."],
+  ["Tactician: must be used during combat.",
+                                     "Das Taktiker-Talent kann nur während eines Kampfes verwendet werden."],
+  ["Tactician — Offer Action Card(s)", "Taktiker — Aktionskarte(n) anbieten"],
+  ["Drawn Action Card(s):",          "Gezogene Aktionskarte(n):"],
+  ["Offer each card to a target in combat, or choose Discard.",
+                                     "Biete jede Karte einem Ziel im Kampf an oder wähle „Ablegen“."],
+  ["Offer Cards",                    "Karten anbieten"],
+  ["Discard",                        "Ablegen"],
+  ["Cancel",                         "Abbrechen"],
+  // Tactician: weitere Canvas-Meldungen (Notifications) aus index.js
+  ["Tactician offers created. Waiting for GM to apply.",
+                                     "Taktiker-Angebote erstellt – warte auf Zuweisung durch den Spielleiter."],
+  ["All Tactician cards discarded.", "Alle Taktiker-Karten abgelegt."],
+  ["Tactician payload invalid.",     "Taktiker-Daten ungültig."],
+  ["Only GMs can apply this request.", "Nur Spielleiter können diese Anfrage anwenden."],
+  ["No active combat.",              "Kein aktiver Kampf."],
+  ["Target combatant not found.",    "Ziel-Kampfteilnehmer nicht gefunden."],
+  ["Tactician card applied by GM.",  "Taktiker-Karte vom Spielleiter zugewiesen."],
+  ["Failed to apply Tactician card.", "Zuweisen der Taktiker-Karte fehlgeschlagen."],
+  ["Request sent to GM to apply the card.",
+                                     "Anfrage zum Zuweisen der Karte an den Spielleiter gesendet."],
+  ["Failed to request GM to apply the Tactician card.",
+                                     "Anfrage an den Spielleiter zum Zuweisen der Taktiker-Karte fehlgeschlagen."],
+
+  // Akteur-Item-Abgleich („Alle Akteure aktualisieren"): Filter-Labels.
+  // Der DOM-Text lautet gemischt "Search"/"Modules"; die Großschreibung macht NUR
+  // CSS – daher matchen die weiter oben stehenden Großbuchstaben-Schlüssel
+  // "SEARCH"/"MODULES" nie. Diese gemischt-Schreibung ist der korrekte Schlüssel.
+  // ("Compendium Filters", "All Modules" und der Platzhalter sind bereits oben gemappt.)
+  ["Search",                         "Suche"],
+  ["Modules",                        "Module"],
+  ["Confirm Actor Item Patch",       "Item-Abgleich bestätigen"],
+  ["Items with a compendium source link are matched first. Name matching is only used as a fallback.",
+                                     "Items mit Kompendium-Quellverweis werden zuerst zugeordnet; der Namensabgleich dient nur als Rückfalloption."],
+  // Geteilter Satz: durch <strong>Zahlen</strong> in Fragmente zerlegt – Werte mit
+  // Leerzeichen, damit der zusammengesetzte Satz korrekt lautet:
+  // "Items im Besitz von <N> Akteur(en) anhand von <M> Kompendium-Pack(s) abgleichen?"
+  ["Patch owned items for",          "Items im Besitz von "],
+  ["actor(s) using",                 " Akteur(en) anhand von "],
+  ["compendium pack(s)?",            " Kompendium-Pack(s) abgleichen?"],
 ]);
 
 const patcherTextEN = "Select actors whose items to patch by selecting the actors themselves or the folder that contains them. Then select the compendiums to use for patching their owned items.";
@@ -2027,6 +2141,9 @@ const dynamicDialogPatterns = [
     replace: (m) => `Eigenschaft erhöhen/senken: ${m[1]}` },
   { regex: /^Select the Combat Edges you want to grant with (.+)\.$/,
     replace: (m) => `Wähle die Kampftalente aus, die du mit ${m[1]} gewähren möchtest.` },
+  // Tactician-Dialog: "Card 1", "Card 2:" usw. (Nummer variabel)
+  { regex: /^Card (\d+):$/, replace: (m) => `Karte ${m[1]}:` },
+  { regex: /^Card (\d+)$/,  replace: (m) => `Karte ${m[1]}` },
 ];
 
 function translateMacroText(text) {
@@ -2111,8 +2228,43 @@ for (const hook of ['renderDialogV2', 'renderDialog']) {
     if (!argaActive()) return;
     const el = html instanceof HTMLElement ? html : html[0] || html;
     translateMacroDOM(el);
+    // Der deutsche Text ist länger als das englische Original; dadurch werden einige
+    // Makro-Dialoge höher und der Ausführen-Button rutscht aus dem Sichtbereich.
+    // Betroffene Dialoge breiter ziehen (Text braucht weniger Zeilen) und die Höhe
+    // neu auf "auto" berechnen lassen, damit die Buttons wieder sichtbar werden.
+    try {
+      if (typeof app?.setPosition !== 'function') return;
+      const root = (app.element instanceof HTMLElement) ? app.element : el;
+      const title = root?.querySelector?.('.window-title')?.textContent?.trim();
+      if (root?.classList?.contains('actor-item-patcher')) {
+        app.setPosition({ width: 820, height: 'auto' });
+      } else if (title === 'Item-Abgleich bestätigen' || title === 'Confirm Actor Item Patch') {
+        app.setPosition({ width: 560, height: 'auto' });
+      }
+    } catch (e) {}
   });
 }
+
+// Höhenbegrenzung + Scroll für SWADE-Makro-Dialoge: Bei viel Inhalt (z.B. viele
+// ausgewählte Akteure) oder längerem deutschen Text wuchsen die Dialoge über den
+// Bildschirmrand hinaus, sodass der Ausführen-Button verschwand. Die Dialoghöhe wird
+// jetzt aufs Sichtfenster gedeckelt; nur der Inhalt (.dialog-content) scrollt, während
+// die Button-Leiste (.form-footer) immer sichtbar unten fixiert bleibt.
+// DialogV2-Struktur: .window-content > form.dialog-form > (.dialog-content + footer.form-footer)
+Hooks.once('ready', () => {
+  if (!argaActive()) return;
+  if (document.getElementById('arga-macro-dialog-scroll')) return;
+  const style = document.createElement('style');
+  style.id = 'arga-macro-dialog-scroll';
+  style.textContent = [
+    '.application.macro-dialog { max-height: 92vh; }',
+    '.application.macro-dialog .window-content { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }',
+    '.application.macro-dialog .dialog-form { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }',
+    '.application.macro-dialog .dialog-content { flex: 1 1 auto; min-height: 0; overflow-y: auto; }',
+    '.application.macro-dialog .form-footer { flex: 0 0 auto; }',
+  ].join('\n');
+  document.head.appendChild(style);
+});
 
 const macroNotificationPatterns = [
   { regex: /^(.+) was healed of all wounds\.$/,
@@ -2342,6 +2494,18 @@ Hooks.on('preCreateActiveEffect', (effect) => {
 });
 
 const macroChatPatterns = [
+  // Tactician-Talent: Chat-Nachrichten (HTML). Button-Klasse + data-payload bleiben
+  // UNVERÄNDERT, damit "Karte zuweisen" funktional bleibt – nur sichtbarer Text wird übersetzt.
+  { regex: /^<p><strong>Tactician<\/strong> — (.+?) discards (.+?)\.<\/p>$/,
+    replace: (m) => `<p><strong>Taktiker</strong> — ${m[1]} legt ${m[2]} ab.</p>` },
+  { regex: /^<p><strong>Tactician Offer<\/strong> — (.+?) offers (.+?) to (.+?)\.<\/p>\n<p><em>GM:<\/em> click <strong>Apply Card<\/strong> to assign this card to (.+?)\.<\/p>\n<button class="swade-tactician-apply" data-payload="([^"]*)">Apply Card \(GM\)<\/button>$/,
+    replace: (m) => `<p><strong>Taktiker-Angebot</strong> — ${m[1]} bietet ${m[3]} die Karte ${m[2]} an.</p>\n<p><em>SL:</em> Klicke auf <strong>Karte zuweisen</strong>, um ${m[4]} diese Karte zuzuweisen.</p>\n<button class="swade-tactician-apply" data-payload="${m[5]}">Karte zuweisen (SL)</button>` },
+  { regex: /^<p><strong>Tactician<\/strong>: (.+?) gives (.+?) to (.+?)\.<\/p>$/,
+    replace: (m) => `<p><strong>Taktiker</strong>: ${m[1]} gibt ${m[2]} an ${m[3]}.</p>` },
+  { regex: /^<p>(.+?) accepts a Tactician card offer\.<\/p><button class="swade-tactician-apply" data-payload="([^"]*)">Apply Card \(GM\)<\/button>$/,
+    replace: (m) => `<p>${m[1]} nimmt ein Taktiker-Kartenangebot an.</p><button class="swade-tactician-apply" data-payload="${m[2]}">Karte zuweisen (SL)</button>` },
+  { regex: /^<p>(.+?) declines the Tactician card offer\.<\/p>$/,
+    replace: (m) => `<p>${m[1]} lehnt das Taktiker-Kartenangebot ab.</p>` },
   { regex: /^(.+) gains temporary proficiency in (.+) \(d(\d+)\)\.$/,
     replace: (m) => `${m[1]} erhält die temporäre Fertigkeit ${m[2]} (W${m[3]}).` },
   { regex: /^(.+) must try again after additional study or effort\.$/,
@@ -2569,17 +2733,12 @@ Hooks.on('renderApplicationV2', (app, element) => {
   }
 });
 
-// =====================================================================
-//  SWADE "Inhalt"-Übersicht (CompendiumTOC): Suche auf den ANGEZEIGTEN
-//  (deutschen) Text umbiegen.
-//  Das systemeigene Such-Widget filtert sonst gegen die englischen
-//  Originalnamen → "Regeln" findet nichts, "rules" schon. Foundrys
-//  normale Seitenliste ("Seiten suchen") ist davon nicht betroffen.
-//  Vorgehen: native Suche auf dem Feld kappen (Klon entfernt direkte
-//  Listener, stopPropagation fängt delegierte ab) und durch einen
-//  eigenen Filter ersetzen, der die li.page-Einträge nach ihrem
-//  sichtbaren a.name-Text (deutsch) ein-/ausblendet.
-// =====================================================================
+// SWADE "Inhalt"-Übersicht (CompendiumTOC): das systemeigene Such-Widget filtert
+// gegen die englischen Originalnamen → "Regeln" findet nichts, "rules" schon.
+// Native Suche kappen (Klon entfernt direkte Listener, stopPropagation die
+// delegierten) und durch einen Filter ersetzen, der die li.page-Einträge nach
+// sichtbarem a.name-Text (deutsch) ein-/ausblendet. Foundrys normale Seitenliste
+// ("Seiten suchen") ist nicht betroffen.
 
 function argaTocNormalize(s) {
   return (s ?? '')
@@ -2633,18 +2792,12 @@ Hooks.on('renderCompendiumTOC', (app, html) => {
   runFilter();
 });
 
-// =====================================================================
-//  CompendiumTOC-Suche: Variante mit li.toc-entry (Item-/Akteur-Kompendien)
-//  ---------------------------------------------------------------------
-//  Eigenständiger Block - kann ersatzlos gelöscht werden, falls die Suche
-//  irgendwann anderweitig (System/Babele) korrekt auf Deutsch filtert.
-//  Schwester des li.page-Blocks oben: SWADE öffnet auch normale Kompendien
-//  (Talente, Gegner, ...) als CompendiumTOC, deren native Suche aber gegen
-//  die englischen Originalnamen filtert → deutsche Begriffe finden nichts.
-//  Gleiches Muster: native Suche kappen (Klon + stopPropagation) und durch
-//  einen eigenen Filter auf den sichtbaren a.name-Text (deutsch) ersetzen.
-//  argaTocNormalize stammt aus dem li.page-Block weiter oben.
-// =====================================================================
+// CompendiumTOC-Suche, Variante li.toc-entry (Item-/Akteur-Kompendien).
+// Schwester des li.page-Blocks oben: SWADE öffnet auch normale Kompendien
+// (Talente, Gegner, ...) als CompendiumTOC, deren native Suche gegen die
+// englischen Originalnamen filtert → deutsche Begriffe finden nichts. Gleiches
+// Muster (Suche kappen + eigener Filter; argaTocNormalize stammt von dort).
+// Eigenständig – löschbar, falls System/Babele später selbst auf Deutsch filtert.
 Hooks.on('renderCompendiumTOC', (app, html) => {
   if (!argaActive()) return;
 
@@ -2775,14 +2928,21 @@ async function argaRestoreWindows(list) {
         const doc = await fromUuid(entry.uuid);
         // Sicherheitsnetz: einzelne Journal-Seiten NIE öffnen (auch nicht im
         // Bearbeiten-Modus). Genau das hat zuvor die deutsche Übersetzung in das
-        // gesperrte Basis-Kompendium zurückgeschrieben. Nur den Journal-Eintrag
-        // selbst öffnen wir wieder (er erscheint im Nur-Lesen-Modus der Kompendie).
+        // gesperrte Basis-Kompendium zurückgeschrieben. Nur der Journal-Eintrag
+        // selbst wird wieder geöffnet (er erscheint im Nur-Lesen-Modus der Kompendie).
         if (doc?.documentName === "JournalEntryPage") continue;
         const sheet = doc?.sheet;
         if (!sheet) continue;
         const opts = entry.pageId ? { pageId: entry.pageId } : {};
         if (sheet instanceof foundry.applications.api.ApplicationV2) {
-          await sheet.render({ force: true, ...opts });
+          // Position bereits als Render-Option uebergeben. Fenster mit eigenem
+          // mehrstufigem Render (vor allem das Journal mit Inhaltsverzeichnis)
+          // bestimmen ihre Position waehrend des Oeffnens selbst und uebernehmen
+          // eine Vorgabe nur, wenn sie schon beim Render-Aufruf vorliegt; ein rein
+          // nachtraegliches Verschieben verpufft dort.
+          const renderOpts = { force: true, ...opts };
+          if (entry.pos && Object.keys(entry.pos).length) renderOpts.position = entry.pos;
+          await sheet.render(renderOpts);
         } else {
           await sheet.render(true, opts);
         }
@@ -2858,13 +3018,15 @@ Hooks.once('init', () => {
 
 Hooks.once('ready', async () => {
   if (argaModuleDisabled()) return;
+  const isGerman = game.settings.get('core', 'language') === 'de';
+  // "Nicht mehr anzeigen" greift erst, wenn der Client auf Deutsch steht. Solange
+  // die Sprache falsch ist, erscheint das Fenster weiter (inkl. Umschalt-Knopf),
+  // damit der Hinweis nicht versehentlich dauerhaft weggeklickt wird.
   try {
-    if (game.settings.get(MODULE_ID, 'welcomeDismissed')) return;
+    if (isGerman && game.settings.get(MODULE_ID, 'welcomeDismissed')) return;
   } catch (e) {
     return;
   }
-
-  const isGerman = game.settings.get('core', 'language') === 'de';
   const LOGO = `modules/${MODULE_ID}/assets/icons/Savage-Worlds-Fanprodukt-Logo.webp`;
   const RED = '#aa0000';
   const GREEN = '#1f6b35';
@@ -2911,7 +3073,7 @@ Hooks.once('ready', async () => {
       <div style="text-align:center;font-size:1.3em;font-weight:bold;">Arga's SWADE Translation (German)</div>
       <div>Es handelt sich um ein inoffizielles Fan-Produkt, welches (mit vorliegender Genehmigung) das kostenpflichtige englische Originalmodul</div>
       <div style="text-align:center;font-weight:bold;">Savage Worlds Adventure Edition Core Rules (swade-core-rules)</div>
-      <div>mittels des Moduls <strong>Babele</strong> ins Deutsche übersetzt. Die Originaldateien werden dabei nicht verändert.<br>Bitte nimm in den Spieleinstellungen <span style="color:${RED};font-weight:bold;">keine Änderungen</span> bei der Parade-Fertigkeit (Fighting) oder den Fahrzeugfertigkeiten (Boating, Driving, Piloting, Riding) vor. Die Werte werden im Spiel automatisch übersetzt.</div>
+      <div>mittels des Moduls <strong>Babele</strong> ins Deutsche übersetzt. Die Originaldateien werden dabei nicht verändert.<br>Bitte nimm in den Spieleinstellungen <span style="color:${RED};font-weight:bold;">keine Änderungen</span> bei der Parade-Fertigkeit (Fighting) oder den Fahrzeugfertigkeiten (Boating, Driving, Piloting, Riding) vor. Die Begriffe werden im Spiel automatisch übersetzt.</div>
       <div style="text-align:center;margin-top:0.4rem;">Viel Spaß – Arga.</div>
       ${dynamic}
       <hr style="width:100%;margin:0;">
