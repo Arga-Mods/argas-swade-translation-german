@@ -78,6 +78,9 @@
     }
   },
   "SWADE": {
+    "Add": "Hinzufügen",
+    "Remove": "Entfernen",
+    "Effects": "Effekte",
     "GangUpDamage": "Überzahlbonus",
     "GangUpHint": "Wendet den Überzahlbonus automatisch auf den Schaden an",
     "GlobalMod": {
