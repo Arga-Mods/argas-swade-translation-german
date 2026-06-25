@@ -1,8 +1,0 @@
-2026/06/22-22:56:02.186974 7fba46ffd6c0 Recovering log #203
-2026/06/22-22:56:02.206893 7fba46ffd6c0 Delete type=0 #203
-2026/06/22-22:56:02.206917 7fba46ffd6c0 Delete type=3 #201
-2026/06/22-22:57:58.081059 7fba4678f6c0 Level-0 table #208: started
-2026/06/22-22:57:58.081074 7fba4678f6c0 Level-0 table #208: 0 bytes OK
-2026/06/22-22:57:58.089817 7fba4678f6c0 Delete type=0 #206
-2026/06/22-22:57:58.119507 7fba4678f6c0 Manual compaction at level-0 from '!macros!ArgasMakroCONV01' @ 72057594037927935 : 1 .. '!macros!ArgasMakroDE0001' @ 0 : 0; will stop at (end)
-2026/06/22-22:57:58.119547 7fba4678f6c0 Manual compaction at level-1 from '!macros!ArgasMakroCONV01' @ 72057594037927935 : 1 .. '!macros!ArgasMakroDE0001' @ 0 : 0; will stop at (end)
