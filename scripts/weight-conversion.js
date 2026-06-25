@@ -1,28 +1,12 @@
 /**
- * Gewichts-Umrechnung lb -> kg für Arga's SWADE Translation (German).
+ * Gewichts-Umrechnung lb -> kg.
  *
- * Hintergrund:
- *   Das SWADE-System (swade) hat die Welt-Einstellung "weightUnit" mit den
- *   Werten "imperial" / "metric". Bei "metric" rechnet das System die
- *   TRAGLAST korrekt um (Faktor /2: imperiale Kapazitaet *20, metrische *10),
- *   laesst aber die GEWICHTE der einzelnen Gegenstaende ("system.weight")
- *   absichtlich unveraendert. Ein 10-lb-Gegenstand wird dann faelschlich als
- *   "10 kg" angezeigt statt korrekt als 5 kg.
- *
- * Loesung (Etappe 1):
- *   Sobald ein Gegenstand aus einem Kompendium auf einen Akteur (Charakterbogen)
- *   gezogen wird, merken wir uns sein Originalgewicht in lb als Flag und setzen
- *   bei metrischer Einstellung "system.weight" auf die Haelfte.
- *
- *   - Der lb-Originalwert bleibt als Flag erhalten  -> spaeter verlustfrei
- *     reversibel (Umschalten metrisch <-> imperial, Etappe 2).
- *   - Es werden NUR aus dem Kompendium gezogene Items angefasst (deren Gewicht
- *     ist immer in lb). Manuell auf dem Bogen angelegte Items bleiben unberuehrt.
- *   - Ein bereits markiertes Item wird nicht erneut halbiert (keine Doppelung).
- *
- * Spaetere Etappen docken an die hier exportierte API (game.modules
- * .get(MODULE_ID).api.weight) an: Welt-Konverter fuer Altbestand,
- * automatische Reaktion auf das Umschalten, Transfer-Makro, Begruessungsfenster.
+ * Bei "weightUnit": "metric" rechnet SWADE die Traglast um (Faktor /2), laesst aber
+ * "system.weight" der Gegenstaende unveraendert -> ein 10-lb-Item zeigt faelschlich
+ * "10 kg" statt 5 kg. Beim Ziehen aus dem Kompendium wird daher das Originalgewicht
+ * (lb) als Flag gesichert und bei metrisch halbiert; das Flag macht das Umschalten
+ * verlustfrei reversibel. Nur Kompendium-Items (immer in lb); manuell angelegte
+ * bleiben unberuehrt, bereits markierte werden nicht erneut halbiert.
  */
 
 const MODULE_ID = 'argas-swade-translation-german';
@@ -69,13 +53,13 @@ function compendiumSourceOf(item, data) {
 
 /**
  * Drag&Drop-Hook: Ein Item wird auf einen Akteur gelegt.
- * Laeuft VOR dem Anlegen, daher koennen wir die Werte per updateSource() setzen.
+ * Laeuft VOR dem Anlegen; die Werte lassen sich daher per updateSource() setzen.
  */
 Hooks.on('preCreateItem', (item, data, options, userId) => {
   if (!argaActive()) return;
   if (!item.parent) return; // nur Items auf einem Akteur (Charakterbogen), kein Welt-/Kompendium-Item
 
-  // Schon von uns markiert? -> nichts tun (verhindert Doppel-Halbierung,
+  // Bereits markiert? -> nichts tun (verhindert Doppel-Halbierung,
   // z. B. beim Kopieren von Akteur zu Akteur).
   if (foundry.utils.getProperty(item, `flags.${MODULE_ID}.${WEIGHT_FLAG}`) != null) return;
 
@@ -169,8 +153,8 @@ Hooks.on('updateSetting', async (setting) => {
   ui.notifications?.info(`Gewichts-Umrechnung abgeschlossen: ${n} Gegenstände aktualisiert.`);
 });
 
-// API fuer spaetere Etappen (Begruessungsfenster) und zum Testen/Anstossen
-// in der Konsole: game.modules.get('argas-swade-translation-german').api.weight
+// API fuer das Begruessungsfenster und zum Anstossen in der Konsole:
+// game.modules.get('argas-swade-translation-german').api.weight
 Hooks.once('init', () => {
   const mod = game.modules.get(MODULE_ID);
   if (!mod) return;

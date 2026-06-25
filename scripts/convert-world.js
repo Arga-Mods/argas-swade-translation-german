@@ -205,7 +205,11 @@ async function argaConvertWorld() {
     return changes;
   };
 
-  const FLAT_SKIP = /^(_id|_key|sort|folder|img|type)$|^(_stats|flags|effects|ownership|permission|system\.actions)\./;
+  // system.actions.* bleibt unangetastet (Aktions-Buttons sind ein Thema fuer sich),
+  // AUSSER system.actions.trait (Probe-Fertigkeit, z.B. Fighting -> Kämpfen): die muss
+  // wie beim Ziehen aus dem Kompendium uebersetzt werden, sonst zeigt das konvertierte
+  // Item englisch "Fighting" statt deutsch "Kämpfen".
+  const FLAT_SKIP = /^(_id|_key|sort|folder|img|type)$|^(_stats|flags|effects|ownership|permission)\.|^system\.actions\.(?!trait$)/;
   const conservativeFields = (cur, orig, trans) => {
     const fc = foundry.utils.flattenObject(cur);
     const fo = foundry.utils.flattenObject(orig);
@@ -805,12 +809,12 @@ async function argaConvertWorld() {
       </div>`;
     }).join('');
     const rowsBlock = plans.length
-      ? `<details data-arga-rows="a" open>
+      ? `<details data-arga-rows="a">
           <summary style="cursor:pointer;padding:0.2rem 0 0.1rem 0;font-weight:bold;opacity:0.85;">Akteursliste</summary>
           ${listBox(actorRows, '0.9rem')}
         </details>`
       : '<div style="opacity:0.7;">Keine Akteure mit offenen Übersetzungen.</div>';
-    const open = !interactive || plans.length || scopeMissing('a') ? ' open' : '';
+    const open = !interactive ? ' open' : '';
     return `<details${open} data-arga-acc="top">
       ${groupSummary(`-${plans.length}- ${word(plans.length, 'Akteur', 'Akteure')} gefunden`, scopeMissing('a'))}
       <div style="padding-left:1.5rem;">${rowsBlock}</div>
@@ -820,7 +824,7 @@ async function argaConvertWorld() {
 
   const renderItemGroup = (interactive) => {
     const found = world.items.length + scopeMissing('i');
-    const open = !interactive || (!plans.length && found) ? ' open' : '';
+    const open = !interactive ? ' open' : '';
     const body = found
       ? CATS.map((c) => renderItemCategory(c, interactive)).join('')
       : '<div style="opacity:0.7;">Keine Welt-Items mit offenen Übersetzungen.</div>';
@@ -832,7 +836,7 @@ async function argaConvertWorld() {
 
   const renderReport = (interactive, withIntro) => `
     <div style="display:flex;flex-direction:column;gap:${GAP};">
-      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br><strong>HINWEIS:</strong> Wurde der Name eines Items verändert, ist eine Konvertierung nicht möglich. Ein individueller Beschreibungstext eines Items bleibt jedoch erhalten.</div>' : ''}
+      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br>Wurde in einem Item ein individueller Beschreibungstext angelegt, bleibt dieser erhalten und nur der Name wird konvertiert. Wurde vorher jedoch der Name des Items verändert, ist eine Konvertierung nicht möglich.</div>' : ''}
       <div style="display:flex;gap:0.5rem;">
         ${statBox(plans.length, `${word(plans.length, 'Akteur', 'Akteure')} gefunden`, 'inherit')}
         ${statBox(world.items.length, `${word(world.items.length, 'Item', 'Items')} gefunden`, 'inherit')}
@@ -862,7 +866,7 @@ async function argaConvertWorld() {
       ${renderReport(true, true)}
       <hr style="width:100%;margin:0;">
       <label style="display:block;cursor:pointer;"><input type="checkbox" name="arga-journal" style="margin-right:0.4em;vertical-align:middle;">Ergebnis nach dem Übersetzen als Journaleintrag speichern</label>
-      <div style="color:${RED};font-weight:bold;text-align:center;">Die Benutzung des Konverters erfolgt auf eigene Gefahr.<br>Bitte sicherheitshalber vorher ein BACKUP der Welt anlegen!</div>
+      <div style="color:${RED};font-weight:bold;text-align:center;">Die Benutzung des Konverters erfolgt auf eigene Gefahr.<br>Bitte auf jeden Fall vorher ein BACKUP der Welt anlegen!</div>
     </div>
   `;
 
@@ -975,10 +979,8 @@ async function argaConvertWorld() {
   }
   if (choice !== 'apply') return;
 
-  const HINT_SECONDS = 12;
   const startHint = ui.notifications.warn('Die Konvertierung benötigt etwas Zeit. Bitte warte auf die Abschlussmeldung.', { permanent: true });
   const clearStartHint = () => { try { ui.notifications.remove?.(startHint); } catch (e) {} };
-  setTimeout(clearStartHint, HINT_SECONDS * 1000);
 
   let doneItems = 0;
   let doneHeads = 0;
@@ -1120,9 +1122,9 @@ async function argaConvertWorld() {
   clearStartHint();
   const result = `Konvertierung abgeschlossen: ${nWord(doneItems, 'Item', 'Items')}, ${nWord(doneEffects, 'Effekt', 'Effekte')} und ${nWord(doneHeads, 'Akteur-Feld', 'Akteur-Felder')} übersetzt.${journalNote}${weightNote}`;
   if (applyErrors) {
-    ui.notifications.warn(`${result} ${applyErrors} Fehler \u2013 Details in der Konsole (F12).`);
+    ui.notifications.warn(`${result} ${applyErrors} Fehler \u2013 Details in der Konsole (F12).`, { permanent: true });
   } else {
-    ui.notifications.warn(result);
+    ui.notifications.warn(result, { permanent: true });
   }
 }
 
