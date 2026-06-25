@@ -1,0 +1,5 @@
+2026/06/23-22:13:54.545613 7f7f8d7bd6c0 Recovering log #80
+2026/06/23-22:13:54.545684 7f7f8d7bd6c0 Level-0 table #82: started
+2026/06/23-22:13:54.552130 7f7f8d7bd6c0 Level-0 table #82: 837 bytes OK
+2026/06/23-22:13:54.556531 7f7f8d7bd6c0 Delete type=0 #80
+2026/06/23-22:13:54.556558 7f7f8d7bd6c0 Delete type=3 #79
