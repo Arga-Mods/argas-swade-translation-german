@@ -1,0 +1,11 @@
+/*
+ * Korrektur eines SWADE-System-Darstellungsfehlers (404 card-hand-gradient.svg im
+ * Kampf-Tracker): Das System definiert --initiative-icon-hover mit relativem Pfad,
+ * verwendet wird die Variable aber in Foundrys Kern-CSS -> der relative Pfad loest
+ * dort falsch auf (/assets/ui/... statt /systems/swade/assets/ui/...). Hier mit
+ * absolutem Pfad neu gesetzt; laedt nach der System-CSS und ueberschreibt sauber.
+ */
+.combat-sidebar.swade li.combatant .token-initiative .roll,
+.combat-sidebar.swade li.combatant-group .token-initiative .roll {
+    --initiative-icon-hover: url('/systems/swade/assets/ui/card-hand-gradient.svg');
+}
