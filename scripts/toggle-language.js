@@ -71,6 +71,9 @@ async function argaToggleLanguage() {
   }
   ui.notifications.info(`Umschalten zu: ${label}`);
   await new Promise((r) => setTimeout(r, 1500));
+  // Markierung fuer register.js: nach dem Neuladen das Begrüßungsfenster einmal
+  // ueberspringen, da der Sprachwechsel hier bewusst ausgeloest wurde.
+  try { sessionStorage.setItem("argas-swade-translation-german.suppressWelcome", "1"); } catch (e) {}
   await game.settings.set("core", "language", next);
   location.reload();
 }

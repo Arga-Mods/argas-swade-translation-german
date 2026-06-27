@@ -205,11 +205,14 @@ async function argaConvertWorld() {
     return changes;
   };
 
-  // system.actions.* bleibt unangetastet (Aktions-Buttons sind ein Thema fuer sich),
-  // AUSSER system.actions.trait (Probe-Fertigkeit, z.B. Fighting -> Kämpfen): die muss
-  // wie beim Ziehen aus dem Kompendium uebersetzt werden, sonst zeigt das konvertierte
-  // Item englisch "Fighting" statt deutsch "Kämpfen".
-  const FLAT_SKIP = /^(_id|_key|sort|folder|img|type)$|^(_stats|flags|effects|ownership|permission)\.|^system\.actions\.(?!trait$)/;
+  // system.actions.* bleibt unangetastet (mechanische Werte: Typ, Modifikatoren, Schaden),
+  // AUSSER den Klartext-Feldern, die auch Babele beim Ziehen aus dem Kompendium uebersetzt:
+  // system.actions.trait (Waffen-Probe) sowie Name und Aktionseigenschaft (override) jeder
+  // Zusatz-Aktion (system.actions.additional.<id>). Sonst bleibt z.B. "Fighting" englisch
+  // statt "Kämpfen".
+  const FLAT_SKIP = /^(_id|_key|sort|folder|img|type)$|^(_stats|flags|effects|ownership|permission)\.|^system\.actions\./;
+  const ACTIONS_TRANSLATABLE = /^system\.actions\.(trait|additional\.[^.]+\.(name|override))$/;
+  const skipFlat = (k) => FLAT_SKIP.test(k) && !ACTIONS_TRANSLATABLE.test(k);
   const conservativeFields = (cur, orig, trans) => {
     const fc = foundry.utils.flattenObject(cur);
     const fo = foundry.utils.flattenObject(orig);
@@ -217,7 +220,7 @@ async function argaConvertWorld() {
     const fields = {};
     let n = 0;
     for (const [k, tv] of Object.entries(ft)) {
-      if (FLAT_SKIP.test(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
+      if (skipFlat(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
       const ov = fo[k];
       if (typeof tv !== 'string' || typeof ov !== 'string' || tv === ov) continue;
       const cv = fc[k];
@@ -291,7 +294,7 @@ async function argaConvertWorld() {
       const ftr = foundry.utils.flattenObject(trans);
       for (const [k, tv] of Object.entries(ftr)) {
         if (k in fd) continue;
-        if (FLAT_SKIP.test(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
+        if (skipFlat(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
         if (typeof tv !== 'string' || !tv.length) continue;
         const ev = fs[k];
         if (typeof ev !== 'string' || ev === tv) continue;
@@ -306,7 +309,7 @@ async function argaConvertWorld() {
     const fields = {};
     let n = 0;
     for (const [k, tv] of Object.entries(fd)) {
-      if (FLAT_SKIP.test(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
+      if (skipFlat(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
       if (typeof tv !== 'string' || !tv.length) continue;
       const cv = fc[k];
       if (typeof cv !== 'string') continue;
@@ -425,7 +428,7 @@ async function argaConvertWorld() {
     const fields = {};
     let n = 0;
     for (const [k, tv] of Object.entries(fd)) {
-      if (FLAT_SKIP.test(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
+      if (skipFlat(k) || k.split('.').some((s) => /^\d+$/.test(s))) continue;
       if (typeof tv !== 'string' || !tv.length) continue;
       const cv = fc[k];
       if (typeof cv !== 'string' || cv === tv) continue;
@@ -836,7 +839,7 @@ async function argaConvertWorld() {
 
   const renderReport = (interactive, withIntro) => `
     <div style="display:flex;flex-direction:column;gap:${GAP};">
-      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br>Wurde in einem Item ein individueller Beschreibungstext angelegt, bleibt dieser erhalten und nur der Name wird konvertiert. Wurde vorher jedoch der Name des Items verändert, ist eine Konvertierung nicht möglich.</div>' : ''}
+      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br><strong>HINWEIS:</strong> Wurde in einem Item ein individueller Beschreibungstext angelegt, bleibt dieser erhalten und nur der Name wird konvertiert. Wurde vorher jedoch der Name des Items verändert, ist eine Konvertierung nicht möglich.</div>' : ''}
       <div style="display:flex;gap:0.5rem;">
         ${statBox(plans.length, `${word(plans.length, 'Akteur', 'Akteure')} gefunden`, 'inherit')}
         ${statBox(world.items.length, `${word(world.items.length, 'Item', 'Items')} gefunden`, 'inherit')}
@@ -979,7 +982,7 @@ async function argaConvertWorld() {
   }
   if (choice !== 'apply') return;
 
-  const startHint = ui.notifications.warn('Die Konvertierung benötigt etwas Zeit. Bitte warte auf die Abschlussmeldung.', { permanent: true });
+  const startHint = ui.notifications.warn('Die Konvertierung kann je nach Umfang mehrere Minuten dauern. Bitte warte auf die Abschlussmeldung.', { permanent: true });
   const clearStartHint = () => { try { ui.notifications.remove?.(startHint); } catch (e) {} };
 
   let doneItems = 0;
