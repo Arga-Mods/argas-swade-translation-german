@@ -2950,7 +2950,13 @@ async function argaRestoreWindows(list) {
       } else if (entry.pack) {
         const pack = game.packs.get(entry.pack);
         if (!pack) continue;
-        await pack.render(true);
+        // Position wie beim Journal als Render-Option uebergeben: das Kompendium-
+        // Fenster bestimmt seine Position beim Oeffnen selbst, ein rein
+        // nachtraegliches Verschieben verpufft. pack.render(force, options) reicht
+        // die options an die ApplicationV2-Compendium-App weiter.
+        const packOpts = {};
+        if (entry.pos && Object.keys(entry.pos).length) packOpts.position = entry.pos;
+        await pack.render(true, packOpts);
         app = [...foundry.applications.instances.values()].find((a) => a.collection === pack)
            ?? Object.values(ui.windows).find((w) => w.collection === pack)
            ?? null;
@@ -3018,6 +3024,15 @@ Hooks.once('init', () => {
 
 Hooks.once('ready', async () => {
   if (argaModuleDisabled()) return;
+  // Beim bewussten Umschalten per "Sprache umschalten"-Makro (z.B. kurz auf
+  // Englisch zum Textvergleich) das Begrüßungsfenster einmalig überspringen,
+  // sonst ploppt es bei jedem Wechsel stoerend auf.
+  try {
+    if (sessionStorage.getItem('argas-swade-translation-german.suppressWelcome') === '1') {
+      sessionStorage.removeItem('argas-swade-translation-german.suppressWelcome');
+      return;
+    }
+  } catch (e) {}
   const isGerman = game.settings.get('core', 'language') === 'de';
   // "Nicht mehr anzeigen" greift erst, wenn der Client auf Deutsch steht. Solange
   // die Sprache falsch ist, erscheint das Fenster weiter (inkl. Umschalt-Knopf),
