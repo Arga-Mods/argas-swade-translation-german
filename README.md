@@ -30,7 +30,7 @@ In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich zwei Makros:
 - Das andere Makro (nur für die SL) startet einen Konverter, mit dem alle über das englische Modul erstellten Akteure und Gegenstände ins Deutsche übertragen werden. Der Konverter nimmt zunächst eine Bestandsaufnahme vor und zeigt an, welche Items er wie übersetzen würde und wo es Probleme gibt. Man kann alle Items in einem Rutsch übersetzen lassen, oder nach Belieben nur ausgewählte Inhalte.
 
  <p align="center">
-  <img src="screenshots/konverter.webp" alt="Konverter" width="600">
+  <img src="screenshots/konverter.webp" alt="Konverter" width="550">
 </p>
 
 Die Konvertierung der Welt kann auch über die Spieleinstellungen gesteuert werden:
