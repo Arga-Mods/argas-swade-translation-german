@@ -29,7 +29,7 @@ In dem Kompendium-Ordner ***Makros (Arga)*** befinden sich zwei Makros:
 - Mit dem einen kann das Foundry-Interface zwischen Deutsch und Englisch umgeschaltet werden. Dabei merkt sich das Makro alle geöffneten Fenster sowie deren Position und öffnet sie in der jeweils anderen Sprache erneut. So können die übersetzten Regeln und Items schnell mit dem englischen Original verglichen werden.
 - Das andere Makro (nur für die SL) startet einen Konverter, mit dem alle über das englische Modul erstellten Akteure und Gegenstände ins Deutsche übertragen werden. Der Konverter nimmt zunächst eine Bestandsaufnahme vor und zeigt an, welche Items er wie übersetzen würde und wo es Probleme gibt. Man kann alle Items in einem Rutsch übersetzen lassen, oder nach Belieben nur ausgewählte Inhalte.
 
- <p align="center">
+<p align="center">
   <img src="screenshots/konverter.webp" alt="Konverter" width="550">
 </p>
 
@@ -39,14 +39,22 @@ Die Konvertierung der Welt kann auch über die Spieleinstellungen gesteuert werd
   <img src="screenshots/settings.webp" alt="Settings" width="580">
 </p>
 
+## Manifest-URL
+https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest/download/module.json
+
+&nbsp;
 
 ## Voraussetzungen
 - [Babele](https://foundryvtt.com/packages/babele) – Übersetzungs-Framework
 - [SWADE-System](https://foundryvtt.com/packages/swade) – kostenloses Spielsystem
 - [SWADE Core Rules](https://foundryvtt.com/packages/swade-core-rules) – kostenpflichtiges Premium-Modul von Pinnacle
   
+&nbsp;
+  
 ## Rechte
 **Savage Worlds** und **SWADE** sind Eigentum der ***Pinnacle Entertainment Group***; die deutschsprachigen Rechte liegen bei ***Ulisses Spiele***. Dieses inoffizielle Fan-Projekt liefert (mit vorliegender Genehmigung) die deutschen Regeltexte von Ulisses Spiele als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, welches installiert sein muss und durch ***Arga's SWADE Translation (German)*** nicht ersetzt wird.
+
+&nbsp;
 
 ## Wirf auch gerne einen Blick auf meine anderen Module
 
