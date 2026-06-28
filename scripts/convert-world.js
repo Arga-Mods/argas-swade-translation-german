@@ -839,7 +839,7 @@ async function argaConvertWorld() {
 
   const renderReport = (interactive, withIntro) => `
     <div style="display:flex;flex-direction:column;gap:${GAP};">
-      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br><strong>HINWEIS:</strong> Wurde in einem Item ein individueller Beschreibungstext angelegt, bleibt dieser erhalten und nur der Name wird konvertiert. Wurde vorher jedoch der Name des Items verändert, ist eine Konvertierung nicht möglich.</div>' : ''}
+      ${withIntro ? '<div>Dies ist zunächst nur eine Bestandsaufnahme. Es wurden noch <strong>keine Änderungen</strong> in der Welt vorgenommen. <strong>Bitte prüfe</strong> die vorgeschlagenen Übersetzungen und deaktiviere ggf. unpassende.<br><br><strong>HINWEIS:</strong> Eigene Item-Namen oder Beschreibungstexte werden beim Konvertieren mit dem Standard überschrieben.</div>' : ''}
       <div style="display:flex;gap:0.5rem;">
         ${statBox(plans.length, `${word(plans.length, 'Akteur', 'Akteure')} gefunden`, 'inherit')}
         ${statBox(world.items.length, `${word(world.items.length, 'Item', 'Items')} gefunden`, 'inherit')}
