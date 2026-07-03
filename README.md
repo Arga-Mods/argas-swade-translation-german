@@ -18,7 +18,7 @@ Die Übersetzungstexte und die verwendeten Bilder basieren auf dem deutschen Gru
   <img src="screenshots/compendium.webp" alt="Kompendium" width="300">
 </p>
 
-Alle Kompendien sind deutsch sortiert und die Suchfelder funktionieren mit auch mit Umlauten. 
+Alle Kompendien sind deutsch sortiert und die Suchfelder funktionieren auch mit Umlauten. 
 
 <p align="center">
   <img src="screenshots/search.webp" alt="Suchfunktion" width="340">
