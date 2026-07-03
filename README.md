@@ -53,6 +53,6 @@ https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest/down
 
 ## Wirf auch gerne einen Blick auf meine anderen Module
 
-* **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein grundsätzlich *systemunabhängiges* Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie Funktionen und Würfelmechaniken speziell für das ***Savage-Worlds-System***, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
+* **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein *systemunabhängiges* Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie zusätzlichen Funktionen und Würfelmechaniken speziell für das ***Savage-Worlds-System***, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
 * **[Arga's Benny & Wound Panel (SWADE)](https://github.com/Arga-Mods/argas-benny-and-wound-panel-swade)** – Ein Panel für ***Savage Worlds*** zum schnellen Anpassen von Bennys, Wunden und Erschöpfung.
 * **[Arga's Day-Night Slider](https://github.com/Arga-Mods/argas-day-night-slider)** – Ein Schieberegler für einen sanften Tag-Nacht-Übergang in deinen Szenen.
