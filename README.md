@@ -11,7 +11,7 @@
 
 # Arga's SWADE Translation (German)
 
-Dieses inoffizielle Modul für Foundry VTT übersetzt alle Kompendien-Inhalte des offiziellen (kostenpflichtigen) englischen ***SWADE Core Rules***-Moduls von Pinnacle ins Deutsche. Die Übersetzung wird über das Modul ***Babele*** realisiert und die Originalinhalte werden dabei nicht verändert.<br>
+Dieses inoffizielle Modul für Foundry VTT übersetzt das komplette offizielle (kostenpflichtige) englische Modul ***SWADE Core Rules*** von Pinnacle ins Deutsche. Die Übersetzung wird über das Modul ***Babele*** realisiert und die Originalinhalte werden dabei nicht verändert.<br>
 Die Übersetzungstexte und die verwendeten Bilder basieren auf dem deutschen Grundregelwerk (6. Auflage) und dem ehemaligen Foundry-Modul ***Savage Worlds Abenteuer Edition Grundregelwerk*** von Ulisses. Eine Genehmigung zur Nutzung der Texte und Bilder liegt vor. 
 
 <p align="center">
@@ -56,3 +56,7 @@ https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest/down
 * **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein *systemunabhängiges* Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie zusätzlichen Funktionen und Würfelmechaniken speziell für das ***Savage-Worlds-System***, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
 * **[Arga's Benny & Wound Panel (SWADE)](https://github.com/Arga-Mods/argas-benny-and-wound-panel-swade)** – Ein Panel für ***Savage Worlds*** zum schnellen Anpassen von Bennys, Wunden und Erschöpfung.
 * **[Arga's Day-Night Slider](https://github.com/Arga-Mods/argas-day-night-slider)** – Ein Schieberegler für einen sanften Tag-Nacht-Übergang in deinen Szenen.
+
+---
+
+<p align="center"><em>Viel Vergnügen — Arga</em></p>
