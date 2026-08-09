@@ -1,0 +1,930 @@
+{
+  "label": "Aktionskartendeck",
+  "folders": {},
+  "entries": {
+    "swadeactiondeck0": {
+      "name": "Aktionskartendeck",
+      "description": "Savage Worlds Adventure Edition Aktionskartendeck",
+      "cards": {
+        "2 of Clubs": {
+          "name": "Kreuz 2",
+          "description": "2♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 2",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_2.webp"
+            }
+          ]
+        },
+        "3 of Clubs": {
+          "name": "Kreuz 3",
+          "description": "3♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 3",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_3.webp"
+            }
+          ]
+        },
+        "4 of Clubs": {
+          "name": "Kreuz 4",
+          "description": "4♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 4",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_4.webp"
+            }
+          ]
+        },
+        "5 of Clubs": {
+          "name": "Kreuz 5",
+          "description": "5♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 5",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_5.webp"
+            }
+          ]
+        },
+        "6 of Clubs": {
+          "name": "Kreuz 6",
+          "description": "6♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 6",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_6.webp"
+            }
+          ]
+        },
+        "7 of Clubs": {
+          "name": "Kreuz 7",
+          "description": "7♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 7",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_7.webp"
+            }
+          ]
+        },
+        "8 of Clubs": {
+          "name": "Kreuz 8",
+          "description": "8♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 8",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_8.webp"
+            }
+          ]
+        },
+        "9 of Clubs": {
+          "name": "Kreuz 9",
+          "description": "9♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 9",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_9.webp"
+            }
+          ]
+        },
+        "10 of Clubs": {
+          "name": "Kreuz 10",
+          "description": "10♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz 10",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_10.webp"
+            }
+          ]
+        },
+        "Jack of Clubs": {
+          "name": "Kreuz Bube",
+          "description": "B♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz Bube",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_Jack.webp"
+            }
+          ]
+        },
+        "Queen of Clubs": {
+          "name": "Kreuz Dame",
+          "description": "D♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz Dame",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_Queen.webp"
+            }
+          ]
+        },
+        "King of Clubs": {
+          "name": "Kreuz König",
+          "description": "K♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz König",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_King.webp"
+            }
+          ]
+        },
+        "Ace of Clubs": {
+          "name": "Kreuz Ass",
+          "description": "A♣",
+          "suit": "Kreuz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Kreuz Ass",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_CLUBS_Ace.webp"
+            }
+          ]
+        },
+        "2 of Diamonds": {
+          "name": "Karo 2",
+          "description": "2♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 2",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_2.webp"
+            }
+          ]
+        },
+        "3 of Diamonds": {
+          "name": "Karo 3",
+          "description": "3♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 3",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_3.webp"
+            }
+          ]
+        },
+        "4 of Diamonds": {
+          "name": "Karo 4",
+          "description": "4♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 4",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_4.webp"
+            }
+          ]
+        },
+        "5 of Diamonds": {
+          "name": "Karo 5",
+          "description": "5♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 5",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_5.webp"
+            }
+          ]
+        },
+        "6 of Diamonds": {
+          "name": "Karo 6",
+          "description": "6♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 6",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_6.webp"
+            }
+          ]
+        },
+        "7 of Diamonds": {
+          "name": "Karo 7",
+          "description": "7♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 7",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_7.webp"
+            }
+          ]
+        },
+        "8 of Diamonds": {
+          "name": "Karo 8",
+          "description": "8♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 8",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_8.webp"
+            }
+          ]
+        },
+        "9 of Diamonds": {
+          "name": "Karo 9",
+          "description": "9♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 9",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_9.webp"
+            }
+          ]
+        },
+        "10 of Diamonds": {
+          "name": "Karo 10",
+          "description": "10♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo 10",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_10.webp"
+            }
+          ]
+        },
+        "Jack of Diamonds": {
+          "name": "Karo Bube",
+          "description": "B♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo Bube",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_Jack.webp"
+            }
+          ]
+        },
+        "Queen of Diamonds": {
+          "name": "Karo Dame",
+          "description": "D♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo Dame",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_Queen.webp"
+            }
+          ]
+        },
+        "King of Diamonds": {
+          "name": "Karo König",
+          "description": "K♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo König",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_King.webp"
+            }
+          ]
+        },
+        "Ace of Diamonds": {
+          "name": "Karo Ass",
+          "description": "A♦",
+          "suit": "Karo",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Karo Ass",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_DIAMONDS_Ace.webp"
+            }
+          ]
+        },
+        "2 of Hearts": {
+          "name": "Herz 2",
+          "description": "2♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 2",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_2.webp"
+            }
+          ]
+        },
+        "3 of Hearts": {
+          "name": "Herz 3",
+          "description": "3♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 3",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_3.webp"
+            }
+          ]
+        },
+        "4 of Hearts": {
+          "name": "Herz 4",
+          "description": "4♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 4",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_4.webp"
+            }
+          ]
+        },
+        "5 of Hearts": {
+          "name": "Herz 5",
+          "description": "5♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 5",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_5.webp"
+            }
+          ]
+        },
+        "6 of Hearts": {
+          "name": "Herz 6",
+          "description": "6♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 6",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_6.webp"
+            }
+          ]
+        },
+        "7 of Hearts": {
+          "name": "Herz 7",
+          "description": "7♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 7",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_7.webp"
+            }
+          ]
+        },
+        "8 of Hearts": {
+          "name": "Herz 8",
+          "description": "8♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 8",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_8.webp"
+            }
+          ]
+        },
+        "9 of Hearts": {
+          "name": "Herz 9",
+          "description": "9♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 9",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_9.webp"
+            }
+          ]
+        },
+        "10 of Hearts": {
+          "name": "Herz 10",
+          "description": "10♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz 10",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_10.webp"
+            }
+          ]
+        },
+        "Jack of Hearts": {
+          "name": "Herz Bube",
+          "description": "B♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz Bube",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_Jack.webp"
+            }
+          ]
+        },
+        "Queen of Hearts": {
+          "name": "Herz Dame",
+          "description": "D♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz Dame",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_Queen.webp"
+            }
+          ]
+        },
+        "King of Hearts": {
+          "name": "Herz König",
+          "description": "K♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz König",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_King.webp"
+            }
+          ]
+        },
+        "Ace of Hearts": {
+          "name": "Herz Ass",
+          "description": "A♥",
+          "suit": "Herz",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Herz Ass",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_HEARTS_Ace.webp"
+            }
+          ]
+        },
+        "2 of Spades": {
+          "name": "Pik 2",
+          "description": "2♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 2",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_2.webp"
+            }
+          ]
+        },
+        "3 of Spades": {
+          "name": "Pik 3",
+          "description": "3♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 3",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_3.webp"
+            }
+          ]
+        },
+        "4 of Spades": {
+          "name": "Pik 4",
+          "description": "4♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 4",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_4.webp"
+            }
+          ]
+        },
+        "5 of Spades": {
+          "name": "Pik 5",
+          "description": "5♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 5",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_5.webp"
+            }
+          ]
+        },
+        "6 of Spades": {
+          "name": "Pik 6",
+          "description": "6♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 6",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_6.webp"
+            }
+          ]
+        },
+        "7 of Spades": {
+          "name": "Pik 7",
+          "description": "7♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 7",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_7.webp"
+            }
+          ]
+        },
+        "8 of Spades": {
+          "name": "Pik 8",
+          "description": "8♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 8",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_8.webp"
+            }
+          ]
+        },
+        "9 of Spades": {
+          "name": "Pik 9",
+          "description": "9♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 9",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_9.webp"
+            }
+          ]
+        },
+        "10 of Spades": {
+          "name": "Pik 10",
+          "description": "10♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik 10",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_10.webp"
+            }
+          ]
+        },
+        "Jack of Spades": {
+          "name": "Pik Bube",
+          "description": "B♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik Bube",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_Jack.webp"
+            }
+          ]
+        },
+        "Queen of Spades": {
+          "name": "Pik Dame",
+          "description": "D♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik Dame",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_Queen.webp"
+            }
+          ]
+        },
+        "King of Spades": {
+          "name": "Pik König",
+          "description": "K♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik König",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_King.webp"
+            }
+          ]
+        },
+        "Ace of Spades": {
+          "name": "Pik Ass",
+          "description": "A♠",
+          "suit": "Pik",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Pik Ass",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_SPADES_Ace.webp"
+            }
+          ]
+        },
+        "Black Joker": {
+          "name": "Schwarzer Joker",
+          "description": "Schw. J",
+          "suit": "Joker",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Schwarzer Joker",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_JOKER_Black.webp"
+            }
+          ]
+        },
+        "Red Joker": {
+          "name": "Roter Joker",
+          "description": "Rot. J",
+          "suit": "Joker",
+          "back": {
+            "name": "",
+            "text": "",
+            "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_Back.webp"
+          },
+          "faces": [
+            {
+              "name": "Roter Joker",
+              "text": "",
+              "img": "modules/swade-core-rules/assets/decks/ActionDeck/Action_Deck_Cards_JOKER_Red.webp"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
