@@ -1,0 +1,10 @@
+header.header figure.gridcell.branding {
+    grid-row: 1 / 4 !important;
+    height: auto !important;
+    align-self: stretch;
+    margin-bottom: 0 !important;
+    background-image: url("../assets/icons/branding-de.webp") !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

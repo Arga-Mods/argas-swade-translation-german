@@ -1,0 +1,53 @@
+/* SWADE definiert --initiative-icon-hover relativ, benutzt wird die Variable
+   aber in Foundrys Kern-CSS und loest dort falsch auf (404). Absoluter Pfad. */
+.combat-sidebar.swade li.combatant .token-initiative .roll,
+.combat-sidebar.swade li.combatant-group .token-initiative .roll {
+    --initiative-icon-hover: url('/systems/swade/assets/ui/card-hand-gradient.svg');
+}
+
+/* Die Zustandsklassen sind ausgenommen, weil Foundry beim Schliessen
+   "max-height: 0px" am Element setzt; ein dauerhaftes !important wuerde das
+   ueberstimmen und das Fenster bliebe leer stehen statt zusammenzufahren. */
+.application.arga-welcome-dialog:not(.minimizing):not(.minimized):not(.maximizing) {
+    max-height: calc(100vh - 3rem) !important;
+}
+
+/* Zentrierung ueber die eigene Hoehe statt ueber Pixelwerte: unabhaengig davon,
+   wann Foundry misst, und beim Schliessen faehrt das Fenster zur Mitte zusammen.
+   Die Klasse entfernt register.js, sobald am Fenstertitel gezogen wird. */
+.application.arga-welcome-dialog.arga-welcome-zentriert {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+/* Schrumpffaehige Kette vom Fenster bis zum Textbereich: Ueberschuss landet
+   immer im scrollenden Teil, Haken und Knopfleiste bleiben sichtbar. */
+.application.arga-welcome-dialog .window-content,
+.application.arga-welcome-dialog .dialog-form,
+.application.arga-welcome-dialog .dialog-content {
+    min-height: 0;
+}
+
+.application.arga-welcome-dialog .dialog-form,
+.application.arga-welcome-dialog .dialog-content {
+    flex: 1 1 auto;
+}
+
+.application.arga-welcome-dialog .dialog-content > div {
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.application.arga-welcome-dialog .arga-welcome-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 0.4rem;
+}
+
+.application.arga-welcome-dialog .dialog-content > div > hr,
+.application.arga-welcome-dialog .dialog-content > div > label,
+.application.arga-welcome-dialog .form-footer {
+    flex: 0 0 auto;
+}
