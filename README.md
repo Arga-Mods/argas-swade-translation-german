@@ -40,20 +40,32 @@ Die Konvertierung der Welt kann auch über die Spieleinstellungen gestartet werd
 ## Manifest-URL
 https://github.com/Arga-Mods/argas-swade-translation-german/releases/latest/download/module.json
 
+## FoundryVTT.com
+https://foundryvtt.com/packages/argas-swade-translation-german
+
+<br>
+
 ## Voraussetzungen
 - [Babele](https://foundryvtt.com/packages/babele) – Übersetzungs-Framework
 - [SWADE-System](https://foundryvtt.com/packages/swade) – kostenloses Spielsystem
 - [SWADE Core Rules](https://foundryvtt.com/packages/swade-core-rules) – kostenpflichtiges Premium-Modul von Pinnacle
 - *optional:* [German [Core]](https://foundryvtt.com/packages/lang-de) – deutsche Sprachunterstützung für Foundry VTT
-    
+
+<br>
+
 ## Rechte
 **Savage Worlds** und **SWADE** sind Eigentum der ***Pinnacle Entertainment Group***; die deutschsprachigen Rechte liegen bei ***Ulisses Spiele***. Dieses inoffizielle Fan-Projekt liefert (mit vorliegender Genehmigung) die deutschen Regeltexte von Ulisses Spiele als Babele-Übersetzung für das kostenpflichtige englische Originalmodul `swade-core-rules`, welches installiert sein muss und durch ***Arga's SWADE Translation (German)*** nicht ersetzt wird.
+
+---
+
+<br>
 
 ## Wirf auch gerne einen Blick auf meine anderen Module
 
 * **[Arga's Dice Roller](https://github.com/Arga-Mods/argas-dice-roller)** – Ein *systemunabhängiges* Würfelmodul mit einem SL-Button für einen Schicksalswurf sowie zusätzlichen Funktionen und Würfelmechaniken speziell für das ***Savage-Worlds-System***, wie Patzer-Erkennung, Benny-Wiederholungswürfe, Wurfanforderungen und Dramatische Aufgaben.
 * **[Arga's Benny & Wound Panel (SWADE)](https://github.com/Arga-Mods/argas-benny-and-wound-panel-swade)** – Ein Panel für ***Savage Worlds*** zum schnellen Anpassen von Bennys, Wunden und Erschöpfung.
 * **[Arga's Day-Night Slider](https://github.com/Arga-Mods/argas-day-night-slider)** – Ein Schieberegler für einen sanften Tag-Nacht-Übergang in deinen Szenen.
+* **[Arga's SWADE SciFi Companion (German)](https://github.com/Arga-Mods/argas-swade-scifi-companion-german)** - A complete German translation of the English ***SWADE Science Fiction Companion*** premium module.
 
 ---
 
