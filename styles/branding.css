@@ -1,4 +1,6 @@
-header.header figure.gridcell.branding {
+/* Klasse aus register.js, gesetzt am einzelnen Bogen; sie fehlt auf Boegen von
+   Settings, zu denen keine Uebersetzung vorliegt. */
+.arga-branding-de header.header figure.gridcell.branding {
     grid-row: 1 / 4 !important;
     height: auto !important;
     align-self: stretch;
@@ -7,4 +9,25 @@ header.header figure.gridcell.branding {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Steht der Entschlossenheits-Zähler in der Kopfzeile, bleibt nur die oberste
+   Zeile frei; dort passt die flache Fassung wie das Logo des Systems.
+   Die Begrenzung auf Zeile 1 hält das Bild vom Zähler fern, auch wenn das
+   Fenster breiter gezogen wird - sonst wüchse es mit der Spaltenbreite mit. */
+.arga-branding-de header.header:has(#conviction) figure.gridcell.branding {
+    background-image: url("../assets/icons/branding-de-flach.webp") !important;
+    background-position: top;
+    grid-row: 1 !important;
+}
+
+/* Der SciFi Companion ordnet die Zelle selbst an: Sie behaelt ihre Hoehe und
+   rueckt neben den Zaehler, das Bild wird dort auf 85 % der Breite gerechnet.
+   In dieser Anordnung passt das grosse Bild; die flache Fassung schrumpfte auf
+   ein Drittel ihrer Hoehe, weil sie zusaetzlich in die erste Zeile gezwungen
+   wuerde. Weitere Settings gehoeren erst hierher, wenn sie uebersetzt sind -
+   die Zuordnung dazu steht in register.js. */
+.arga-branding-de.swadesfc-sheet header.header:has(#conviction) figure.gridcell.branding {
+    background-image: url("../assets/icons/branding-de.webp") !important;
+    grid-row: 1 / 4 !important;
 }
