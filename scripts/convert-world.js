@@ -94,11 +94,12 @@ async function argaConvertWorld(optionen = {}) {
 
   // Standardwert aus einer Messung an einer grossen Welt (147 ms je Aenderung).
   // Weil das stark vom Rechner abhaengt, merkt sich der Konverter nach groesseren
-  // Laeufen den selbst gemessenen Wert. localStorage ist ein Host-Objekt und im
-  // Testrahmen nicht vorhanden, jeder Zugriff faellt auf den Standard zurueck.
+  // Laeufen den selbst gemessenen Wert. localStorage ist ein Host-Objekt und
+  // nicht in jeder Umgebung vorhanden; dann faellt jeder Zugriff auf den
+  // Standard zurueck.
   const MS_JE_AENDERUNG_STANDARD = 150;
   const TEMPO_KEY = 'arga-convert-ms-je-aenderung';
-  const WARNSCHWELLE_MS = 120000;   // erst ab ~2 min fragen, sonst nervt es
+  const WARNSCHWELLE_MS = 120000;   // erst ab ~2 min fragen
   const TEMPO_MINDESTMENGE = 200;   // kleine Laeufe verzerren den Messwert
   const msJeAenderung = () => {
     try {
@@ -592,7 +593,7 @@ async function argaConvertWorld(optionen = {}) {
         // Kein Woerterbuch kannte einen einzigen Text - dann ist nichts
         // erkennbar Englisches mehr da: schon deutsch, durch die Mutation
         // umgebaut oder Handtext. Der Pack-Vergleich unten kann das Original
-        // hier nicht rekonstruieren und meldete deshalb Fehlalarme.
+        // hier nicht rekonstruieren und meldete sonst Fehlalarme.
         return null;
       } catch (e) {}
     }
@@ -650,9 +651,8 @@ async function argaConvertWorld(optionen = {}) {
   // direkt durch die Woerterbuecher aller uebersetzten Item-Packs schicken, die
   // nur exakt bekannte englische Texte ersetzen.
   //
-  // WICHTIG: Jedes Converter-Feld ohne extract MUSS in einer dieser Listen (oder
-  // in einem eigenen Plan) stehen; die Feld-Inventur des Testrahmens prueft das
-  // bei jedem Lauf maschinell.
+  // WICHTIG: Jedes Converter-Feld ohne extract MUSS in einer dieser Listen oder
+  // in einem eigenen Plan stehen.
   const STAT_FELDER = ['system.rank', 'system.range', 'system.duration', 'system.trapping',
     'system.category', 'system.source', 'system.ammo', 'system.arcane'];
   // Array-Felder: die Converter aendern nur Text-Teile, die Struktur bleibt.
@@ -2265,7 +2265,7 @@ async function argaConvertWorld(optionen = {}) {
   // Vor dem Schreiben Umfang und geschaetzte Dauer nennen: der erste Lauf an
   // einer grossen Welt kann eine Dreiviertelstunde beschaeftigt sein und sieht
   // ohne Vorwarnung wie ein haengendes Foundry aus. Erst ab der Schwelle
-  // fragen, bei wenigen Aenderungen waere die Rueckfrage nur laestig.
+  // fragen, bei wenigen Aenderungen waere die Rueckfrage nur stoerend.
   const ausgewaehltJetzt = totalSelected();
   const geschaetztMs = ausgewaehltJetzt * msJeAenderung();
   if (geschaetztMs >= WARNSCHWELLE_MS) {
@@ -2534,7 +2534,7 @@ async function argaConvertWorld(optionen = {}) {
 
   ZEIT.anwenden = jetzt() - tAnwenden;
   // Teilzeiten nur nennen, wenn sie ins Gewicht fallen - beim zweiten Lauf sind
-  // die Kompendien warm und die Angabe waere Ballast.
+  // die Kompendien warm und die Angabe waere ueberfluessig.
   const teileText = Object.entries(teileAnalyse)
     .filter(([, ms]) => ms > 1000 && ms > ZEIT.analyse * 0.05)
     .sort((a, b) => b[1] - a[1])
