@@ -1,5 +1,10 @@
 # Änderungsprotokoll
 
+## 14.0.4
+- **Fanprodukt-Logo.** Bei Settings, die von der ***Arga's Translation - Reihe*** noch nicht übersetzt wurden (wie z.B. *Deadlands*), wird das SWADE Fanprodukt - Logo nun nicht mehr im Charakterbogen des Settings angezeigt. Im Standardbogen verbleibt es, sofern ***Arga’s SWADE Translation (German)*** aktiv ist. 
+- **Behoben: Entschlossenheit**. Wenn mit der Setting-Regel „Entschlossenheit" gespielt wird, verdeckt das Fan-Logo im Charakterbogen nun nicht mehr die Darstellung der Entschlossenheitspunkte.
+- **Behoben: Schild-Items.** Diese erhalten nun auch außerhalb der Kompendien ihre deutsche Beschreibung.
+
 ## 14.0.3
 - **Konverter überarbeitet.** Er erfasst nun auch Inhalte, die sich der Umstellung bisher entzogen haben, wie bestimmte Token auf Szenen oder Akteure aus importierten Abenteuern. Der Konverter macht nun selbständig bis zu 3 Durchläufe, um keine Items auszulassen, und übersetzt künftig auch die Inhalte der übrigen Module der Arga's-Translation-Reihe.
 - **Kein gegenseitiges Überschreiben mehr.** Dieses Modul und *Arga's SWADE SciFi Companion (German)* nehmen einander die Übersetzungen nicht mehr weg; die Ladereihenfolge spielt keine Rolle mehr.
