@@ -16,6 +16,53 @@ function argaActive() {
   return !argaModuleDisabled();
 }
 
+// Settings bringen eigene Charakterboegen mit. Auf einem solchen Bogen
+// erscheint das eigene Branding nur, wenn eine Uebersetzung des Settings
+// vorliegt; auf dem Bogen des Systems erscheint es immer. Schluessel ist die
+// Kennung, die ein Setting seinem Bogen mitgibt, Wert die Modul-ID der
+// zugehoerigen Uebersetzung.
+const BRANDING_UEBERSETZTE_SETTINGS = {
+  'swadesfc-sheet': 'argas-swade-scifi-companion-german',
+};
+
+// Settings melden ihren Bogen unter dem Namen des Systems an ("swade"), leiten
+// ihn aber von dessen Bogenklasse ab. Die Herkunft ist daher nicht der
+// Registrierung zu entnehmen, sondern der Klasse selbst: Der Bogen des Systems
+// ist eine der unter `game.swade.sheets` veroeffentlichten Klassen, ein
+// Setting-Bogen eine Ableitung davon.
+function argaSystemBogen(app) {
+  const eigene = Object.values(game.swade?.sheets ?? {});
+  if (!eigene.length) return true;
+  return eigene.includes(app?.constructor);
+}
+
+function argaBrandingErlaubt(app, wurzel) {
+  try {
+    if (argaSystemBogen(app)) return true;
+    for (const kennung of Object.keys(BRANDING_UEBERSETZTE_SETTINGS)) {
+      if (!wurzel?.classList?.contains(kennung)) continue;
+      return game.modules.get(BRANDING_UEBERSETZTE_SETTINGS[kennung])?.active === true;
+    }
+    return false;
+  } catch (e) { return true; }
+}
+
+// Steuert die Regeln in styles/branding.css. Die Klasse sitzt am einzelnen
+// Bogen, nicht am Dokumentkoerper: In derselben Welt koennen Boegen des Systems
+// und eines Settings gleichzeitig offen sein. Ruht die Uebersetzung - englische
+// Anzeigesprache oder abgeschaltetes Modul -, tritt das Logo des Systems
+// wieder an ihre Stelle.
+function argaBrandingKlasseSetzen(app, element) {
+  const dokument = app?.document ?? app?.object;
+  if (dokument?.documentName !== 'Actor') return;
+  const wurzel = (element instanceof HTMLElement) ? element : (app?.element?.[0] ?? app?.element);
+  if (!(wurzel instanceof HTMLElement)) return;
+  wurzel.classList.toggle('arga-branding-de', argaActive() && argaBrandingErlaubt(app, wurzel));
+}
+
+Hooks.on('renderApplicationV2', argaBrandingKlasseSetzen);
+Hooks.on('renderApplication', argaBrandingKlasseSetzen);
+
 let argaSettingsRegistered = false;
 function argaRegisterSettings() {
   if (argaSettingsRegistered) return;
@@ -1414,9 +1461,10 @@ Hooks.once('babele.init', (babele) => {
     'Item.ability':   { description: 'system.description' },
     'Item.gear':      { description: 'system.description' },
     'Item.hindrance': { description: 'system.description' },
-    // Nur actions – ob die Beschreibung wie bei armor auf system.description
-    // umzuleiten ist, ist ungeprüft und bleibt bewusst unangetastet.
+    // Schild-Items führen ihre Beschreibung wie Rüstungen als String unter
+    // system.description, nicht unter .value.
     'Item.shield': {
+      description: 'system.description',
       actions: { path: 'system.actions.additional', converter: 'actionButtons' },
     },
     'Item.armor': {
@@ -3136,8 +3184,8 @@ async function argaRestoreWindows(list) {
       let app = null;
       if (entry.uuid) {
         const doc = await fromUuid(entry.uuid);
-        // Einzelne Journal-Seiten nie öffnen: das hat die deutsche Übersetzung
-        // schon einmal ins gesperrte Basis-Kompendium zurückgeschrieben.
+        // Einzelne Journal-Seiten nie öffnen: sonst schreibt die deutsche
+        // Übersetzung ins gesperrte Basis-Kompendium zurück.
         if (doc?.documentName === "JournalEntryPage") continue;
         const sheet = doc?.sheet;
         if (!sheet) continue;
